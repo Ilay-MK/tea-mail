@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+%bg-cover {
+    background-position: center center; /*50% 50%*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
+%transition-color {
+    -webkit-transition: color 300ms ease-out;
+       -moz-transition: color 300ms ease-out;
+         -o-transition: color 300ms ease-out;
+            transition: color 300ms ease-out;
+}
+
+// --------------------------------------- //
+
+%outline_boxShadow_none {
+    box-shadow: 0 0 0 0 transparent;
+    box-shadow: none;
+    outline: 0 solid transparent;
+    outline: none;
+}
+
+// --------------------------------------- //
+
+%font-nav {
+    color: map-get($colors, "bs4");
+    font-family: map-get($fonts, "bb");
+    /*font-size: 15px;*/
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 16px; /*1.067*/
+    letter-spacing: 0.05em;
+}
+
+%font-userLabel {
+    color: map-get($colors, "bs3");
+    font-family: map-get($fonts, "bul");
+    /*font-size: 14px;*/
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+    line-height: 16px; /*1.143*/
+    letter-spacing: 0.05em;
+}
+
+/* ------------------------------------------ */
+
+%font-proximaNova-Cond {
+    color: map-get($colors, "bs3");
+    font-family: map-get($fonts, "pnc");
+    /*font-size: 14px;*/
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+%font-karton {
+    color: map-get($colors, "bs3");
+    font-family: map-get($fonts, "kt");
+    /*font-size: 14px;*/
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+%font-bristal {
+    color: map-get($colors, "bs3");
+    font-family: map-get($fonts, "br");
+    /*font-size: 14px;*/
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+/* ------------------------------------------ */

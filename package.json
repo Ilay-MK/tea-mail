@@ -1,0 +1,40 @@
+{
+    "name": "Tea-mail",
+    "version": "0.0.1",
+    "description": "Tea-mail - интернет магазин китайского чая в Беларуси",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Ilya Purouski",
+    "license": "ISC",
+    "repository": {
+        "type": "",
+        "url": ""
+    },
+    "devDependencies": {
+        "browser-sync": "^2.11.2",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^3.1.0",
+        "gulp-google-cdn": "^2.1.0",
+        "gulp-htmlmin": "^2.0.0",
+        "gulp-if": "^2.0.0",
+        "gulp-imagemin": "^2.4.0",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-notify": "^2.2.0",
+        "gulp-rigger": "^0.5.8",
+        "gulp-sass": "^2.2.0",
+        "gulp-sftp": "^0.1.5",
+        "gulp-sourcemaps": "^1.6.0",
+        "gulp-uglify": "^1.5.3",
+        "gulp-uncss": "^1.0.5",
+        "gulp-useref": "^2.1.0",
+        "gulp-watch": "^4.3.8",
+        "imagemin-pngquant": "^4.2.2",
+        "rimraf": "^2.5.2",
+        "wiredep": "^2.2.2"
+    },
+    "keywords": [
+    ""
+  ]
+}

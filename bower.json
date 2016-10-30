@@ -1,0 +1,23 @@
+{
+  "name": "Tea-mail",
+  "description": "Tea-mail.by - online Chinese tea shop",
+  "main": "index.html",
+  "authors": [
+    "Ilya Purouski"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize.css": "*",
+    "protonet/jquery.inview": "^1.1.2"
+  },
+  "devDependencies": {}
+}

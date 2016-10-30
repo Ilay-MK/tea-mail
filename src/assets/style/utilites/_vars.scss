@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+$colors: (
+    "b_w" : $color-base-white,        /*#fff*/
+    "b_b" : $color-base-black,        /*#000*/
+    "err" : $color-error,             /*#a94442*/
+    "suc" : $color-success,           /*#3c763d*/
+    "bp1" : $color-brand-primary-1,   /*#FFC865*/
+    "bp2" : $color-brand-primary-2,   /*#D29B3B*/
+    "bp3" : $color-brand-primary-3,   /*#8AAD7F*/
+    "bs1" : $color-brand-secondary-1, /*#181818*/
+    "bs2" : $color-brand-secondary-2, /*#ACACAC*/
+    "bs3" : $color-brand-secondary-3, /*#5C5C5C*/
+    "bs4" : $color-brand-secondary-4  /*#3D3D3D*/
+);
+
+$fonts: (
+    "bb"  : $font-brand-base,         /*Open Sans*/
+    "bul" : $font-brand-userLabel,    /*Proxima Nova Cond*/
+    "pn"  : font-ProximaNova-Cond,    /*Proxima Nova Cond*/
+    "kt"  : $font-Karton,             /*Karton*/
+    "br"  : $font-Bristol             /*Bristol*/
+);

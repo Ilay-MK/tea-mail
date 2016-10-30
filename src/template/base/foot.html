@@ -1,0 +1,48 @@
+    <!-- build:js js/vendor.js -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>-->
+
+    <!-- bower:js -->
+    <!-- endbower -->
+
+    <!-- endbuild -->
+
+    <!-- build:js js/main.js -->
+    <!-- endbuild -->
+
+    <script>
+
+        // Загрузка стилей
+        function loadStyle(l) {
+            var a = document.createElement("link");
+            a.rel = "stylesheet";
+            a.type = "text/css";
+            a.href = l;
+            document.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        // Загрузка скриптов
+        function downloadJSAtOnload(l) {
+            var element = document.createElement("script");
+            element.src = l;
+            document.getElementsByTagName("body")[0].appendChild(element)
+        }
+
+        $(document).ready(function () {
+            /*loadStyle('css/main.css?v=0.0.1');*/
+            downloadJSAtOnload('assets/js/main.js?v=0.0.1');
+        });
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Google.Analytics counter -->
+
+    <!-- /Google.Analytics counter -->
+
+</body>
+
+</html>

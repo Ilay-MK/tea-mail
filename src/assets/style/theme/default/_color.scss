@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+$color-base-white             : rgb(255, 255, 255); /*base of white*/
+$color-base-black             : rgb(0, 0, 0);       /*base for lighen*/
+
+// ------------------------------- //
+
+/*Red*/
+$color-RoofTerracotta    : rgb(169, 68, 66);   /*#a94442*/ /*! error */
+
+/*Green*/
+$color-Amulet            : rgb(138, 173, 127); /*#8AAD7F*/ /*! primary - Block of catalog */
+$color-JapaneseLaurel    : rgb(60, 118, 61);   /*#3c763d*/ /*! success */
+
+/*Yellow*/
+$color-Grandis           : rgb(255, 200, 101); /*#FFC865*/ /*! Balls in Hero */
+$color-FuelYellow        : rgb(210, 155, 59);  /*#D29B3B*/ /*! BG Button */
+
+/* Gray */
+$color-Zambezi           : rgb(92, 92, 92);    /*#5C5C5C*/ /*! Name login */
+$color-Eclipse           : rgb(61, 61, 61);    /*#3D3D3D*/ /*! nav */
+$color-DarkGray          : rgb(172, 172, 172); /*#ACACAC*/ /*! Catalog, secondary title-info (date of make) */
+$color-Nero              : rgb(24, 24, 24);    /*#181818*/ /*! Catalog, title */
+
+
+// ------------------------------- //
+
+$color-base-white        : $color-base-white;
+$color-base-black        : $color-base-black;
+
+$color-error             : $color-RoofTerracotta;
+$color-success           : $color-JapaneseLaurel;
+
+$color-brand-primary-1   : $color-Grandis;
+$color-brand-primary-2   : $color-FuelYellow;
+$color-brand-primary-3   : $color-Amulet;
+
+$color-brand-secondary-1 : $color-Nero;
+$color-brand-secondary-2 : $color-DarkGray;
+$color-brand-secondary-3 : $color-Zambezi;
+$color-brand-secondary-4 : $color-Eclipse;
