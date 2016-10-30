@@ -1,17 +1,33 @@
 @charset "UTF-8";
 
+/* Bristol */
+@font-face {
+    font-family: 'Bristol';
+    src: local("Bristol"), local("Bristol Regular"),
+        url(../fonts/Bristol/Bristol.eot);
+    src: local("Bristol"), local("Bristol Regular"),
+        url(../fonts/Bristol/Bristol.woff2) format("woff2"),
+        url(../fonts/BristolBristol.woff) format("woff"),
+        url(../fonts/BristolBristol.ttf) format("truetype"),
+        url(../fonts/BristolBristol.svg#Bristol) format("svg"),
+        url(../fonts/BristolBristol.eot?#iefix) format("embedded-opentype");
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400
+}
+
 /* Karton */
-/*@font-face {
+@font-face {
     font-family: 'Karton';
     src: local('Karton'), local('Karton Regular'),
-        url('../fonts/Karton-Regular/Karton-Regular.eot');
+        url('../fonts/Karton-Regular/Karton.eot');
     src: local('Karton'), local('Karton Regular'),
-        url('../fonts/Karton-Regular/Karton-Regular.woff2') format('woff2'),
-        url('../fonts/Karton-Regular/Karton-Regular.woff') format('woff'),
-        url('../fonts/Karton-Regular/Karton-Regular.ttf') format('truetype'),
-        url('../fonts/Karton-Regular/Karton-Regular.svg#Karton-Regular') format('svg'),
-        url('../fonts/Karton-Regular/Karton-Regular.eot?#iefix') format('embedded-opentype');
+        url('../fonts/Karton/Karton.woff2') format('woff2'),
+        url('../fonts/Karton/Karton.woff') format('woff'),
+        url('../fonts/Karton/Karton.ttf') format('truetype'),
+        url('../fonts/Karton/Karton.svg#Karton-Regular') format('svg'),
+        url('../fonts/Karton/Karton.eot?#iefix') format('embedded-opentype');
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
-}*/
+}

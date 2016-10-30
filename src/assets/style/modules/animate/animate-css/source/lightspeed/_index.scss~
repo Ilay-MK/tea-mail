@@ -1,0 +1,15 @@
+@import "base";
+@import "attention_seekers/index";
+@import "bouncing_entrances/index";
+@import "bouncing_exits/index";
+@import "fading_entrances/index";
+@import "fading_exits/index";
+@import "flippers/index";
+@import "lightspeed/index";
+@import "rotating_entrances/index";
+@import "rotating_exits/index";
+@import "sliding_entrances/index";
+@import "sliding_exits/index";
+@import "specials/index";
+@import "zooming_entrances/index";
+@import "zooming_exits/index";
