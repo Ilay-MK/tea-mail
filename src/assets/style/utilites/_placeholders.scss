@@ -27,6 +27,42 @@
 
 // --------------------------------------- //
 
+/* ------------------------------------------ */
+
+%font-openSans {
+    font-family: map-get($fonts, "bb");
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+%font-proximaNova_Cond {
+    font-family: map-get($fonts, "pnc");
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+%font-karton {
+    font-family: map-get($fonts, "kt");
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+%font-bristal {
+    font-family: map-get($fonts, "br");
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+/* ------------------------------------------ */
+
+%font-base {
+    @extend %font-openSans;
+}
+
 %font-nav {
     color: map-get($colors, "bs4");
     font-family: map-get($fonts, "bb");
@@ -48,34 +84,3 @@
     line-height: 16px; /*1.143*/
     letter-spacing: 0.05em;
 }
-
-/* ------------------------------------------ */
-
-%font-proximaNova-Cond {
-    color: map-get($colors, "bs3");
-    font-family: map-get($fonts, "pnc");
-    /*font-size: 14px;*/
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-}
-
-%font-karton {
-    color: map-get($colors, "bs3");
-    font-family: map-get($fonts, "kt");
-    /*font-size: 14px;*/
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-}
-
-%font-bristal {
-    color: map-get($colors, "bs3");
-    font-family: map-get($fonts, "br");
-    /*font-size: 14px;*/
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-}
-
-/* ------------------------------------------ */

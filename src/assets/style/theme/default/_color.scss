@@ -1,20 +1,22 @@
 @charset "UTF-8";
 
+/* http://razorjam.github.io/sasscolourfunctioncalculator/ */
+
 $color-base-white             : rgb(255, 255, 255); /*base of white*/
 $color-base-black             : rgb(0, 0, 0);       /*base for lighen*/
 
 // ------------------------------- //
 
-/*Red*/
+/* Red */
 $color-RoofTerracotta    : rgb(169, 68, 66);   /*#a94442*/ /*! error */
 
-/*Green*/
+/* Green */
 $color-Amulet            : rgb(138, 173, 127); /*#8AAD7F*/ /*! primary - Block of catalog */
 $color-JapaneseLaurel    : rgb(60, 118, 61);   /*#3c763d*/ /*! success */
 
-/*Yellow*/
-$color-Grandis           : rgb(255, 200, 101); /*#FFC865*/ /*! Balls in Hero */
-$color-FuelYellow        : rgb(210, 155, 59);  /*#D29B3B*/ /*! BG Button */
+/* Yellow */
+$color-Grandis           : rgb(255, 200, 103); /*#FFC867*/ /*[homepage -> 1 screen] text of advantages*/
+$color-FuelYellow        : darken(desaturate(adjust-hue($color-Grandis, -0.4257), 37.3444), 17.0588); //rgb(210, 155, 59);  /*#D29B3B*/ /*! [homepage] BG Button && color of advantages icon */
 
 /* Gray */
 $color-Zambezi           : rgb(92, 92, 92);    /*#5C5C5C*/ /*! Name login */
@@ -22,6 +24,8 @@ $color-Eclipse           : rgb(61, 61, 61);    /*#3D3D3D*/ /*! nav */
 $color-DarkGray          : rgb(172, 172, 172); /*#ACACAC*/ /*! Catalog, secondary title-info (date of make) */
 $color-Nero              : rgb(24, 24, 24);    /*#181818*/ /*! Catalog, title */
 
+/* White */
+/* rgb(246, 246, 245) #f6f6f5  -  shapely_line and GBs of tea_mail_2 & catalog */
 
 // ------------------------------- //
 
