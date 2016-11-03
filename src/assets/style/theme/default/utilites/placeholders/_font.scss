@@ -2,49 +2,49 @@
 
 /* ------------- -= Open Sans =- ------------- */
 %font-OpenSans_Light {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
 }
 %font-OpenSans_LightItalic {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 300;
 }
 %font-OpenSans_Regular {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
 }
 %font-OpenSans_RegularItalic {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 400;
 }
 %font-OpenSans_Semibold {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
 }
 %font-OpenSans_SemiBoldItalic {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 600;
 }
 %font-OpenSans_Bold {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
 }
 %font-OpenSans_BoldItalic {
-    font-family: map-get($fonts, "font-1"); /* Open Sans */
+    font-family: $font-OpenSans; /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 700;
@@ -52,19 +52,19 @@
 
 /* ------------- -= Noto Sans =- ------------- */
 %font-NotoSans_Regular {
-    font-family: map-get($fonts, "font-2"); /* Noto Sans */
+    font-family: $font-NotoSans; /* Noto Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
 }
 %font-NotoSans_Italic {
-    font-family: map-get($fonts, "font-2"); /* Noto Sans */
+    font-family: $font-NotoSans; /* Noto Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 400;
 }
 %font-NotoSans_BoldItalic {
-    font-family: map-get($fonts, "font-2"); /* Noto Sans */
+    font-family: $font-NotoSans; /* Noto Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 700;
@@ -72,7 +72,7 @@
 
 /* ------------- -= Noto Serif =- ------------- */
 %font-NotoSerif_BoldItalic {
-    font-family: map-get($fonts, "font-3"); /* Noto Serif */
+    font-family: $font-NotoSerif; /* Noto Serif */
     font-style: italic;
     font-variant: normal;
     font-weight: 700;
@@ -80,7 +80,7 @@
 
 /* ------------- -= Karton =- ------------- */
 %font-Karton_Regular {
-    font-family: map-get($fonts, "font-4"); /* Karton */
+    font-family: $font-Karton; /* Karton */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -88,7 +88,7 @@
 
 /* ------------- -= Bristol =- ------------- */
 %font-Bristol_Regular {
-    font-family: map-get($fonts, "font-5"); /* Bristol */
+    font-family: $font-Bristol; /* Bristol */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -96,7 +96,7 @@
 
 /* ------------- -= Proxima Nova condensed =- ------------- */
 %font-ProximaNova_Condensed_Regular {
-    font-family: map-get($fonts, "font-6"); /* Proxima Nova condensed */
+    font-family: $font-ProximaNova_Cond; /* Proxima Nova condensed */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
