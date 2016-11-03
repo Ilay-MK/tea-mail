@@ -7,9 +7,9 @@
 /// @require getColors()
 
 @function colors($assignment: "bg-base") {
-    @return getColors($assignment);
+    @return getColor($assignment);
 }
 
 @function c($assignment: "bg-base") {
-    @return getColors($assignment);
+    @return getColor($assignment);
 }
