@@ -4,7 +4,7 @@
 /// @access private
 /// @type Map
 /// @prop {String} key - Область применения
-/// @prop {String} value - значение Font-size, соответствущее ключу
+/// @prop {String} value - значение font-size, соответствущее ключу
 
 $service-kegels: (
     "base"      : getKegel("kegels-5")  /* 16px */
