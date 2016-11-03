@@ -43,7 +43,7 @@ body {
 a {
     display: inline-block;
     text-decoration: none;
-    @extend %transition-color;
+    @include transition(color);
 
     &:link, &:visited , &:hover, &:active, &:focus, &:focus:active {
         display: inline-block;
