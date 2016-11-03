@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/// Получение значения цвета
+/// Получение значения Цвета
 /// @access public
-/// @param {String} $color - Название цвета (доп.: через "-" порядковый номер)
+/// @param {String} $color - Название цвета (доп.: "-" порядковый номер)
 /// пример: #925900 - GoldenBrown; #9F6407 - GoldenBrown-1
 /// @return {String}
 /// @require domains.vars.colors.$domain-colors
