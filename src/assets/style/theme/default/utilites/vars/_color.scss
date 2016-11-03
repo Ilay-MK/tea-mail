@@ -43,3 +43,41 @@ $color-brand-secondary-1 : $color-Nero;
 $color-brand-secondary-2 : $color-DarkGray;
 $color-brand-secondary-3 : $color-Zambezi;
 $color-brand-secondary-4 : $color-Eclipse;
+
+
+/* -------------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
+/* ------------ */
+/* [ HOMEPAGE ] */
+/* ------------ */
+/* ----------------------------------------------------------- */
+/* -------------------- [ -= BUTTONS =- ] -------------------- */
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* -------------------- [ gradient ] ------------------- */
+
+/* ------------ */
+/* [tea_mail_2] [tea_room] [care] [about_project] [newsletters] [reviews] */
+
+/* жёлто-коричневые цвета */
+$color--button--gradient__normal__from : rgb(191, 146, 101); // #bf9265
+$color--button--gradient__normal__to   : rgb(206, 159, 111); // #ce9f6f
+$color--button--gradient__hover__from  : rgb(182, 138, 94);  // #b68a5e
+$color--button--gradient__hover__to    : rgb(199, 153, 106); // #c7996a
+
+/* -------------------------------------------------- */
+/* -------------------- [ solid ] ------------------- */
+
+/* ---------- */
+/* [catalog_popular] [dishes] [kits] */
+/* жёлто-коричневые  */
+$color--button--solid-yb__normal : rgb(210, 155, 59); // #d29b3b
+$color--button--solid-yb__hover  : rgb(194, 142, 50); // #c28e32
+
+/* [catalog_popular] [footer] */
+/* красные цвета */
+$color--button--solid-r__normal : rgb(182, 41, 39); // b62927
+$color--button--solid-r__hover  : rgb(214, 63, 60); // d63f3c
+$color--button--solid-r--footer__normal : rgb(177, 101, 75); // b1654b
