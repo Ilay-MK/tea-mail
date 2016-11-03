@@ -172,6 +172,6 @@ $domain-colors: (
     "error"     : map-get($colors-red,   "RoofTerracotta"), /* #a94442 */
     "success"   : map-get($colors-green, "JapaneseLaurel"), /* #3c763d */
     "white"     : map-get($colors-white, "white")           /* #ffffff */
-) !default;
+);
 
 
