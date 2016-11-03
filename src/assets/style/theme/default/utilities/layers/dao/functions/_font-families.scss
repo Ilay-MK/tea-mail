@@ -4,7 +4,7 @@
 /// @access public
 /// @param {String} $font-family - Имя гарнитуры
 /// @return {String}
-/// @require domains.vars.fonts.$domain-font-families
+/// @require domains.vars.font-families.$domain-font-families
 
 @function getFont-family($font-family: "OpenSans") {
     @return map-get($domain-font-families, $font-family);
