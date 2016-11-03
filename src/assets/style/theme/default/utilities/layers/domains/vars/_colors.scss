@@ -162,7 +162,7 @@ $color-success    : map-get($colors-green, "JapaneseLaurel"); /* #a94442 */
 /// @access private
 /// @type Map
 /// @prop {String} key - Имя цвета
-/// @prop {String} value - значение Color
+/// @prop {String} value - значение Color, соответствущее ключу
 
 $domain-colors: (
     "black"     : map-get($colors-black, "black"),          /* #000000 */
