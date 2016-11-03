@@ -90,11 +90,11 @@
             border-image: url($image) $border;
 }
 
-@mixin transition ($time, $effect) {
-    -webkit-transition: color $time $effect;
-       -moz-transition: color $time $effect;
-         -o-transition: color $time $effect;
-            transition: color $time $effect;
+@mixin transition ($target: all, $time: 0.3s, $effect: ease-out) {
+    -webkit-transition: $target $time $effect;
+       -moz-transition: $target $time $effect;
+         -o-transition: $target $time $effect;
+            transition: $target $time $effect;
 }
 
 /*Extras*/
