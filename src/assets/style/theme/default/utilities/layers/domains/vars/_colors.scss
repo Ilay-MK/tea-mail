@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+/* http://razorjam.github.io/sasscolourfunctioncalculator/ */
+/* ------------------------------------------------------- */
+
+/* ------------ */
+/* [ HOMEPAGE ] */
+/* ------------ */
+
+/* colors from dark to light */
+/* -------------------------- */
+
+/* Blacks */
+$color-black    : $color-base-black; /* #000000 [ brand ] */
+$color-Nero     : rgb(34, 34, 34);   /* #222222 */
+$color-Charcoal : rgb(68, 68, 68);   /* #444444 */
+$color-Zambezi  : rgb(92, 92, 92);   /* #5c5c5c */
+
+$colors-black: (
+    "black"     : $color-black,
+    "Nero"      : $color-Nero,
+    "Charcoal"  : $color-Charcoal,
+    "Zambezi"   : $color-Zambezi
+);
+
+/* -------------------------- */
+
+/* Grays */
+$color-DimGray   : rgb(110, 110, 110); /* #6e6e6e */
+$color-Grey      : rgb(132, 132, 132); /* #848484 */
+
+$colors-gray: (
+    "DimGray"    : $color-DimGray,
+    "Grey"       : $color-Grey
+);
+
+/* -------------------------- */
+
+/* browns */
+$color-GoldenBrown : rgb(146, 89, 0);    /* #925900 [ brand ] */
+$color-Tuscany     : rgb(177, 101, 75);  /* #b1654b */
+
+$color-BarleyCorn  : rgb(182, 138, 94);  /* #b68a5e */
+$color-Fallow-1    : rgb(191, 146, 101); /* #bf9265 */
+$color-Fallow-2    : rgb(199, 153, 106); /* #c7996a */
+$color-Fallow-3    : rgb(206, 159, 111); /* #ce9f6f */
+
+$colors-brown: (
+    "GoldenBrown"  : $color-GoldenBrown,
+    "Tuscany"      : $color-Tuscany,
+    "BarleyCorn"   : $color-BarleyCorn,
+    "Fallow-1"     : $color-Fallow-1,
+    "Fallow-2"     : $color-Fallow-2,
+    "Fallow-3"     : $color-Fallow-3
+);
+
+/* -------------------------- */
+
+/* Red */
+$color-RoofTerracotta : rgb(169, 68, 66); /* #a94442 */
+$color-FireBrick      : rgb(182, 41, 39); /* #b62927 */
+$color-Cinnabar       : rgb(214, 63, 60); /* #d63f3c */
+
+$colors-red: (
+    "RoofTerracotta"  : $color-RoofTerracotta,
+    "FireBrick"       : $color-FireBrick,
+    "Cinnabar"        : $color-Cinnabar
+);
+
+/* -------------------------- */
+
+/* Greens */
+$colors-JapaneseLaurel : rgb(60, 118, 61);   /* #3c763d */
+$color-Amulet          : rgb(138, 173, 127); /* #8aad7f [ brand ] */
+
+$colors-green: (
+    "JapaneseLaurel"   : $color-JapaneseLaurel,
+    "Amulet"           : $color-Amulet
+);
+
+/* -------------------------- */
+
+/* Orange */
+$color-HokeyPokey : rgb(194, 142, 50); /* #c28e32 */
+$color-FuelYellow : rgb(210, 155, 59); /* #d29b3b [ brand ] */
+
+$colors-orange: (
+    "HokeyPokey"  : $color-HokeyPokey,
+    "FuelYellow"  : $color-FuelYellow
+);
+
+/* -------------------------- */
+
+/* Beige */
+$color-DoubleColonialWhite : rgb(224, 204, 145); /* #e0cc91 [ brand ] */
+
+$colors-beige: (
+    "DoubleColonialWhite"  : $color-DoubleColonialWhite
+);
+
+/* -------------------------- */
+
+/* White */
+$color-white : $color-base-white; /* #ffffff [ brand ] */
+
+$colors-white: (
+    "white"  : $color-black
+);
+
+/* -------------------------- */
+
+
+/* ----------------------------------------------------------- */
+/* -------------------- [ -= BUTTONS =- ] -------------------- */
+/* ----------------------------------------------------------- */
+
+/* ----------------------------------------------------- */
+/* -------------------- [ gradient ] ------------------- */
+
+/* ------------ */
+/* [tea_mail_2] [tea_room] [care] [about_project] [newsletters] [reviews] */
+/* жёлто-коричневые */
+$color--button--gradient__normal__from : map-get($colors-brown, "Fallow-1");   /* #bf9265 */
+$color--button--gradient__normal__to   : map-get($colors-brown, "Fallow-3");   /* #ce9f6f */
+$color--button--gradient__hover__from  : map-get($colors-brown, "BarleyCorn"); /* #b68a5e */
+$color--button--gradient__hover__to    : map-get($colors-brown, "Fallow-2");   /* #c7996a */
+
+/* -------------------------------------------------- */
+/* -------------------- [ solid ] ------------------- */
+
+/* ---------- */
+/* [catalog_popular] [dishes] [kits] */
+/* жёлто-коричневые */
+$color--button--solid-yb__normal : map-get($colors-orange, "FuelYellow"); /* #d29b3b */
+$color--button--solid-yb__hover  : map-get($colors-orange, "HokeyPokey"); /* #c28e32 */
+
+/* [catalog_popular] [footer] */
+/* красно-коричневые */
+$color--button--solid-r__normal         : map-get($colors-red,   "FireBrick"); /* #b62927 */
+$color--button--solid-r__hover          : map-get($colors-red,   "Cinnabar");  /* #d63f3c */
+$color--button--solid-r--footer__normal : map-get($colors-brown, "Tuscany");   /* #b1654b */
+
+/* ================================================================= */
+/* ----------------------------------------------------------------- */
+/* ================================================================= */
+
+/* -= Brand Colors =- */
+$colors-brand-brown : map-get($colors-brown, "GoldenBrown"); /* #925900 */
+
+/* ================================================================= */
+
+$color-base-white : $color-white;                             /* #ffffff */
+$color-base-black : $color-black;                             /* #000000 */
+$color-error      : map-get($colors-red,   "RoofTerracotta"); /* #a94442 */
+$color-success    : map-get($colors-green, "JapaneseLaurel"); /* #a94442 */
+
+/// Карта цветов, собирает все цвета сайта
+/// @access private
+/// @type Map
+/// @prop {String} key - Имя цвета
+/// @prop {String} value - значение Color
+
+$colors-map: (
+    "black"     : map-get($colors-black, "black"),          /* #000000 */
+    "Nero"      : map-get($colors-black, "Nero"),           /* #222222 */
+    "Charcoal"  : map-get($colors-black, "Charcoal"),       /* #444444 */
+    "Zambezi"   : map-get($colors-black, "Zambezi"),        /* #5c5c5c */
+    "error"     : map-get($colors-red,   "RoofTerracotta"), /* #a94442 */
+    "success"   : map-get($colors-green, "JapaneseLaurel"), /* #3c763d */
+    "white"     : map-get($colors-white, "white")           /* #ffffff */
+) !default;
+
+

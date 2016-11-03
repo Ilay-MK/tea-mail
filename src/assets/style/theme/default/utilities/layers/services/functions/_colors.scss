@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Получение значения цвета
+/// @access public
+/// @param {String} $assignment - Область применения цвета
+/// @return {String}
+/// @require getColors()
+
+@function colors($assignment: "bg-base") {
+    @return getColors($assignment);
+}
+
+@function c($assignment: "bg-base") {
+    @return getColors($assignment);
+}

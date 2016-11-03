@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// The color map assignments / Цветовая карта назначений -
+/// собирает все цвета по назначению
+/// @access private
+/// @type Map
+/// @prop {String} key - Область применения цвета
+/// @prop {String} value - значение Color
+
+$colors: (
+    "error"      : getColors("RoofTerracotta"), /* #a94442 */
+    "success"    : getColors("JapaneseLaurel"), /* #3c763d */
+    "nav--link"  : getColors("Charcoal"),       /* #444444 */
+    "bg-base"    : getColors("white")           /* #ffffff */
+);
