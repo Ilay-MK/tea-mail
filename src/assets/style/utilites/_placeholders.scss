@@ -8,19 +8,3 @@
 	     -o-background-size: cover;
 	        background-size: cover;
 }
-
-%transition-color {
-    -webkit-transition: color 300ms ease-out;
-       -moz-transition: color 300ms ease-out;
-         -o-transition: color 300ms ease-out;
-            transition: color 300ms ease-out;
-}
-
-// --------------------------------------- //
-
-%outline_boxShadow_none {
-    box-shadow: 0 0 0 0 transparent;
-    box-shadow: none;
-    outline: 0 solid transparent;
-    outline: none;
-}
