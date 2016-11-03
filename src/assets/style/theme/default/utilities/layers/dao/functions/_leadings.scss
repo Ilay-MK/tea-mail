@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-/// Получение значения интерлиньяжа (междустрочного расстояния)
+/// Получение значения Интерлиньяжа
 /// @access public
-/// @param {String} $leading - нумерация по возрастанию значения from "leading-1" to "leading-11"
-/// @return {String} - размер /* пока в px */
+/// @param {String} $leading - нумерация по возрастанию значения "leading-1" to "leading-11"
+/// @return {String}
 /// @require domains.vars.leadings.$domain-leadings
 
 @function getLeading($leading: "leading-2") {
