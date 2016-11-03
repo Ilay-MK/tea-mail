@@ -1,14 +1,2 @@
 @charset "UTF-8";
 
-$colors: (
-    "link" : map-get(map-get($colors-map, "cb-black"), "3");
-);
-
-$fonts: (
-    "font-1" : $font-OpenSans,         /* Open Sans */
-    "font-2" : $font-NotoSans,         /* Noto Sans */
-    "font-3" : $font-NotoSerif,        /* Noto Serif */
-    "font-4" : $font-Karton,           /* Karton */
-    "font-5" : $font-Bristol,          /* Bristol */
-    "font-6" : $font-ProximaNova_Cond  /* Proxima Nova condensed */
-);
