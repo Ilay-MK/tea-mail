@@ -158,7 +158,7 @@ $color-base-black : $color-black;                             /* #000000 */
 $color-error      : map-get($colors-red,   "RoofTerracotta"); /* #a94442 */
 $color-success    : map-get($colors-green, "JapaneseLaurel"); /* #a94442 */
 
-/// Карта цветов, собирает все цвета сайта
+/// Карта цвета. Все цвета сайта
 /// @access private
 /// @type Map
 /// @prop {String} key - Имя цвета
