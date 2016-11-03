@@ -8,3 +8,7 @@
 	     -o-background-size: cover;
 	        background-size: cover;
 }
+
+%font-base {
+    @extend %font-OpenSans_Regular;
+}
