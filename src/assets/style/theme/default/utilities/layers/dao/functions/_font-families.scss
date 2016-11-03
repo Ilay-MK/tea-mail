@@ -4,16 +4,16 @@
 /// @access public
 /// @param {String} $font-family - Имя гарнитуры
 /// @return {String}
-/// @require $font-families
+/// @require domains.vars.fonts.$domain-font-families
 
-@function font-families($font-family: "OpenSans") {
-    @return map-get($font-family-families, $font-family);
+@function getFont-family($font-family: "OpenSans") {
+    @return map-get($domain-font-families, $font-family);
 }
 
-@function getfont-family($font-family: "OpenSans") {
-    @return map-get($font-family-families, $font-family);
+@function font-family($font-family: "OpenSans") {
+    @return map-get($domain-font-families, $font-family);
 }
 
 @function ff($font-family: "OpenSans") {
-    @return map-get($font-family-families, $font-family);
+    @return map-get($domain-font-families, $font-family);
 }
