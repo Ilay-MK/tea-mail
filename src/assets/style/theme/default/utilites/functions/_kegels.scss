@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Получение значения кегля (размер шрифта)
+/// @access public
+/// @param {String} $kegel - нумерация по возрастанию значения from "kegel-1" to "kegel-16"
+/// @return {String} - размер /* пока в px */
+/// @require $kegels
+
+@function kegels($kegel: "kegel-5") {
+    @return map-get($kegels, $kegel);
+}
+
+@function getKegels($kegel: "kegel-5") {
+    @return map-get($kegels, $kegel);
+}
+
+@function fz($kegel: "kegel-5") {
+    @return map-get($kegels, $kegel);
+}
