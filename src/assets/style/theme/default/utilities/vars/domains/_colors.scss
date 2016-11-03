@@ -87,3 +87,19 @@ $colors-map: (
     /* #000000, #222222, #444444, #5c5c5c, #6e6e6e, #848484 */
     "cb-black" : $colors-brand-black  /* brand blacks */
 );
+
+/* ================================================================= */
+
+$colors: (
+    "base_white" : $color-base-white,        /* #ffffff*/
+    "base_black" : $color-base-black,        /* #000000 */
+    "error"      : $color-error,             /* #a94442 */
+    "success"    : $color-success,           /* #3c763d */
+    "black-0" : $color-black,
+    "black-1" : $color-Nero,
+    "black-2" : $color-Charcoal,
+    "black-3" : $color-Zambezi,
+    "black-4" : $color-DimGray,
+    "black-5" : $color-Grey,
+    "brown-1" : $color-GoldenBrown
+) !default;

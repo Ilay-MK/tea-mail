@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Получение значения цвета
+/// @access public
+/// @param {String} $color -
+/// @return {String}
+/// @require $colors
+
+@function colors($color: "black") {
+    @return map-get($colors, $color);
+}
+
+@function getColors($color: "black") {
+    @return map-get($colors, $color);
+}
+
+@function c($color: "black") {
+    @return map-get($colors, $color);
+}
