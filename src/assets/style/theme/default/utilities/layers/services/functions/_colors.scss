@@ -4,12 +4,12 @@
 /// @access public
 /// @param {String} $assignment - Область применения цвета
 /// @return {String}
-/// @require getColors()
+/// @require services.vars.colors.$service-colors
 
 @function color($assignment: "bg-base") {
-    @return getColor($assignment);
+    @return map-get($service-colors, $assignment);
 }
 
 @function c($assignment: "bg-base") {
-    @return getColor($assignment);
+    @return map-get($service-colors, $assignment);
 }
