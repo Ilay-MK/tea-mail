@@ -1,10 +1,9 @@
 @charset "UTF-8";
 
-/// The color map assignments / Цветовая карта назначений -
-/// собирает все цвета по назначению
+/// Карта Цвета. Все света сайта по назначению
 /// @access private
 /// @type Map
-/// @prop {String} key - Область применения цвета
+/// @prop {String} key - Область применения
 /// @prop {String} value - значение Color
 
 $service-colors: (
