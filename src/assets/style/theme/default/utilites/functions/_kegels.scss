@@ -10,7 +10,7 @@
     @return map-get($kegels, $kegel);
 }
 
-@function getKegels($kegel: "kegel-5") {
+@function getKegel($kegel: "kegel-5") {
     @return map-get($kegels, $kegel);
 }
 

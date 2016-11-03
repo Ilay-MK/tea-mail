@@ -10,7 +10,7 @@
     @return map-get($trackings, $purpose);
 }
 
-@function getTrackings($purpose: "common") {
+@function getTracking($purpose: "common") {
     @return map-get($trackings, $purpose);
 }
 

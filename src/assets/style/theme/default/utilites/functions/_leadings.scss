@@ -10,7 +10,7 @@
     @return map-get($leadings, $leading);
 }
 
-@function getLeadings($leading: "leading-2") {
+@function getLeading($leading: "leading-2") {
     @return map-get($leadings, $leading);
 }
 
