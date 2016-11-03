@@ -23,19 +23,19 @@ $color-DimGray   : rgb(110, 110, 110); /* #6e6e6e */
 $color-Grey      : rgb(132, 132, 132); /* #848484 */
 
 $colors-black: (
-    $color-black,
-    $color-Nero,
-    $color-Charcoal,
-    $color-Zambezi,
-    $color-DimGray,
-    $color-Grey
+    "black-0" : $color-black,
+    "black-1" : $color-Nero,
+    "black-2" : $color-Charcoal,
+    "black-3" : $color-Zambezi,
+    "black-4" : $color-DimGray,
+    "black-5" : $color-Grey
 );
 
 /* browns */
 $color-GoldenBrown : rgb(146, 89, 0); /* #925900 !brand */
 
 $colors-brown: (
-    $color-GoldenBrown
+    "brown-1" : $color-GoldenBrown
 );
 
 /* ----------------------------------------------------------- */
