@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Карта Кегля. Все кегли сайта по назначению
+/// @access private
+/// @type Map
+/// @prop {String} key - Область применения
+/// @prop {String} value - значение Кегля
+
+$service-kegels: (
+    "base"      : getKegel("kegels-5")  /* 16px */
+    "error"     : getKegel("kegels-5"), /* 16px */
+    "success"   : getKegel("kegels-5"), /* 16px */
+    "nav--link" : getKegel("kegels-4")  /* 15px */
+);

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Получение значения Кегля
+/// @access public
+/// @param {String} $assignment - Область применения
+/// @return {String}
+/// @require services.vars.kegels.$service-kegels
+
+@function kegel($assignment: "bg-base") {
+    @return map-get($service-kegels, $assignment);
+}
+
+@function fz($assignment: "bg-base") {
+    @return map-get($service-kegels, $assignment);
+}
