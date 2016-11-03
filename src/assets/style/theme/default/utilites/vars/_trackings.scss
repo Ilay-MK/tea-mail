@@ -1,7 +1,13 @@
 @charset "UTF-8";
 
+/// Карта трекинга (междубуквенного расстояния), собирает весь трекинг сайта
+/// @access private
+/// @type Map
+/// @prop {String} key - Назначение текста
+/// @prop {String} value - значение трекинга, соответствущее ключу
+
 $trackings: (
-    "tracking-1" : 0.025em, /* common */
-    "tracking-2" : 0.04em,  /* search */
-    "tracking-3" : 0.05em   /* lead */
+    "common" : 0.025em, /* common */
+    "search" : 0.04em,  /* search */
+    "lead"   : 0.05em   /* lead */
 );
