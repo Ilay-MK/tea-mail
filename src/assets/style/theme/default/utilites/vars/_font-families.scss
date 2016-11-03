@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/*
+$font-OpenSans         : 'Open Sans', sans-serif;
+$font-NotoSans         : 'Noto Sans', sans-serif;
+$font-NotoSerif        : 'Noto Serif', serif;
+$font-Karton           : 'Karton', sans-serif;
+$font-Bristol          : 'Bristol', sans-serif;
+$font-ProximaNova_Cond : 'Proxima Nova Condensed', sans-serif;
+*/
+
+/// Карта гарнитур, собирает все гарнитуры сайта
+/// @access private
+/// @type Map
+/// @prop {String} key - Имя гарнитуры
+/// @prop {String} value - значение font-family, соответствущее ключу
+
+$font-families: (
+    "OpenSans"         : "'Open Sans', sans-serif",
+    "NotoSans"         : "'Noto Sans', sans-serif",
+    "NotoSerif"        : "'Open Serif', serif",
+    "Karton"           : "'Karton', sans-serif",
+    "Bristol"          : "'Bristol', sans-serif",
+    "ProximaNova_Cond" : "'Proxima Nova Condensed', sans-serif"
+);

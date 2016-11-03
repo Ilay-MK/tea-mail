@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Получение гарнитуры
+/// @access public
+/// @param {String} $font-family - Имя гарнитуры
+/// @return {String}
+/// @require $font-families
+
+@function font-families($font-family: "OpenSans") {
+    @return map-get($font-family-families, $font-family);
+}
+
+@function getfont-family($font-family: "OpenSans") {
+    @return map-get($font-family-families, $font-family);
+}
+
+@function ff($font-family: "OpenSans") {
+    @return map-get($font-family-families, $font-family);
+}
