@@ -25,27 +25,6 @@ $fonts: (
 
 /* ------------ */
 
-$trackings: (
-    "tracking-1" : 0.025em, /* common */
-    "tracking-2" : 0.04em,  /* search */
-    "tracking-3" : 0.05em   /* lead */
-);
-
-/* x.47 = x; x.02 = x; x.39 = x; x.53 = x; */
-$leadings: (
-    "leading-1"  : 15px, /* [ 1 ] */
-    "leading-2"  : 16px, /* links */
-    "leading-3"  : 18px, /* secondary text */
-    "leading-4"  : 19px, /*  */
-    "leading-5"  : 20px, /* [ 1 ] */
-    "leading-6"  : 23px, /*  */
-    "leading-7"  : 24px, /* [ 1 ] */
-    "leading-8"  : 26px, /* [ 3 ] */
-    "leading-9"  : 50px, /*  */
-    "leading-10" : 80px, /* [ 3 ] */
-    "leading-11" : 90px  /*  */
-);
-
 /* x.78px = x+1; */
 $kegels: (
     "kegel-1"  : 12px,
@@ -64,4 +43,25 @@ $kegels: (
     "kegel-14" : 45px,
     "kegel-15" : 48px,
     "kegel-16" : 50px
+);
+
+/* x.47 = x; x.02 = x; x.39 = x; x.53 = x; */
+$leadings: (
+    "leading-1"  : 15px, /* [ 1 ] */
+    "leading-2"  : 16px, /* links */
+    "leading-3"  : 18px, /* secondary text */
+    "leading-4"  : 19px, /*  */
+    "leading-5"  : 20px, /* [ 1 ] */
+    "leading-6"  : 23px, /*  */
+    "leading-7"  : 24px, /* [ 1 ] */
+    "leading-8"  : 26px, /* [ 3 ] */
+    "leading-9"  : 50px, /*  */
+    "leading-10" : 80px, /* [ 3 ] */
+    "leading-11" : 90px  /*  */
+);
+
+$trackings: (
+    "tracking-1" : 0.025em, /* common */
+    "tracking-2" : 0.04em,  /* search */
+    "tracking-3" : 0.05em   /* lead */
 );
