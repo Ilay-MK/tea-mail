@@ -8,6 +8,7 @@
 /// @prop {String} value - значение Color
 
 $service-font-families: (
+    "base"       : getFont-family("OpenSans"),
     "error"      : getFont-family("OpenSans"),
     "success"    : getFont-family("OpenSans"),
     "nav--link"  : getFont-family("OpenSans")
