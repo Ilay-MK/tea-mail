@@ -4,7 +4,7 @@
 /// @access private
 /// @type Map
 /// @prop {String} key - Область применения
-/// @prop {String} value - значение Color
+/// @prop {String} value - значение Color, соответствущее ключу
 
 $service-colors: (
     "error"      : getColor("RoofTerracotta"), /* #a94442 */
