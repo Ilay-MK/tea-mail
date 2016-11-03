@@ -1,19 +1,19 @@
 @charset "UTF-8";
 
-/// Получение трекинга (междубуквенного расстояния)
+/// Получение Трекинга
 /// @access public
-/// @param {String} $purpose - Назначение текста (common, search, lead)
-/// @return {String} - значение трекинга в em
+/// @param {String} $tracking - нумерация по возрастанию значения "tracking-1" to "tracking-3"
+/// @return {String}
 /// @require domains.vars.trackings.$domain-trackings
 
-@function getTracking($purpose: "common") {
-    @return map-get($domain-trackings, $purpose);
+@function getTracking($tracking: "tracking-1") {
+    @return map-get($domain-trackings, $tracking);
 }
 
-@function tracking($purpose: "common") {
-    @return map-get($domain-trackings, $purpose);
+@function tracking($tracking: "tracking-1") {
+    @return map-get($domain-trackings, $tracking);
 }
 
-@function ls($purpose: "common") {
-    @return map-get($domain-trackings, $purpose);
+@function ls($tracking: "tracking-1") {
+    @return map-get($domain-trackings, $tracking);
 }
