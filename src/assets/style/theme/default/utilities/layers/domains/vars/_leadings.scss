@@ -6,7 +6,7 @@
 /// @prop {String} key - нумерация по возрастанию значения /* унифицировать и придать название по значению */
 /// @prop {String} value - значение интерлиньяжа, соответствущее ключу Number + px
 
-$leadings: (
+$domain-leadings: (
     "leading-1"  : 15px, /* [ 1 ] */
     "leading-2"  : 16px, /* links */
     "leading-3"  : 18px, /* secondary text */

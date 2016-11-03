@@ -1,11 +1,15 @@
 @charset "UTF-8";
 
+/* ------------------------------------------------------- */
+/// Карат цветов. Карта в конце файла
+/// @var $colors-map
+/* ------------------------------------------------------- */
 /* http://razorjam.github.io/sasscolourfunctioncalculator/ */
 /* ------------------------------------------------------- */
 
-/* ------------ */
-/* [ HOMEPAGE ] */
-/* ------------ */
+/* -------------- */
+/// [ HOMEPAGE ] ///
+/* -------------- */
 
 /* colors from dark to light */
 /* -------------------------- */
@@ -160,7 +164,7 @@ $color-success    : map-get($colors-green, "JapaneseLaurel"); /* #a94442 */
 /// @prop {String} key - Имя цвета
 /// @prop {String} value - значение Color
 
-$colors-map: (
+$domain-colors: (
     "black"     : map-get($colors-black, "black"),          /* #000000 */
     "Nero"      : map-get($colors-black, "Nero"),           /* #222222 */
     "Charcoal"  : map-get($colors-black, "Charcoal"),       /* #444444 */

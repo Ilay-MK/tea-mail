@@ -6,7 +6,7 @@
 /// @prop {String} key - Назначение текста
 /// @prop {String} value - значение трекинга, соответствущее ключу
 
-$trackings: (
+$domain-trackings: (
     "common" : 0.025em, /* common */
     "search" : 0.04em,  /* search */
     "lead"   : 0.05em   /* lead */
