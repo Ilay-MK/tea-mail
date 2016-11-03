@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Получение значения интерлиньяжа (междустрочного расстояния)
+/// @access public
+/// @param {String} $leading - нумерация по возрастанию значения from "leading-1" to "leading-11"
+/// @return {String} - размер /* пока в px */
+/// @require $Leadings
+
+@function leadings($leading: "leading-2") {
+    @return map-get($leadings, $leading);
+}
+
+@function getLeadings($leading: "leading-2") {
+    @return map-get($leadings, $leading);
+}
+
+@function lh($leading: "leading-2") {
+    @return map-get($leadings, $leading);
+}
