@@ -97,6 +97,18 @@
             transition: $target $time $effect;
 }
 
+/// Помощник для сброса внутреннего обтекания
+/// @author Николас Галлагер
+/// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+
 /*Extras*/
 
 // Extras
