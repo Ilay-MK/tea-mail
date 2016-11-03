@@ -8,8 +8,7 @@
 /// @prop {String} value - значение Color
 
 $service-font-families: (
-    "error"      : getFont-family("RoofTerracotta"), /* #a94442 */
-    "success"    : getFont-family("JapaneseLaurel"), /* #3c763d */
-    "nav--link"  : getFont-family("Charcoal"),       /* #444444 */
-    "bg-base"    : getFont-family("white")           /* #ffffff */
+    "error"      : getFont-family("OpenSans"),
+    "success"    : getFont-family("OpenSans"),
+    "nav--link"  : getFont-family("OpenSans")
 );
