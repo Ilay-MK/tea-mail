@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Получение гарнитуры
+/// @access public
+/// @param {String} $assignment - Область применения  гарнитуры
+/// @return {String}
+/// @require services.vars.font-families.$service-font-families
+
+@function font-family($assignment: "base") {
+    @return map-get($service-font-families, $assignment);
+}
+
+@function ff($assignment: "base") {
+    @return map-get($service-font-families, $assignment);
+}
