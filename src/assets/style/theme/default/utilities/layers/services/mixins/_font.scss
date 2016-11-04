@@ -12,3 +12,7 @@
     line-height: leading($assignment);
     letter-spacing: tracking($assignment);
 }
+
+@mixin f($assignment: use) {
+    @include font($assignment);
+}
