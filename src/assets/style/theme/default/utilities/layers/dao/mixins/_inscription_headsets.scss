@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+/// mixins начертаний гарнитур всего сайта
+/// @access public
+/// @type Mixin
+
+/* ------------- -= Open Sans =- ------------- */
+@mixin font-OpenSans_Light {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 300;
+}
+@mixin font-OpenSans_LightItalic {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 300;
+}
+@mixin font-OpenSans_Regular {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+@mixin font-OpenSans_RegularItalic {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+}
+@mixin font-OpenSans_Semibold {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+}
+@mixin font-OpenSans_SemiBoldItalic {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 600;
+}
+@mixin font-OpenSans_Bold {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+}
+@mixin font-OpenSans_BoldItalic {
+    font-family: getFont-family("OpenSans"); /* Open Sans */
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+/* ------------- -= Noto Sans =- ------------- */
+@mixin font-NotoSans_Regular {
+    font-family: getFont-family("NotoSans"); /* Noto Sans */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+@mixin font-NotoSans_Italic {
+    font-family: getFont-family("NotoSans"); /* Noto Sans */
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 400;
+}
+@mixin font-NotoSans_BoldItalic {
+    font-family: getFont-family("NotoSans"); /* Noto Sans */
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+/* ------------- -= Noto Serif =- ------------- */
+@mixin font-NotoSerif_BoldItalic {
+    font-family: getFont-family("NotoSerif"); /* Noto Serif */
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 700;
+}
+
+/* ------------- -= Karton =- ------------- */
+@mixin font-Karton_Regular {
+    font-family: getFont-family("Karton"); /* Karton */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+/* ------------- -= Bristol =- ------------- */
+@mixin font-Bristol_Regular {
+    font-family: getFont-family("Bristol"); /* Bristol */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+/* ------------- -= Proxima Nova condensed =- ------------- */
+@mixin font-ProximaNova_Condensed_Regular {
+    font-family: getFont-family("ProximaNovaCond"); /* Proxima Nova condensed */
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    font-stretch: condensed;
+}
