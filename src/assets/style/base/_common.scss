@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    @extend %font-base;
+    @include f;
     /*font-size: 16px;*/
     padding: 0;
     text-rendering: auto;
