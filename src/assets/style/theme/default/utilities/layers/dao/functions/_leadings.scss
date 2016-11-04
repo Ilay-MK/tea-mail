@@ -9,11 +9,3 @@
 @function getLeading($leading: "leading-2") {
     @return map-get($domain-leadings, $leading);
 }
-
-@function leading($leading: "leading-2") {
-    @return map-get($domain-leadings, $leading);
-}
-
-@function lh($leading: "leading-2") {
-    @return map-get($domain-leadings, $leading);
-}

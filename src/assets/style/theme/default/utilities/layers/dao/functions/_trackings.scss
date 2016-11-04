@@ -9,11 +9,3 @@
 @function getTracking($tracking: "tracking-1") {
     @return map-get($domain-trackings, $tracking);
 }
-
-@function tracking($tracking: "tracking-1") {
-    @return map-get($domain-trackings, $tracking);
-}
-
-@function ls($tracking: "tracking-1") {
-    @return map-get($domain-trackings, $tracking);
-}
