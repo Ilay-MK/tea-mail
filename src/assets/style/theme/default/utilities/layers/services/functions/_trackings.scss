@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Получение значения Трекинга
+/// @access public
+/// @param {String} $assignment - Область применения
+/// @return {String}
+/// @require services.vars.trackings.$service-trackings
+
+@function tracking($assignment: "tracking-1") {
+    @return map-get($service-trackings, $assignment);
+}
+
+@function ls($assignment: "tracking-1") {
+    @return map-get($service-trackings, $assignment);
+}

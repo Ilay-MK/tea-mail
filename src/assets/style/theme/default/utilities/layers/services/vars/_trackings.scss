@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Карта Трекинга. Весь трекинг сайта по назначению
+/// @access private
+/// @type Map
+/// @prop {String} key - Область применения
+/// @prop {String} value - значение letter-spacing, соответствущее ключу
+
+$service-trackings: (
+    "base"      : getTracking("tracking-1")  /* 0.025em */
+    "error"     : getTracking("tracking-1"), /* 0.025em */
+    "success"   : getTracking("tracking-1"), /* 0.025em */
+    "search"    : getTracking("tracking-2"), /* 0.04em */
+    "nav--link" : getTracking("tracking-3")  /* 0.05em */
+);
