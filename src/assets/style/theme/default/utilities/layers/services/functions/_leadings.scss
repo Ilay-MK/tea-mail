@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Получение значения Интерлиньяжа
+/// @access public
+/// @param {String} $assignment - Область применения
+/// @return {String}
+/// @require services.vars.leadings.$service-leadings
+
+@function leading($assignment: "leading-2") {
+    @return map-get($service-leadings, $assignment);
+}
+
+@function lh($assignment: "leading-2") {
+    @return map-get($service-leadings, $assignment);
+}
