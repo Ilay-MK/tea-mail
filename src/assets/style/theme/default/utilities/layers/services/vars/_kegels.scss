@@ -10,7 +10,99 @@ $service-kegels: (
     use("use-1")  : getKegel("kegel-5"),  /* 16px */
     use("use-2")  : getKegel("kegel-5"),  /* 16px */
     use("use-3")  : getKegel("kegel-5"),  /* 16px */
+
+    use("use-4")  : getKegel("kegel-3"),  /* 14px */
+    use("use-5")  : getKegel("kegel-5"),  /* 16px */
+    use("use-6")  : getKegel("kegel-4"),  /* 15px */
+
     use("use-7")  : getKegel("kegel-4"),  /* 15px */
+    use("use-8")  : getKegel("kegel-4"),  /* 15px */
+    use("use-9")  : getKegel("kegel-3"),  /* 14px */
+    use("use-10") : getKegel("kegel-2"),  /* 13px */
+    use("use-11") : getKegel("kegel-2"),  /* 13px */
+    use("use-12") : getKegel("kegel-6"),  /* 18px */
+    use("use-13") : getKegel("kegel-6"),  /* 18px */
+    use("use-14") : getKegel("kegel-3"),  /* 14px */
+    use("use-15") : getKegel("kegel-4"),  /* 15px */
+    use("use-16") : getKegel("kegel-4"),  /* 15px */
+    use("use-17") : getKegel("kegel-2"),  /* 13px */
+    use("use-18") : getKegel("kegel-3"),  /* 14px */
+    use("use-19") : getKegel("kegel-4"),  /* 15px */
+    use("use-20") : getKegel("kegel-4"),  /* 15px */
+
+    use("use-21") : getKegel("kegel-3"),  /* 14px */
+    use("use-22") : getKegel("kegel-3"),  /* 14px */
+    use("use-23") : getKegel("kegel-1"),  /* 12px */
+    use("use-24") : getKegel("kegel-3"),  /* 14px */
+    use("use-25") : getKegel("kegel-2"),  /* 13px */
+    use("use-26") : getKegel("kegel-2"),  /* 13px */
+    use("use-27") : getKegel("kegel-1"),  /* 12px */
+    use("use-28") : getKegel("kegel-1"),  /* 12px */
+
+    use("use-29") : getKegel("kegel-3"),  /* 14px */
+    use("use-30") : getKegel("kegel-1"),  /* 12px */
+    use("use-31") : getKegel("kegel-3"),  /* 14px */
+    use("use-32") : getKegel("kegel-4"),  /* 15px */
+    use("use-33") : getKegel("kegel-4"),  /* 15px */
+    use("use-34") : getKegel("kegel-3"),  /* 14px */
+    use("use-35") : getKegel("kegel-4"),  /* 15px */
+
+    use("use-36") : getKegel("kegel-4"),  /* 15px */
+
+    use("use-37") : getKegel("kegel-3"),  /* 14px */
+    use("use-38") : getKegel("kegel-3"),  /* 14px */
+    use("use-39") : getKegel("kegel-2"),  /* 13px */
+    use("use-40") : getKegel("kegel-3"),  /* 14px */
+    use("use-41") : getKegel("kegel-3"),  /* 14px */
+    use("use-42") : getKegel("kegel-3"),  /* 14px */
+    use("use-43") : getKegel("kegel-3"),  /* 14px */
+    use("use-44") : getKegel("kegel-8"),  /* 22px */
+    use("use-45") : getKegel("kegel-6"),  /* 18px */
+    use("use-46") : getKegel("kegel-7"),  /* 19px */
+    use("use-47") : getKegel("kegel-2"),  /* 13px */
+    use("use-48") : getKegel("kegel-2"),  /* 13px */
+    use("use-49") : getKegel("kegel-3"),  /* 14px */
+    use("use-50") : getKegel("kegel-3"),  /* 14px */
+    use("use-51") : getKegel("kegel-3"),  /* 14px */
+    use("use-52") : getKegel("kegel-5"),  /* 16px */
+    use("use-53") : getKegel("kegel-5"),  /* 16px */
+
+    use("use-54") : getKegel("kegel-4"),  /* 15px */
+
+    use("use-55") : getKegel("kegel-6"),  /* 18px */
+    /* --------------------------------------------------------------------------- */
+    use("use-56") : getKegel("kegel-3"),  /* 14px */
+
+    use("use-57") : getKegel("kegel-5"),  /* 16px */
+    use("use-58") : getKegel("kegel-2"),  /* 13px */
+    use("use-59") : getKegel("kegel-3"),  /* 14px */
+    use("use-60") : getKegel("kegel-2"),  /* 13px */
+    use("use-61") : getKegel("kegel-2"),  /* 13px */
+    use("use-62") : getKegel("kegel-4"),  /* 15px */
+    use("use-63") : getKegel("kegel-2"),  /* 13px */
+    use("use-64") : getKegel("kegel-3"),  /* 14px */
+
+    use("use-65") : getKegel("kegel-9"),  /* 25px */
+    use("use-66") : getKegel("kegel-5"),  /* 16px */
+    /* --------------------------------------------------------------------------- */
+    use("use-67") : getKegel("kegel-7"),  /* 19px */
+    use("use-68") : getKegel("kegel-7"),  /* 19px */
+    /* --------------------------------------------------------------------------- */
     use("use-69") : getKegel("kegel-16"), /* 50px */
+    use("use-70") : getKegel("kegel-11"), /* 30px */
+    use("use-71") : getKegel("kegel-14"), /* 45px */
+    use("use-72") : getKegel("kegel-15"), /* 48px */
+    use("use-73") : getKegel("kegel-12"), /* 35px */
+    use("use-74") : getKegel("kegel-12"), /* 35px */
+    use("use-75") : getKegel("kegel-13"), /* 40px */
+    use("use-76") : getKegel("kegel-12"), /* 35px */
+    use("use-77") : getKegel("kegel-16"), /* 50px */
+    use("use-78") : getKegel("kegel-12"), /* 35px */
+    use("use-79") : getKegel("kegel-10"), /* 28px */
+    use("use-80") : getKegel("kegel-10"), /* 28px */
+    /* -------------------------------------------------------------------------- */
+    use("use-81") : getKegel("kegel-11"), /* 30px */
+    use("use-82") : getKegel("kegel-10"), /* 28px */
+    /* -------------------------------------------------------------------------- */
     use("use-83") : getKegel()
 );
