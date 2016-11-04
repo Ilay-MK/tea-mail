@@ -10,7 +10,99 @@ $service-colors: (
     use("use-1")  : getColor("white"),          /* #ffffff */
     use("use-2")  : getColor("RoofTerracotta"), /* #a94442 */
     use("use-3")  : getColor("JapaneseLaurel"), /* #3c763d */
-    use("use-7")  : getColor("Charcoal"),       /* #444444 */
+
+    use("use-4")  : getColor("white"),          /* #646464 */
+    use("use-5")  : getColor("Eclipse"),        /* #404040 */
+    use("use-6")  : getColor("Grey"),           /* #848484 */
+
+    use("use-7")  : getColor("Charcoal"),       /* #3d3d3d */
+    use("use-8")  : getColor("GoldenBrown"),    /* #925900 */
+    use("use-9")  : getColor("GoldenBrown"),    /* #925900 */
+    use("use-10") : getColor("DimGray"),        /* #6e6e6e */
+    use("use-11") : getColor("DimGray-2"),      /* #6d6d6d */
+    use("use-12") : getColor("Matterhorn"),     /* #535353 */
+    use("use-13") : getColor("Matterhorn"),     /* #535353 */
+    use("use-14") : getColor("black"),          /* #000000 */
+    use("use-15") : getColor("Grandis"),        /* #ffc867 */
+    use("use-16") : getColor("Fallow-1"),       /* #bf9265 */
+    use("use-17") : getColor("Charcoal-1"),     /* #454545 */
+    use("use-18") : getColor("Roman"),          /* #e66060 */
+    use("use-19") : getColor("Grey"),           /* #848484 */
+    use("use-20") : getColor("VeryDarkBrown"),  /* #55423b */
+
+    use("use-21") : getColor("Zambezi"),        /* #5c5c5c */
+    use("use-22") : getColor("Zambezi"),        /* #5c5c5c */
+    use("use-23") : getColor("Nobel"),          /* #9b9b9b */
+    use("use-24") : getColor("black"),          /* #000000 */
+    use("use-25") : getColor("Nero-1"),         /* #282828 */
+    use("use-26") : getColor("Tuscany"),        /* #b1654b */
+    use("use-27") : getColor("DimGray-3"),      /* #696969 */
+    use("use-28") : getColor("Russett"),        /* #796b66 */
+
+    use("use-29") : getColor("white"),          /* #ffffff */
+    use("use-30") : getColor("MySin"),          /* #fbb844 */
+    use("use-31") : getColor("white"),          /* #ffffff */
+    use("use-32") : getColor("Charcoal-2"),     /* #4a4a4a */
+    use("use-33") : getColor("Charcoal-2"),     /* #4a4a4a */
+    use("use-34") : getColor("Charcoal-3"),     /* #484848 */
+    use("use-35") : getColor("Charcoal-2"),     /* #4a4a4a */
+
+    use("use-36") : getColor("Charcoal"),       /* #444444 */
+
+    use("use-37") : getColor("GoldenBrown"),    /* #925900 */
+    use("use-38") : getColor("white"),          /* #d29a43 */
+    use("use-39") : getColor("white"),          /* #ffffff */
+    use("use-40") : getColor("white"),          /* #ffffff */
+    use("use-41") : getColor("NightRider"),     /* #2e2e2e */
+    use("use-42") : getColor("white"),          /* #ffffff */
+    use("use-43") : getColor("Putty"),          /* #d7a96a */
+    use("use-44") : getColor("GoldenBrown"),    /* #925900 */
+    use("use-45") : getColor("SuvaGrey"),       /* #8e8e8e */
+    use("use-46") : getColor("Muesli"),         /* #a28455 */
+    use("use-47") : getColor("white"),          /* #ffffff */
+    use("use-48") : getColor("white"),          /* #ffffff */
+    use("use-49") : getColor("white"),          /* #ffffff */
+    use("use-50") : getColor("white"),          /* #ffffff */
+    use("use-51") : getColor("white"),          /* #ffffff */
+    use("use-52") : getColor("DimGray-4"),      /* #666666 */
+    use("use-53") : getColor("ForgetMeNot"),    /* #fff2df */
+
+    use("use-54") : getColor("HokeyPokey"),     /* #bb8a34 */
+
+    use("use-55") : getColor("DimGray-4"),      /* #666666 */
+    /* --------------------------------------------------------------------------- */
+    use("use-56") : getColor("Nero-2"),         /* #181818 */
+
+    use("use-57") : getColor("GoldenBrown"),    /* #925900 */
+    use("use-58") : getColor("DoubleColonialWhite"), /* #e0cc91 */
+    use("use-59") : getColor("Matterhorn-2"),   /* #525151 */
+    use("use-60") : getColor("Grey-2"),         /* #808080 */
+    use("use-61") : getColor("Grey-2"),         /* #808080 */
+    use("use-62") : getColor("Putty"),          /* #d7a96a */
+    use("use-63") : getColor("Grey-2"),         /* #808080 */
+    use("use-64") : getColor("Eclipse"),        /* #404040 */
+
+    use("use-65") : getColor("NightRider"),     /* #2e2e2e */
+    use("use-66") : getColor("black"),          /* #000000 */
+    /* --------------------------------------------------------------------------- */
+    use("use-67") : getColor("black"),          /* #000000 */
+    use("use-68") : getColor("black"),          /* #000000 */
+    /* --------------------------------------------------------------------------- */
     use("use-69") : getColor("white"),          /* #ffffff */
+    use("use-70") : getColor("black"),          /* #000000 */
+    use("use-71") : getColor("black"),          /* #000000 */
+    use("use-72") : getColor("GoldenBrown"),    /* #925900 */
+    use("use-73") : getColor("Nero"),           /* #222222 */
+    use("use-74") : getColor("Nero"),           /* #222222 */
+    use("use-75") : getColor("black"),          /* #000000 */
+    use("use-76") : getColor("Nero"),           /* #222222 */
+    use("use-77") : getColor("Nero"),           /* #222222 */
+    use("use-78") : getColor("Nero"),           /* #222222 */
+    use("use-79") : getColor("IndianTan"),      /* #4f291e */
+    use("use-80") : getColor("IndianTan"),      /* #4f291e */
+    /* -------------------------------------------------------------------------- */
+    use("use-81") : getColor("white"),          /* #ffffff */
+    use("use-82") : getColor("Tuscany"),        /* #b1654b */
+    /* -------------------------------------------------------------------------- */
     use("use-83") : getColor()
 );
