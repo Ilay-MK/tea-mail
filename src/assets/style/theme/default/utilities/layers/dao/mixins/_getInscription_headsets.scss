@@ -3,6 +3,10 @@
 /// mixin получения начертаний гарнитур
 /// @access public
 /// @type Mixin
+/// @param {String} $font-family - Имя Гарнитуры
+/// @param {String} $font-style - Стиль Гарнитуры
+/// @param {String} $font-weight - Вес Гарнитуры
+/// @require getFont-family()
 
 @mixin getInscription_headsets($font-family: "OpenSans", $font-style: normal, $font-weight: 400) {
     font-family: getFont-family($font-family);
