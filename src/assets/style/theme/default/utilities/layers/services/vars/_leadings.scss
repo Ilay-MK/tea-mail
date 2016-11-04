@@ -7,7 +7,7 @@
 /// @prop {String} value - значение line-height, соответствущее ключу
 
 $service-leadings: (
-    "base"      : getLeading("leading-3")  /* 18px */
+    "base"      : getLeading("leading-3"), /* 18px */
     "error"     : getLeading("leading-3"), /* 18px */
     "success"   : getLeading("leading-3"), /* 18px */
     "nav--link" : getLeading("leading-2")  /* 16px */
