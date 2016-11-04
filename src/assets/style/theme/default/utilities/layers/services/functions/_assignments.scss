@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Получение значения Назначения
+/// @access public
+/// @param {String} $assignment - Назначение
+/// @return {String}
+/// @require domains.vars.assignments.$assignments
+
+@function assignment($assignment: "use-1") {
+    @return getAssignment($assignment);
+}
+
+@function use($assignment: "use-1") {
+    @return getAssignment($assignment);
+}
