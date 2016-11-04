@@ -7,13 +7,13 @@
 
 @mixin inscription_headsets($assignment: use) {
 
-    @if $assignment == map-get($assignments, "use-2") {
+    @if $assignment == use("use-2") {
         @include font-OpenSans_Regular;
-    } @else if $assignment == map-get($assignments, "use-3") {
+    } @else if $assignment == use("use-3") {
         @include font-OpenSans_Regular;
-    } @else if $assignment == map-get($assignments, "use-5") {
+    } @else if $assignment == use("use-5") {
         @include font-OpenSans_RegularItalic;
-    } @else if $assignment == "heading" {
+    } @else if $assignment == use("use-69") {
         @include font-Karton_Regular;
     } @else {
         @include font-OpenSans_Regular;
