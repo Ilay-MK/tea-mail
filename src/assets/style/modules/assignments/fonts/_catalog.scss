@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/// Стили catalog блока. Вкл. вложеные
+
+.catalog {
+
+    &--product_card {
+
+        &--title {
+            @include f("catalog--product_card--title");
+        }
+
+        &--subtitle {
+            @include f("catalog--product_card--subtitle");
+        }
+
+        &--price {
+            @include f("catalog--product_card--price");
+        }
+
+        &--oldprice {
+            @include f("catalog--product_card--oldprice");
+        }
+
+        &--inputData {
+            @include f("catalog--product_card--inputData");
+        }
+    }
+
+    &--button {
+        @include f("catalog--button");
+    }
+
+    &--title {
+        @include f("catalog--title");
+    }
+}
