@@ -7,9 +7,10 @@
 /// @prop {String} value - значение font-size, соответствущее ключу
 
 $service-kegels: (
-    "base"      : getKegel("kegel-5"),  /* 16px */
-    "error"     : getKegel("kegel-5"),  /* 16px */
-    "success"   : getKegel("kegel-5"),  /* 16px */
-    "heading"   : getKegel("kegel-16"), /* 50px */
-    "nav--link" : getKegel("kegel-4")   /* 15px */
+    use("use-1")  : getKegel("kegel-5"),  /* 16px */
+    use("use-2")  : getKegel("kegel-5"),  /* 16px */
+    use("use-3")  : getKegel("kegel-5"),  /* 16px */
+    use("use-7")  : getKegel("kegel-4"),  /* 15px */
+    use("use-69") : getKegel("kegel-16"), /* 50px */
+    use("use-83") : getKegel()
 );
