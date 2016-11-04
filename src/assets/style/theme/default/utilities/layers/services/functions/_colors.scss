@@ -6,10 +6,10 @@
 /// @return {String}
 /// @require services.vars.colors.$service-colors
 
-@function color($assignment: map-get($assignments, "use-1")) {
+@function color($assignment: use) {
     @return map-get($service-colors, $assignment);
 }
 
-@function c($assignment: map-get($assignments, "use-1")) {
+@function c($assignment: use) {
     @return map-get($service-colors, $assignment);
 }

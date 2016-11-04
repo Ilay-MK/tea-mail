@@ -6,10 +6,10 @@
 /// @return {String}
 /// @require services.vars.trackings.$service-trackings
 
-@function tracking($assignment: map-get($assignments, "use-1")) {
+@function tracking($assignment: use) {
     @return map-get($service-trackings, $assignment);
 }
 
-@function ls($assignment: map-get($assignments, "use-1")) {
+@function ls($assignment: use) {
     @return map-get($service-trackings, $assignment);
 }

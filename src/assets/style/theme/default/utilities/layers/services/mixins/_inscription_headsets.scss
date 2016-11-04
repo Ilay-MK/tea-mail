@@ -5,7 +5,7 @@
 /// @type Mixin
 /// @param {String} $assignment - Область применения
 
-@mixin inscription_headsets($assignment: map-get($assignments, "use-1")) {
+@mixin inscription_headsets($assignment: use) {
 
     @if $assignment == map-get($assignments, "use-2") {
         @include font-OpenSans_Regular;
@@ -13,14 +13,14 @@
         @include font-OpenSans_Regular;
     } @else if $assignment == map-get($assignments, "use-5") {
         @include font-OpenSans_RegularItalic;
-    } @else if $assignment == map-get($assignments, "use-4") {
+    } @else if $assignment == "heading" {
         @include font-Karton_Regular;
     } @else {
         @include font-OpenSans_Regular;
     }
 }
 
-@mixin ih($assignment: map-get($assignments, "use-1")) {
+@mixin ih($assignment: use) {
 
     @if $assignment == map-get($assignments, "use-2") {
         @include font-OpenSans_Regular;
@@ -28,7 +28,7 @@
         @include font-OpenSans_Regular;
     } @else if $assignment == map-get($assignments, "use-5") {
         @include font-OpenSans_RegularItalic;
-    } @else if $assignment == map-get($assignments, "use-4") {
+    } @else if $assignment == "heading" {
         @include font-Karton_Regular;
     } @else {
         @include font-OpenSans_Regular;

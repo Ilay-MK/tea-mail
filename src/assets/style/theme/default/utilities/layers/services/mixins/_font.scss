@@ -5,7 +5,7 @@
 /// @type Mixin
 /// @param {String} $assignment - Область применения
 
-@mixin font($assignment: map-get($assignments, "use-1")) {
+@mixin font($assignment: use) {
     @include inscription_headsets($assignment);
     color: color($assignment);
     font-size: kegel($assignment);

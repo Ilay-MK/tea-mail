@@ -6,10 +6,10 @@
 /// @return {String}
 /// @require services.vars.leadings.$service-leadings
 
-@function leading($assignment: map-get($assignments, "use-1")) {
+@function leading($assignment: use) {
     @return map-get($service-leadings, $assignment);
 }
 
-@function lh($assignment: map-get($assignments, "use-1")) {
+@function lh($assignment: use) {
     @return map-get($service-leadings, $assignment);
 }

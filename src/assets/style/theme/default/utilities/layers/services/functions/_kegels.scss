@@ -6,10 +6,10 @@
 /// @return {String}
 /// @require services.vars.kegels.$service-kegels
 
-@function kegel($assignment: "bg-base") {
+@function kegel($assignment: use) {
     @return map-get($service-kegels, $assignment);
 }
 
-@function fz($assignment: "bg-base") {
+@function fz($assignment: use) {
     @return map-get($service-kegels, $assignment);
 }
