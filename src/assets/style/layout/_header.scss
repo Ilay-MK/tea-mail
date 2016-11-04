@@ -4,7 +4,7 @@
 #header {
     @extend %bg-cover;
     background-image: url(../img/header/bg.png);
-    height: 750px;
+    height: 742px; /*750px*/
     overflow: hidden;
     position: relative;
 
@@ -36,50 +36,40 @@
 
             &-left {
                 background-position: 0 0;
-                left: 15px;
+                left: 254px; /*15px*/
                 right: auto;
             }
 
             &-right {
                 background-position: -32px 0;
                 left: auto;
-                right: 15px;
+                right: 254px; /*15px*/
             }
         }
     }
 
     h1 {
-
-        &.font-karton {
-            color: map-get($colors, "b_w");
-            font-size: 50px;
-            line-height: 50px;
-            letter-spacing: 0.04em;
-            margin: 252px auto 99px;
-            text-align: center;
-            text-shadow: -2.828px 2.828px 54px rgba(0, 0, 0, 0.83);
-            text-transform: uppercase;
-        }
+        margin: 252px auto 99px;
+        text-align: center;
+        text-shadow: -2.828px 2.828px 54px rgba(0, 0, 0, 0.83);
+        text-transform: uppercase;
     }
 
     .search {
         border: solid 2px rgb(210, 155, 59);
         background-color: rgba(0, 0, 0, 0.31);
         border-radius: 18.5px;
-        height: 37px;
-        margin: 0 auto;
-        margin-bottom: 117px;
+        @include size(241px, 37px);
+        margin: 0 auto 117px;
         position: relative;
-        width: 241px;
 
         &-icon {
             @extend %bg-cover;
             background-image: url("../img/header/search/search.png");
-            height: 16px;
+            @include size(16px);
             position: absolute;
             right: 17px;
             top: 9px;
-            width: 16px;
         }
     }
 
@@ -90,13 +80,7 @@
 
         /* [!] Выбрать каким способом стилизовать float или inline-block */
         .advantage {
-            @extend %font-base;
-            font-style: italic;
-            color: map-get($colors, "bp1");
-            font-size: 15px;
             /*float: left;*/
-            line-height: 1.267em;
-            letter-spacing: 0.025em;
             min-width: 140px;
             overflow: hidden;
             padding: 0 15px;
@@ -164,9 +148,16 @@
     .shapely_line {
         background: transparent url(../img/header/shapely_line.png) no-repeat center bottom;
         @include background-size(100% 100%);
-        bottom: 0;
-        height: 16px;
+        bottom: 28px;
+        @include size(100%, 16px);
         position: absolute;
-        width: 100%;
+
+        &:after {
+            content: "";
+            background-color: rgb(246, 246, 245); /* Ivory #f6f6f5 */
+            @include size(100%, 28px);
+            position: absolute;
+            bottom: -28px;
+        }
     }
 }
