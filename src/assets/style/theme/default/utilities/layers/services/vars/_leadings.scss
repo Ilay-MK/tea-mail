@@ -7,10 +7,102 @@
 /// @prop {String} value - значение line-height, соответствущее ключу
 
 $service-leadings: (
-    use("use-1")  : getLeading("leading-3"), /* 18px */
-    use("use-2")  : getLeading("leading-3"), /* 18px */
-    use("use-3")  : getLeading("leading-3"), /* 18px */
-    use("use-7")  : getLeading("leading-2"), /* 16px */
-    use("use-69") : getLeading("leading-9"), /* 50px */
+    use("use-1")  : getLeading("leading-2"),  /* 16px */
+    use("use-2")  : getLeading("leading-2"),  /* 16px */
+    use("use-3")  : getLeading("leading-2"),  /* 16px */
+
+    use("use-4")  : getLeading("leading-2"),  /* 16px */
+    use("use-5")  : getLeading("leading-5"),  /* 20px */
+    use("use-6")  : getLeading("leading-3"),  /* 18px */
+
+    use("use-7")  : getLeading("leading-2"),  /* 16px */
+    use("use-8")  : getLeading("leading-2"),  /* 16px */
+    use("use-9")  : getLeading("leading-2"),  /* 16px */
+    use("use-10") : getLeading("leading-2"),  /* 16px */
+    use("use-11") : getLeading("leading-2"),  /* 16px */
+    use("use-12") : getLeading("leading-2"),  /* 16px */
+    use("use-13") : getLeading("leading-2"),  /* 16px */
+    use("use-14") : getLeading("leading-6"),  /* 23px */
+    use("use-15") : getLeading("leading-4"),  /* 19px */
+    use("use-16") : getLeading("leading-4"),  /* 19px */
+    use("use-17") : getLeading("leading-4"),  /* 19px */
+    use("use-18") : getLeading("leading-3"),  /* 18px */
+    use("use-19") : getLeading("leading-3"),  /* 18px */
+    use("use-20") : getLeading("leading-2"),  /* 16px */
+
+    use("use-21") : getLeading("leading-2"),  /* 16px */
+    use("use-22") : getLeading("leading-2"),  /* 16px */
+    use("use-23") : getLeading("leading-11"), /* 90px */
+    use("use-24") : getLeading("leading-3"),  /* 18px */
+    use("use-25") : getLeading("leading-2"),  /* 16px */
+    use("use-26") : getLeading("leading-2"),  /* 16px */
+    use("use-27") : getLeading("leading-2"),  /* 16px */
+    use("use-28") : getLeading("leading-1"),  /* 15px */
+
+    use("use-29") : getLeading("leading-9"),  /* 50px */
+    use("use-30") : getLeading("leading-9"),  /* 50px */
+    use("use-31") : getLeading("leading-9"),  /* 50px */
+    use("use-32") : getLeading("leading-6"),  /* 23px */
+    use("use-33") : getLeading("leading-6"),  /* 23px */
+    use("use-34") : getLeading("leading-4"),  /* 19px */
+    use("use-35") : getLeading("leading-6"),  /* 23px */
+
+    use("use-36") : getLeading("leading-3"),  /* 18px */
+
+    use("use-37") : getLeading("leading-2"),  /* 16px */
+    use("use-38") : getLeading("leading-2"),  /* 16px */
+    use("use-39") : getLeading("leading-4"),  /* 19px */
+    use("use-40") : getLeading("leading-4"),  /* 19px */
+    use("use-41") : getLeading("leading-3"),  /* 18px */
+    use("use-42") : getLeading("leading-4"),  /* 19px */
+    use("use-43") : getLeading("leading-4"),  /* 19px */
+    use("use-44") : getLeading("leading-4"),  /* 19px */
+    use("use-45") : getLeading("leading-4"),  /* 19px */
+    use("use-46") : getLeading("leading-4"),  /* 19px */
+    use("use-47") : getLeading("leading-4"),  /* 19px */
+    use("use-48") : getLeading("leading-4"),  /* 19px */
+    use("use-49") : getLeading("leading-4"),  /* 19px */
+    use("use-50") : getLeading("leading-4"),  /* 19px */
+    use("use-51") : getLeading("leading-4"),  /* 19px */
+    use("use-52") : getLeading("leading-8"),  /* 26px */
+    use("use-53") : getLeading("leading-8"),  /* 26px */
+
+    use("use-54") : getLeading("leading-4"),  /* 19px */
+
+    use("use-55") : getLeading("leading-8"),  /* 26px */
+    /* --------------------------------------------------------------------------- */
+    use("use-56") : getLeading("leading-11"),  /* 90px */
+
+    use("use-57") : getLeading("leading-11"), /* 90px */
+    use("use-58") : getLeading("leading-11"), /* 90px */
+    use("use-59") : getLeading("leading-11"), /* 90px */
+    use("use-60") : getLeading("leading-4"),  /* 19px */
+    use("use-61") : getLeading("leading-4"),  /* 19px */
+    use("use-62") : getLeading("leading-4"),  /* 19px */
+    use("use-63") : getLeading("leading-4"),  /* 19px */
+    use("use-64") : getLeading("leading-7"),  /* 24px */
+
+    use("use-65") : getLeading("leading-4"),  /* 19px */
+    use("use-66") : getLeading("leading-4"),  /* 19px */
+    /* --------------------------------------------------------------------------- */
+    use("use-67") : getLeading("leading-8"),  /* 26px */
+    use("use-68") : getLeading("leading-8"),  /* 26px */
+    /* --------------------------------------------------------------------------- */
+    use("use-69") : getLeading("leading-9"),  /* 50px */
+    use("use-70") : getLeading("leading-10"), /* 80px */
+    use("use-71") : getLeading("leading-10"), /* 80px */
+    use("use-72") : getLeading("leading-4"),  /* 19px */
+    use("use-73") : getLeading("leading-4"),  /* 19px */
+    use("use-74") : getLeading("leading-4"),  /* 19px */
+    use("use-75") : getLeading("leading-10"), /* 80px */
+    use("use-76") : getLeading("leading-4"),  /* 19px */
+    use("use-77") : getLeading("leading-4"),  /* 19px */
+    use("use-78") : getLeading("leading-4"),  /* 19px */
+    use("use-79") : getLeading("leading-3"),  /* 18px */
+    use("use-80") : getLeading("leading-3"),  /* 18px */
+    /* -------------------------------------------------------------------------- */
+    use("use-81") : getLeading("leading-4"),  /* 19px */
+    use("use-82") : getLeading("leading-3"),  /* 18px */
+    /* -------------------------------------------------------------------------- */
     use("use-83") : getLeading()
 );
