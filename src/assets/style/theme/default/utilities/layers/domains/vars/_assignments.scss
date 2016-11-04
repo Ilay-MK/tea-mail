@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Карта облостей применения
+/// @access private
+/// @type Map
+/// @prop {String} key - Нумерация по возрастанию значения
+/// @prop {String} value - значение $assignments, соответствущее ключу
+
+$assignments: (
+    "use-1"  : "base",
+    "use-2"  : "error",
+    "use-3"  : "success",
+    "use-4"  : "heading",
+    "use-5"  : "nav--link"
+);
