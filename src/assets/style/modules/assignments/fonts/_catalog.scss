@@ -10,16 +10,16 @@
             @include f("catalog--product_card--title");
         }
 
-        &--subtitle {
-            @include f("catalog--product_card--subtitle");
+        &--subTitle {
+            @include f("catalog--product_card--subTitle");
         }
 
         &--price {
             @include f("catalog--product_card--price");
         }
 
-        &--oldprice {
-            @include f("catalog--product_card--oldprice");
+        &--oldPrice {
+            @include f("catalog--product_card--oldPrice");
         }
 
         &--inputData {
