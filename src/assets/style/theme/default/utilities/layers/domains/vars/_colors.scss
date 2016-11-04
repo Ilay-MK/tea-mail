@@ -45,7 +45,7 @@ $color-GoldenBrown : rgb(146, 89, 0);    /* #925900 [ brand ] */
 $color-Tuscany     : rgb(177, 101, 75);  /* #b1654b */
 
 $color-BarleyCorn  : rgb(182, 138, 94);  /* #b68a5e */
-$color-Fallow-1    : rgb(191, 146, 101); /* #bf9265 */
+$color-Fallow-1    : rgb(191, 146, 101); /* #bf9265 [ ! ] */
 $color-Fallow-2    : rgb(199, 153, 106); /* #c7996a */
 $color-Fallow-3    : rgb(206, 159, 111); /* #ce9f6f */
 
@@ -165,13 +165,50 @@ $color-success    : map-get($colors-green, "JapaneseLaurel"); /* #a94442 */
 /// @prop {String} value - значение сolor, соответствущее ключу
 
 $domain-colors: (
-    "black"     : map-get($colors-black, "black"),          /* #000000 */
-    "Nero"      : map-get($colors-black, "Nero"),           /* #222222 */
-    "Charcoal"  : map-get($colors-black, "Charcoal"),       /* #444444 */
-    "Zambezi"   : map-get($colors-black, "Zambezi"),        /* #5c5c5c */
-    "RoofTerracotta"     : map-get($colors-red,   "RoofTerracotta"), /* #a94442 */
-    "JapaneseLaurel"   : map-get($colors-green, "JapaneseLaurel"), /* #3c763d */
-    "white"     : map-get($colors-white, "white")           /* #ffffff */
+    "white"                : map-get($colors-white, "white"),               /* #ffffff */
+    "RoofTerracotta"       : map-get($colors-red,   "RoofTerracotta"),      /* #a94442 */
+    "JapaneseLaurel"       : map-get($colors-green, "JapaneseLaurel"),      /* #3c763d */
+
+    /* Ниже написаные цвета необходимо разобрать... */
+    "DimGray-1"            : #646464,          /* # */
+    "Eclipse"              : #404040,          /* # */
+    "Grey"                 : map-get($colors-gray,  "Grey"),                /* #848484 */
+    "Eclipse-1"            : #3d3d3d,          /* # */
+    "GoldenBrown"          : map-get($colors-brown, "GoldenBrown"),         /* #925900 [ brand ] */
+    "DimGray"              : map-get($colors-gray,  "DimGray"),             /* #6e6e6e */
+    "DimGray-2"            : #6d6d6d,          /* # */
+    "Matterhorn"           : #535353,          /* # */
+    "Eclipse-2"            : #3f3f3f,          /* # */
+    "black"                : map-get($colors-black, "black"),               /* #000000 */
+    "Grandis"              : #ffc867,          /* # */
+    "Fallow-1"             : map-get($colors-brown, "Fallow-1");            /* #bf9265 [ ! ] */
+    "Charcoal-1"           : #454545,          /* # */
+    "Roman"                : #e66060,          /* # */
+    "VeryDarkBrown"        : #55423b,          /* # */
+    "Zambezi"              : map-get($colors-black, "Zambezi"),             /* #5c5c5c */
+    "Nobel"                : #9b9b9b,          /* # */
+    "Nero-1"               : #282828,          /* # */
+    "Tuscany"              : map-get($colors-brown, "Tuscany");             /* #b1654b */
+    "DimGray-3"            : #696969,          /* # */
+    "Russett"              : #796b66,          /* # */
+    "MySin"                : #fbb844,          /* # */
+    "Charcoal-2"           : #4a4a4a,          /* # */
+    "Charcoal-3"           : #484848,          /* # */
+    "Charcoal"             : map-get($colors-black, "Charcoal"),            /* #444444 */
+    "FireBush"             : #d29a43,          /* # */
+    "NightRider"           : #2e2e2e,          /* # */
+    "Putty"                : #d7a96a,          /* # */
+    "SuvaGrey"             : #8e8e8e,          /* # */
+    "Muesli"               : #a28455,          /* # */
+    "DimGray-4"            : #666666,          /* # */
+    "ForgetMeNot"          : #fff2df,          /* # */
+    "HokeyPokey"           : #bb8a34,          /* # */
+    "Nero-2"               : #181818,          /* # */
+    "DoubleColonialWhite"  : map-get($colors-beige, "DoubleColonialWhite"), /* #e0cc91 [ brand ] */
+    "Matterhorn-2"         : #525151,          /* # */
+    "Grey-2"               : #808080,          /* # */
+    "Nero"                 : map-get($colors-black, "Nero"),                /* #222222 */
+    "IndianTan"            : #4f291e           /* # */
 );
 
 
