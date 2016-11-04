@@ -181,14 +181,14 @@ $domain-colors: (
     "Eclipse-2"            : #3f3f3f,          /* # */
     "black"                : map-get($colors-black, "black"),               /* #000000 */
     "Grandis"              : #ffc867,          /* # */
-    "Fallow-1"             : map-get($colors-brown, "Fallow-1");            /* #bf9265 [ ! ] */
+    "Fallow-1"             : map-get($colors-brown, "Fallow-1"),            /* #bf9265 [ ! ] */
     "Charcoal-1"           : #454545,          /* # */
     "Roman"                : #e66060,          /* # */
     "VeryDarkBrown"        : #55423b,          /* # */
     "Zambezi"              : map-get($colors-black, "Zambezi"),             /* #5c5c5c */
     "Nobel"                : #9b9b9b,          /* # */
     "Nero-1"               : #282828,          /* # */
-    "Tuscany"              : map-get($colors-brown, "Tuscany");             /* #b1654b */
+    "Tuscany"              : map-get($colors-brown, "Tuscany"),             /* #b1654b */
     "DimGray-3"            : #696969,          /* # */
     "Russett"              : #796b66,          /* # */
     "MySin"                : #fbb844,          /* # */
