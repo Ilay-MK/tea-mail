@@ -6,6 +6,6 @@
 /// @return {String}
 /// @require domains.vars.leadings.$domain-leadings
 
-@function getLeading($leading: "leading-2") {
+@function getLeading($leading: "leading-3") {
     @return map-get($domain-leadings, $leading);
 }
