@@ -7,9 +7,10 @@
 /// @prop {String} value - значение сolor, соответствущее ключу
 
 $service-colors: (
-    "error"      : getColor("RoofTerracotta"), /* #a94442 */
-    "success"    : getColor("JapaneseLaurel"), /* #3c763d */
-    "heading"    : getColor("white"),          /* #444444 */
-    "nav--link"  : getColor("Charcoal"),       /* #444444 */
-    "base"       : getColor("white")           /* #ffffff */
+    use("use-1")  : getColor("white"),          /* #ffffff */
+    use("use-2")  : getColor("RoofTerracotta"), /* #a94442 */
+    use("use-3")  : getColor("JapaneseLaurel"), /* #3c763d */
+    use("use-7")  : getColor("Charcoal"),       /* #444444 */
+    use("use-69") : getColor("white"),          /* #ffffff */
+    use("use-83") : getColor()
 );
