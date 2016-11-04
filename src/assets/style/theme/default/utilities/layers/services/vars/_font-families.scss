@@ -7,9 +7,10 @@
 /// @prop {String} value - значение font-family, соответствущее ключу
 
 $service-font-families: (
-    "base"       : getFont-family("OpenSans"),
-    "error"      : getFont-family("OpenSans"),
-    "success"    : getFont-family("OpenSans"),
-    "heading"    : getFont-family("Karton"),
-    "nav--link"  : getFont-family("OpenSans")
+    use("use-1")  : getFont-family("OpenSans"),
+    use("use-2")  : getFont-family("OpenSans"),
+    use("use-3")  : getFont-family("OpenSans"),
+    use("use-7")  : getFont-family("OpenSans"),
+    use("use-69") : getFont-family("Karton"),
+    use("use-83") : getFont-family()
 );
