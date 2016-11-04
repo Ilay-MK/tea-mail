@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// mixin получения шрифта по области применения
+/// @access public
+/// @type Mixin
+/// @param {String} $assignment - Область применения
+
+@mixin font($assignment: map-get($assignments, "use-1")) {
+    @include inscription_headsets($assignment);
+    color: color($assignment);
+    font-size: kegel($assignment);
+    line-height: leading($assignment);
+    letter-spacing: tracking($assignment);
+}
