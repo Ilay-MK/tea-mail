@@ -7,14 +7,184 @@
 
 @mixin inscription_headsets($assignment: use) {
 
-    @if $assignment == use("use-2") {
+    @if $assignment == use("use-1") {
+        @include font-OpenSans_Regular;
+    } @else if $assignment == use("use-2") {
         @include font-OpenSans_Regular;
     } @else if $assignment == use("use-3") {
         @include font-OpenSans_Regular;
+    } @else if $assignment == use("use-4") {
+        @include font-OpenSans_Regular;
     } @else if $assignment == use("use-5") {
+        @include font-OpenSans_Regular;
+    } @else if $assignment == use("use-6") {
+        @include font-OpenSans_Regular;
+        /* / OpenSans_Regular */
+    } @else if $assignment == use("use-7") {
         @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-8") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-9") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-10") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-11") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-12") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-13") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-14") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-15") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-16") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-17") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-18") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-19") {
+        @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-20") {
+        @include font-OpenSans_RegularItalic;
+        /* / OpenSans_RegularItalic */
+    } @else if $assignment == use("use-21") {
+        @include font-OpenSans_Light;
+    } @else if $assignment == use("use-22") {
+        @include font-OpenSans_Light;
+    } @else if $assignment == use("use-23") {
+        @include font-OpenSans_Light;
+    } @else if $assignment == use("use-24") {
+        @include font-OpenSans_Light;
+    } @else if $assignment == use("use-25") {
+        @include font-OpenSans_Light;
+    } @else if $assignment == use("use-26") {
+        @include font-OpenSans_Light;
+    } @else if $assignment == use("use-27") {
+        @include font-OpenSans_Light;
+    } @else if $assignment == use("use-28") {
+        @include font-OpenSans_Light;
+        /* / OpenSans_Light */
+    } @else if $assignment == use("use-29") {
+        @include font-OpenSans_LightItalic;
+    } @else if $assignment == use("use-30") {
+        @include font-OpenSans_LightItalic;
+    } @else if $assignment == use("use-31") {
+        @include font-OpenSans_LightItalic;
+    } @else if $assignment == use("use-32") {
+        @include font-OpenSans_LightItalic;
+    } @else if $assignment == use("use-33") {
+        @include font-OpenSans_LightItalic;
+    } @else if $assignment == use("use-34") {
+        @include font-OpenSans_LightItalic;
+    } @else if $assignment == use("use-35") {
+        @include font-OpenSans_LightItalic;
+        /* / OpenSans_LightItalic */
+    } @else if $assignment == use("use-36") {
+        @include font-OpenSans_Semibold;
+        /* / OpenSans_Semibold */
+    } @else if $assignment == use("use-37") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-38") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-39") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-40") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-41") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-42") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-43") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-44") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-45") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-46") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-47") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-48") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-49") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-50") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-51") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-52") {
+        @include font-OpenSans_SemiBoldItalic;
+    } @else if $assignment == use("use-53") {
+        @include font-OpenSans_SemiBoldItalic;
+        /* / OpenSans_SemiBoldItalic */
+    } @else if $assignment == use("use-54") {
+        @include font-OpenSans_Bold;
+        /* / OpenSans_Bold */
+    } @else if $assignment == use("use-55") {
+        @include font-OpenSans_BoldItalic;
+        /* / OpenSans_BoldItalic */
+    } @else if $assignment == use("use-56") {
+        @include font-NotoSans_Regular;
+        /* / NotoSans_Regular */
+    } @else if $assignment == use("use-57") {
+        @include font-NotoSans_Italic;
+    } @else if $assignment == use("use-58") {
+        @include font-NotoSans_Italic;
+    } @else if $assignment == use("use-59") {
+        @include font-NotoSans_Italic;
+    } @else if $assignment == use("use-60") {
+        @include font-NotoSans_Italic;
+    } @else if $assignment == use("use-61") {
+        @include font-NotoSans_Italic;
+    } @else if $assignment == use("use-62") {
+        @include font-NotoSans_Italic;
+    } @else if $assignment == use("use-63") {
+        @include font-NotoSans_Italic;
+    } @else if $assignment == use("use-64") {
+        @include font-NotoSans_Italic;
+        /* / NotoSans_Italic */
+    } @else if $assignment == use("use-65") {
+        @include font-NotoSans_BoldItalic;
+    } @else if $assignment == use("use-66") {
+        @include font-NotoSans_BoldItalic;
+        /* / NotoSans_BoldItalic */
+    } @else if $assignment == use("use-67") {
+        @include font-NotoSerif_BoldItalic;
+    } @else if $assignment == use("use-68") {
+        @include font-NotoSerif_BoldItalic;
+        /* / NotoSerif_BoldItalic */
     } @else if $assignment == use("use-69") {
         @include font-Karton_Regular;
+    } @else if $assignment == use("use-70") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-71") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-72") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-73") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-74") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-75") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-76") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-77") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-78") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-79") {
+        @include font-Karton_Regular;
+    } @else if $assignment == use("use-80") {
+        @include font-Karton_Regular;
+        /* / Karton_Regular */
+    } @else if $assignment == use("use-81") {
+        @include font-Bristol_Regular;
+    } @else if $assignment == use("use-82") {
+        @include font-Bristol_Regular;
+        /* / Bristol_Regular */
     } @else {
         @include font-OpenSans_Regular;
     }
