@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// mixin получения начертаний гарнитур
+/// @access public
+/// @type Mixin
+
+@mixin getInscription_headsets($font-family: "OpenSans", $font-style: normal, $font-weight: 400) {
+    font-family: getFont-family($font-family);
+    font-style: $font-style;
+    font-weight: $font-weight;
+}
