@@ -6,49 +6,49 @@
 
 /* ------------- -= Open Sans =- ------------- */
 %font-OpenSans_Light {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 300;
 }
 %font-OpenSans_LightItalic {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 300;
 }
 %font-OpenSans_Regular {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
 }
 %font-OpenSans_RegularItalic {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 400;
 }
 %font-OpenSans_Semibold {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 600;
 }
 %font-OpenSans_SemiBoldItalic {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 600;
 }
 %font-OpenSans_Bold {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 700;
 }
 %font-OpenSans_BoldItalic {
-    font-family: ff("OpenSans"); /* Open Sans */
+    font-family: getFont-family("OpenSans"); /* Open Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 700;
@@ -56,19 +56,19 @@
 
 /* ------------- -= Noto Sans =- ------------- */
 %font-NotoSans_Regular {
-    font-family: ff("NotoSans"); /* Noto Sans */
+    font-family: getFont-family("NotoSans"); /* Noto Sans */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
 }
 %font-NotoSans_Italic {
-    font-family: ff("NotoSans"); /* Noto Sans */
+    font-family: getFont-family("NotoSans"); /* Noto Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 400;
 }
 %font-NotoSans_BoldItalic {
-    font-family: ff("NotoSans"); /* Noto Sans */
+    font-family: getFont-family("NotoSans"); /* Noto Sans */
     font-style: italic;
     font-variant: normal;
     font-weight: 700;
@@ -76,7 +76,7 @@
 
 /* ------------- -= Noto Serif =- ------------- */
 %font-NotoSerif_BoldItalic {
-    font-family: ff("NotoSerif"); /* Noto Serif */
+    font-family: getFont-family("NotoSerif"); /* Noto Serif */
     font-style: italic;
     font-variant: normal;
     font-weight: 700;
@@ -84,7 +84,7 @@
 
 /* ------------- -= Karton =- ------------- */
 %font-Karton_Regular {
-    font-family: ff("Karton"); /* Karton */
+    font-family: getFont-family("Karton"); /* Karton */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -92,7 +92,7 @@
 
 /* ------------- -= Bristol =- ------------- */
 %font-Bristol_Regular {
-    font-family: ff("Bristol"); /* Bristol */
+    font-family: getFont-family("Bristol"); /* Bristol */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
@@ -100,7 +100,7 @@
 
 /* ------------- -= Proxima Nova condensed =- ------------- */
 %font-ProximaNova_Condensed_Regular {
-    font-family: ff("ProximaNovaCond"); /* Proxima Nova condensed */
+    font-family: getFont-family("ProximaNovaCond"); /* Proxima Nova condensed */
     font-style: normal;
     font-variant: normal;
     font-weight: 400;
