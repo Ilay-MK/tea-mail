@@ -7,7 +7,7 @@
 /// @prop {String} value - значение letter-spacing, соответствущее ключу
 
 $service-trackings: (
-    "base"      : getTracking("tracking-1")  /* 0.025em */
+    "base"      : getTracking("tracking-1"), /* 0.025em */
     "error"     : getTracking("tracking-1"), /* 0.025em */
     "success"   : getTracking("tracking-1"), /* 0.025em */
     "search"    : getTracking("tracking-2"), /* 0.04em */
