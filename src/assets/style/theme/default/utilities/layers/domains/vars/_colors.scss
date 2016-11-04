@@ -15,7 +15,7 @@
 /* -------------------------- */
 
 /* Blacks */
-$color-black    : $color-base-black; /* #000000 [ brand ] */
+$color-black    : rgb(0, 0, 0);      /* #000000 [ brand ] */
 $color-Nero     : rgb(34, 34, 34);   /* #222222 */
 $color-Charcoal : rgb(68, 68, 68);   /* #444444 */
 $color-Zambezi  : rgb(92, 92, 92);   /* #5c5c5c */
@@ -105,7 +105,7 @@ $colors-beige: (
 /* -------------------------- */
 
 /* White */
-$color-white : $color-base-white; /* #ffffff [ brand ] */
+$color-white : rgb(255, 255, 255); /* #ffffff [ brand ] */
 
 $colors-white: (
     "white"  : $color-black
