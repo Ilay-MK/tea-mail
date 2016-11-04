@@ -6,10 +6,10 @@
 /// @return {String}
 /// @require services.vars.font-families.$service-font-families
 
-@function font-family($assignment: "base") {
+@function font-family($assignment: map-get($assignments, "use-1")) {
     @return map-get($service-font-families, $assignment);
 }
 
-@function ff($assignment: "base") {
+@function ff($assignment: map-get($assignments, "use-1")) {
     @return map-get($service-font-families, $assignment);
 }
