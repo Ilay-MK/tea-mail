@@ -11,5 +11,5 @@
 }
 
 @function ls($assignment: use) {
-    @return map-get($service-trackings, $assignment);
+    @return tracking($assignment);
 }

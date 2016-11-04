@@ -11,5 +11,5 @@
 }
 
 @function c($assignment: use) {
-    @return map-get($service-colors, $assignment);
+    @return color($assignment);
 }

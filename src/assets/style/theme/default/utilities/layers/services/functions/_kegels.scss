@@ -11,5 +11,5 @@
 }
 
 @function fz($assignment: use) {
-    @return map-get($service-kegels, $assignment);
+    @return kegel($assignment);
 }

@@ -11,5 +11,5 @@
 }
 
 @function lh($assignment: use) {
-    @return map-get($service-leadings, $assignment);
+    @return leading($assignment);
 }

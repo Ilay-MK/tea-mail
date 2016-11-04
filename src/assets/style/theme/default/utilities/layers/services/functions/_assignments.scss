@@ -11,5 +11,5 @@
 }
 
 @function use($assignment: "use-1") {
-    @return getAssignment($assignment);
+    @return assignment($assignment);
 }

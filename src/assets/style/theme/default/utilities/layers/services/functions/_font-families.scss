@@ -11,5 +11,5 @@
 }
 
 @function ff($assignment: use) {
-    @return map-get($service-font-families, $assignment);
+    @return font-family($assignment);
 }
