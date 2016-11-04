@@ -4,11 +4,15 @@
 
 .header {
 
-    &-heading {
-        @include font("heading");
-        margin: 252px auto 99px;
-        text-align: center;
-        text-shadow: -2.828px 2.828px 54px rgba(0, 0, 0, 0.83);
-        text-transform: uppercase;
+    &--heading {
+        @include f("header--heading");
+    }
+
+    &--search {
+        @include f("header--search");
+    }
+
+    &--advantages {
+        @include f("header--advantages--text");
     }
 }
