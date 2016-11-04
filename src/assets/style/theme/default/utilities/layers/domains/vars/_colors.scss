@@ -169,8 +169,8 @@ $domain-colors: (
     "Nero"      : map-get($colors-black, "Nero"),           /* #222222 */
     "Charcoal"  : map-get($colors-black, "Charcoal"),       /* #444444 */
     "Zambezi"   : map-get($colors-black, "Zambezi"),        /* #5c5c5c */
-    "error"     : map-get($colors-red,   "RoofTerracotta"), /* #a94442 */
-    "success"   : map-get($colors-green, "JapaneseLaurel"), /* #3c763d */
+    "RoofTerracotta"     : map-get($colors-red,   "RoofTerracotta"), /* #a94442 */
+    "JapaneseLaurel"   : map-get($colors-green, "JapaneseLaurel"), /* #3c763d */
     "white"     : map-get($colors-white, "white")           /* #ffffff */
 );
 
