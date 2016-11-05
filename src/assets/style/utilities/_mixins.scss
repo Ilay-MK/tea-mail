@@ -97,6 +97,15 @@
             transition: $target $time $effect;
 }
 
+@mixin bg-cover {
+    background-position: center center; /*50% 50%*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
 /// Помощник для сброса внутреннего обтекания
 /// @author Николас Галлагер
 /// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
