@@ -129,7 +129,7 @@
 /* ScrollBars */
 
 /* параметризировать! */
-@mixin scrollBar($base: "") {
+@mixin ie-scrollBar($base: "") {
     scrollbar-base-color: #000; /* Задает основной цвет для скролла */
 
     /* И более тонкие настройки: */
@@ -150,7 +150,8 @@
 }
 
 /* параметризировать! */
-@mixin webkit-scrollbar() {
+@mixin webkit-scrollbar($thumb-color: #e0cc91, $thumb-color-hover: #c4b178) {
+
     ::-webkit-scrollbar-button {
         background-image: url('');
         background-repeat: no-repeat;
@@ -170,11 +171,11 @@
         //border-style: solid;
         -webkit-border-radius: 0px;
                 border-radius: 0px;
-        background-color: #d29b3b; /* #6dc0c8 */
+        background-color: $thumb-color; /* #6dc0c8 */
     }
 
     ::-webkit-scrollbar-thumb:hover {
-        background-color: #56999f;
+        background-color: $thumb-color-hover;
     }
 
     ::-webkit-resizer {
@@ -187,6 +188,13 @@
     /* Основная ширина прокрутки */
     ::-webkit-scrollbar {
         width: 6px;
+    }
+
+}
+
+@mixin webkit-scrollbar-append($thumb-color: #d29b3b, $thumb-color-hover: #6dc0c8) {
+    @include optional-at-root('&') {
+        @content;
     }
 }
 
