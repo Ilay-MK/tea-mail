@@ -4,4 +4,24 @@
 
 .tea_room {
 
+    &--heading {
+        @include f("tea_room--heading");
+    }
+
+    &--subHeading {
+        @include f("tea_room--subHeading");
+    }
+
+    &--text {
+        @include f("tea_room--text");
+    }
+
+    &--address {
+        @include f("tea_room--address");
+    }
+
+    &--button {
+        @include f("tea_room--button");
+    }
+
 }
