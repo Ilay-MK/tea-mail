@@ -1,5 +1,41 @@
 @charset "UTF-8";
 
 #tea_room {
+    @include bg-cover;
+    background-image: url(../img/tea_room/bg.png);
+    height: 820px;
+    overflow: visible;
+
+    .tea_room {
+
+        &-content {
+            background-color: #fae7d4; /* TEMP взять из карты цветов */
+            padding: 60px 100px 0 168px;
+            position: absolute;
+            top: 20px; /* TEMP */
+            @include size(690px, 628px);
+        }
+
+        &--heading {
+            text-transform: uppercase;
+        }
+
+        &--subHeading {
+
+        }
+
+        &--text {
+
+        }
+
+        &--address {
+
+        }
+
+        &--button {
+
+        }
+
+    }
 
 }
