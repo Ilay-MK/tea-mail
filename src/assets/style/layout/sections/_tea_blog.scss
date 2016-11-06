@@ -2,4 +2,77 @@
 
 #tea_blog {
 
+    /* Карусель */
+    .carousel {
+
+        &-indicators {
+
+            li {
+                background-color: #f5f5f5; /* TEMP - взять из карты цветов */
+                border-radius: 50%;
+                @include size(9px);
+
+                &.active {
+                    background-color: #d7a96a; /* TEMP - взять из карты цветов */
+                }
+            }
+        }
+    }
+
+    .tea_blog {
+
+        /* Колонка */
+        &--article {
+            display: inline-block;
+            border: 1px solid red; /* TEMP */
+            padding: 0 56px;
+            max-width: 733px;
+            @include size(100%, auto);
+
+            &--heading {
+
+            }
+
+            &--date {
+
+            }
+
+            &--text {
+
+            }
+
+            &--link_more {
+
+            }
+        }
+
+        /* Тизер */
+        &-teaser {
+
+            &-visual {
+                max-height: 358px;
+                max-width: 621px;
+                @include size(100%, 100%);
+
+                img {
+                    @include size(100%, auto);
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        /* ------------------ */
+
+        /* Колонка */
+        &-news {
+            display: inline-block;
+            border: 1px solid blue; /* TEMP */
+        }
+
+        &--heading {
+            text-align: center;
+        }
+
+    }
+
 }
