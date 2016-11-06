@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Стили tea_mail блока. Вкл. вложеные
+
+.tea_mail {
+
+    &--text {
+        @include f("tea_mail--text");
+    }
+
+    &--button {
+        @include f("tea_mail--button");
+    }
+
+    &--heading {
+        @include f("tea_mail--heading");
+    }
+
+}
