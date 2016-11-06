@@ -20,4 +20,10 @@
     &-gradient {
 
     }
+
+    &-product {
+        border-radius: 4px;
+        background-color: #b62927; /* TEMP - взять из карты цветов */
+        @include size(77px, 31px);
+    }
 }
