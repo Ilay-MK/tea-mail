@@ -38,6 +38,11 @@
             &--inputData {
                 @include f("catalog--product_card--inputData");
             }
+
+            &--button {
+                @include f("catalog--product_card--button");
+                line-height: 28px; /* TEMP */
+            }
         }
     }
 
