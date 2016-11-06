@@ -4,20 +4,27 @@
 
 .tea_blog {
 
+    &--article {
+
+        &--heading {
+            @include f("tea_blog--heading_article");
+        }
+
+        &--date {
+            @include f("tea_blog--date");
+        }
+
+        &--text {
+            @include f("tea_blog--post--text");
+        }
+
+        &--link_more {
+            @include f("tea_blog--link_more");
+        }
+    }
+
     &--heading {
-        @include f("tea_mail--heading");
-    }
-
-    &--heading_article {
-        @include f("tea_mail--heading_article");
-    }
-
-    &--date {
-        @include f("tea_mail--date");
-    }
-
-    &--post--text {
-        @include f("tea_mail--post--text");
+        @include f("tea_blog--heading");
     }
 
 }
