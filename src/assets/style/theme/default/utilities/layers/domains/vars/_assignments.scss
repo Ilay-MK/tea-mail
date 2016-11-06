@@ -32,7 +32,7 @@ $assignments: (
 
     "use-21" : "nav--username",
     "use-22" : "nav--login_label",
-    "use-23" : "catalog--product_card--subtitle",
+    "use-23" : "catalog--product_card--subTitle",
     "use-24" : "tea_news--article--text",
     "use-25" : "footer--nav-second--link",
     "use-26" : "footer--newsletters--title",
@@ -42,7 +42,7 @@ $assignments: (
     "use-29" : "header--search",
     "use-30" : "header--search--heading",
     "use-31" : "header--search--text",
-    "use-32" : "tea_mail_2--text",
+    "use-32" : "tea_mail--text",
     "use-33" : "tea_room--text",
     "use-34" : "kits--text",
     "use-35" : "about_project--text",
@@ -52,7 +52,7 @@ $assignments: (
     "use-37" : "nav-opened--link",
     "use-38" : "nav-opened--link-hover",
     "use-39" : "catalog--button",
-    "use-40" : "tea_mail_2--button",
+    "use-40" : "tea_mail--button",
     "use-41" : "tea_room--address",
     "use-42" : "tea_room--button",
     "use-43" : "tea_blog--link_more",
@@ -67,14 +67,14 @@ $assignments: (
     "use-52" : "map--button",
     "use-53" : "footer--newsletters--button",
 
-    "use-54" : "catalog--title",
+    "use-54" : "catalog--category--title",
 
     "use-55" : "map--firmName",
     /* --------------------------------------------------------------------------- */
     "use-56" : "catalog--product_card--title",
 
     "use-57" : "catalog--product_card--price",
-    "use-58" : "catalog--product_card--oldprice",
+    "use-58" : "catalog--product_card--oldPrice",
     "use-59" : "catalog--product_card--inputData",
     "use-60" : "tea_blog--date",
     "use-61" : "tea_news--post--date",
@@ -89,7 +89,7 @@ $assignments: (
     "use-68" : "about_project--subHeading",
     /* --------------------------------------------------------------------------- */
     "use-69" : "header--heading",
-    "use-70" : "tea_mail_2--heading",
+    "use-70" : "tea_mail--heading",
     "use-71" : "tea_room--heading",
     "use-72" : "tea_blog--heading",
     "use-73" : "kits--heading",
@@ -106,5 +106,9 @@ $assignments: (
 
     /* --------------------------------------------------------------------------- */
 
-    "use-83" : ""
+    "use-83" : "catalog--product_card--button",
+
+    /* --------------------------------------------------------------------------- */
+
+    "use-84" : ""
 );

@@ -104,5 +104,7 @@ $service-font-families: (
     use("use-81") : getFont-family("Bristol"),
     use("use-82") : getFont-family("Bristol"),
     /* -------------------------------------------------------------------------- */
-    use("use-83") : getFont-family()
+    use("use-83") : getFont-family("NotoSans"),
+    /* -------------------------------------------------------------------------- */
+    use("use-84") : getFont-family()
 );

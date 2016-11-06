@@ -68,8 +68,6 @@
     }
 }
 
-/**/
-
 @mixin background-size ($background-size) {
     -webkit-background-size: $background-size;
        -moz-background-size: $background-size;
@@ -97,6 +95,15 @@
             transition: $target $time $effect;
 }
 
+@mixin bg-cover {
+    background-position: center center; /*50% 50%*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+}
+
 /// Помощник для сброса внутреннего обтекания
 /// @author Николас Галлагер
 /// @link http://nicolasgallagher.com/micro-clearfix-hack/ Micro Clearfix
@@ -117,7 +124,79 @@
     width: $width;
 }
 
-/*Extras*/
+/* -= Extras =- */
+
+/* ScrollBars */
+
+/* параметризировать! */
+@mixin ie-scrollBar($base: "") {
+    scrollbar-base-color: #000; /* Задает основной цвет для скролла */
+
+    /* И более тонкие настройки: */
+
+    scrollbar-3dlight-color: #000; /*задает цвет верхней и левой границ полосы прокрутки, ее бегунка и стрелок*/
+
+    scrollbar-arrow-color: #000; /*задает цвет стрелок на кнопках полосы прокрутки*/
+
+    scrollbar-darkshadow-color: #000; /*задает цвет "тени", отбрасываемой бегунком и кнопками полосы прокрутки (цвет правых и нижних границей)*/
+
+    scrollbar-face-color: #000; /*задает основной цвет бегунка и кнопок прокрутки полосы прокрутки*/
+
+    scrollbar-highlight-color: #000; /*задает цвет "освещенной" части бегунка и кнопок прокрутки полосы прокрутки (цвет левых и верхних их граней)*/
+
+    scrollbar-shadow-color: #000; /*задает цвет "неосвещенной" части бегунка и кнопок прокрутки полосы прокрутки (цвет правых и нижних их граней). Не путать с цветом "тени", задаваемым атрибутом scroll-darkshadow-color*/
+
+    crollbar-track-color: #000; /*задает цвет фона полосы прокрутки, той ее части, по которой перемещается бегунок*/
+}
+
+/* параметризировать! */
+@mixin webkit-scrollbar($thumb-color: #e0cc91, $thumb-color-hover: #c4b178) {
+
+    ::-webkit-scrollbar-button {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 5px;
+        height: 0px
+    }
+
+    /* Цвет дорожки */
+    ::-webkit-scrollbar-track {
+        background-color: transparent; /* #ecedee */
+    }
+
+    /* Цвет бегунка полосы, + его закругления */
+    ::-webkit-scrollbar-thumb {
+        //border-width: 1px 1px 1px 2px;
+        //border-color: #777;
+        //border-style: solid;
+        -webkit-border-radius: 0px;
+                border-radius: 0px;
+        background-color: $thumb-color; /* #6dc0c8 */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: $thumb-color-hover;
+    }
+
+    ::-webkit-resizer {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 4px;
+        height: 0px
+    }
+
+    /* Основная ширина прокрутки */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+}
+
+@mixin webkit-scrollbar-append($thumb-color: #d29b3b, $thumb-color-hover: #6dc0c8) {
+    @include optional-at-root('&') {
+        @content;
+    }
+}
 
 // Extras
 // -- Highlight Color Customization
