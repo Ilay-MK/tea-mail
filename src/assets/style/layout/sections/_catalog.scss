@@ -2,6 +2,7 @@
 
 #catalog {
     background-color: #f6f6f5; /* TEMP -взять из карты цветов */
+    text-align: center;
 
     /// Цвета категорий продуктов каталога
     /// border карточки каталога и декоративной полосочки @--decor
@@ -78,10 +79,6 @@
         }
     }
 
-    .container {
-        text-align: center;
-    }
-
     .catalog {
 
         /// Описание категории каталога - колонки
@@ -89,6 +86,7 @@
             display: inline-block;
             overflow: hidden;
             text-align: center;
+            width: 100%;
 
             .catalog {
 
