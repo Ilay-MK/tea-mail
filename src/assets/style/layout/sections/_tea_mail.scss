@@ -1,5 +1,33 @@
 @charset "UTF-8";
 
 #tea_mail {
+    background-color: #f6f6f5; /* TEMP -взять из карты цветов */
+    text-align: center;
+
+    .col {
+        /*outline: 1px solid;*/
+        display: inline-block;
+        padding: 0 15px;
+        /*overflow: hidden;*/
+        vertical-align: top;
+        /* 384px without scrollbar */
+        @include size(33.3%, auto);
+    }
+
+    .tea_mail {
+
+        &--text {
+
+        }
+
+        &--button {
+
+        }
+
+        &--heading {
+            text-transform: uppercase;
+        }
+
+    }
 
 }
