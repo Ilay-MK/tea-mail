@@ -27,7 +27,9 @@ html {
 }
 
 body {
-    @include f;
+    @include f();
+    background-color: c();
+    color: #000;
     /*font-size: 16px;*/
     padding: 0;
     text-rendering: auto;
