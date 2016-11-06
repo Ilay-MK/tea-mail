@@ -1,7 +1,3 @@
-/*
-    Third party
-*/
-
 "use strict";
 
 $(function () {
