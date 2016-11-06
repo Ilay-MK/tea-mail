@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+#tea_mail {
+    background-image: url(../img/tea_mail/bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: #f6f6f5; /* TEMP -взять из карты цветов */
+    padding-top: 55px;
+    padding-bottom: 105px;
+    text-align: center;
+
+    .col {
+        /*outline: 1px solid;*/
+        display: inline-block;
+        padding: 0 15px;
+        /*overflow: hidden;*/
+        vertical-align: top;
+        /* 384px without scrollbar */
+        @include size(33.3%, auto);
+    }
+
+    /// Описание картинок ссылок
+    &--imgLink {
+
+        &-1 {
+            background-image: url(../img/tea_mail/1.png);
+
+            &:hover {
+                /*background-image: url(../img/tea_mail/1-hover.png);*/
+            }
+        }
+
+        &-2 {
+            background-image: url(../img/tea_mail/2.png);
+
+            &:hover {
+                /*background-image: url(../img/tea_mail/2-hover.png);*/
+            }
+        }
+    }
+
+    .tea_mail {
+
+        &--heading {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        &--text {
+
+        }
+
+        &--button {
+            margin-top: 73px;
+        }
+
+        &--imgLink {
+            /*@include bg-cover;*/
+            /*@include size(100%, auto);*/
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            margin-top: 45px;
+            @include size(360px, 355px);
+            @include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+
+            &:hover {
+                background-position: -360px 0;
+            }
+
+            img {
+                /* size(720px, 355px) */
+            }
+        }
+
+    }
+
+}

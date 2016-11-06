@@ -104,5 +104,7 @@ $service-colors: (
     use("use-81") : getColor("white"),          /* #ffffff */
     use("use-82") : getColor("Tuscany"),        /* #b1654b */
     /* -------------------------------------------------------------------------- */
-    use("use-83") : getColor()
+    use("use-83") : getColor("white"),          /* #ffffff */
+    /* -------------------------------------------------------------------------- */
+    use("use-84") : getColor()
 );

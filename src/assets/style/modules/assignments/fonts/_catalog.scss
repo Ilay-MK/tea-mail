@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/// Стили catalog блока. Вкл. вложеные
+
+.catalog {
+
+    &--category {
+
+        &--title {
+            @include f("catalog--category--title");
+        }
+    }
+
+    &--product {
+
+        &_card {
+
+            &--title {
+                @include f("catalog--product_card--title");
+                line-height: normal !important; /* TEMP */
+            }
+
+            &--subTitle {
+                @include f("catalog--product_card--subTitle");
+                line-height: normal !important; /* TEMP */
+            }
+
+            &--price {
+                @include f("catalog--product_card--price");
+                line-height: normal !important; /* TEMP */
+            }
+
+            &--oldPrice {
+                @include f("catalog--product_card--oldPrice");
+                line-height: normal !important; /* TEMP */
+            }
+
+            &--inputData {
+                @include f("catalog--product_card--inputData");
+            }
+
+            &--button {
+                @include f("catalog--product_card--button");
+                line-height: 28px; /* TEMP */
+            }
+        }
+    }
+
+    &--button {
+        @include f("catalog--button");
+    }
+}

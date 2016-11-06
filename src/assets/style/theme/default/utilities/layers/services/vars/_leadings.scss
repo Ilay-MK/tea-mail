@@ -104,5 +104,7 @@ $service-leadings: (
     use("use-81") : getLeading("leading-4"),  /* 19px */
     use("use-82") : getLeading("leading-3"),  /* 18px */
     /* -------------------------------------------------------------------------- */
-    use("use-83") : getLeading()
+    use("use-83") : getLeading("leading-11"), /* 90px */
+    /* -------------------------------------------------------------------------- */
+    use("use-84") : getLeading()
 );
