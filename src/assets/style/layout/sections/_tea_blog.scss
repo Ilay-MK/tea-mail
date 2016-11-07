@@ -83,6 +83,26 @@
         &--heading {
             margin: 19px 0 54px;
             text-align: center;
+
+            &:before, &:after {
+                display: inline-block;
+                content: '';
+                @include bg-cover;
+                background-image: url(../img/tea_blog/yin-yang_symbol.png);
+                position: relative;
+                top: 5px;
+                @include size(28px, 27px);
+            }
+
+            &:before {
+                margin-left: auto;
+                margin-right: 25px;
+            }
+
+            &:after {
+                margin-left: 25px;
+                margin-right: auto;
+            }
         }
 
     }
