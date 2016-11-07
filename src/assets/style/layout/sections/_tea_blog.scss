@@ -27,13 +27,41 @@
 
     .tea_blog {
 
+        &--heading {
+            margin: 19px 0 54px;
+            text-align: center;
+
+            &:before, &:after {
+                display: inline-block;
+                content: '';
+                @include bg-cover;
+                background-image: url(../img/tea_blog/yin-yang_symbol.png);
+                position: relative;
+                top: 5px;
+                @include size(28px, 27px);
+            }
+
+            &:before {
+                margin-left: auto;
+                margin-right: 25px;
+            }
+
+            &:after {
+                margin-left: 25px;
+                margin-right: auto;
+            }
+        }
+
         /* Колонка */
         &--article {
             display: inline-block;
-            border: 1px solid red; /* TEMP */
+            outline: 1px dotted red; /* TEMP */
             padding: 0 56px;
-            max-width: 733px;
+            min-height: 640px;
+            /*max-width: 733px;*/
+            vertical-align: middle;
             @include size(100%, auto);
+            @include size(62.64957264957265%, auto);
 
             &--heading {
                 margin: 11px 0 22px;
@@ -48,7 +76,7 @@
             }
 
             &--link_more {
-                margin: 14px 0;
+                margin: 14px 0 11px;
                 text-decoration: underline;
             }
         }
@@ -77,33 +105,32 @@
         /* ------------------ */
 
         /* Колонка */
-        &-news {
+        &--news {
             display: inline-block;
-            border: 1px solid blue; /* TEMP */
-        }
+            border-left: 2px solid #a28455; /* TEMP цветз взять из карты цветов */
+            outline: 1px dotted green; /* TEMP */
+            /*max-width: 437px;*/
+            min-height: 640px;
+            vertical-align: middle;
+            @include size(37.35042735042735%, auto);
 
-        &--heading {
-            margin: 19px 0 54px;
-            text-align: center;
+            .nav {
 
-            &:before, &:after {
-                display: inline-block;
-                content: '';
-                @include bg-cover;
-                background-image: url(../img/tea_blog/yin-yang_symbol.png);
-                position: relative;
-                top: 5px;
-                @include size(28px, 27px);
-            }
+                &-justified {
 
-            &:before {
-                margin-left: auto;
-                margin-right: 25px;
-            }
+                    & > li {
 
-            &:after {
-                margin-left: 25px;
-                margin-right: auto;
+                        & > a {
+
+                            &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
+                                background: none;
+                                color: inherit;
+                                width: 100%;
+                            }
+                        }
+                    }
+
+                }
             }
         }
 
