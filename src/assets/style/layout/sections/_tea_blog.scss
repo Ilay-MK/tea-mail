@@ -119,14 +119,38 @@
 
             .nav {
 
-                &-justified li > a {
+                &-justified li {
+                    width: 50%;
 
-                    &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
-                        background: none;
-                        color: inherit;
-                        width: 100%;
+                    &:first-child {
+                        border-right: 1px solid #dcdcdc;
                     }
 
+                    & > a {
+                        @include transition();
+
+                        &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
+                            background: none;
+                            width: 100%;
+                        }
+
+                        &:hover, &:focus, &:hover:focus {
+                            color: c("tea_news--post--nav_tab-news-hover");
+                        }
+
+                        &:active, &:focus:active, &::selection { /* Внести стиль в карты ... */
+                            color: #925900;
+                            font-size: 22px;
+                        }
+                    }
+
+                    &.active > a {
+
+                        &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
+                            color: #925900;
+                            font-size: 22px;
+                        }
+                    }
                 }
             }
 
