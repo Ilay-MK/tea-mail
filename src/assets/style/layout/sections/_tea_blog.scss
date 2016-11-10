@@ -55,7 +55,6 @@
         /* Колонка */
         &--article {
             display: inline-block;
-            outline: 1px dotted red; /* TEMP */
             padding: 0 56px;
             min-height: 640px;
             /*max-width: 733px;*/
@@ -108,9 +107,6 @@
         &--news {
             display: inline-block;
             border-left: 2px solid #a28455; /* TEMP */
-            border-bottom: 2px dotted green; /* TEMP */
-            border-right: 2px dotted green; /* TEMP */
-            border-top: 2px dotted green; /* TEMP */
             /*max-width: 437px;*/
             min-height: 640px;
             padding: 5px;
