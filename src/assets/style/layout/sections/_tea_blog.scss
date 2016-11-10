@@ -8,7 +8,7 @@
 
         &-indicators {
             bottom: initial;
-            top: 383px;
+            top: 380px;
 
             li {
                 background-color: #f5f5f5; /* TEMP - взять из карты цветов */
@@ -61,7 +61,7 @@
             /*max-width: 733px;*/
             vertical-align: middle;
             @include size(100%, auto);
-            @include size(62.64957264957265%, auto);
+            @include size(57.265625%, auto);
 
             &--heading {
                 margin: 11px 0 22px;
@@ -112,7 +112,7 @@
             /*max-width: 437px;*/
             min-height: 640px;
             vertical-align: middle;
-            @include size(37.35042735042735%, auto);
+            @include size(42.734375%, auto);
 
             .nav {
 
@@ -133,7 +133,33 @@
                 }
             }
         }
+    }
 
+    .tea_news {
+
+        &--post {
+
+            &:hover {
+
+            }
+
+            &--visual {
+                display: inline-block;
+                @include size(78px);
+
+                img {
+                    @include size(100%, auto);
+                }
+            }
+
+            &--content {
+                display: inline-block;
+            }
+
+            &--link_more {
+
+            }
+        }
     }
 
 }
