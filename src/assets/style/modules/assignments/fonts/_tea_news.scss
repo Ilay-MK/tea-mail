@@ -23,10 +23,13 @@
 
         &--date {
             @include f("tea_news--post--date");
+            line-height: 1.1em; /* 14/15 px - это исправление */
         }
 
         &--heading {
             @include f("tea_news--post--header");
+            line-height: 1.5em; /* это исправление */
+            //или margin: 3px 0px 1px;
         }
 
         &--text {

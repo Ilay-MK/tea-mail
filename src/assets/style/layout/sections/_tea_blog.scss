@@ -133,7 +133,7 @@
             & .tea_news {
 
                 &--post {
-                    background-color: #fff;
+                    background-color: transparent;
                     border-style: solid;
                     border-width: 1px;
                     border-color: transparent;
@@ -142,14 +142,19 @@
                     position: relative;
                     margin-top: -21px;
                     z-index: 8;
+                    @include size(451px, auto);
+                    /*@include size(451px, 107px);*/
+                    @include transition();
+
 
                     &:hover {
+                        background-color: #fff;
                         border-color: rgb(228, 228, 228);
                         z-index: 9;
-                        //@include size(449px, 126px);
+                        /*@include size(451px, 128px);*/
 
                         .tea_news--post--link_more {
-                            display: block;
+                            color: c("tea_news--post--link_more");
                         }
                     }
 
@@ -163,6 +168,8 @@
 
                     &--visual {
                         display: inline-block;
+                        float: left;
+                        margin-right: 9px;
                         vertical-align: top;
                         @include size(78px);
 
@@ -173,10 +180,10 @@
 
                     &--content {
                         display: inline-block;
-                        padding: 0 9px;
+                        padding: 0 7px 9px 9px;
                         vertical-align: top;
                         overflow: hidden;
-                        @include size(343px, 108px);
+                        @include size(344px, 108px);
                     }
 
                     &--heading {
@@ -184,7 +191,8 @@
                     }
 
                     &--link_more {
-                        display: none;
+                        color: transparent;
+                        margin-top: 6px;
                         text-decoration: underline;
                     }
                 }
