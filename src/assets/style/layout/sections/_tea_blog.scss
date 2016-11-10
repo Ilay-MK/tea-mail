@@ -107,59 +107,88 @@
         /* Колонка */
         &--news {
             display: inline-block;
-            border-left: 2px solid #a28455; /* TEMP цветз взять из карты цветов */
-            outline: 1px dotted green; /* TEMP */
+            border-left: 2px solid #a28455; /* TEMP */
+            border-bottom: 2px dotted green; /* TEMP */
+            border-right: 2px dotted green; /* TEMP */
+            border-top: 2px dotted green; /* TEMP */
             /*max-width: 437px;*/
             min-height: 640px;
+            padding: 5px;
             vertical-align: middle;
             @include size(42.734375%, auto);
 
             .nav {
 
-                &-justified {
+                &-justified li > a {
 
-                    & > li {
-
-                        & > a {
-
-                            &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
-                                background: none;
-                                color: inherit;
-                                width: 100%;
-                            }
-                        }
+                    &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
+                        background: none;
+                        color: inherit;
+                        width: 100%;
                     }
 
                 }
             }
-        }
-    }
 
-    .tea_news {
+            & .tea_news {
 
-        &--post {
+                &--post {
+                    background-color: #fff;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: transparent;
+                    padding: 9px;
+                    overflow: hidden;
+                    position: relative;
+                    margin-top: -21px;
+                    z-index: 8;
 
-            &:hover {
+                    &:hover {
+                        border-color: rgb(228, 228, 228);
+                        z-index: 9;
+                        //@include size(449px, 126px);
 
-            }
+                        .tea_news--post--link_more {
+                            display: block;
+                        }
+                    }
 
-            &--visual {
-                display: inline-block;
-                @include size(78px);
+                    &:first-child {
+                        margin-top: 0;
+                    }
 
-                img {
-                    @include size(100%, auto);
+                    p {
+                        margin: 0;
+                    }
+
+                    &--visual {
+                        display: inline-block;
+                        vertical-align: top;
+                        @include size(78px);
+
+                        img {
+                            @include size(100%, auto);
+                        }
+                    }
+
+                    &--content {
+                        display: inline-block;
+                        padding: 0 9px;
+                        vertical-align: top;
+                        overflow: hidden;
+                        @include size(343px, 108px);
+                    }
+
+                    &--heading {
+                        margin: 0;
+                    }
+
+                    &--link_more {
+                        display: none;
+                        text-decoration: underline;
+                    }
                 }
             }
-
-            &--content {
-                display: inline-block;
-            }
-
-            &--link_more {
-
-            }
         }
     }
-
 }
