@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/// Стили tea_news блока. Вкл. вложеные
+
+.tea_news {
+
+    &--post {
+
+        &--nav_tab {
+
+            &-article {
+                @include f("tea_news--heading_button_article");
+            }
+
+            &-news {
+                @include f("tea_news--heading_button_news");
+
+                &:hover {
+                    @include f("tea_news--heading_button_news-hover");
+                }
+            }
+        }
+
+        &--date {
+            @include f("tea_news--post--date");
+        }
+
+        &--heading {
+            @include f("tea_news--post--header");
+        }
+
+        &--text {
+            @include f("tea_news--article--text");
+        }
+
+        &--link_more {
+            @include f("tea_news--post--link_more");
+        }
+    }
+
+}
