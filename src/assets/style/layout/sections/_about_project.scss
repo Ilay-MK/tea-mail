@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#about_project {
+    background-image: url(../img/about_project/bg.png);
+    background-position: center 64px;
+    background-repeat: no-repeat;
+    padding-top: 85px;
+}
+
+.about_project {
+
+    &-container {
+        background-image: url(../img/about_project/bg-2.png);
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        margin: 0 134px;
+    }
+
+    &--heading {
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    &--subHeading {
+
+    }
+
+    &--text {
+        max-width: 420px;
+    }
+
+    &--button {
+        margin-top: 41px;
+        margin: 41px 0 55px;
+    }
+
+}
