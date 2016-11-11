@@ -1,5 +1,85 @@
 @charset "UTF-8";
 
 #kits {
+    padding: 64px 0;
+    text-align: center;
+
+    .col {
+        /*outline: 1px solid;*/
+        display: inline-block;
+        padding: 0 15px;
+        /*overflow: hidden;*/
+        vertical-align: top;
+        /* 384px without scrollbar */
+        @include size(33.3%, auto);
+    }
+
+    /// Описание картинок ссылок
+    &--imgLink {
+
+        &-1 {
+            background-image: url(../img/kits/1.png);
+            background-position: -400px 0;
+
+            &:hover {
+                /*background-image: url(../img/kits/1-hover.png);*/
+                background-position: 0 0;
+            }
+        }
+
+        &-2 {
+            background-image: url(../img/kits/2.png);
+            background-position: 0 0;
+
+            &:hover {
+                /*background-image: url(../img/kits/2-hover.png);*/
+                background-position: -400px 0;
+            }
+        }
+    }
+}
+
+.kits {
+
+    &--content {
+        background-color: #fff;
+        /*@include size(485px, 399px);*/
+        /*border-top-left-radius: 20px 150px;
+        border-top-right-radius: 20px 150px;
+        border-bottom-left-radius: 20px 150px;
+        border-bottom-right-radius: 20px 150px;*/
+        border-radius: 20px/150px;
+    }
+
+    &--heading {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &--text {
+
+    }
+
+    &--button {
+        margin-top: 23px;
+    }
+
+    &--imgLink {
+        /*@include bg-cover;*/
+        /*@include size(100%, auto);*/
+        background-repeat: no-repeat;
+        /*background-position: 0 0;*/
+        margin-top: 14px;
+        @include size(100%, 380px);
+        @include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+
+        &:hover {
+            /*background-position: -400px 0;*/
+        }
+
+        img {
+            /* size(720px, 355px) */
+        }
+    }
 
 }
