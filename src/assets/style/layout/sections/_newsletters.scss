@@ -45,6 +45,11 @@
                 transform: rotate(-2.8deg);
             }
         }
+
+        &-content {
+            margin-top: 182px;
+            position: relative;
+        }
     }
 }
 
@@ -55,10 +60,12 @@
     }
 
     &--text {
-
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 450px;
     }
 
     &--button {
-
+        margin-top: 24px;
     }
 }
