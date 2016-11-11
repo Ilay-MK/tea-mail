@@ -8,9 +8,5 @@ $(function(){
     console.log('in main.js! ');
 })
 
-/*
-    Custom
-*/
 
-//= partials/plugins.js
-//= partials/common.js
+//= partials/index.js

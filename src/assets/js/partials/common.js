@@ -1,7 +1,3 @@
-/*
-    Third party
-*/
-
 "use strict";
 
 $(function () {
@@ -9,8 +5,6 @@ $(function () {
 })
 
 $(document).ready(function () {
-
-    parallax("#tea_room-content");
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - HEADER - - - - - - - - - - - - - - -  */
