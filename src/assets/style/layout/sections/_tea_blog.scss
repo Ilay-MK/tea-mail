@@ -8,7 +8,7 @@
 
         &-indicators {
             bottom: initial;
-            top: 383px;
+            top: 380px;
 
             li {
                 background-color: #f5f5f5; /* TEMP - взять из карты цветов */
@@ -27,13 +27,40 @@
 
     .tea_blog {
 
+        &--heading {
+            margin: 19px 0 54px;
+            text-align: center;
+
+            &:before, &:after {
+                display: inline-block;
+                content: '';
+                @include bg-cover;
+                background-image: url(../img/tea_blog/yin-yang_symbol.png);
+                position: relative;
+                top: 5px;
+                @include size(28px, 27px);
+            }
+
+            &:before {
+                margin-left: auto;
+                margin-right: 25px;
+            }
+
+            &:after {
+                margin-left: 25px;
+                margin-right: auto;
+            }
+        }
+
         /* Колонка */
         &--article {
             display: inline-block;
-            border: 1px solid red; /* TEMP */
             padding: 0 56px;
-            max-width: 733px;
+            min-height: 640px;
+            /*max-width: 733px;*/
+            vertical-align: middle;
             @include size(100%, auto);
+            @include size(57.265625%, auto);
 
             &--heading {
                 margin: 11px 0 22px;
@@ -48,7 +75,7 @@
             }
 
             &--link_more {
-                margin: 14px 0;
+                margin: 14px 0 11px;
                 text-decoration: underline;
             }
         }
@@ -77,36 +104,128 @@
         /* ------------------ */
 
         /* Колонка */
-        &-news {
+        &--news {
             display: inline-block;
-            border: 1px solid blue; /* TEMP */
+            border-left: 2px solid #a28455; /* TEMP */
+            /*max-width: 437px;*/
+            min-height: 640px;
+            padding: 5px;
+            vertical-align: middle;
+            @include size(42.734375%, auto);
+
+            .nav {
+
+                &-justified li {
+                    width: 50%;
+
+                    &:first-child {
+                        border-right: 1px solid #dcdcdc;
+                    }
+
+                    & > a {
+                        @include transition();
+
+                        &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
+                            background: none;
+                            width: 100%;
+                        }
+
+                        &:hover, &:focus, &:hover:focus {
+                            color: c("tea_news--post--nav_tab-news-hover");
+                        }
+
+                        &:active, &:focus:active, &::selection { /* Внести стиль в карты ... */
+                            color: #925900;
+                            font-size: 22px;
+                        }
+                    }
+
+                    &.active > a {
+
+                        &:active, &:focus, &:focus:active, &:hover, &:link, &:visited {
+                            color: #925900;
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+
+            & .tea_news {
+
+                &--post {
+                    background-color: transparent;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-color: transparent;
+                    padding: 9px;
+                    overflow: hidden;
+                    position: relative;
+                    margin-top: -21px;
+                    z-index: 8;
+                    @include size(451px, auto);
+                    /*@include size(451px, 107px);*/
+                    @include transition();
+
+
+                    &:hover {
+                        background-color: #fff;
+                        border-color: rgb(228, 228, 228);
+                        z-index: 9;
+                        /*@include size(451px, 128px);*/
+
+                        .tea_news--post--link_more {
+                            color: c("tea_news--post--link_more");
+                        }
+                    }
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    &--visual {
+                        display: inline-block;
+                        float: left;
+                        margin-right: 9px;
+                        vertical-align: top;
+                        @include size(78px);
+
+                        img {
+                            @include size(100%, auto);
+                        }
+                    }
+
+                    &--content {
+                        display: inline-block;
+                        padding: 0 7px 9px 9px;
+                        vertical-align: top;
+                        overflow: hidden;
+                        @include size(344px, 108px);
+                    }
+
+                    &--heading {
+                        margin: 0;
+                    }
+
+                    &--link_more {
+                        color: transparent;
+                        margin-top: 6px;
+                        text-decoration: underline;
+                    }
+                }
+
+                &--link_more {
+                    text-decoration: underline;
+
+                    &-container {
+                        /*margin-top: -18px;*/
+                        text-align: center;
+                    }
+                }
+            }
         }
-
-        &--heading {
-            margin: 19px 0 54px;
-            text-align: center;
-
-            &:before, &:after {
-                display: inline-block;
-                content: '';
-                @include bg-cover;
-                background-image: url(../img/tea_blog/yin-yang_symbol.png);
-                position: relative;
-                top: 5px;
-                @include size(28px, 27px);
-            }
-
-            &:before {
-                margin-left: auto;
-                margin-right: 25px;
-            }
-
-            &:after {
-                margin-left: 25px;
-                margin-right: auto;
-            }
-        }
-
     }
-
 }
