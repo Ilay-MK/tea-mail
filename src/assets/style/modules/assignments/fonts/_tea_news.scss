@@ -41,4 +41,8 @@
         }
     }
 
+    &--link_more {
+        @include f("tea_news--post--link_more");
+    }
+
 }

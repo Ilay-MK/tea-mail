@@ -216,6 +216,15 @@
                         text-decoration: underline;
                     }
                 }
+
+                &--link_more {
+                    text-decoration: underline;
+
+                    &-container {
+                        /*margin-top: -18px;*/
+                        text-align: center;
+                    }
+                }
             }
         }
     }
