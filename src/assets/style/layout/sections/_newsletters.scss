@@ -10,6 +10,23 @@
         position: relative;
         @include size(1152px, 548px); /* 468 | 52 */
 
+        .bg-top {
+            background-color: #d1b48a;
+            opacity: 0.51;
+            border-bottom-left-radius: 30% 650%;
+            border-bottom-right-radius: 30% 650%;
+            position: absolute;
+            top: -30px; /* 0 */
+            @include size(100%, 110px); /* 80px */
+
+            &-inner {
+                background-image: -moz-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
+                background-image: -webkit-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
+                background-image: -ms-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
+                @include size(100%, 100%);
+            }
+        }
+
         .bg-bottom {
             background-color: #fff;
             position: absolute;
