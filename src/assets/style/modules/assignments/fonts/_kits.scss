@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.kits {
+
+    &--text {
+        @include f("tea_mail--text");
+    }
+
+    &--heading {
+        @include f("tea_mail--heading");
+    }
+
+    &--button {
+        @include f("tea_mail--button");
+        line-height: 40px; /* TEMP */
+    }
+}
