@@ -1,9 +1,47 @@
 @charset "UTF-8";
 
 #newsletters {
+    text-align: center;
 
+    .letter {
+        background-color: #edd6a7; /* TEMP взять из карты цветов */
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        @include size(1152px, 548px); /* 468 | 52 */
+
+        .bg-bottom {
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            @include size(50%, 28px);
+
+            &.left {
+                left: 0;
+                transform-origin: 0 0;
+                transform: rotate(2.8deg);
+            }
+
+            &.right {
+                right: 0;
+                transform-origin: 100% 0;
+                transform: rotate(-2.8deg);
+            }
+        }
+    }
 }
 
 .newsletters {
 
+    &--heading {
+        text-transform: uppercase;
+    }
+
+    &--text {
+
+    }
+
+    &--button {
+
+    }
 }
