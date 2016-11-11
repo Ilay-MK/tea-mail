@@ -2,4 +2,18 @@
 
 .care {
 
+    &--heading {
+        @include f("care--heading");
+    }
+
+    &--advantages {
+        @include f("header--advantages--text");
+        color: #bf9265; /* Temp из карты взять */
+    }
+
+    &--button {
+        @include f("tea_mail--button");
+        line-height: 40px; /* TEMP */
+    }
+
 }

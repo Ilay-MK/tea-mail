@@ -1,9 +1,82 @@
 @charset "UTF-8";
 
 #care {
+    text-align: center;
 
+    &--advantages {
+
+        &--gift {
+
+            .icon {
+                background-image: url(../img/care/advantages/gift.png);
+            }
+        }
+
+        &--sale {
+
+            .icon {
+                background-image: url(../img/care/advantages/sale.png);
+            }
+        }
+
+        &--delivery {
+
+            .icon {
+                background-image: url(../img/care/advantages/delivery.png);
+            }
+        }
+    }
 }
 
 .care {
+    &--container {
 
+    }
+
+    &--heading {
+        text-transform: uppercase;
+    }
+
+    &--advantages {
+
+    }
+
+    &--button {
+        margin-top: 20px;
+    }
+
+    &--advantages {
+        text-align: center;
+        overflow: hidden;
+        padding: 0 15px;
+
+        /* [!] Выбрать каким способом стилизовать float или inline-block */
+        .advantage { /* Сделать марджины для адаптивки. Картинки на фоне ковером сделаны, т. что они почти одинаковой высоты */
+            /*float: left;*/
+            min-width: 140px;
+            overflow: hidden;
+            margin: 23px 0;
+            padding: 0 15px;
+            text-align: center;
+            vertical-align: top;
+            /*width: 20%;*/
+
+            /*outline: 1px solid;*/
+
+            display: inline-block;
+            /*margin: 0 -2px;*/
+
+            width: 16.5%;
+
+            p {
+                margin: 0;
+            }
+
+            .icon {
+                @extend %bg-cover;
+                margin: 0 auto 22px;
+                @include size(50px);
+            }
+        }
+    }
 }
