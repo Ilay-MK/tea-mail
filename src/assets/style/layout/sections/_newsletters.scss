@@ -11,11 +11,11 @@
         @include size(1152px, 548px); /* 468 | 52 */
 
         .bg-top {
-            background-color: #d1b48a;
-            opacity: 0.51;
+            background-color: rgba(209, 180, 138, 0.51);
             border-bottom-left-radius: 30% 650%;
             border-bottom-right-radius: 30% 650%;
             position: absolute;
+            overflow: hidden;
             top: -30px; /* 0 */
             @include size(100%, 110px); /* 80px */
 
@@ -43,6 +43,56 @@
                 right: 0;
                 transform-origin: 100% 0;
                 transform: rotate(-2.8deg);
+            }
+        }
+
+        .envelope-circle {
+            border-radius: 50%;
+            //background-color: #d1b48a;
+            border: 9px solid #d1b48a;
+            /*height: 32px; */
+            @include size(31px);
+
+            &.top {
+            }
+
+            &.bottom {
+                margin-top: 33px; /* 93 - 31 - 29 */
+
+                &:before, &:after {
+                    background-color: #ffdc94;
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 15px;
+                    /*top: 21px;*/
+                    top: 29px;
+                    transform-origin: 50% 50%;
+                    z-index: 9;
+                    /*@include size(2px, 52px);*/
+                    @include size(2px, 37px);
+                }
+
+                &:before {
+                    transform: rotate(20deg);
+                }
+
+                &:after {
+                    transform: rotate(-20deg);
+                }
+            }
+
+            &-container {
+                left: 48.7%; /* Suport more brousers ;) */
+                left: calc(50% - 15px);
+                top: 29px;
+                position: absolute;
+            }
+
+            .inner {
+                border-radius: 50%;
+                border: 2px solid #4e4e4e;
+                @include size(13px);
             }
         }
 
