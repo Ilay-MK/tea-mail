@@ -20,9 +20,6 @@
             @include size(100%, 110px); /* 80px */
 
             &-inner {
-                background-image: -moz-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
-                background-image: -webkit-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
-                background-image: -ms-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
                 @include size(100%, 100%);
             }
         }
