@@ -85,11 +85,10 @@ var config = {
 
 var crossBrousersCompatibility = {
     brousers: [
-        '> 0%',
+        '> 1%',
         'last 20 versions',
         'Firefox ESR',
         'ie 9',
-        'ie 8',
         'Opera 12.1',
         'Android 2.3',
         'Android >= 4',
@@ -109,7 +108,7 @@ var hosting = {
     host: 'host',
     user: 'user',
     pass: 'pass',
-    remotePath: './remotePath'
+    remotePath: 'path'
 };
 
 
