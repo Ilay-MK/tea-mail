@@ -1,5 +1,27 @@
 @charset "UTF-8";
 
 .reviews {
+    &--heading {
+        @include f("reviews--heading");
+    }
 
+    &--subHeading {
+        @include f("reviews--subHeading");
+    }
+
+    &--date {
+        @include f("reviews--date");
+    }
+
+    &--username {
+        @include f("reviews--username");
+    }
+
+    &--text {
+        @include f("reviews--text");
+    }
+
+    &--button {
+        @include f("reviews--button");
+    }
 }
