@@ -63,19 +63,19 @@
                     position: absolute;
                     left: 15px;
                     /*top: 21px;*/
-                    top: 29px;
+                    top: 27px;
                     transform-origin: 50% 50%;
                     z-index: 9;
                     /*@include size(2px, 52px);*/
-                    @include size(2px, 37px);
+                    @include size(2px, 41px);
                 }
 
                 &:before {
-                    transform: rotate(20deg);
+                    transform: rotate(24deg);
                 }
 
                 &:after {
-                    transform: rotate(-20deg);
+                    transform: rotate(-24deg);
                 }
             }
 
