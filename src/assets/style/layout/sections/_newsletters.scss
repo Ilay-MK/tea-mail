@@ -5,6 +5,11 @@
 
     .letter {
         background-color: #edd6a7; /* TEMP взять из карты цветов */
+        background: url(../img/newsletters/packages/1.png) no-repeat 20% 160%,
+            url(../img/newsletters/packages/2.png) no-repeat 40% 160%,
+            url(../img/newsletters/packages/3.png) no-repeat 60% 160%,
+            url(../img/newsletters/packages/4.png) no-repeat 80% 160%,
+            #edd6a7;
         overflow: hidden;
         margin: 0 auto;
         position: relative;
