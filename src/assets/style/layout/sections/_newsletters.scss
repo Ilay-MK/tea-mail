@@ -94,7 +94,7 @@
             background-color: #fff;
             bottom: -35%;
             left: 0;
-            transform-origin: 100% 0;
+            transform-origin: 100% -15px;
             transform: rotate(2.8deg);
             @include size(50%, 35%); /* 28px */
         }
@@ -103,7 +103,7 @@
             background-color: #fff;
             bottom: -35%;
             right: 0;
-            transform-origin: 0 0;
+            transform-origin: 0 -15px;
             transform: rotate(-2.8deg);
             @include size(50%, 35%); /* 28px */
         }
