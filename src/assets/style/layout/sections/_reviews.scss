@@ -197,5 +197,7 @@
 
     &--button {
         margin: 29px auto 0;
+        position: relative;
+        z-index: 9;
     }
 }
