@@ -23,5 +23,6 @@
 
     &--button {
         @include f("reviews--button");
+        line-height: 40px; /* TEMP */
     }
 }

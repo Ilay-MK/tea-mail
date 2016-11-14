@@ -1,9 +1,191 @@
 @charset "UTF-8";
 
 #reviews {
+    background-color: #fff;
+    background-image: url(../img/reviews/bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    text-align: center;
 
+    &--carousel {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #eeafaf;
+        border-radius: 4px;
+        background-color: #fff;
+        margin: 0 auto;
+        /*@include size(796px, 374px);*/
+        @include size(100%);
+
+        .carousel {
+            &-indicators li {
+                background-color: #f5f5f5;
+                /*@include size(9px);*/
+
+                &.active {
+                    background-color: #d7a96a;
+                }
+            }
+
+            &-inner {
+
+                .item {
+                    padding: 113px 110px 40px 80px;
+                }
+
+            }
+
+            &-control {
+                background: none;
+                @include transition();
+                width: 10%;
+
+                .chevron {
+                    &-container {
+                        display: inline-block;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #eeafaf;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        margin-top: -28px;
+                        /*padding: 19px;*/
+                        padding-bottom: 18px;
+                        padding-top: 18px;
+                        position: absolute;
+                        top: 50%;
+                        @include size(55px);
+                        @include transition();
+                    }
+
+                    &-inner {
+                        display: inline-block;
+                        margin: auto 0;
+                        transform-origin: 50% 50%;
+                        transform: rotate(45deg);
+                        /*@include size(16px);*/
+                        @include size(18px);
+                        @include transition();
+                    }
+                }
+
+                &.left {
+                    .chevron {
+                        &-container {
+                            left: -28px;
+                            padding-left: 9px;
+                        }
+                        &-inner {
+                            border-bottom: 1px solid #a4a4a4;
+                            border-left: 1px solid #a4a4a4;
+                        }
+                    }
+                }
+
+                &.right {
+                    .chevron {
+                        &-container {
+                            padding-right: 9px;
+                            right: -28px;
+                        }
+                        &-inner {
+                            border-right: 1px solid #a4a4a4;
+                            border-top: 1px solid #a4a4a4;
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    .chevron-inner {
+                        border-width: 2px;
+                    }
+                }
+
+                &:active, &:focus:active {
+
+                    .chevron {
+
+                        &-container {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+
+                        &-inner {
+                            border: 1px solid #a4a4a4;
+                            border-radius: 50%;
+                            transform: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .reviews {
 
+    &-decoration-bottom {
+        @include bg-cover;
+        background-image: url(../reviews/bg.png);
+        max-height: 244px;
+        max-width: 577px;
+        @include size(100%, auto);
+    }
+
+    &-container {
+        border-radius: 6px;
+        background-color: #f5f5f5;
+        margin: 0 auto;
+        padding: 14px;
+        @include size(825px, 402px);
+
+        text-align: left;
+
+        .col {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    &--visual {
+        background-color: #e3e3e3;
+        background-image: url(../img/reviews/visual.png);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        border-radius: 50%;
+        margin-right: 15px; /* 20px */
+        margin-top: 12px; /* 31px */
+        @include size(51px);
+    }
+
+    &--heading {
+        text-transform: uppercase;
+    }
+
+    &--subHeading {
+
+    }
+
+    &--rating {
+        float: left;
+    }
+
+    &--date {
+        margin: 0;
+        float: right;
+    }
+
+    &--username {
+        margin: 17px auto 7px;
+    }
+
+    &--text {
+        margin: 0;
+        max-width: 450px;
+    }
+
+    &--button {
+
+    }
 }
