@@ -65,7 +65,7 @@
                         transform: rotate(45deg);
                         /*@include size(16px);*/
                         @include size(18px);
-                        @include transition();
+                        @include transition($time: 100ms);
                     }
                 }
 
