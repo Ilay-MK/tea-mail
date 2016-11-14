@@ -7,6 +7,10 @@
     background-position: 50% 94%;
     text-align: center;
 
+    hgroup {
+        margin: 100px auto 80px;
+    }
+
     &--carousel {
         border-style: solid;
         border-width: 1px;
@@ -165,11 +169,12 @@
     }
 
     &--heading {
+        margin-bottom: 38px;
         text-transform: uppercase;
     }
 
     &--subHeading {
-
+        margin-top: 38px;
     }
 
     &--rating {
