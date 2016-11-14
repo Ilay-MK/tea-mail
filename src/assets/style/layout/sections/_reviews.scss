@@ -4,7 +4,7 @@
     background-color: #fff;
     background-image: url(../img/reviews/bg.png);
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: 50% 94%;
     text-align: center;
 
     &--carousel {
@@ -128,10 +128,14 @@
 
     &-decoration-bottom {
         @include bg-cover;
-        background-image: url(../reviews/bg.png);
+        background-image: url(../img/reviews/decoration-bottom.png);
+        margin: -2px auto 0;
         max-height: 244px;
         max-width: 577px;
-        @include size(100%, auto);
+        position: relative;
+        top: -92px;
+        /*@include size(100%, auto);*/
+        @include size(100%, 244px);
     }
 
     &-container {
@@ -187,6 +191,6 @@
     }
 
     &--button {
-
+        margin: 29px auto 0;
     }
 }
