@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 #newsletters {
+    position: relative;
     text-align: center;
 
     .letter {
@@ -26,25 +27,6 @@
 
             &-inner {
                 @include size(100%, 100%);
-            }
-        }
-
-        .bg-bottom {
-            background-color: #fff;
-            position: absolute;
-            bottom: 0;
-            @include size(50%, 28px);
-
-            &.left {
-                left: 0;
-                transform-origin: 0 0;
-                transform: rotate(2.8deg);
-            }
-
-            &.right {
-                right: 0;
-                transform-origin: 100% 0;
-                transform: rotate(-2.8deg);
             }
         }
 
@@ -101,6 +83,38 @@
         &-content {
             margin-top: 182px;
             position: relative;
+        }
+    }
+
+
+    .bg-bottom {
+        position: absolute;
+
+        &.left {
+            background-color: #fff;
+            bottom: -35%;
+            left: 0;
+            transform-origin: 100% -15px;
+            transform: rotate(2.8deg);
+            @include size(50%, 35%); /* 28px */
+        }
+
+        &.right {
+            background-color: #fff;
+            bottom: -35%;
+            right: 0;
+            transform-origin: 0 -15px;
+            transform: rotate(-2.8deg);
+            @include size(50%, 35%); /* 28px */
+        }
+
+        &.gradient {
+            background-color: transparent;
+            background-image: -moz-linear-gradient( 90deg, rgb(115,195,166) 0%, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 90deg, rgb(115,195,166) 0%, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 90deg, rgb(115,195,166) 0%, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+            bottom: 0;
+            @include size(100%, 35%); /* height: 193px; - 35,21897810218978% от 548px */
         }
     }
 }
