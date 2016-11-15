@@ -3,3 +3,49 @@
 #footer {
     overflow: hidden;
 }
+
+.footer {
+    &--nav {
+
+        &--link {
+
+        }
+
+        &-second {
+            &--link {
+
+            }
+        }
+    }
+
+    &--newsletters {
+
+        &--title {
+
+        }
+
+        &--input {
+
+        }
+
+        &--button {
+
+        }
+    }
+
+    &--company_details {
+
+    }
+
+    &--phone {
+
+
+        &_+ {
+
+        }
+    }
+
+    &--heading_social {
+
+    }
+}

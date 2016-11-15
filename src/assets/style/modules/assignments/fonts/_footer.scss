@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+.footer {
+    &--nav {
+
+        &--link {
+            @include f("footer--nav--link");
+        }
+
+        &-second {
+            &--link {
+                @include f("footer--nav-second--link");
+            }
+        }
+    }
+
+    &--newsletters {
+
+        &--title {
+            @include f("footer--title");
+        }
+
+        &--input {
+            @include f("footer--input");
+        }
+
+        &--button {
+            @include f("footer--button");
+        }
+    }
+
+    &--company_details {
+        @include f("footer--company_details");
+    }
+
+    &--phone {
+        @include f("footer--phone");
+
+        &_+ {
+            @include f("footer--phone_+");
+        }
+    }
+
+    &--heading_social {
+        @include f("footer--heading_social");
+    }
+}
