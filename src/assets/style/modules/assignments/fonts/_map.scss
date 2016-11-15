@@ -1,5 +1,24 @@
 @charset "UTF-8";
 
 .map {
+    &--work_mode {
+        @include f("map--work_mode");
 
+        &-time {
+            @include f("map--work_mode-time");
+        }
+    }
+    &--address {
+        @include f("map--address");
+
+        &-metro{
+            @include f("map--address-metro");
+        }
+        &-description{
+            @include f("map--address-description");
+        }
+    }
+    &--firmName {
+        @include f("map--firmName");
+    }
 }

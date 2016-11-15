@@ -1,13 +1,85 @@
 @charset "UTF-8";
 
 #map {
+    @include size(100%, 590px);
 
+    .address {
+        &-container {
+            background-color: #ffffff;
+            left: 40px;
+            position: absolute;
+            top: 118px;
+            @include size(457px, 321px);
+            z-index: 99;
+
+            .binding {
+                background-color: #e6c89d;
+                float: left;
+                margin-right: 35px;
+                @include size(38px, 100%);
+
+                .circle {
+                    border-radius: 50%;
+                    background-color: #bdaa90;
+                    left: 10px;
+                    padding: 3px;
+                    position: absolute;
+                    @include size(18px);
+
+                    &.top {
+                        top: 26px;
+                    }
+                    &.bottom {
+                        bottom: 31px;
+                    }
+
+                    &-inner {
+                        border-radius: 50%;
+                        background-color: #636363;
+                        @include size(12px);
+                    }
+                }
+            }
+        }
+
+        &-content {
+            max-width: 320px;
+        }
+    }
 }
 
 #gmap {
-
+    @include size(100%);
 }
 
 .map {
+    &--work_mode {
 
+
+        &-time {
+
+        }
+    }
+    &--address {
+        margin: 0;
+
+        &-metro{
+            margin: 10px 0 37px;
+
+            &:before {
+                @include bg-cover;
+                background-image: url(../img/map/metro.png);
+                content: '';
+                float: left;
+                margin: -2px 11px 0 2px;
+                @include size(21px);
+            }
+        }
+        &-description{
+            margin-bottom: 40px;
+        }
+    }
+    &--firmName {
+        margin: 51px 0 1px;
+    }
 }

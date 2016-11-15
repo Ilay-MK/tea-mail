@@ -1,3 +1,3 @@
 //= vendors/index.js
-//= plugins.js
+//= plugins/index.js
 //= common.js

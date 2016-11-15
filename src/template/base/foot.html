@@ -33,7 +33,33 @@
             /*loadStyle('css/main.css?v=0.0.1');*/
             downloadJSAtOnload('assets/js/main.js?v=0.0.1');
         });
+
     </script>
+
+    <script>
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('gmap'), {
+                zoom: 17,
+                center: {lat: 53.911619, lng: 27.576343},
+                disableDefaultUI: true
+            });
+            /* 53.911619, 27.579647 */
+            /*var image = './assets/img/map/marker.png';*/
+            /*marker = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: {
+                    lat: 53.911619,
+                    lng: 27.579647
+                },
+                icon: image
+            });*/
+        }
+    </script>
+
+    <!-- API GOOGLE MAP -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB2a-rr7rqpb2ePaUWBoF856gWo8rpIFDE&callback=initMap"></script>
 
     <!-- Yandex.Metrika counter -->
 
