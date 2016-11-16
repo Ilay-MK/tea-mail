@@ -1,3 +1,47 @@
 <footer id="footer" role="contentinfo">
+    <div class="container">
 
+        <div>
+            <div class="col">
+                <div class="footer--phone--container">
+                    <p class="footer--phone"><span class="plus">+</span>375 (29) 854 34 60
+                        <!--<a href="tel:+375(29)8543460" class="footer--phone">+375 (29) 854 34 60</a>-->
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer--newsletters--container">
+
+                    <div class="form-newsletters" role="form">
+                        <form action="mail.php" class="order" id="footer--newsletters-form" method="post">
+                            <!--
+                            -- .has-feedback
+                            --
+                            -- .has-success
+                            -- .has-warning
+                            -- .has-error
+                            -->
+
+                            <div class="form-group form-group-main has-feedback">
+                                <!--<label class="control-label sr-only" for="bsName">Подписка на акции и новости</label>-->
+                                <label for="footer--newsletters--email" class="control-label footer--newsletters--title">Подписка на акции и новости</label>
+                                <input type="email" class="validating footer--newsletters--input" name="footer--newsletters--email" id="footer--newsletters--email" placeholder="Ваш Email" aria-describedby="footer--newsletters--email-status" required="required" />
+                                <!--<span class="glyphicon form-control-feedback" aria-hidden="true"></span>-->
+                                <!--<span id="footer--newsletters--email-status" class="sr-only">(успех)</span>-->
+                                <!--<div class="form-control-feedback-icon"></div>-->
+                                <!--<div class="form-control-feedback-message-error">Поле не заполнено.</div>-->
+
+                                <input type="hidden" name="whichService" id="whichService" class="form-control" value="Подвал newsletters">
+
+                                <button type="submit" class="btn submit footer--newsletters--button" role="button" data-submit="#footer--newsletters-form">Готово</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 </footer>

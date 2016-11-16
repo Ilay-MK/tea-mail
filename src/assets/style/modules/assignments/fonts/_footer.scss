@@ -17,15 +17,15 @@
     &--newsletters {
 
         &--title {
-            @include f("footer--title");
+            @include f("footer--newsletters--title");
         }
 
         &--input {
-            @include f("footer--input");
+            @include f("footer--newsletters--input");
         }
 
         &--button {
-            @include f("footer--button");
+            @include f("footer--newsletters--button");
         }
     }
 
@@ -35,10 +35,6 @@
 
     &--phone {
         @include f("footer--phone");
-
-        &_+ {
-            @include f("footer--phone_+");
-        }
     }
 
     &--heading_social {
