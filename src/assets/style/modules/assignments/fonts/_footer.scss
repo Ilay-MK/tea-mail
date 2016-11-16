@@ -60,7 +60,7 @@
         @include f("footer--phone");
     }
 
-    &--heading_social {
-        @include f("footer--heading_social");
+    &--social--heading {
+        @include f("footer--social--heading");
     }
 }
