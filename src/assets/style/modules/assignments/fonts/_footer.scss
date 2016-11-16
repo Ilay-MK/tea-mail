@@ -3,13 +3,36 @@
 .footer {
     &--nav {
 
-        &--link {
-            @include f("footer--nav--link");
+        li {
+
+            a {
+                @include f("footer--nav--link");
+                margin-bottom: 12px;
+            }
+
+            &:last-child {
+
+                a {
+                    margin-bottom: 0;
+                }
+            }
         }
 
-        &-second {
-            &--link {
-                @include f("footer--nav-second--link");
+        &-secondary {
+
+            li {
+
+                a {
+                    @include f("footer--nav-secondary--link");
+                    margin-bottom: 16px;
+                }
+
+                &:last-child {
+
+                    a {
+                        margin-bottom: 0;
+                    }
+                }
             }
         }
     }

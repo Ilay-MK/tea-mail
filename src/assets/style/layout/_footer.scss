@@ -6,38 +6,48 @@
     overflow: hidden;
 
     .container {
-        max-width: 815px;
+        max-width: 845px; /* 815px + 15px + 15px */
     }
 
-    .col {
-        float: left;
-        width: 50%;
+    nav > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
 }
 
 .footer {
     &--nav {
 
-        &--link {
-
+        &--container {
+            float: left;
+            width: 33.3%;
         }
 
-        &-second {
-            &--link {
+        &-secondary {
 
+            &--container {
+                float: right;
+                width: 33.3%;
             }
         }
+    }
+
+    &--visual {
+        display: inline-block;
+        width: 33.3%;
     }
 
     &--newsletters {
 
         &--container {
-           text-align: right;
+            float: right;
+            width: 33.3%;
         }
 
         &--title {
             display: block;
-            margin-right: 75px;
+            /*margin-right: 75px;*/
             margin-bottom: 8px;
         }
 
@@ -89,7 +99,9 @@
         }
 
         &--container {
+            float: left;
             text-align: center;
+            width: 50%;
         }
     }
 
