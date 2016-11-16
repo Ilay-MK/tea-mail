@@ -46,6 +46,8 @@
         @include font-OpenSans_RegularItalic;
     } @else if $assignment == use("use-19") {
         @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-26") {
+        @include font-OpenSans_RegularItalic;
     } @else if $assignment == use("use-20") {
         @include font-OpenSans_RegularItalic;
         /* / OpenSans_RegularItalic */
@@ -58,8 +60,6 @@
     } @else if $assignment == use("use-24") {
         @include font-OpenSans_Light;
     } @else if $assignment == use("use-25") {
-        @include font-OpenSans_Light;
-    } @else if $assignment == use("use-26") {
         @include font-OpenSans_Light;
     } @else if $assignment == use("use-27") {
         @include font-OpenSans_Light;
