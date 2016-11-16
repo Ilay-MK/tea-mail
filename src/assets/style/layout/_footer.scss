@@ -2,7 +2,7 @@
 
 #footer {
     background-color: #e6c89d;
-    padding: 55px 0 0;
+    padding: 55px 0;
     overflow: hidden;
 
     .container {
@@ -129,9 +129,17 @@
             @include size(80px, 49px);*/
             background-image: url(../img/footer/social.png);
             background-repeat: no-repeat;
-            display: inline-block;
+            border-bottom-left-radius: 25%;
+            border-bottom-right-radius: 25%;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,.4);
             margin: 0 14px;
-            @include size(76px, 45px);
+            vertical-align: top;
+            @include size(76px, 44px);
+
+            &:hover {
+                box-shadow: 0 10px 15px -10px rgba(0,0,0,.3);
+                @include size(76px, 45px);
+            }
 
             &.f {
                 background-position: 0 0;
@@ -166,7 +174,8 @@
             }
 
             img {
-                @include size(auto, 100%);
+                margin-top: 3px;
+                @include size(auto, 75%);
             }
         }
     }
