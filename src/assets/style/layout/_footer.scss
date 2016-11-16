@@ -19,6 +19,10 @@
 .footer {
     &--nav {
 
+        &s--container {
+            margin: 18px 0 0;
+        }
+
         &--container {
             float: left;
             padding-left: 100px;
@@ -35,8 +39,11 @@
     }
 
     &--visual {
+        background-image: url(../img/footer/visual.png);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
         display: inline-block;
-        width: 33.3%;
+        @include size(33.3%, 196px); /* 100px 196px */
     }
 
     &--newsletters {
