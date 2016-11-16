@@ -21,6 +21,7 @@
 
         &--container {
             float: left;
+            padding-left: 100px;
             width: 33.3%;
         }
 
@@ -88,8 +89,7 @@
             float: left;
             @include bg-cover;
             background-image: url(../img/footer/phone.png);
-            margin-right: 9px;
-            margin-top: -15px;
+            margin: -15px 9px 0 -28px;
             @include size(28px);
         }
 
