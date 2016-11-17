@@ -10,10 +10,23 @@
 
         &-content {
             background-color: #fae7d4; /* TEMP взять из карты цветов */
+            border-radius: 600%/30%;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
             padding: 60px 100px 0 168px;
             position: absolute;
             top: 20px; /* TEMP */
-            @include size(690px, 628px);
+            @include size(690px, 600px);
+
+            &:after {
+                background: url(../img/tea_room/bg-content-bottom.png) 0 100% repeat-x transparent;
+                bottom: -28px;
+                content: '';
+                display: block;
+                left: 0;
+                position: absolute;
+                @include size(100%, 28px);
+            }
         }
 
         &--heading {
