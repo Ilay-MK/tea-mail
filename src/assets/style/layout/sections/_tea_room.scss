@@ -30,6 +30,14 @@
 
         &--address {
 
+            &:before {
+                @include bg-cover;
+                background-image: url(../img/tea_room/marker.png);
+                content: '';
+                float: left;
+                margin-right: 11px;
+                @include size(13px, 20px);
+            }
         }
 
         &--button {
