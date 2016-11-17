@@ -18,6 +18,16 @@
 
         &--heading {
             text-transform: uppercase;
+
+            &:after {
+                @include bg-cover;
+                background-image: url(../img/tea_room/visual.png);
+                content: '';
+                float: right;
+                margin-left: -32px;
+                margin-top: -37px;
+                @include size(98px, 117px);
+            }
         }
 
         &--subHeading {
