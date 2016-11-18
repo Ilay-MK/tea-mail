@@ -10,9 +10,27 @@ $(document).ready(function () {
     /* - - - - - - - - - - - - - - - - HEADER - - - - - - - - - - - - - - -  */
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - TEA_ROOM - - - - - - - - - - - - - -  */
+    /*$("#tea_room").on('inview', function(event, isInView) {
+        if (isInView) {
+
+        } else {
+            // element has gone out of viewport
+        }
+    });*/
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - COMMON - - - - - - - - - - - - - -  */
 
-    // автоудаление классов анимации animate.css после проигрывания анимации
+    $(document).scroll( function () {
+        parallax($('.tea_mail--imgLink').addClass("parallax"), 'margin-top', -getPageSize()[3] / 2, "px", -4, 400, 25);
+        parallax($('#tea_room-content').addClass("parallax"), 'margin-top', getPageSize()[3] / 2);
+        parallax($('#tea_room').addClass("parallax-bg"), 'background-position-y', 0, "px", -4, 400, -400);
+        parallax($('#dishes').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3] / 6, "px", -10);
+        parallax($('#map--address').addClass("parallax"), 'top', getPageSize()[3] / 2);
+    } );
+
+    // Автоудаление классов анимации animate.css после проигрывания анимации
     $.fn.extend({
         animateCss: function (animationName) {
             var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
@@ -26,6 +44,47 @@ $(document).ready(function () {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - FUNCTION - - - - - - - - - - - - - - - */
+
+//Parallax effect
+function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY) {
+    if (getPageSize()[2] < 768) {
+        return;
+    }
+
+    if (unit === undefined) {
+        unit = "px";
+    }
+    if (maxOffsetY === undefined) {
+        maxOffsetY = +object.outerHeight()/2;
+    }
+    if (minOffsetY === undefined) {
+        minOffsetY = -object.outerHeight()/2;
+    }
+    if (rate === undefined) {
+        rate = 4;
+    }
+
+    var currScrollPos = +$(document).scrollTop(),
+        offsetFromTop = object.offset(),
+        currToBlock   = +offsetFromTop.top - currScrollPos,
+        hOffset       = (currToBlock + baseline) / rate;
+
+    console.log("----------------------");
+    console.log("getPageSize()[3]: " + getPageSize()[3]);
+    console.log("maxOffsetY: " + maxOffsetY);
+    console.log("minOffsetY: " + minOffsetY);
+    console.log("currToBlock: " + currToBlock);
+    console.log("hOffset: " + hOffset);
+
+    if ( hOffset > maxOffsetY ) { hOffset = maxOffsetY; }
+    if ( hOffset < minOffsetY ) { hOffset = minOffsetY; }
+
+    console.log("hOffset + unit: " + hOffset + unit);
+    console.log("----------------------");
+
+    /*object.addClass("parallax");*/
+    object.css(cssRule, hOffset + unit);
+}
 
 // Кроссбраузерное получение размеров окна на JS
 function getPageSize() {
