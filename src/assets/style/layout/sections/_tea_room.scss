@@ -6,67 +6,81 @@
     height: 820px;
     overflow: visible;
 
-    .tea_room {
+    .shapely_line {
+        @include background-size(100% 100%);
+        @include size(100%, 16px);
+        position: absolute;
 
-        &-content {
-            background-color: #fae7d4; /* TEMP взять из карты цветов */
-            border-radius: 600%/30%;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 0;
-            padding: 60px 100px 0 168px;
+        &.top {
+            background: transparent url(../img/tea_room/shapely_line/top.png) no-repeat center top;
+            top: 0;
+        }
+
+        &.bottom {
+            background: transparent url(../img/tea_room/shapely_line/bottom.png) no-repeat center bottom;
+            bottom: 0;
+        }
+    }
+}
+
+.tea_room {
+    &-content {
+        background-color: #fae7d4; /* TEMP взять из карты цветов */
+        border-radius: 600%/30%;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 60px 100px 0 168px;
+        position: absolute;
+        margin-top: 225px;
+        top: 20px; /* TEMP */
+        @include size(690px, 600px);
+
+        &:after {
+            background: url(../img/tea_room/bg-content-bottom.png) 0 100% repeat-x transparent;
+            bottom: -28px;
+            content: '';
+            display: block;
+            left: 0;
             position: absolute;
-            top: 20px; /* TEMP */
-            @include size(690px, 600px);
-
-            &:after {
-                background: url(../img/tea_room/bg-content-bottom.png) 0 100% repeat-x transparent;
-                bottom: -28px;
-                content: '';
-                display: block;
-                left: 0;
-                position: absolute;
-                @include size(100%, 28px);
-            }
+            @include size(100%, 28px);
         }
+    }
 
-        &--heading {
-            text-transform: uppercase;
+    &--heading {
+        text-transform: uppercase;
 
-            &:after {
-                @include bg-cover;
-                background-image: url(../img/tea_room/visual.png);
-                content: '';
-                float: right;
-                margin-left: -32px;
-                margin-top: -37px;
-                @include size(98px, 117px);
-            }
+        &:after {
+            @include bg-cover;
+            background-image: url(../img/tea_room/visual.png);
+            content: '';
+            float: right;
+            margin-left: -32px;
+            margin-top: -37px;
+            @include size(98px, 117px);
         }
+    }
 
-        &--subHeading {
-
-        }
-
-        &--text {
-
-        }
-
-        &--address {
-
-            &:before {
-                @include bg-cover;
-                background-image: url(../img/tea_room/marker.png);
-                content: '';
-                float: left;
-                margin-right: 11px;
-                @include size(13px, 20px);
-            }
-        }
-
-        &--button {
-
-        }
+    &--subHeading {
 
     }
 
+    &--text {
+
+    }
+
+    &--address {
+
+        &:before {
+            @include bg-cover;
+            background-image: url(../img/tea_room/marker.png);
+            content: '';
+            float: left;
+            margin-right: 11px;
+            @include size(13px, 20px);
+        }
+    }
+
+    &--button {
+
+    }
 }
