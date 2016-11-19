@@ -4,16 +4,6 @@
     padding: 64px 0;
     text-align: center;
 
-    .col {
-        /*outline: 1px solid;*/
-        display: inline-block;
-        padding: 0 15px;
-        /*overflow: hidden;*/
-        vertical-align: top;
-        /* 384px without scrollbar */
-        @include size(33.3%, auto);
-    }
-
     /// Описание картинок ссылок
     &--imgLink {
 
@@ -43,25 +33,33 @@
 
     &--content {
         background-color: #fff;
+        background: url(../img/kits/bg-left.png) 40px 45% no-repeat,
+            url(../img/kits/bg-right.png) calc(100% - 40px) 45% no-repeat,
+            #fff;
         /*@include size(485px, 399px);*/
         /*border-top-left-radius: 20px 150px;
         border-top-right-radius: 20px 150px;
         border-bottom-left-radius: 20px 150px;
         border-bottom-right-radius: 20px 150px;*/
         border-radius: 20px/150px;
+        padding: 1px 100px;
+        @include size(485px, 399px);
     }
 
     &--heading {
-        margin-bottom: 20px;
+        margin-bottom: 17px;
+        margin-top: 13px;
         text-transform: uppercase;
     }
 
     &--text {
-
+        /*font-size: 14px !important;*/
+        line-height: 19px !important;
+        letter-spacing: .025em !important;
     }
 
     &--button {
-        margin-top: 23px;
+        margin: 23px auto 0 !important;
     }
 
     &--imgLink {
