@@ -110,9 +110,9 @@
 
         &.gradient {
             background-color: transparent;
-            background-image: -moz-linear-gradient( 90deg, rgb(115,195,166) 0%, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-            background-image: -webkit-linear-gradient( 90deg, rgb(115,195,166) 0%, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-            background-image: -ms-linear-gradient( 90deg, rgb(115,195,166) 0%, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+            background-image: -moz-linear-gradient( 90deg, rgb(115,195,166) 0%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 90deg, rgb(115,195,166) 0%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 90deg, rgb(115,195,166) 0%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
             bottom: 0;
             @include size(100%, 35%); /* height: 193px; - 35,21897810218978% от 548px */
         }
