@@ -217,13 +217,17 @@
                         &:before {
                             content: '';
                             @include bg-cover;
-                            background-image: url(../img/nav/heart.png);
+                            /*background-image: url(../img/nav/heart.png);*/
+                            background-image: url(../img/nav/heart.svg);
                             display: inline-block;
                             position: absolute;
                             border-radius: 50%;
-                            left: -8px;
-                            top: 39px;
-                            @include size(12px, 11px);
+                            /*left: -8px;*/
+                            left: -11px;
+                            /*top: 39px;*/
+                            top: 36px;
+                            /*@include size(12px, 11px);*/
+                            @include size(17px);
                         }
                     }
                 }
