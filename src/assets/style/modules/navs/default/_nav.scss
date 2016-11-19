@@ -3,14 +3,165 @@
 .nav {
 
     &-main {
+        background-color: transparent !important;
+        background-image: url(../img/nav/bg.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100% 119px;
+        border: 0px solid transparent !important;
+        border: none !important;
+        height: 119px;
+        position: relative;
 
+        .logo {
+            position: absolute;
+            z-index: 9;
+            left: calc(50% - 25px);
+            top: 21px;
+            @include size(50px, 81px);
+        }
 
         &-dropdown {
 
+        }
+
+        .navbar-main-collapse {
+            position: relative;
+
+            ul.before, ul.after {
+                display: inline-block;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                position: absolute;
+
+                > li {
+                    display: inline-block;
+
+                    > a {
+                        @extend .nav--link;
+                        padding: 28px 14px;
+                        max-width: 103px;
+                        position: relative;
+                        vertical-align: middle;
+
+                        &:hover {
+                            @extend .nav--link-hover;
+                            text-decoration: none;
+                        }
+                    }
+
+                    &.active {
+                        > a {
+                            &:after {
+                                content: '';
+                                @include bg-cover;
+                                background-image: url(../img/nav/underline-pusshed.png);
+                                bottom: 19px;
+                                display: block;
+                                position: absolute;
+                                right: 31px;
+                                @include size(25px, 5px);
+                            }
+                        }
+                    }
+                }
+            }
+
+            ul.before {
+                margin-right: 51px;
+                right: 50%;
+
+                li.catalog {
+
+                    a.dropdown-toggle {
+                        &:before {
+                            content: '';
+                            @include bg-cover;
+                            background-image: url(../img/nav/caret.png);
+                            display: inline-block;
+                            position: absolute;
+                            border-radius: 50%;
+                            left: -21px;
+                            top: 38px;
+                            @include size(13px);
+                        }
+                    }
+                }
+
+                li.care {
+                    padding-left: 20px;
+
+                    a {
+                        &:before {
+                            content: '';
+                            @include bg-cover;
+                            background-image: url(../img/nav/heart.png);
+                            display: inline-block;
+                            position: absolute;
+                            border-radius: 50%;
+                            left: -8px;
+                            top: 39px;
+                            @include size(12px, 11px);
+                        }
+                    }
+                }
+            }
+
+            ul.after {
+                left: 50%;
+                margin-left: 58px;
+                margin-top: 6px;
+            }
+
+            ul.navbar-right {
+                list-style: none;
+                margin: 23px 0;
+                padding: 0;
+
+                li {
+
+                    &.basket {
+                        text-align: center;
+
+                        a {
+                            @extend .nav--link;
+                            font-size: 14px;
+
+                            .icon {
+                                @include bg-cover;
+                                background-image: url(../img/nav/basket.png);
+                                display: inline-block;
+                                @include size(25px, 20px);
+                                position: relative;
+
+                                &:before {
+                                    @extend .nav--username;
+                                    font-size: 13px;
+                                    color: #fff !important;
+                                    content: '2';
+                                    background-color: #b62927;
+                                    border-radius: 50%;
+                                    display: inline-block;
+                                    left: -8px;
+                                    position: relative;
+                                    text-align: center;
+                                    top: -4px;
+                                    @include size(17px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
     &-secondary {
 
+    }
+
+    &--username {
+        margin-top: 10px;
     }
 }
