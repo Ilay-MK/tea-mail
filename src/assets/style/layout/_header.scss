@@ -46,6 +46,13 @@
                 left: auto;
                 right: 254px; /*15px*/
             }
+
+            &:hover {
+                background-image: url(../img/header/ctrl-arrow_hover.png);
+                @extend .pulse;
+                @extend .animated;
+                @extend .infinite;
+            }
         }
     }
 
