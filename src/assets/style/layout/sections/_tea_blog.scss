@@ -75,7 +75,7 @@
             }
 
             &--link_more {
-                margin: 14px 0 11px;
+                margin: 22px 0 3px; /* 14px 0 11px */
             }
         }
 
@@ -107,15 +107,16 @@
             display: inline-block;
             border-left: 2px solid #a28455; /* TEMP */
             /*max-width: 437px;*/
+            max-width: 463px;
             min-height: 640px;
             padding: 5px;
-            vertical-align: middle;
+            vertical-align: top;
             @include size(42.734375%, auto);
 
             .nav {
 
                 &-justified li {
-                    width: 50%;
+                    width: auto; /*50%*/
 
                     &:first-child {
                         border-right: 1px solid #dcdcdc;
@@ -161,7 +162,7 @@
                     position: relative;
                     margin-top: -21px;
                     z-index: 8;
-                    @include size(451px, auto);
+                    /*@include size(451px, auto);*/
                     /*@include size(451px, 107px);*/
                     @include transition();
 
