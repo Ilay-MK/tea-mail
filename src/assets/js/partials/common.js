@@ -4,10 +4,31 @@ $(function () {
     console.log('in common.js! ');
 })
 
+var heroCarousel = {
+    h1 : [
+        "Отборные сорта чая с азиатских плантаций",
+        "Новый заголовок H1 ;)"
+    ],
+    bg : [
+        "0",
+        "1"
+    ],
+    h1_default: "Отборные сорта чая с азиатских плантаций",
+    bg_default: "0",
+    cursor: 0
+};
+
 $(document).ready(function () {
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - HEADER - - - - - - - - - - - - - - -  */
+    $("#header .ctrl-arrow-left").click(function () {
+        scrollHeroCarousel("prev");
+    });
+
+    $("#header .ctrl-arrow-right").click(function () {
+        scrollHeroCarousel("next");
+    });
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - TEA_ROOM - - - - - - - - - - - - - -  */
@@ -45,7 +66,52 @@ $(document).ready(function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - FUNCTION - - - - - - - - - - - - - - - */
 
-//Parallax effect
+/// Get Hero Carousel number of slide
+/// @route - "prev" или "next"
+function scrollHeroCarousel(route) {
+    var h1, bg;
+
+    switch(route) {
+        case "prev":
+            if(heroCarousel.cursor < 1) {
+                heroCarousel.cursor = heroCarousel.h1.length - 1;
+            }
+            else {
+                --heroCarousel.cursor;
+            }
+            break;
+        case "next":
+            if(heroCarousel.cursor > (heroCarousel.h1.length - 2)) {
+                heroCarousel.cursor = 0;
+            }
+            else {
+                ++heroCarousel.cursor;
+            }
+            break;
+        default:
+            if(heroCarousel.cursor > (heroCarousel.h1.length - 2)) {
+                heroCarousel.cursor = 0;
+            }
+            else {
+                ++heroCarousel.cursor;
+            }
+            break;
+    }
+
+    if(heroCarousel.h1.length > 0) {
+        h1 = heroCarousel.h1[heroCarousel.cursor];
+        bg = heroCarousel.cursor;
+    }
+    else {
+        h1 = heroCarousel.h1_default;
+        bg = heroCarousel.bg_default;
+    }
+
+    $("#header h1").stop().text(h1).css("animation-duration", "0.8s").animateCss("fadeInDown");
+    $("#header").css("background-image", "url(assets/img/header/bg_" + bg + ".png)");
+}
+
+/// Parallax effect
 function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY) {
     if (getPageSize()[2] < 768) {
         return;
@@ -86,7 +152,7 @@ function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY)
     object.css(cssRule, hOffset + unit);
 }
 
-// Кроссбраузерное получение размеров окна на JS
+/// Кроссбраузерное получение размеров окна на JS
 function getPageSize() {
     var xScroll, yScroll;
 
