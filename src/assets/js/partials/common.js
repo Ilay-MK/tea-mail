@@ -74,7 +74,20 @@ $(document).ready(function () {
         parallax($('#tea_room').addClass("parallax-bg"), 'background-position-y', 0, "px", -4, 400, -400);
         parallax($('#dishes').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3] / 6, "px", -10);
         parallax($('#map--address').addClass("parallax"), 'top', getPageSize()[3] / 2);
-    } );
+
+
+        if(+$(document).scrollTop() > 50) {
+            $("#nav-main").css("margin-top", "-10px");
+            $("#nav-main").css("height", "101px");
+            $("#nav-main .logo").html('<img src="assets/img/nav/logo_mini.png" alt="">');
+        }
+        else {
+            $("#nav-main").css("margin-top", "0");
+            $("#nav-main").css("height", "119px");
+            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+        }
+
+    });
 
     // Автоудаление классов анимации animate.css после проигрывания анимации
     $.fn.extend({

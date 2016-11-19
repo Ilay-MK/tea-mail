@@ -6,12 +6,13 @@
         background-color: transparent !important;
         background-image: url(../img/nav/bg.png);
         background-repeat: no-repeat;
-        background-position: 0 0;
+        background-position: 50% 100%;
         background-size: 100% 119px;
         border: 0px solid transparent !important;
         border: none !important;
         height: 119px;
         position: relative;
+        @include transition();
 
         .logo {
             position: absolute;
