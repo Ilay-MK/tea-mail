@@ -7,23 +7,58 @@
     /// Описание картинок ссылок
     &--imgLink {
 
-        &-1 {
-            background-image: url(../img/kits/1.png);
-            background-position: -400px 0;
+        &-left {
 
-            &:hover {
-                /*background-image: url(../img/kits/1-hover.png);*/
-                background-position: 0 0;
+            &-1 {
+                /*calc(32.5% - 400px)*/
+                background-image: url(../img/kits/box-left-1.png);
+                //background-position: -400px 0;
+                left: calc(32.5% - 251px);
+                margin-left: 251px;
+
+                &:hover {
+                    /*background-image: url(../img/kits/1-hover.png);*/
+                    //background-position: 0 0;
+                }
+            }
+
+            &-2 {
+                /*calc(32.5% - 400px)*/
+                background-image: url(../img/kits/box-left-2.png);
+                //background-position: -400px 0;
+                left: calc(32.5% - 400px);
+                margin-left: 400px;
+
+                &:hover {
+                    /*background-image: url(../img/kits/1-hover.png);*/
+                    //background-position: 0 0;
+                }
             }
         }
 
-        &-2 {
-            background-image: url(../img/kits/2.png);
-            background-position: 0 0;
+        &-right {
+            &-1 {
+                background-image: url(../img/kits/box-right-1.png);
+                //background-position: 0 0;
+                margin-right: 235px;
+                right: calc(32.5% - 235px);
 
-            &:hover {
-                /*background-image: url(../img/kits/2-hover.png);*/
-                background-position: -400px 0;
+                &:hover {
+                    /*background-image: url(../img/kits/2-hover.png);*/
+                    //background-position: -400px 0;
+                }
+            }
+
+            &-2 {
+                background-image: url(../img/kits/box-right-2.png);
+                //background-position: 0 0;
+                margin-right: 365px;
+                right: calc(32.5% - 365px);
+
+                &:hover {
+                    /*background-image: url(../img/kits/2-hover.png);*/
+                    //background-position: -400px 0;
+                }
             }
         }
     }
@@ -42,8 +77,11 @@
         border-bottom-left-radius: 20px 150px;
         border-bottom-right-radius: 20px 150px;*/
         border-radius: 20px/150px;
+        margin: 0 auto;
         padding: 1px 100px;
+        position: relative;
         @include size(485px, 399px);
+        z-index: 9;
     }
 
     &--heading {
@@ -68,11 +106,21 @@
         background-repeat: no-repeat;
         /*background-position: 0 0;*/
         margin-top: 14px;
-        @include size(100%, 380px);
-        @include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+        /*max-width: 400px;*/
+        position: absolute;
+        top: 0;
+        /*@include size(100%, 380px);*/
+        /*@include size(400px, 380px);*/
+        @include size(251px, 380px);
+        /*@include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));*/
+        @include transition(margin, 1s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+        z-index: 8;
 
         &:hover {
             /*background-position: -400px 0;*/
+            @extend .animated;
+            @extend .bounce;
+            @extend .infinite;
         }
 
         img {
