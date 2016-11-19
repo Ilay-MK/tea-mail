@@ -2,6 +2,125 @@
 
 .nav {
 
+    &-catalog-opened {
+        display: none;
+        background-color: #f6f6f5;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        padding-top: 100px;
+        padding-bottom: 10px;
+        @include transition();
+        z-index: 90;
+
+        ul {
+            display: inline-block;
+            list-style: none;
+            margin-right: 55px;
+            max-width: 200px;
+            padding: 0;
+            vertical-align: top;
+
+            ul {
+                margin: 0;
+            }
+
+            &.list-categories {
+                margin-right: 0;
+                max-width: 170px;
+            }
+        }
+
+        .menu-content {
+            margin: 0 105px;
+
+            ul li {
+                > a {
+                    @extend .nav-opened--link;
+                    padding: 5px 0;
+
+                    &.list-title {
+                        @extend .nav-opened--category;
+                        padding-bottom: 12px;
+                        position: relative;
+
+                        &:before {
+                            content: '';
+                            @include bg-cover;
+                            display: inline-block;
+                            position: absolute;
+                            left: -35px;
+                            top: -1px;
+                            @include size(26px, 32px);
+                        }
+
+                        &.title {
+                            &-tea {
+                                &:before {
+                                    background-image: url(../img/nav/opened/title-icons/tea.png);
+                                }
+                            }
+                            &-dishes {
+                                &:before {
+                                    background-image: url(../img/nav/opened/title-icons/dishes.png);
+                                }
+                            }
+                            &-other {
+                                &:before {
+                                    background-image: url(../img/nav/opened/title-icons/other.png);
+                                }
+                            }
+                            &-gift {
+                                &:before {
+                                    background-image: url(../img/nav/opened/title-icons/gift.png);
+                                    top: 10px;
+                                }
+                            }
+                            &-kits {
+                                &:before {
+                                    background-image: url(../img/nav/opened/title-icons/kits.png);
+                                }
+                            }
+                        }
+
+                    }
+
+                    span {
+                        @extend .nav-opened--link-elaboration;
+                    }
+
+                    &:hover {
+                        @extend .nav-opened--link-hover;
+                    }
+                }
+
+                .subList {
+                    margin-left: 12px;
+
+                    li {
+
+                        a {
+                            @extend .nav-opened--link--sublink;
+                            padding: 4px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:after {
+            content: '';
+            background-image: url(../img/nav/bg-opened-bottom.png);
+            background-repeat: repeat-x;
+            background-position: 0 100%;
+            display: block;
+            position: absolute;
+            bottom: -11px;
+            @include size(100%, 11px);
+        }
+    }
+
     &-main {
         background-color: transparent !important;
         background-image: url(../img/nav/bg.png);
@@ -11,7 +130,6 @@
         border: 0px solid transparent !important;
         border: none !important;
         height: 119px;
-        position: relative;
         @include transition();
 
         .logo {
@@ -20,14 +138,16 @@
             left: calc(50% - 25px);
             top: 21px;
             @include size(50px, 81px);
+            z-index: 99;
         }
 
-        &-dropdown {
+        .dropdown {
 
         }
 
         .navbar-main-collapse {
             position: relative;
+            z-index: 98;
 
             ul.before, ul.after {
                 display: inline-block;
@@ -52,7 +172,7 @@
                         }
                     }
 
-                    &.active {
+                    &.pushed {
                         > a {
                             &:after {
                                 content: '';
@@ -75,7 +195,7 @@
 
                 li.catalog {
 
-                    a.dropdown-toggle {
+                    a.catalog-toggle {
                         &:before {
                             content: '';
                             @include bg-cover;

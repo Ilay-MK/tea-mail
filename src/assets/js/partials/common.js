@@ -21,6 +21,24 @@ var heroCarousel = {
 $(document).ready(function () {
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - NAV - - - - - - - - - - - - - - - - - */
+    $("nav .catalog-toggle").click(function (e) {
+        e.preventDefault();
+        var obj;
+
+        obj = $(this).attr("data-toggle");
+
+        if($(obj).is(':hidden')) {
+            $(this).parent("li.catalog").addClass("pushed");
+        }
+        else {
+            $(this).parent("li.catalog").removeClass("pushed");
+        }
+
+        $(obj).slideToggle();
+    });
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - HEADER - - - - - - - - - - - - - - -  */
     $("#header .ctrl-arrow-left").click(function () {
         scrollHeroCarousel("prev");
@@ -80,11 +98,13 @@ $(document).ready(function () {
             $("#nav-main").css("margin-top", "-10px");
             $("#nav-main").css("height", "101px");
             $("#nav-main .logo").html('<img src="assets/img/nav/logo_mini.png" alt="">');
+            $(".nav-catalog-opened").css("padding-top", "60px");
         }
         else {
             $("#nav-main").css("margin-top", "0");
             $("#nav-main").css("height", "119px");
             $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+            $(".nav-catalog-opened").css("padding-top", "100px");
         }
 
     });
