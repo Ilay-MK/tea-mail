@@ -41,6 +41,31 @@ $(document).ready(function () {
     });*/
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - - KITS - - - - - - - - - - - - - - -  */
+    $('#kits').on('inview', function(event, visible) {
+        if (visible) {
+            setTimeout(function() {
+                $("#kits--imgLink-left-1").css("margin-left", "0");
+            }, 500);
+            setTimeout(function() {
+                $("#kits--imgLink-left-2").css("margin-left", "0");
+            }, 1000);
+
+            setTimeout(function() {
+                $("#kits--imgLink-right-1").css("margin-right", "0");
+            }, 500);
+            setTimeout(function() {
+                $("#kits--imgLink-right-2").css("margin-right", "0");
+            }, 1000);
+        } else {
+            $("#kits--imgLink-left-1").css("margin-left", "251px");
+            $("#kits--imgLink-left-2").css("margin-left", "400px");
+            $("#kits--imgLink-right-1").css("margin-right", "235px");
+            $("#kits--imgLink-right-2").css("margin-right", "365px");
+        }
+    });
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - COMMON - - - - - - - - - - - - - -  */
 
     $(document).scroll( function () {
