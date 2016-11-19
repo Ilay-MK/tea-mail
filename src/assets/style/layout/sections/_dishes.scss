@@ -12,8 +12,9 @@
         position: absolute;
 
         &-left {
-            background-image: -moz-linear-gradient( 0deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-            background-image: -webkit-linear-gradient( 0deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100);
+            background-image: -moz-linear-gradient( 0deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
             bottom: 0;
             left: 0;
             top: 0;
@@ -22,9 +23,9 @@
         }
 
         &-right {
-            background-image: -moz-linear-gradient( 180deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-            background-image: -webkit-linear-gradient( 180deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-            background-image: -ms-linear-gradient( 180deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+            background-image: -moz-linear-gradient( 180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
             bottom: 0;
             right: 0;
             top: 0;
@@ -33,9 +34,9 @@
         }
 
         &-bottom {
-            background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-            background-image: -webkit-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
-            background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgba(0,0,0,0) 100%);
+            background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
             bottom: 0;
             /* height: 277px; */
             @include size(100%, 50%);
