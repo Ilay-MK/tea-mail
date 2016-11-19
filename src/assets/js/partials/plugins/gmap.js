@@ -1,9 +1,9 @@
 
 /*$('#gmap').on('inview', function(event, isInView) {
     if (isInView) {
-        // element is now visible in the viewport
+        drop();
     } else {
-        // element has gone out of viewport
+        alert("out from gmap");
     }
 });*/
 
@@ -35,7 +35,7 @@ function addMarker(position, timeout) {
         marker = new google.maps.Marker({
             map: map,
             position: position,
-            draggable: true,
+            /*draggable: true,*/
             animation: google.maps.Animation.DROP,
             icon: image
         });
