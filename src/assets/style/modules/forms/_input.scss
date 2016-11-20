@@ -5,6 +5,7 @@
     border-width: 1px;
     border-color: #dedede; /* TEMP - взять из карты цветов */
     border-radius: 2px;
+    float: left;
     margin: 0 4px;
-    @include size(70px, 32px);
+    @include size(65px, 30px); /* 70px, 32px - поправка на зум */
 }

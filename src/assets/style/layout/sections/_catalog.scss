@@ -161,7 +161,8 @@
 
                     .catalog--product_card--visual {
                         /*@include size(203px, 63px);*/
-                        @include size(100%, 63px);
+                        /*@include size(100%, 63px);*/
+                        @include size(100%, 59px); /* Поправка на увеличение карточки */
                         position: relative;
 
                         &:after {
@@ -171,6 +172,32 @@
 
                     .input-group, .btn {
                         display: inline-block;
+                    }
+
+                    .catalog--product_card--inputData-count,
+                    .catalog--product_card--inputData-weight,
+                    .catalog--product_card--button {
+                        @extend .animated;
+                    }
+
+                    .catalog--product_card--button {
+                        @extend .bounceIn;
+                        /*@extend .bounceInUp;*/
+                        /*@extend .fadeInUp;*/
+                    }
+
+                    .catalog--product_card--inputData-weight {
+                        /*@extend .slideInLeft;*/
+                        /*@extend .rotateInDownLeft;*/
+                        @extend .bounceInLeft;
+                        /*@extend .fadeInLeft;*/
+                    }
+
+                    .catalog--product_card--inputData-count {
+                        /*@extend .slideInRight;*/
+                        /*@extend .rotateInDownRight;*/
+                        @extend .bounceInRight;
+                        /*@extend .fadeInRight;*/
                     }
                 }
 
@@ -238,6 +265,13 @@
 
                 &--inputData {
 
+                    &-weight {
+
+                    }
+
+                    &-count {
+
+                    }
                 }
 
                 &--button {
