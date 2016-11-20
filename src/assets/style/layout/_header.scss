@@ -74,10 +74,15 @@
         &-icon {
             @extend %bg-cover;
             background-image: url("../img/header/search/search.png");
-            @include size(16px);
+            background-color: transparent;
+            border: 0px solid transparent;
+            border: none;
+            outline: 0px solid transparent;
+            outline: none;
             position: absolute;
             right: 17px;
             top: 9px;
+            @include size(16px);
         }
     }
 
