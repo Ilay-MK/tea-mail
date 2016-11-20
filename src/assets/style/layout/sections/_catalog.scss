@@ -100,7 +100,9 @@
                     /*overflow: hidden;*/
                     vertical-align: top;
                     /* 384px without scrollbar */
-                    @include size(393px, auto);
+                    /*@include size(393px, auto);*/
+                    /* width: 401px; */
+                    @include size(400px, auto);
                 }
 
                 &--category {
@@ -132,7 +134,9 @@
             min-height: 100%;
             /* height: 498px */
             margin: 0px -3px;
-            @include size(auto, 502px);
+            padding: 5px 4px; /* Чтоб не резала продукт при hover */
+            /*@include size(auto, 502px);*/
+            @include size(auto, 507px); /* Чтоб не резала продукт при hover */
 
             &_card {
                 @include size(188px, 245px);
