@@ -10,6 +10,7 @@
     &--category {
 
         &-popular_goods {
+            @include webkit-scrollbar(#e0cc91, #c4b178);
 
             .catalog {
 
@@ -33,6 +34,7 @@
         }
 
         &-new_goods {
+            @include webkit-scrollbar(#d29b3b, #c4b178);
 
             .catalog {
 
@@ -56,6 +58,7 @@
         }
 
         &-choice_teaPost {
+            @include webkit-scrollbar(#8aad7f, #c4b178);
 
             .catalog {
 

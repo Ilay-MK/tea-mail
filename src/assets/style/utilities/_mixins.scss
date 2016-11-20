@@ -150,13 +150,13 @@
 }
 
 /* параметризировать! */
-@mixin webkit-scrollbar($thumb-color: #e0cc91, $thumb-color-hover: #c4b178) {
+@mixin webkit-scrollbar($thumb-color: #e0cc91, $thumb-color-hover: #c4b178, $btn-height: 0px) {
 
     ::-webkit-scrollbar-button {
         background-image: url('');
         background-repeat: no-repeat;
         width: 5px;
-        height: 0px
+        height: $btn-height;
     }
 
     /* Цвет дорожки */
