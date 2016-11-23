@@ -150,7 +150,7 @@
 }
 
 /* параметризировать! */
-@mixin webkit-scrollbar($thumb-color: #e0cc91, $thumb-color-hover: #c4b178, $btn-height: 0px) {
+@mixin webkit-scrollbar($thumb-color: #e0cc91, $thumb-color-hover: #c4b178, $btn-height: 0px, $scrollbar-track: transparent) {
 
     ::-webkit-scrollbar-button {
         background-image: url('');
@@ -161,7 +161,7 @@
 
     /* Цвет дорожки */
     ::-webkit-scrollbar-track {
-        background-color: transparent; /* #ecedee */
+        background-color: $scrollbar-track; /* #ecedee */
     }
 
     /* Цвет бегунка полосы, + его закругления */
