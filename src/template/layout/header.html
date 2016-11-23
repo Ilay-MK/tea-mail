@@ -150,9 +150,16 @@
 
         <h1 class="header--heading">Отборные сорта чая с азиатских плантаций</h1>
 
-        <div class="search header--search">
-            <input type="search" name="header--input-search" id="header--input-search" class="header--input-search" placeholder="Что будем искать?" />
-            <input type="submit" class="search-icon" value="" />
+
+        <div class="form-search" role="form">
+            <form action="search.php" class="form-search" id="header--search--form" method="post">
+
+                <div class="search header--search">
+                    <input type="search" name="header--search--input" id="header--search--input" class="search--input header--search--input" placeholder="Что будем искать?" />
+                    <input type="submit" class="search--icon header--search--icon" value="" />
+                </div>
+
+            </form>
         </div>
 
         <div class="row">

@@ -10,19 +10,40 @@
     @include size(65px, 30px); /* 70px, 32px - поправка на зум */
 }
 
-.header--input-search {
-    background-color: transparent;
-    border: 0px solid transparent;
-    border: none;
-    color: #fff;
-    outline: 0px solid transparent;
-    outline: none;
-    padding: 0 20px;
-    position: relative;
-    top: -8px;
-    @include size(200px, 100%);
+.search {
 
-    @include placeholder_append {
-        color: #fff;
+    &--input {
+        background-color: transparent;
+        border: 0px solid transparent;
+        border: none;
+        outline: 0px solid transparent;
+        outline: none;
+        padding: 0 20px;
+        @include size(200px, 100%);
+        @include transition();
+
+        @include placeholder_append {
+
+        }
+
+        &:focus {
+            width: 306px;
+        }
+    }
+
+    &--icon {
+        @extend %bg-cover;
+        background-image: url("../img/header/search/search.png");
+        background-color: transparent;
+        border: 0px solid transparent;
+        border: none;
+        outline: 0px solid transparent;
+        outline: none;
+        /*position: absolute;
+        right: 17px;
+        top: 9px;*/
+        margin-right: 15px;
+        @include size(16px);
+        vertical-align: middle;
     }
 }

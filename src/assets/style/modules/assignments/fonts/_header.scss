@@ -9,7 +9,21 @@
     }
 
     &--search {
-        @include f("header--search");
+
+        &--input {
+            @include f("header--search");
+            line-height: normal;
+        }
+
+        &--heading {
+            @include f("header--search--heading");
+            line-height: normal;
+        }
+
+        &--text {
+            @include f("header--search--text");
+            line-height: normal;
+        }
     }
 
     &--advantages {
