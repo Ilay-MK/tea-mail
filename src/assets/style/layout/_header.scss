@@ -76,6 +76,55 @@
         position: relative;
         /*@include size(241px, 37px);*/
         @include size(auto, 37px);
+
+        input {
+            position: relative;
+            z-index: 9;
+        }
+
+        &--input {
+
+            &:focus {
+                width: 306px;
+            }
+        }
+
+        &--preResult {
+            background-color: rgba(0, 0, 0, 0.549);
+            border-radius: 18.5px;
+            display: none;
+            height: 169px;
+            padding: 44px 18px 7px; /* 37px 18px 18px 7px */
+            position: absolute;
+            /*top: 0;
+            left: 0;
+            width: 343px;*/
+            top: -2px;
+            left: -2px;
+            overflow: hidden;
+            text-align: left;
+            /*width: 346px;*/
+            width: calc(100% + 4px);
+            @include transition();
+            z-index: 8;
+
+            p {
+                margin: 0;
+
+                a {
+                    color: inherit;
+                }
+            }
+
+            .category {
+                border-bottom: 1px solid #393939;
+                padding: 3px 0 10px;
+
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
     }
 
     .advantages {

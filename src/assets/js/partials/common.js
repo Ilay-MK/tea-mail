@@ -48,6 +48,30 @@ $(document).ready(function () {
         scrollHeroCarousel("next");
     });
 
+    /* SEARCH */
+    /*$("#header--search--input").on('input', function () {
+        var $item = $(this),
+            value = $item.val();
+
+        $item.siblings(".result").fadeIn();
+    });*/
+
+    /* SEARCH */
+    $("#header--search--input").on('focus', function () {
+        var $item = $(this),
+            value = $item.val();
+
+        $item.siblings(".result").fadeIn();
+    });
+
+    /* SEARCH */
+    $("#header--search--input").on('blur', function () {
+        var $item = $(this),
+            value = $item.val();
+
+        $item.siblings(".result").fadeOut();
+    });
+
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - TEA_ROOM - - - - - - - - - - - - - -  */
     /*$("#tea_room").on('inview', function(event, isInView) {
