@@ -41,6 +41,7 @@
 
             &-control {
                 background: none;
+                opacity: 1;
                 @include transition();
                 width: 10%;
 
