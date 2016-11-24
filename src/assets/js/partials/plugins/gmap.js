@@ -39,7 +39,7 @@ function addMarker(position, timeout) {
             animation: google.maps.Animation.DROP,
             icon: image
         });
-        marker.addListener('click', toggleBounce);
+        /*marker.addListener('click', toggleBounce);*/
     }, timeout);
 }
 
