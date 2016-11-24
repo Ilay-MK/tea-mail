@@ -3,7 +3,8 @@
 #tea_room {
     @include bg-cover;
     background-image: url(../img/tea_room/bg.png);
-    height: 820px;
+    /*height: 820px;*/
+    height: 620px;
     overflow: visible;
 
     .shapely_line {
@@ -30,10 +31,11 @@
         border-bottom-right-radius: 0;
         border-bottom-left-radius: 0;
         padding: 60px 100px 0 168px;
-        position: absolute;
+        position: absolute !important;
         margin-top: 225px;
         top: 20px; /* TEMP */
         @include size(690px, 600px);
+        z-index: 9;
 
         &:after {
             background: url(../img/tea_room/bg-content-bottom.png) 0 100% repeat-x transparent;
