@@ -35,7 +35,7 @@ $(document).ready(function () {
             $(this).parent("li.catalog").removeClass("pushed");
         }
 
-        $(obj).slideToggle();
+        $(obj).toggle();
     });
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
@@ -119,15 +119,21 @@ $(document).ready(function () {
 
 
         if(+$(document).scrollTop() > 50) {
-            $("#nav-main").css("margin-top", "-10px");
-            $("#nav-main").css("height", "101px");
+            $("#nav-main").css("background-size", "280% 219px");
+            $("#nav-main").css("height", "201px");
+            $("#nav-main").css("margin-top", "-110px");
+            $("#nav-main").css("padding-top", "104px");
             $("#nav-main .logo").html('<img src="assets/img/nav/logo_mini.png" alt="">');
+            /* opened */
             $(".nav-catalog-opened").css("padding-top", "60px");
         }
         else {
-            $("#nav-main").css("margin-top", "0");
-            $("#nav-main").css("height", "119px");
+            $("#nav-main").css("background-size", "180% 219px");
+            $("#nav-main").css("height", "219px");
+            $("#nav-main").css("margin-top", "-100px");
+            $("#nav-main").css("padding-top", "100px");
             $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+            /* opened */
             $(".nav-catalog-opened").css("padding-top", "100px");
         }
 
