@@ -9,7 +9,7 @@
     position: relative;
     @include transition(all, 1.3s, cubic-bezier(0.66, -0.91, 0.32, 1.28));
 
-    .container {
+    .header--search--container {
         text-align: center;
     }
 
