@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 #map {
+    position: relative;
     @include size(100%, 590px);
 
     .address {
@@ -44,6 +45,22 @@
 
         &-content {
             max-width: 320px;
+        }
+    }
+
+    .shapely_line {
+        background: transparent url(../img/map/shapely_line.png) no-repeat center bottom;
+        @include background-size(100% 100%);
+        bottom: 28px;
+        @include size(100%, 16px);
+        position: absolute;
+
+        &:after {
+            content: "";
+            background-color: rgb(230, 200, 157);
+            @include size(100%, 28px);
+            position: absolute;
+            bottom: -28px;
         }
     }
 }
