@@ -69,6 +69,7 @@
     }
 
     &--address {
+        margin: 41px 0 22px;
 
         &:before {
             @include bg-cover;
