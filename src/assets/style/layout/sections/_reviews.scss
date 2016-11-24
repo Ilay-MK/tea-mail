@@ -180,6 +180,22 @@
 
     &--rating {
         float: left;
+        margin-left: 68px;
+
+        .star {
+            /*@include bg-cover;*/
+            background-image: url(../img/reviews/rating/star.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            cursor: pointer;
+            float: left;
+            margin: 0 3px;
+            @include size(15px, 17px);
+
+            &.off {
+                background-position: -15px 0;
+            }
+        }
     }
 
     &--date {
