@@ -19,9 +19,8 @@
             li {
                 background-color: #f5f5f5; /* TEMP - взять из карты цветов */
                 border-radius: 50%;
-                border: none;
-                margin: 1px 3px;
-                @include size(10px); /* fact 9px */
+                /*border: none;*/
+                /*@include size(10px);*/ /* fact 9px */
 
                 &.active {
                     background-color: #d7a96a; /* TEMP - взять из карты цветов */
