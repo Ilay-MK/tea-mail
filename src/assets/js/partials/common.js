@@ -38,6 +38,34 @@ $(document).ready(function () {
         $(obj).toggle();
     });
 
+    /* Прячем выпадающее меню при потере фокуса */
+    document.addEventListener("click", function(e) {
+        /*e.preventDefault();*/
+
+        if(e.isTrusted) {
+            /*alert(e.target.getAttribute("role"));*/
+            /*alert(e.target.tagName + e.target.localName + e.target.nodeName);*/
+
+            /*alert(e.target.localName);*/
+
+            if(e.target.localName != "nav" && e.target.dataset.toggle === undefined && !e.target.closest("nav")) {
+                if($($("nav .catalog-toggle").attr("data-toggle")).is(':visible')) {
+                    $($("nav .catalog-toggle").attr("data-toggle")).toggle();
+                    $("nav .catalog-toggle").parent("li.catalog").removeClass("pushed");
+                }
+            }
+        }
+
+    }, false);
+
+    /*$("body").click(function () {
+        var $obj;
+
+        $obj = $(this);
+
+        $(obj).toggle();
+    });*/
+
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - HEADER - - - - - - - - - - - - - - -  */
     $("#header .ctrl-arrow-left").click(function () {
