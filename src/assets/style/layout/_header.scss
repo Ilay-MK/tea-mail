@@ -34,11 +34,12 @@
             background-repeat: no-repeat;
             cursor: pointer;
 
-            height: 86px;
+            height: 126px; /*86px*/
+            padding: 20px;
             position: absolute;
-            top: 350px;
+            top: 330px; /*350px*/
             /*width: 32px;*/
-            width: 36px;
+            width: 76px; /*36px*/
 
             &-stroke {
                 fill: rgba(0,0,0,0.2);
@@ -51,14 +52,14 @@
 
             &-left {
                 /*background-position: 0 0;*/
-                left: 30px; /*254px 15px*/
+                left: 10px; /*254px 15px 30px*/
                 right: auto;
             }
 
             &-right {
                 /*background-position: -32px 0;*/
                 left: auto;
-                right: 30px; /*254 15px*/
+                right: 10px; /*254 15px 30px*/
 
                 svg {
                     transform: scale(-1, 1);
