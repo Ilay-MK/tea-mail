@@ -160,7 +160,7 @@ $(document).ready(function () {
     $(document).scroll( function () {
         parallax($('#tea_mail').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3], "px", -8);
         parallax($('#tea_room-content').addClass("parallax"), 'margin-top', getPageSize()[3] / 2);
-        parallax($('#tea_room').addClass("parallax-bg"), 'background-position-y', 0, "px", -4, 400, -400);
+        /*parallax($('#tea_room').addClass("parallax-bg"), 'background-position-y', 0, "px", -4, 400, -400);*/
         parallax($('#dishes').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3] / 6, "px", -10);
         parallax($('#map--address').addClass("parallax"), 'top', getPageSize()[3] / 2);
 
