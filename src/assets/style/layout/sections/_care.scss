@@ -10,14 +10,26 @@
         &--gift {
 
             .icon {
-                background-image: url(../img/care/advantages/gift.png);
+                /*background-image: url(../img/care/advantages/gift.png);*/
+
+                svg {
+                    left: 0px;
+                    top: 4px;
+                    width: 39px;
+                }
             }
         }
 
         &--sale {
 
             .icon {
-                background-image: url(../img/care/advantages/sale.png);
+                /*background-image: url(../img/care/advantages/sale.png);*/
+
+                svg {
+                    left: -5px;
+                    top: 0px;
+                    width: 61px;
+                }
             }
         }
 
@@ -25,6 +37,12 @@
 
             .icon {
                 background-image: url(../img/care/advantages/delivery.png);
+
+                svg {
+                    left: -6px;
+                    top: -6px;
+                    width: 62px;
+                }
             }
         }
     }
@@ -76,6 +94,14 @@
                 @extend %bg-cover;
                 margin: 0 auto 22px;
                 @include size(50px);
+
+                img, svg {
+                    /*fill: #bf9265;*/
+                }
+
+                svg {
+                    position: relative;
+                }
             }
         }
     }
