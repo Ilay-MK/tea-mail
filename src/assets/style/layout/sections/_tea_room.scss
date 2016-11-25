@@ -73,13 +73,24 @@
     &--address {
         margin: 41px 0 22px;
 
-        &:before {
+        /*&:before {
             @include bg-cover;
+            fill: #9D7A55;
             background-image: url(../img/tea_room/marker.png);
             content: '';
             float: left;
             margin-right: 11px;
             @include size(13px, 20px);
+        }*/
+
+        .icon {
+
+            svg {
+                float: left;
+                margin-left: -11px;
+                margin-top: -5px;
+                width: 37px;
+            }
         }
     }
 
