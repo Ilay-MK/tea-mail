@@ -78,6 +78,7 @@
             @include size(67px, 31px);
 
             &:hover, &:active, &:focus, &:focus:active {
+                background-color: darken(#b1654b, 5%);
                 border: none;
                 outline: none;
             }
