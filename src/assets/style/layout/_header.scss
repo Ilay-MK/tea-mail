@@ -29,7 +29,7 @@
     .ctrl {
 
         .ctrl-arrow {
-            background-image: url(../img/header/ctrl-arrow.png);
+            /*background-image: url(../img/header/ctrl-arrow.png);*/
             background-position: 0 0;
             background-repeat: no-repeat;
             cursor: pointer;
@@ -37,25 +37,43 @@
             height: 86px;
             position: absolute;
             top: 350px;
-            width: 32px;
+            /*width: 32px;*/
+            width: 36px;
+
+            &-stroke {
+                fill: rgba(0,0,0,0.2);
+                @include transition(fill);
+            }
+
+            &-fill {
+                fill: #d19a3a;
+            }
 
             &-left {
-                background-position: 0 0;
+                /*background-position: 0 0;*/
                 left: 30px; /*254px 15px*/
                 right: auto;
             }
 
             &-right {
-                background-position: -32px 0;
+                /*background-position: -32px 0;*/
                 left: auto;
                 right: 30px; /*254 15px*/
+
+                svg {
+                    transform: scale(-1, 1);
+                }
             }
 
             &:hover {
-                background-image: url(../img/header/ctrl-arrow_hover.png);
+                /*background-image: url(../img/header/ctrl-arrow_hover.png);*/
                 @extend .pulse;
                 @extend .animated;
                 @extend .infinite;
+
+                .ctrl-arrow-stroke {
+                    fill: rgba(0,0,0,0.4);
+                }
             }
         }
     }
