@@ -101,6 +101,25 @@ $(document).ready(function () {
     });
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - TEA_MAIL - - - - - - - - - - - - - -  */
+    /*$(".tea_mail--imgLink").hover(
+        function(){
+
+        },
+        function(){
+          //alert('Вы покинули территорию элемента "foo". Мы будем рады видеть вас снова.');
+        }
+    );*/
+
+    $(".tea_mail--imgLink .field").mousemove(function( event ) {
+        mh(this, event);
+    });
+
+    $(".tea_mail--imgLink").mouseleave(function( event ) {
+
+    });
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - TEA_ROOM - - - - - - - - - - - - - -  */
     /*$("#tea_room").on('inview', function(event, isInView) {
         if (isInView) {
@@ -181,6 +200,33 @@ $(document).ready(function () {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - FUNCTION - - - - - - - - - - - - - - - */
+
+/// Эффект наведения на картинки-линки в блоке чайной почты
+function mh(ob, event) {
+    var x = event.offsetX;
+    var y = event.offsetY;
+
+    var left, top, $obj;
+
+    $obj = $(ob).siblings(".hover");
+
+    console.log("---------");
+    console.log("X:"+x+"; Y:"+y);
+
+    left = x ;
+    top = y;
+
+    left -= $(".tea_mail--imgLink .hover").width()/2;
+    top -= $(".tea_mail--imgLink .hover").height()/2;
+
+    console.log("left:"+left+"; top:"+top);
+    console.log("---------");
+
+    $obj.css("left", left);
+    $obj.css("top", top);
+    $obj.css("background-position-x", -left);
+    $obj.css("background-position-y", -top);
+}
 
 /// Get Hero Carousel number of slide
 /// @route - "prev" или "next"

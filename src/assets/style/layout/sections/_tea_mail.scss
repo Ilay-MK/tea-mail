@@ -23,18 +23,26 @@
     &--imgLink {
 
         &-1 {
-            background-image: url(../img/tea_mail/1.png);
+            background-image: url(../img/tea_mail/imgs/1.png);
 
             &:hover {
                 /*background-image: url(../img/tea_mail/1-hover.png);*/
             }
+
+            .hover {
+                background-image: url(../img/tea_mail/imgs/1-hover.png);
+            }
         }
 
         &-2 {
-            background-image: url(../img/tea_mail/2.png);
+            background-image: url(../img/tea_mail/imgs/2.png);
 
             &:hover {
                 /*background-image: url(../img/tea_mail/2-hover.png);*/
+            }
+
+            .hover {
+                background-image: url(../img/tea_mail/imgs/2-hover.png);
             }
         }
     }
@@ -55,18 +63,76 @@
         }
 
         &--imgLink {
-            /*@include bg-cover;*/
+            @include bg-cover;
             /*@include size(100%, auto);*/
-            background-repeat: no-repeat;
-            background-position: 0 0;
-            margin-top: 45px;
+            /*background-repeat: no-repeat;
+            background-position: 0 0;*/
+            /*cursor: none;*/
+            margin: 45px auto 0;
+            position: relative;
+            overflow: hidden;
             @include size(360px, 355px);
             @include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+            z-index: 7;
+
+            &--container {
+                position: relative;
+            }
 
             &:hover {
                 /*@extend .animated;
                 @extend .flip;*/
-                background-position: -360px 0;
+                /*background-position: -360px 0;*/
+
+                .hover {
+                    display: block;
+                }
+            }
+
+            .field {
+                display: block;
+                position: absolute;
+                opacity: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                z-index: 9;
+            }
+
+            .hover {
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                border-radius: 50%;
+                /*display: none;*/
+                position: absolute;
+                left: -999px;
+                top: -999px;
+                @include size(150px);
+                z-index: 8;
+                /*@include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));*/
+
+                /*&:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: -10px;
+                    left: -10px;
+                    right: -10px;
+                    top: -10px;
+                }*/
+
+                .inner {
+                    background: radial-gradient(transparent 60%,#fff 80%);
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+                    display: block;
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
             }
 
             img {
