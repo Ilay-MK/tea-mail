@@ -34,7 +34,7 @@
         }
 
         &-new_goods {
-            @include webkit-scrollbar(#d29b3b, #c4b178);
+            @include webkit-scrollbar(#d29b3b, #b1812c);
 
             .catalog {
 
@@ -58,7 +58,7 @@
         }
 
         &-choice_teaPost {
-            @include webkit-scrollbar(#8aad7f, #c4b178);
+            @include webkit-scrollbar(#8aad7f, #688c5d);
 
             .catalog {
 
@@ -117,7 +117,7 @@
                         &-bottom {
                             border-bottom-width: 2px;
                             border-bottom-style: solid;
-                            margin: 0 8px 0 1px;
+                            margin: 0 11px 0 5px; /*0 8px 0 1px*/
                             @include size(auto, 16px);
                         }
                     }
