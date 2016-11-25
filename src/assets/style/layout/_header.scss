@@ -141,15 +141,10 @@
             text-align: center;
             vertical-align: top;
             /*width: 20%;*/
-
             /*outline: 1px solid;*/
-
             display: inline-block;
             /*margin: 0 -2px;*/
-
             width: 19%;
-
-
 
             p {
                 margin: 0;
@@ -160,40 +155,75 @@
                 height: 29px;
                 margin: 0 auto 22px;
                 width: 42px;
+
+                svg {
+                    fill: #d09a3a;
+                    position: relative;
+                }
             }
 
             &#get_from {
 
                 .icon {
-                    background-image: url(../img/header/advantages/get_from.png);
+                    /*background-image: url(../img/header/advantages/get_from.png);*/
+
+                    svg {
+                        left: -6px;
+                        top: -5px;
+                        width: 56px;
+                    }
                 }
             }
 
             &#delivery {
 
                 .icon {
-                    background-image: url(../img/header/advantages/delivery.png);
+                    /*background-image: url(../img/header/advantages/delivery.png);*/
+
+                    svg {
+                        left: -12px;
+                        top: -2px;
+                        width: 65px;
+                    }
                 }
             }
 
             &#tested {
 
                 .icon {
-                    background-image: url(../img/header/advantages/tested.png);
+                    /*background-image: url(../img/header/advantages/tested.png);*/
+
+                    svg {
+                        left: 1px;
+                        top: -3px;
+                        width: 42px;
+                    }
                 }
             }
 
             &#wide_range {
 
                 .icon {
-                    background-image: url(../img/header/advantages/wide_range.png);
+                    /*background-image: url(../img/header/advantages/wide_range.png);*/
+
+                    svg {
+                        left: 0px;
+                        top: -2px;
+                        width: 37px;
+                    }
                 }
             }
 
             &#discounts {
 
                 .icon {
-                    background-image: url(../img/header/advantages/discounts.png);
+                    /*background-image: url(../img/header/advantages/discounts.png);*/
+
+                    svg {
+                        left: -1px;
+                        top: -4px;
+                        width: 45px;
+                    }
                 }
             }
         }
