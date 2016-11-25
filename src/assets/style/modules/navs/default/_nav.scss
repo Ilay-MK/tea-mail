@@ -260,7 +260,7 @@
 
                             .icon {
                                 @include bg-cover;
-                                background-image: url(../img/nav/basket.png);
+                                /*background-image: url(../img/nav/basket.png);*/
                                 display: inline-block;
                                 @include size(25px, 20px);
                                 position: relative;
@@ -279,6 +279,17 @@
                                     text-align: center;
                                     top: -4px;
                                     @include size(17px);
+                                    z-index: 9;
+                                }
+
+                                svg {
+                                    fill: #d09a3a;
+                                    float: left;
+                                    left: -3px;
+                                    position: absolute;
+                                    top: -4px;
+                                    width: 29px;
+                                    z-index: 8;
                                 }
                             }
                         }
