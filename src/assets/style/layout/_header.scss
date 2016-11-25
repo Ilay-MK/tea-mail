@@ -77,6 +77,21 @@
         /*@include size(241px, 37px);*/
         @include size(auto, 37px);
 
+        .icon-search {
+            position: absolute;
+            right: 14px;
+            top: 9px;
+
+            svg {
+                fill: #d19a3a;
+                width: 17px;
+            }
+        }
+
+        &--icon {
+
+        }
+
         input {
             position: relative;
             z-index: 9;

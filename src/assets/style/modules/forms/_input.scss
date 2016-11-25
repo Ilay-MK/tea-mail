@@ -29,10 +29,11 @@
 
     &--icon {
         @extend %bg-cover;
-        background-image: url("../img/header/search/search.png");
+        /*background-image: url("../img/header/search/search.png");*/
         background-color: transparent;
         border: 0px solid transparent;
         border: none;
+        cursor: pointer;
         outline: 0px solid transparent;
         outline: none;
         /*position: absolute;
