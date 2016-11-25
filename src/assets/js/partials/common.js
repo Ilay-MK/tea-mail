@@ -131,7 +131,7 @@ $(document).ready(function () {
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - KITS - - - - - - - - - - - - - - -  */
-    $('#kits').on('inview', function(event, visible) {
+    $('#kits').one('inview', function(event, visible) {
         if (visible) {
             setTimeout(function() {
                 $("#kits--imgLink-left-1").css("margin-left", "0");
