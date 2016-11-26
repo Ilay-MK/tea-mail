@@ -18,6 +18,24 @@
 
 .footer {
     &--nav {
+        li.care {
+            position: relative;
+
+            .icon {
+                left: -25px;
+                position: absolute;
+                top: 1px;
+
+                svg {
+                    /*@include size(17px);*/
+                    @include size(18px, 16px);
+                }
+            }
+
+            a {
+
+            }
+        }
 
         &s--container {
             margin: 18px 0 0;
