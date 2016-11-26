@@ -25,6 +25,34 @@
 }
 
 .tea_room {
+
+    &-container {
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+
+        @media (min-width: 1200px) {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 1170px;
+        }
+
+        @media (min-width: 1310px) {
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 1280px;
+        }
+
+        .col {
+            position: relative;
+
+            @media (max-width: 1199px) {
+                width: calc(50% + 48px);
+            }
+        }
+
+    }
+
     &-content {
         background-color: #fae7d4; /* TEMP взять из карты цветов */
         border-radius: 600%/30%;
@@ -36,6 +64,13 @@
         top: 20px; /* TEMP */
         @include size(690px, 600px);
         z-index: 9;
+
+        @media (max-width: 1199px) {
+            right: 0;
+            padding-left: 170px;
+            padding-right: 75px;
+            width: 660px;
+        }
 
         &:after {
             background: url(../img/tea_room/bg-content-bottom.png) 0 100% repeat-x transparent;
