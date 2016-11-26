@@ -117,7 +117,7 @@
             border-left: 2px solid #a28455; /* TEMP */
             /*max-width: 437px;*/
             max-width: 463px;
-            min-height: 640px;
+            max-height: 640px;
             padding: 5px;
             vertical-align: top;
             @include size(42.734375%, auto);
