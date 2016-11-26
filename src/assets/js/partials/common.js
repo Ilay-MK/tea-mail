@@ -26,7 +26,7 @@ $(document).ready(function () {
         e.preventDefault();
         var obj;
 
-        obj = $(this).attr("data-toggle");
+        obj = $(this).attr("data-target");
 
         if($(obj).is(':hidden')) {
             $(this).parent("li.catalog").addClass("pushed");
@@ -35,7 +35,7 @@ $(document).ready(function () {
             $(this).parent("li.catalog").removeClass("pushed");
         }
 
-        $(obj).toggle();
+        /*$(obj).toggle();*/
     });
 
     /* Прячем выпадающее меню при потере фокуса */
@@ -49,8 +49,8 @@ $(document).ready(function () {
             /*alert(e.target.localName);*/
 
             if(e.target.localName != "nav" && e.target.dataset.toggle === undefined && !e.target.closest("nav")) {
-                if($($("nav .catalog-toggle").attr("data-toggle")).is(':visible')) {
-                    $($("nav .catalog-toggle").attr("data-toggle")).toggle();
+                if($($("nav .catalog-toggle").attr("data-target")).is(':visible')) {
+                    $($("nav .catalog-toggle").attr("data-target")).collapse('toggle');
                     $("nav .catalog-toggle").parent("li.catalog").removeClass("pushed");
                 }
             }
@@ -156,6 +156,10 @@ $(document).ready(function () {
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - COMMON - - - - - - - - - - - - - -  */
+
+    if (getPageSize()[2] < 1280) {
+
+    }
 
     $(document).scroll( function () {
         parallax($('#tea_mail').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3], "px", -8);

@@ -6,7 +6,6 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -14,14 +13,13 @@
                 <a class="logo" href="#"><img src="assets/img/nav/logo.png" alt=""></a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-main-collapse">
+            <div class="navbar-main-links">
                 <ul class="before">
                     <li class="dropdown active catalog">
                         <div class="icon">
                             <div class="caret"></div>
                         </div>
-                        <a href="#" class="catalog-toggle" data-toggle=".nav-catalog-opened">Чайный магазин</a>
+                        <a href="#" class="catalog-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">Чайный магазин</a>
                     </li>
                     <li><a href="#">Чайная Комната</a></li>
                     <li><a href="#">Чайные записки</a></li>
@@ -37,113 +35,117 @@
                     <li><a href="#">Отзывы</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>
+            </div>
 
-                <ul class="navbar-right">
-                    <li class="basket">
-                        <a href="#">
-                            <span class="icon">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-275 402.1 43.8 38.8" style="enable-background:new -275 402.1 43.8 38.8;" xml:space="preserve"><g><path d="M-236.1,412.3h-2.8c-0.7,0-1.3,0.5-1.4,1.2l-0.3,1.9h-22.5l-1-5.8c-0.1-0.7-0.7-1.1-1.4-1.1h-4.4c-0.7-0.1-1.3,0.6-1.3,1.3c0,0.7,0.6,1.4,1.4,1.4h3.2l3.1,17.6c0.1,0.7,0.7,1.1,1.4,1.1h20.9c0.7,0,1.3-0.5,1.4-1.2l2.1-13.6h1.6c0.8,0,1.4-0.6,1.4-1.4S-235.4,412.3-236.1,412.3z M-255.9,427.2h-5.1l-0.6-3.4h5.7V427.2z M-255.9,422.2h-6l-0.7-4h6.7V422.2zM-249.8,427.2h-4.5v-3.4h4.5V427.2z M-249.8,422.2h-4.5v-4h4.5V422.2z M-242.5,427.2h-5.7v-3.4h6.3L-242.5,427.2z M-241.7,422.2h-6.5v-4h7.2L-241.7,422.2z"/><circle cx="-259.7" cy="434.4" r="2.7"/><circle cx="-245.5" cy="434.4" r="2.7"/></g></svg>
-                            </span>
-                             0,00 р
-                        </a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle nav--username" data-toggle="dropdown"><b class="caret"></b> Владимир Овсяников</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Заказы</a></li>
-                            <li><a href="#">Дневник</a></li>
-                            <li><a href="#">Учётные данные</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Выйти</a></li>
+            <ul class="navbar-right">
+                <li class="basket">
+                    <a href="#">
+                        <span class="icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="-275 402.1 43.8 38.8" style="enable-background:new -275 402.1 43.8 38.8;" xml:space="preserve"><g><path d="M-236.1,412.3h-2.8c-0.7,0-1.3,0.5-1.4,1.2l-0.3,1.9h-22.5l-1-5.8c-0.1-0.7-0.7-1.1-1.4-1.1h-4.4c-0.7-0.1-1.3,0.6-1.3,1.3c0,0.7,0.6,1.4,1.4,1.4h3.2l3.1,17.6c0.1,0.7,0.7,1.1,1.4,1.1h20.9c0.7,0,1.3-0.5,1.4-1.2l2.1-13.6h1.6c0.8,0,1.4-0.6,1.4-1.4S-235.4,412.3-236.1,412.3z M-255.9,427.2h-5.1l-0.6-3.4h5.7V427.2z M-255.9,422.2h-6l-0.7-4h6.7V422.2zM-249.8,427.2h-4.5v-3.4h4.5V427.2z M-249.8,422.2h-4.5v-4h4.5V422.2z M-242.5,427.2h-5.7v-3.4h6.3L-242.5,427.2z M-241.7,422.2h-6.5v-4h7.2L-241.7,422.2z"/><circle cx="-259.7" cy="434.4" r="2.7"/><circle cx="-245.5" cy="434.4" r="2.7"/></g></svg>
+                        </span>
+                         0,00 р
+                    </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle nav--username" data-toggle="dropdown"><b class="caret"></b> Владимир Овсяников</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Заказы</a></li>
+                        <li><a href="#">Дневник</a></li>
+                        <li><a href="#">Учётные данные</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-main-collapse">
+                <nav class="nav-catalog-opened">
+                    <div class="menu-content">
+                       <!-- Чай -->
+                        <ul class="list-tea">
+                            <li><a href="#" class="list-title title-tea">Чай</a></li>
+                            <li><a href="#">Чай 2016 года</a></li>
+                            <li><a href="#">Шу пуэр <span>(черныe)</span></a></li>
+                            <li><a href="#">Шен пуэр <span>(зелены)</span></a></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">Улуны</a></li>
+                            <li>
+                                <ul class="subList">
+                                    <li><a href="#">Южнофуцзянские</a></li>
+                                    <li><a href="#">Уишаньские</a></li>
+                                    <li><a href="#">Гуандунские</a></li>
+                                    <li><a href="#">Тайваньские</a></li>
+                                    <li><a href="#">ГАБА</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Красный чай</a></li>
+                            <li><a href="#">Индийский чай</a></li>
+                            <li><a href="#">Тайский чай</a></li>
+                            <!-- -->
                         </ul>
-                    </li>
-                </ul>
+                        <ul class="list-tea">
+                            <li><a href="#" class="list-title">&nbsp;</a></li>
+                            <li><a href="#">Хейча <span>(черный чай)</span></a></li>
+                            <li><a href="#">Белый чай</a></li>
+                            <li><a href="#">Желтый чай</a></li>
+                            <li><a href="#">Зеленый чай</a></li>
+                            <li><a href="#">Японский чай</a></li>
+                            <li><a href="#">Цветы, травы, добавки</a></li>
+                            <li>
+                                <ul class="subList">
+                                    <li><a href="#">Иван Чай</a></li>
+                                    <li><a href="#">Нечайный чай</a></li>
+                                    <li><a href="#">Цветы</a></li>
+                                    <li><a href="#">Аюрведические смеси</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Чай от чайной почты</a></li>
+                        </ul>
+
+                        <!-- Посуда -->
+                        <ul class="list-dishes">
+                            <li><a href="#" class="list-title title-dishes">Посуда</a></li>
+                            <li><a href="#">Типоды</a></li>
+                            <li><a href="#">Сифоны</a></li>
+                            <li><a href="#">Термосы</a></li>
+                            <li><a href="#">Пиалы</a></li>
+                            <li><a href="#">Чабани</a></li>
+                            <li><a href="#">Чайники</a></li>
+                            <li><a href="#">Наборы посуды</a></li>
+                            <li><a href="#">Гайвани</a></li>
+                            <li><a href="#">Авторская керамика</a></li>
+                            <li><a href="#">Колбы и Стаканы</a></li>
+                            <li><a href="#">Чахэ</a></li>
+                            <li><a href="#"><span>Еще (в каталог)</span></a></li>
+                        </ul>
+
+                        <!-- Прочее -->
+                        <ul class="list-other">
+                            <li><a href="#" class="list-title title-other">Прочее</a></li>
+                            <li><a href="#">Фигурки</a></li>
+                            <li><a href="#">Книги</a></li>
+                            <li><a href="#">Живопись</a></li>
+                            <li><a href="#">Упаковка</a></li>
+                            <li><a href="#">Благовония <span>(Сян Дао)</span></a></li>
+                            <li><a href="#">Баночки и чайницы</a></li>
+                            <li><a href="#">Мешочки и чехлы</a></li>
+                            <li><a href="#">Футболки</a></li>
+                            <li><a href="#">Браслеты</a></li>
+                            <li><a href="#">Декоративные вазочки</a></li>
+                            <li><a href="#">Подставки для чайников</a></li>
+                            <li><a href="#"><span>Еще (в каталог)</span></a></li>
+                        </ul>
+
+                        <!-- Подарочные сертификаты и Чайные наборы -->
+                        <ul class="list-categories">
+                            <li><a href="#" class="list-title title-gift">Подарочные сертификаты</a></li>
+                            <li><a href="#" class="list-title title-kits">Чайные наборы</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div><!-- /.navbar-collapse -->
 
-            <nav class="nav-catalog-opened">
-                <div class="menu-content">
-                   <!-- Чай -->
-                    <ul class="list-tea">
-                        <li><a href="#" class="list-title title-tea">Чай</a></li>
-                        <li><a href="#">Чай 2016 года</a></li>
-                        <li><a href="#">Шу пуэр <span>(черныe)</span></a></li>
-                        <li><a href="#">Шен пуэр <span>(зелены)</span></a></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">Улуны</a></li>
-                        <li>
-                            <ul class="subList">
-                                <li><a href="#">Южнофуцзянские</a></li>
-                                <li><a href="#">Уишаньские</a></li>
-                                <li><a href="#">Гуандунские</a></li>
-                                <li><a href="#">Тайваньские</a></li>
-                                <li><a href="#">ГАБА</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Красный чай</a></li>
-                        <li><a href="#">Индийский чай</a></li>
-                        <li><a href="#">Тайский чай</a></li>
-                        <!-- -->
-                    </ul>
-                    <ul class="list-tea">
-                        <li><a href="#" class="list-title">&nbsp;</a></li>
-                        <li><a href="#">Хейча <span>(черный чай)</span></a></li>
-                        <li><a href="#">Белый чай</a></li>
-                        <li><a href="#">Желтый чай</a></li>
-                        <li><a href="#">Зеленый чай</a></li>
-                        <li><a href="#">Японский чай</a></li>
-                        <li><a href="#">Цветы, травы, добавки</a></li>
-                        <li>
-                            <ul class="subList">
-                                <li><a href="#">Иван Чай</a></li>
-                                <li><a href="#">Нечайный чай</a></li>
-                                <li><a href="#">Цветы</a></li>
-                                <li><a href="#">Аюрведические смеси</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Чай от чайной почты</a></li>
-                    </ul>
-
-                    <!-- Посуда -->
-                    <ul class="list-dishes">
-                        <li><a href="#" class="list-title title-dishes">Посуда</a></li>
-                        <li><a href="#">Типоды</a></li>
-                        <li><a href="#">Сифоны</a></li>
-                        <li><a href="#">Термосы</a></li>
-                        <li><a href="#">Пиалы</a></li>
-                        <li><a href="#">Чабани</a></li>
-                        <li><a href="#">Чайники</a></li>
-                        <li><a href="#">Наборы посуды</a></li>
-                        <li><a href="#">Гайвани</a></li>
-                        <li><a href="#">Авторская керамика</a></li>
-                        <li><a href="#">Колбы и Стаканы</a></li>
-                        <li><a href="#">Чахэ</a></li>
-                        <li><a href="#"><span>Еще (в каталог)</span></a></li>
-                    </ul>
-
-                    <!-- Прочее -->
-                    <ul class="list-other">
-                        <li><a href="#" class="list-title title-other">Прочее</a></li>
-                        <li><a href="#">Фигурки</a></li>
-                        <li><a href="#">Книги</a></li>
-                        <li><a href="#">Живопись</a></li>
-                        <li><a href="#">Упаковка</a></li>
-                        <li><a href="#">Благовония <span>(Сян Дао)</span></a></li>
-                        <li><a href="#">Баночки и чайницы</a></li>
-                        <li><a href="#">Мешочки и чехлы</a></li>
-                        <li><a href="#">Футболки</a></li>
-                        <li><a href="#">Браслеты</a></li>
-                        <li><a href="#">Декоративные вазочки</a></li>
-                        <li><a href="#">Подставки для чайников</a></li>
-                        <li><a href="#"><span>Еще (в каталог)</span></a></li>
-                    </ul>
-
-                    <!-- Подарочные сертификаты и Чайные наборы -->
-                    <ul class="list-categories">
-                        <li><a href="#" class="list-title title-gift">Подарочные сертификаты</a></li>
-                        <li><a href="#" class="list-title title-kits">Чайные наборы</a></li>
-                    </ul>
-                </div>
-            </nav>
         </div>
     </nav>
 
