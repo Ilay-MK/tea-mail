@@ -206,7 +206,7 @@
                 &-col {
                     /*outline: 1px solid;*/
                     display: inline-block;
-                    margin: 0 5px;
+                    margin: 0 5px 27px;
                     /*overflow: hidden;*/
                     vertical-align: top;
                     /* 384px without scrollbar */
@@ -215,7 +215,7 @@
                     @include size(400px, auto);
 
                     @media (max-width: 1309px) {
-                        margin: 0 6px;
+                        margin: 0 6px 27px;
                         width: auto;
                     }
                 }
@@ -411,7 +411,7 @@
 
         /// Описание кнопки секции (каталога)
         &--button {
-
+            margin: 0 auto 27px;
         }
     }
 }
