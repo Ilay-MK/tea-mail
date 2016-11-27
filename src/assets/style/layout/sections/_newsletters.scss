@@ -15,7 +15,16 @@
         overflow: hidden;
         margin: 0 auto;
         position: relative;
-        @include size(1152px, 548px); /* 468 | 52 */
+        max-width: 1152px;
+        @include size(100%, 548px); /* 468 | 52 */
+
+        @media (max-width: 1199px) {
+            background: url(../img/newsletters/packages/1.png) 0% 160% no-repeat,
+                url(../img/newsletters/packages/2.png) 30% 160% no-repeat,
+                url(../img/newsletters/packages/3.png) 60% 160% no-repeat,
+                url(../img/newsletters/packages/4.png) 90% 160% no-repeat,
+                #edd6a7;
+        }
 
         .bg-top {
             background-color: rgba(209, 180, 138, 0.51);
