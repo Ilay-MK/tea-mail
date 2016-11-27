@@ -232,6 +232,12 @@
         padding-top: 100px;
         @include transition();
 
+        @media (max-width: 991px) {
+            background-size: 800% 219px;
+            margin-top: -117px;
+            padding-top: 117px;
+        }
+
         .container-collapse-menu {
             @media (max-width: 1279px) {
                 width: auto;
@@ -276,6 +282,10 @@
             top: 21px;
             @include size(50px, 81px);
             z-index: 99;
+
+            @media (max-width: 991px) {
+                top: 11px;
+            }
         }
 
         .dropdown {
@@ -438,56 +448,66 @@
             }
         }
 
-        ul.navbar-right {
-            list-style: none;
+        .navbar-right-container {
             margin: 23px 0;
+            left: calc(50% + 90px);
             padding: 0;
-            /*position: relative;*/
             position: absolute;
             right: 15px;
             z-index: 98;
 
-            li {
+            ul.navbar-right {
+                list-style: none;
+                margin: 0;
+                padding: 0;
 
-                &.basket {
-                    text-align: center;
+                li {
 
                     a {
-                        @extend .nav--link;
-                        font-size: 14px;
+                        text-align: center;
+                        width: 100%;
+                    }
 
-                        .icon {
-                            @include bg-cover;
-                            /*background-image: url(../img/nav/basket.png);*/
-                            display: inline-block;
-                            @include size(25px, 20px);
-                            position: relative;
+                    &.basket {
+                        text-align: center;
 
-                            &:before {
-                                @extend .nav--username;
-                                font-size: 13px;
-                                color: #fff !important;
-                                content: '2';
-                                background-color: #b62927;
-                                border-radius: 50%;
+                        a {
+                            @extend .nav--link;
+                            font-size: 14px;
+
+                            .icon {
+                                @include bg-cover;
+                                /*background-image: url(../img/nav/basket.png);*/
                                 display: inline-block;
-                                left: -8px;
-                                margin: 0 !important;
+                                @include size(25px, 20px);
                                 position: relative;
-                                text-align: center;
-                                top: -4px;
-                                @include size(17px);
-                                z-index: 9;
-                            }
 
-                            svg {
-                                fill: #d09a3a;
-                                float: left;
-                                left: -3px;
-                                position: absolute;
-                                top: -4px;
-                                width: 29px;
-                                z-index: 8;
+                                &:before {
+                                    @extend .nav--username;
+                                    font-size: 13px;
+                                    color: #fff !important;
+                                    content: '2';
+                                    background-color: #b62927;
+                                    border-radius: 50%;
+                                    display: inline-block;
+                                    left: -8px;
+                                    margin: 0 !important;
+                                    position: relative;
+                                    text-align: center;
+                                    top: -4px;
+                                    @include size(17px);
+                                    z-index: 9;
+                                }
+
+                                svg {
+                                    fill: #d09a3a;
+                                    float: left;
+                                    left: -3px;
+                                    position: absolute;
+                                    top: -4px;
+                                    width: 29px;
+                                    z-index: 8;
+                                }
                             }
                         }
                     }
