@@ -180,6 +180,10 @@
             /*margin: 0 -2px;*/
             width: 19%;
 
+            @media (max-width: 1279px) {
+                padding: 0;
+            }
+
             p {
                 margin: 0;
             }
