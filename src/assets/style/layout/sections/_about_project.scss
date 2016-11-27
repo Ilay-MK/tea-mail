@@ -6,6 +6,13 @@
     background-position: center 64px;
     background-repeat: no-repeat;
     padding-top: 85px;
+
+    @media (max-width: 1309px) {
+        background-position: 70% 64px;
+
+    @media (max-width: 1199px) {
+        background-position: 100% 64px;
+    }
 }
 
 .about_project {
@@ -15,6 +22,10 @@
         background-position: 100% 100%;
         background-repeat: no-repeat;
         margin: 0 134px;
+
+        @media (max-width: 1199px) {
+
+        }
     }
 
     &--heading {
