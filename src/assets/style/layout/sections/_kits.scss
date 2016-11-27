@@ -17,6 +17,11 @@
                 left: calc(32.5% - 251px);
                 margin-left: 251px;
 
+                @media (max-width: 1279px) {
+                    left: calc(32.5% - 235px);
+                    margin-left: 235px;
+                }
+
                 &:hover {
                     /*background-image: url(../img/kits/1-hover.png);*/
                     //background-position: 0 0;
@@ -29,6 +34,11 @@
                 //background-position: -400px 0;
                 left: calc(32.5% - 400px);
                 margin-left: 400px;
+
+                @media (max-width: 1279px) {
+                    left: calc(32.5% - 341px);
+                    margin-left: 341px;
+                }
 
                 &:hover {
                     /*background-image: url(../img/kits/1-hover.png);*/
@@ -55,6 +65,11 @@
                 //background-position: 0 0;
                 margin-right: 365px;
                 right: calc(32.5% - 365px);
+
+                @media (max-width: 1279px) {
+                    margin-right: 336px;
+                    right: calc(32.5% - 336px);
+                }
 
                 &:hover {
                     /*background-image: url(../img/kits/2-hover.png);*/
@@ -117,6 +132,12 @@
         /*@include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));*/
         @include transition(margin, 1s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
         z-index: 8;
+
+        @media (max-width: 1279px) {
+            height: 290px;
+            width: 192px;
+            top: 30px;
+        }
 
         &:hover {
             /*background-position: -400px 0;*/
