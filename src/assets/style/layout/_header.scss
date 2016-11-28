@@ -166,6 +166,10 @@
         overflow: hidden;
         padding: 0 15px;
 
+        @media (max-width: 991px) {
+            display: none;
+        }
+
         /* [!] Выбрать каким способом стилизовать float или inline-block */
         .advantage {
             /*float: left;*/

@@ -233,9 +233,17 @@
         @include transition();
 
         @media (max-width: 991px) {
-            background-size: 800% 219px;
+            background-size: 300% 219px;
             margin-top: -117px;
             padding-top: 117px;
+        }
+
+        @media (max-width: 767px) {
+            background-size: 500% 219px;
+        }
+
+        @media (max-width: 554px) {
+            background-size: 800% 219px;
         }
 
         .container-collapse-menu {
@@ -455,6 +463,10 @@
             position: absolute;
             right: 15px;
             z-index: 98;
+
+            @media (max-width: 991px) {
+                margin: 17px 0;
+            }
 
             ul.navbar-right {
                 list-style: none;

@@ -115,10 +115,6 @@ $(document).ready(function () {
         mh(this, event);
     });
 
-    $(".tea_mail--imgLink").mouseleave(function( event ) {
-
-    });
-
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - TEA_ROOM - - - - - - - - - - - - - -  */
     /*$("#tea_room").on('inview', function(event, isInView) {
@@ -161,6 +157,11 @@ $(document).ready(function () {
 
     }
 
+    $( window ).resize(function() {
+        /* NAV TOP */
+        navMainResp();
+    });
+
     $(document).scroll( function () {
         parallax($('#tea_mail').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3], "px", -8);
         parallax($('#tea_room-content').addClass("parallax"), 'margin-top', getPageSize()[3] / 2);
@@ -169,24 +170,7 @@ $(document).ready(function () {
         parallax($('#map--address').addClass("parallax"), 'top', getPageSize()[3] / 2);
 
         /* NAV TOP */
-        if(+$(document).scrollTop() > 50) {
-            $("#nav-main").css("background-size", "280% 219px");
-            $("#nav-main").css("height", "201px");
-            $("#nav-main").css("margin-top", "-110px");
-            $("#nav-main").css("padding-top", "104px");
-            $("#nav-main .logo").html('<img src="assets/img/nav/logo_mini.png" alt="">');
-            /* opened */
-            $(".nav-catalog-opened").css("padding-top", "60px");
-        }
-        else {
-            $("#nav-main").css("background-size", "180% 219px");
-            $("#nav-main").css("height", "219px");
-            $("#nav-main").css("margin-top", "-100px");
-            $("#nav-main").css("padding-top", "100px");
-            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
-            /* opened */
-            $(".nav-catalog-opened").css("padding-top", "100px");
-        }
+        navMainResp();
 
     });
 
@@ -204,6 +188,68 @@ $(document).ready(function () {
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - FUNCTION - - - - - - - - - - - - - - - */
+
+/// NAV TOP responsive nebu bg && margins
+/// p.s. вынести всё в класыы и скриптом только присваивание классов сделать!.
+function navMainResp() {
+
+    if(+$(document).scrollTop() > 50) {
+        if (getPageSize()[2] > 991) {
+            $("#nav-main").css("background-size", "280% 219px");
+            $("#nav-main").css("height", "202px");
+            $("#nav-main").css("margin-top", "-110px");
+            $("#nav-main").css("padding-top", "104px");
+            $("#nav-main .logo").html('<img src="assets/img/nav/logo_mini.png" alt="">');
+        }
+
+        if (getPageSize()[2] < 992) {
+            $("#nav-main").css("background-size", "300% 219px");
+            $("#nav-main").css("height", "219px");
+            $("#nav-main").css("margin-top", "-117px");
+            $("#nav-main").css("padding-top", "117px");
+            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+        }
+
+        if (getPageSize()[2] < 768) {
+            $("#nav-main").css("background-size", "500% 219px");
+        }
+
+        if (getPageSize()[2] < 555) {
+            $("#nav-main").css("background-size", "800% 219px");
+        }
+
+        /* opened */
+        $(".nav-catalog-opened").css("padding-top", "60px");
+    }
+    else {
+        if (getPageSize()[2] > 991) {
+            $("#nav-main").css("background-size", "180% 219px");
+            $("#nav-main").css("height", "219px");
+            $("#nav-main").css("margin-top", "-100px");
+            $("#nav-main").css("padding-top", "100px");
+            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+        }
+
+        if (getPageSize()[2] < 992) {
+            $("#nav-main").css("background-size", "300% 219px");
+            $("#nav-main").css("height", "219px");
+            $("#nav-main").css("margin-top", "-117px");
+            $("#nav-main").css("padding-top", "117px");
+            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+        }
+
+        if (getPageSize()[2] < 768) {
+            $("#nav-main").css("background-size", "500% 219px");
+        }
+
+        if (getPageSize()[2] < 555) {
+            $("#nav-main").css("background-size", "800% 219px");
+        }
+
+        /* opened */
+        $(".nav-catalog-opened").css("padding-top", "100px");
+    }
+}
 
 /// Эффект наведения на картинки-линки в блоке чайной почты
 function mh(ob, event) {
