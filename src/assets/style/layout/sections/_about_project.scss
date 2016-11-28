@@ -18,6 +18,11 @@
     @media (max-width: 1100px) {
         background-position: 75% 64px;
     }
+
+    @media (max-width: 991px) {
+        background-image: none;
+        text-align: center;
+    }
 }
 
 .about_project {
@@ -40,6 +45,10 @@
 
         @media (max-width: 1100px) {
             background-position: 100% 100%;
+        }
+
+        @media (max-width: 991px) {
+            background-image: none;
         }
     }
 
