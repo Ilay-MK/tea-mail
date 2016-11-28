@@ -253,6 +253,9 @@ function navMainResp() {
 
 /// Эффект наведения на картинки-линки в блоке чайной почты
 function mh(ob, event) {
+    if (getPageSize()[2] < 992) {
+        return;
+    }
     var x = event.offsetX;
     var y = event.offsetY;
 
@@ -325,7 +328,7 @@ function scrollHeroCarousel(route) {
 
 /// Parallax effect
 function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY) {
-    if (getPageSize()[2] < 768) {
+    if (getPageSize()[2] < 992) {
         return;
     }
 
