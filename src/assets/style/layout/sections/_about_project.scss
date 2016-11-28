@@ -20,7 +20,11 @@
     }
 
     @media (max-width: 991px) {
-        background-image: none;
+        /*background-image: none;*/
+        background-image: url(../img/about_project/bg-mobile-bottom.png);
+        background-repeat: repeat-x;
+        background-position-y: 82%;
+        padding-top: 50px;
         text-align: center;
     }
 }
@@ -59,10 +63,19 @@
 
     &--subHeading {
 
+        @media (max-width: 991px) {
+            margin-top: 0;
+        }
     }
 
     &--text {
         max-width: 420px;
+
+        @media (max-width: 991px) {
+            margin: 0 auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     &--button {
@@ -72,6 +85,11 @@
         @media (max-width: 1309px) {
             margin-top: 62px;
         }
+
+        @media (max-width: 991px) {
+            margin-top: 36px;
+        }
+
 
     }
 
