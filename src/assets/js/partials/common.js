@@ -162,6 +162,10 @@ $(document).ready(function () {
     $( window ).resize(function() {
         /* NAV TOP */
         navMainResp();
+
+        if (getPageSize()[2] < 992) {
+            $('#tea_room-content').css("margin-top", "0");
+        }
     });
 
     $(document).scroll( function () {
