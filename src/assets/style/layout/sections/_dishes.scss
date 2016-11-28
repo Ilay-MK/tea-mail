@@ -8,6 +8,10 @@
     position: relative;
     text-align: center;
 
+    @media (max-width: 991px) {
+        padding: 85px 0 40px;
+    }
+
     .bg-shadow {
         position: absolute;
 
