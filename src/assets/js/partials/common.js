@@ -127,28 +127,30 @@ $(document).ready(function () {
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - KITS - - - - - - - - - - - - - - -  */
-    $('#kits').one('inview', function(event, visible) {
-        if (visible) {
-            setTimeout(function() {
-                $("#kits--imgLink-left-1").css("margin-left", "0");
-            }, 500);
-            setTimeout(function() {
-                $("#kits--imgLink-left-2").css("margin-left", "0");
-            }, 1000);
+    if (getPageSize()[2] > 991) {
+        $('#kits').one('inview', function(event, visible) {
+            if (visible) {
+                setTimeout(function() {
+                    $("#kits--imgLink-left-1").css("margin-left", "0");
+                }, 500);
+                setTimeout(function() {
+                    $("#kits--imgLink-left-2").css("margin-left", "0");
+                }, 1000);
 
-            setTimeout(function() {
-                $("#kits--imgLink-right-1").css("margin-right", "0");
-            }, 500);
-            setTimeout(function() {
-                $("#kits--imgLink-right-2").css("margin-right", "0");
-            }, 1000);
-        }/* else { // Если не один раз анимация, то необходимо вернуть значения...
-            $("#kits--imgLink-left-1").css("margin-left", "251px");
-            $("#kits--imgLink-left-2").css("margin-left", "400px");
-            $("#kits--imgLink-right-1").css("margin-right", "235px");
-            $("#kits--imgLink-right-2").css("margin-right", "365px");
-        }*/
-    });
+                setTimeout(function() {
+                    $("#kits--imgLink-right-1").css("margin-right", "0");
+                }, 500);
+                setTimeout(function() {
+                    $("#kits--imgLink-right-2").css("margin-right", "0");
+                }, 1000);
+            }/* else { // Если не один раз анимация, то необходимо вернуть значения...
+                $("#kits--imgLink-left-1").css("margin-left", "251px");
+                $("#kits--imgLink-left-2").css("margin-left", "400px");
+                $("#kits--imgLink-right-1").css("margin-right", "235px");
+                $("#kits--imgLink-right-2").css("margin-right", "365px");
+            }*/
+        });
+    }
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - COMMON - - - - - - - - - - - - - -  */
