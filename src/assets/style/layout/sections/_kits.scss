@@ -94,9 +94,10 @@
         border-bottom-right-radius: 20px 150px;*/
         border-radius: 20px/150px;
         margin: 0 auto;
+        max-width: 485px;
         padding: 1px 100px;
         position: relative;
-        @include size(485px, 399px);
+        @include size(100%, 399px);
         z-index: 9;
     }
 
