@@ -3,9 +3,15 @@
 #tea_room {
     @include bg-cover;
     background-image: url(../img/tea_room/bg.png);
+    background-color: #fff;
     /*height: 820px;*/
     height: 620px;
     overflow: visible;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        height: auto;
+    }
 
     .shapely_line {
         @include background-size(100% 100%);
@@ -20,6 +26,28 @@
         &.bottom {
             background: transparent url(../img/tea_room/shapely_line/bottom.png) no-repeat center bottom;
             bottom: 0;
+        }
+    }
+
+    .bg-mobile {
+        @include bg-cover;
+        background-image: url(../img/tea_room/bg-mobile.png);
+        display: none;
+        height: 0;
+        @include transition();
+
+        @media (max-width: 991px) {
+            display: block;
+            height: 340px;
+            position: relative;
+        }
+    }
+
+    .tea_room-content {
+        position: absolute;
+
+        @media (max-width: 991px) {
+            position: static;
         }
     }
 }
@@ -46,7 +74,7 @@
         .col {
             position: relative;
 
-            @media (max-width: 1199px) {
+            @media (max-width: 1199px) and (min-width: 992px) {
                 width: calc(50% + 48px);
             }
         }
@@ -54,22 +82,30 @@
     }
 
     &-content {
-        background-color: #fae7d4; /* TEMP взять из карты цветов */
-        border-radius: 600%/30%;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        padding: 60px 100px 0 168px;
-        position: absolute !important;
-        margin-top: 225px;
-        top: 20px; /* TEMP */
-        @include size(690px, 600px);
-        z-index: 9;
 
-        @media (max-width: 1199px) {
+        @media (min-width: 992px) {
+            background-color: #fae7d4; /* TEMP взять из карты цветов */
+            border-radius: 600%/30%;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 60px 100px 0 168px;
+            position: absolute;
+            margin-top: 225px;
+            top: 20px; /* TEMP */
+            @include size(690px, 600px);
+            z-index: 9;
+        }
+
+        @media (max-width: 1199px) and (min-width: 992px) {
             right: 0;
             padding-left: 170px;
             padding-right: 75px;
             width: 660px;
+        }
+
+        @media (max-width: 991px) {
+            padding: 0 30px;
+            text-align: center;
         }
 
         &:after {
@@ -80,6 +116,10 @@
             left: 0;
             position: absolute;
             @include size(100%, 28px);
+
+            @media (max-width: 991px) {
+                display: none;
+            }
         }
     }
 
@@ -94,6 +134,10 @@
             margin-left: -32px;
             margin-top: -37px;
             @include size(98px, 117px);
+
+            @media (max-width: 991px) {
+                display: none;
+            }
         }
     }
 
@@ -119,6 +163,11 @@
         }*/
 
         .icon {
+            @media (max-width: 991px) {
+                display: inline-block;
+                vertical-align: middle;
+                margin: -6px 0 -8px;
+            }
 
             svg {
                 float: left;
