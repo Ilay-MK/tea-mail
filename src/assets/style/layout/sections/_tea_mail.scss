@@ -9,6 +9,11 @@
     padding-bottom: 105px;
     text-align: center;
 
+    @media (max-width: 991px) {
+        padding-bottom: 30px;
+        padding-top: 5px;
+    }
+
     .tea_mail-content {
         /*max-width: 396px;*/
         /*background-color: #f6f6f5;*/
@@ -27,6 +32,10 @@
             background-image: url(../img/tea_mail/imgs/1.png);
             right: calc(50% + 198px);
 
+            @media (max-width: 991px) {
+                right: calc(50% - 35px);
+            }
+
             &:hover {
                 /*background-image: url(../img/tea_mail/1-hover.png);*/
             }
@@ -41,6 +50,10 @@
             border-radius: 70px/150px;
             /*border-top-left-radius: 50%;*/
             left: calc(50% + 198px);
+
+            @media (max-width: 991px) {
+                left: calc(50% - 35px);
+            }
 
             &:hover {
                 /*background-image: url(../img/tea_mail/2-hover.png);*/
@@ -65,10 +78,18 @@
 
         &--button {
             margin-top: 73px;
+
+            @media (max-width: 991px) {
+                margin-top: 277px;
+            }
         }
 
         &--imgLink {
             @include bg-cover;
+            /*background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;*/
+
             cursor: none;
             margin: 45px auto 0;
             padding: 0 15px;
@@ -78,6 +99,11 @@
             @include size(360px, 355px);
             @include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
             z-index: 7;
+
+            @media (max-width: 991px) {
+                margin-top: 260px;
+                @include size(220px);
+            }
 
             &--container {
                 position: relative;
