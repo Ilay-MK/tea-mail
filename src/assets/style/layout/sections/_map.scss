@@ -2,6 +2,7 @@
 
 #map {
     position: relative;
+    overflow: hidden;
     @include size(100%, 590px);
 
     .address {
