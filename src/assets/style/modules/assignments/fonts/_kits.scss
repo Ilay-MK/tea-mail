@@ -3,15 +3,15 @@
 .kits {
 
     &--text {
-        @include f("tea_mail--text");
+        @include f("kits--text");
     }
 
     &--heading {
-        @include f("tea_mail--heading");
+        @include f("kits--heading");
     }
 
     &--button {
-        @include f("tea_mail--button");
+        @include f("kits--button");
         line-height: 40px; /* TEMP */
     }
 }
