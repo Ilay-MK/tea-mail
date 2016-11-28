@@ -5,6 +5,10 @@
     /*padding-top: 142px;*/
     padding-top: 95px;
 
+    @media (max-width: 991px) {
+        display: none;
+    }
+
     /* Карусель */
     .carousel {
 
