@@ -22,6 +22,10 @@
                     margin-left: 235px;
                 }
 
+                @media (max-width: 991px) {
+                    display: none;
+                }
+
                 &:hover {
                     /*background-image: url(../img/kits/1-hover.png);*/
                     //background-position: 0 0;
@@ -38,6 +42,10 @@
                 @media (max-width: 1279px) {
                     left: calc(32.5% - 341px);
                     margin-left: 341px;
+                }
+
+                @media (max-width: 991px) {
+                    display: none;
                 }
 
                 &:hover {
@@ -82,11 +90,50 @@
 
 .kits {
 
+    &-decorate {
+        position: absolute;
+        top: 94px;
+        @include size(auto, 190px); /* 175px */
+        z-index: 8;
+        /*z-index: -1;*/
+
+        svg {
+            @include size(100%, 100%);
+        }
+
+        &-svg-cl {
+            fill: none;
+            stroke: #ffe7be;
+            stroke-miterlimit:10;
+        }
+
+        &.first {
+            left: -90px;
+            @media (max-width: 991px) {
+                left: calc(50% - 150px);
+                top: -144px;
+                transform: rotate(90deg);
+            }
+        }
+
+        &.second {
+            right: -90px;
+            transform: scale(-1, 1);
+            @media (max-width: 991px) {
+                bottom: -13px;
+                left: calc(50% - 150px);
+                right: auto;
+                top: auto;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
     &--content {
         background-color: #fff;
-        background: url(../img/kits/bg-left.png) 40px 45% no-repeat,
+        /*background: url(../img/kits/bg-left.png) 40px 45% no-repeat,
             url(../img/kits/bg-right.png) calc(100% - 40px) 45% no-repeat,
-            #fff;
+            #fff;*/
         /*@include size(485px, 399px);*/
         /*border-top-left-radius: 20px 150px;
         border-top-right-radius: 20px 150px;
@@ -99,22 +146,36 @@
         position: relative;
         @include size(100%, 399px);
         z-index: 9;
+
+        @media (max-width: 991px) {
+            padding: 0 33px;
+        }
     }
 
     &--heading {
         margin-bottom: 17px;
         margin-top: 13px;
+        position: relative;
         text-transform: uppercase;
+        z-index: 9;
+
+        @media (max-width: 991px) {
+            line-height: 59px !important;
+        }
     }
 
     &--text {
         /*font-size: 14px !important;*/
         line-height: 19px !important;
         letter-spacing: .025em !important;
+        position: relative;
+        z-index: 9;
     }
 
     &--button {
         margin: 23px auto 0 !important;
+        position: relative;
+        z-index: 9;
     }
 
     &--imgLink {
