@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 #map {
+    background-color: #fff;
     position: relative;
     overflow: hidden;
     @include size(100%, 590px);
@@ -14,11 +15,21 @@
             @include size(457px, 321px);
             z-index: 99;
 
+            @media (max-width: 767px) {
+                position: static;
+                margin: 1px 0 30px;
+                @include size(auto, auto);
+            }
+
             .binding {
                 background-color: #e6c89d;
                 float: left;
                 margin-right: 35px;
                 @include size(38px, 100%);
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
 
                 .circle {
                     border-radius: 50%;
@@ -45,7 +56,15 @@
         }
 
         &-content {
+            overflow: hidden;
             max-width: 320px;
+
+            @media (max-width: 767px) {
+                max-width: 245px;
+                margin: 0 auto;
+                text-align: center;
+                width: auto;
+            }
         }
     }
 
@@ -66,10 +85,6 @@
     }
 }
 
-#gmap {
-    @include size(100%);
-}
-
 .map {
     &--work_mode {
 
@@ -84,6 +99,10 @@
         &-metro{
             margin: 10px 0 37px;
 
+            @media (max-width: 767px) {
+                margin: 14px 0 27px;
+            }
+
             &:before {
                 @include bg-cover;
                 background-image: url(../img/map/metro.png);
@@ -95,9 +114,21 @@
         }
         &-description{
             margin-bottom: 40px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 21px;
+            }
         }
     }
     &--firmName {
         margin: 51px 0 1px;
+
+        @media (max-width: 767px) {
+            margin: 0 0 1px;
+        }
     }
+}
+
+#gmap {
+    @include size(100%);
 }
