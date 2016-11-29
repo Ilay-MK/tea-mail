@@ -13,6 +13,10 @@
 
     .bg-icons {
 
+        @media (max-width: 991px) {
+            display: none;
+        }
+
         svg {
             position: absolute;
             z-index: 8;
@@ -59,6 +63,14 @@
 
     hgroup {
         margin: 100px auto 80px;
+
+        @media (max-width: 991px) {
+            margin: 83px auto 63px;
+        }
+
+        @media (max-width: 767px) {
+            margin: 83px auto 0;
+        }
     }
 
     &--carousel {
@@ -70,6 +82,10 @@
         margin: 0 auto;
         /*@include size(796px, 374px);*/
         @include size(100%);
+
+        @media (max-width: 767px) {
+            border: none;
+        }
 
         .carousel {
             &-indicators li {
@@ -85,6 +101,14 @@
 
                 .item {
                     padding: 113px 110px 40px 80px;
+
+                    @media (max-width: 991px) {
+                        padding: 80px 50px 80px 50px;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding: 49px 0 109px;
+                    }
                 }
 
             }
@@ -94,6 +118,11 @@
                 opacity: 1;
                 @include transition();
                 width: 10%;
+
+                @media (max-width: 767px) {
+                    height: 55px;
+                    top: auto;
+                }
 
                 .chevron {
                     &-container {
@@ -125,10 +154,15 @@
                 }
 
                 &.left {
+
                     .chevron {
                         &-container {
                             left: -28px;
                             padding-left: 9px;
+
+                            @media (max-width: 767px) {
+                                left: 0;
+                            }
                         }
                         &-inner {
                             border-bottom: 1px solid #a4a4a4;
@@ -142,6 +176,10 @@
                         &-container {
                             padding-right: 9px;
                             right: -28px;
+
+                            @media (max-width: 767px) {
+                                right: 0;
+                            }
                         }
                         &-inner {
                             border-right: 1px solid #a4a4a4;
@@ -192,6 +230,10 @@
         /*@include size(100%, auto);*/
         @include size(100%, 244px);
         z-index: 11;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
 
     &-container {
@@ -200,10 +242,19 @@
         margin: 0 auto;
         padding: 14px;
         position: relative;
-        @include size(825px, 402px);
+        max-width: 825px;
+        @include size(auto, 402px);
         z-index: 10;
-
         text-align: left;
+
+        @media (max-width: 991px) {
+            height: 350px;
+        }
+
+        @media (max-width: 767px) {
+            background: none;
+            height: auto;
+        }
 
         .col {
             display: inline-block;
@@ -229,6 +280,7 @@
 
     &--subHeading {
         margin-top: 38px;
+        margin-bottom: 0;
     }
 
     &--rating {
@@ -263,11 +315,19 @@
     &--text {
         margin: 0;
         max-width: 450px;
+
+        @media (max-width: 767px) {
+            max-width: 350px;
+        }
     }
 
     &--button {
         margin: 29px auto 0;
         position: relative;
         z-index: 9;
+
+        @media (max-width: 991px) {
+            margin: 29px auto 50px;
+        }
     }
 }
