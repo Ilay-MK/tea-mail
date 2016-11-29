@@ -166,6 +166,10 @@ $(document).ready(function () {
         if (getPageSize()[2] < 992) {
             $('#tea_room-content').css("margin-top", "0");
         }
+
+        if (getPageSize()[2] < 768) {
+            map.setCenter( marker.getPosition() );
+        }
     });
 
     $(document).scroll( function () {

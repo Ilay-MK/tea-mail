@@ -22,6 +22,10 @@ $('#gmap').one('inview', drop());
 
 /* ----------------------------------------------------------- */
 
+
+
+/* ----------------------------------------------------------- */
+
 function drop() {
     clearMarkers();
     /*for (var i = 0; i < neighborhoods.length; i++) {
@@ -40,6 +44,10 @@ function addMarker(position, timeout) {
             icon: image
         });
         /*marker.addListener('click', toggleBounce);*/
+
+        if (getPageSize()[2] < 768) {
+            map.setCenter( marker.getPosition() );
+        }
     }, timeout);
 }
 
