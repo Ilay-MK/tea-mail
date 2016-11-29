@@ -153,6 +153,12 @@ $(document).ready(function () {
     }
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - -  */
+    /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
+    /// и возрат обратно в противном случае
+    detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - COMMON - - - - - - - - - - - - - -  */
 
     if (getPageSize()[2] < 1280) {
@@ -162,6 +168,10 @@ $(document).ready(function () {
     $( window ).resize(function() {
         /* NAV TOP */
         navMainResp();
+
+        /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
+        /// и возрат обратно в противном случае
+        detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
 
         if (getPageSize()[2] < 992) {
             $('#tea_room-content').css("margin-top", "0");
@@ -334,6 +344,27 @@ function scrollHeroCarousel(route) {
 
     $("#header h1").stop().text(h1).css("animation-duration", "0.8s").animateCss("fadeInDown");
     $("#header").css("background-image", "url(assets/img/header/bg_" + bg + ".png)");
+}
+
+/// Перемещение объектов
+/// с условиями по ширине
+/// @obj - объект, который необходимо перенести
+/// @from - откуда производится перенос
+/// @to - куда производится перенос
+/// @width - при какой ширине производить перенос { < width }
+function detachPrependTo(obj, from, to, width) {
+    if (width === undefined) {
+        width = 768;
+    }
+
+    if (getPageSize()[2] < width) {
+        /* перемещаем контейнер */
+        $(from).find(obj).detach().prependTo(to);
+    }
+    else {
+        /* перемещаем контейнер */
+        $(to).find(obj).detach().prependTo(from);
+    }
 }
 
 /// Parallax effect

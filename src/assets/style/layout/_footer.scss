@@ -5,6 +5,10 @@
     padding: 55px 0 10px;
     overflow: hidden;
 
+    @media (max-width: 767px) {
+        padding-top: 0;
+    }
+
     .container {
         max-width: 845px; /* 815px + 15px + 15px */
     }
@@ -39,12 +43,28 @@
 
         &s--container {
             margin: 18px 0 0;
+
+            @media (max-width: 767px) {
+                margin: 34px 0 19px;
+            }
+
+            @media (max-width: 619px) {
+                padding: 0 15px;
+            }
         }
 
         &--container {
             float: left;
             padding-left: 100px;
             width: 33.3%;
+
+            @media (max-width: 767px) {
+                width: 50%;
+            }
+
+            @media (max-width: 619px) {
+                padding: 0 0 0 20px;
+            }
         }
 
         &-secondary {
@@ -52,6 +72,10 @@
             &--container {
                 float: right;
                 width: 33.3%;
+
+                @media (max-width: 767px) {
+                    width: 50%;
+                }
             }
         }
     }
@@ -62,6 +86,10 @@
         background-repeat: no-repeat;
         display: inline-block;
         @include size(33.3%, 196px); /* 100px 196px */
+
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &--newsletters {
@@ -69,6 +97,16 @@
         &--container {
             float: right;
             width: 33.3%;
+
+            @media (max-width: 767px) {
+                float: none;
+                text-align: center;
+                width: auto;
+
+                &:after {
+                    clear: both;
+                }
+            }
         }
 
         &--title {
@@ -128,6 +166,15 @@
             float: left;
             text-align: center;
             width: 50%;
+
+            @media (max-width: 767px) {
+                float: none;
+                width: auto;
+
+                &:after {
+                    clear: both;
+                }
+            }
         }
     }
 
@@ -135,12 +182,20 @@
         margin-bottom: 32px;
         text-align: center;
 
+        @media (max-width: 767px) {
+            margin-bottom: 43px;
+        }
+
         &--heading {
             box-shadow: 0 5px 10px -6px rgba(0,0,0,0.33);
             margin: 0 auto;
             max-width: 645px;
             padding: 42px 0 32px;
             text-align: center;
+
+            @media (max-width: 767px) {
+                padding-top: 19px;
+            }
         }
 
         &--link {
