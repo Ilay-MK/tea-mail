@@ -157,8 +157,13 @@
                                 }
                             }
                             &-dishes {
-                                &:before {
+                                /*&:before {
                                     background-image: url(../img/nav/opened/title-icons/dishes.png);
+                                }*/
+
+                                .icon {
+                                    left: -39px;
+                                    top: 2px;
                                 }
                             }
                             &-other {
@@ -167,18 +172,36 @@
                                 }
                             }
                             &-gift {
-                                &:before {
+                                /*&:before {
                                     background-image: url(../img/nav/opened/title-icons/gift.png);
                                     top: 10px;
+                                }*/
+
+                                .icon {
+                                    left: -37px;
+                                    top: 7px;
                                 }
                             }
                             &-kits {
-                                &:before {
+                                /*&:before {
                                     background-image: url(../img/nav/opened/title-icons/kits.png);
+                                }*/
+
+                                .icon {
+                                    left: -38px;
+                                    top: 1px;
                                 }
                             }
                         }
 
+                        .icon {
+                            position: absolute;
+                            width: 35px;
+
+                            svg {
+
+                            }
+                        }
                     }
 
                     span {
@@ -202,6 +225,10 @@
                     }
                 }
             }
+        }
+
+        &-list-title-icon {
+            fill: #3b404f;
         }
 
         /*&:after {
