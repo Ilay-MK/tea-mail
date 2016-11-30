@@ -293,6 +293,33 @@
                     background-color: #d6a54f;
                 }
             }
+
+            a.phone {
+                left: calc(25% - 11px);
+                position: absolute;
+                top: 17px; /* 19px */
+                z-index: 98;
+
+                @media (min-width: 992px) {
+                    display: none;
+                }
+
+                .icon {
+                    display: block;
+                    @include size(42px, auto);
+
+                    svg {
+                        fill: #a0a09f;
+                    }
+                }
+
+                .icon-phone {
+                    fill: none;
+                    stroke: #a0a09f;
+                    stroke-width: 1.75;
+                    stroke-miterlimit: 10;
+                }
+            }
         }
 
         .navbar-main-collapse {
