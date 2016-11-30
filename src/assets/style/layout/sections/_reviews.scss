@@ -264,13 +264,25 @@
 
     &--visual {
         background-color: #e3e3e3;
-        background-image: url(../img/reviews/visual.png);
+        /*background-image: url(../img/reviews/visual.png);*/
+        background-image: url(../img/reviews/visual.svg);
         background-repeat: no-repeat;
         background-position: 50% 50%;
+        background-size: 74%;
         border-radius: 50%;
         margin-right: 15px; /* 20px */
         margin-top: 12px; /* 31px */
         @include size(51px);
+
+        .icon {
+            margin: 0 auto;
+            padding-top: 13px;
+            width: 37px;
+        }
+
+        &--icon {
+            fill: #20201d;
+        }
     }
 
     &--heading {
