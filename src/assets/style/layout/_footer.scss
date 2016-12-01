@@ -9,6 +9,10 @@
         padding-top: 0;
     }
 
+    @media (max-width: 479px) {
+        padding-bottom: 20px;
+    }
+
     .container {
         max-width: 845px; /* 815px + 15px + 15px */
     }
@@ -51,6 +55,11 @@
             @media (max-width: 619px) {
                 padding: 0 15px;
             }
+
+            @media (max-width: 479px) {
+                margin-top: 6px;
+                padding: 0;
+            }
         }
 
         &--container {
@@ -65,9 +74,24 @@
             @media (max-width: 619px) {
                 padding: 0 0 0 20px;
             }
+
+            @media (max-width: 479px) {
+                display: none;
+            }
         }
 
         &-secondary {
+
+            @media (max-width: 479px) {
+                margin-left: 25px;
+            }
+
+            li a {
+
+                @media (max-width: 479px) {
+                    margin-bottom: 8px !important;
+                }
+            }
 
             &--container {
                 float: right;
@@ -75,6 +99,10 @@
 
                 @media (max-width: 767px) {
                     width: 50%;
+                }
+
+                @media (max-width: 479px) {
+                    width: 100%;
                 }
             }
         }
@@ -107,6 +135,11 @@
                     clear: both;
                 }
             }
+
+            @media (max-width: 479px) {
+                margin-left: 25px;
+                text-align: left;
+            }
         }
 
         &--title {
@@ -124,6 +157,10 @@
             outline: none;
             padding: 0 18px;
             @include size(190px, 33px);
+
+            @media (max-width: 479px) {
+                width: 185px;
+            }
         }
 
         &--button {
@@ -138,15 +175,26 @@
                 border: none;
                 outline: none;
             }
+
+            @media (max-width: 479px) {
+                width: 59px;
+            }
         }
     }
 
     &--company_details {
 
+        @media (max-width: 479px) {
+            /*margin-left: -25px;*/
+        }
     }
 
     &--phone {
         display: inline-block;
+
+        @media (max-width: 479px) {
+            font-size: 25px !important;
+        }
 
         &:before {
             content: '';
@@ -155,6 +203,10 @@
             background-image: url(../img/footer/phone.png);
             margin: -15px 9px 0 -28px;
             @include size(28px);
+
+            @media (max-width: 479px) {
+                margin-left: -37px;
+            }
         }
 
         .plus {
@@ -175,6 +227,10 @@
                     clear: both;
                 }
             }
+
+            @media (max-width: 479px) {
+                margin-left: 25px;
+            }
         }
     }
 
@@ -186,6 +242,10 @@
             margin-bottom: 43px;
         }
 
+        @media (max-width: 479px) {
+            margin-bottom: 27px;
+        }
+
         &--heading {
             box-shadow: 0 5px 10px -6px rgba(0,0,0,0.33);
             margin: 0 auto;
@@ -195,6 +255,12 @@
 
             @media (max-width: 767px) {
                 padding-top: 19px;
+            }
+
+            @media (max-width: 479px) {
+                box-shadow: none;
+                padding-top: 0;
+                padding-bottom: 27px;
             }
         }
 
@@ -213,12 +279,24 @@
             margin: 0 14px;
             vertical-align: top;
             @include size(76px, 44px);
-            transition: box-shadow 0.3s ease-out, margin-bottom 0.3s ease-out, height 0.3s ease-out;
+            transition: box-shadow 0.3s ease-out, margin-bottom 0.3s ease-out, height 0.3s ease-out, background 0.3s ease-out;
+
+            @media (max-width: 479px) {
+                @include size(47px);
+                background-color: #cca46b;
+                background-image: none;
+                border-radius: 50%;
+                margin: 2px;
+            }
 
             &:hover {
                 box-shadow: 0 10px 15px -10px rgba(0,0,0,.3);
                 /*margin-bottom: -1px;
                 @include size(76px, 45px);*/
+
+                @media (max-width: 479px) {
+                    background-color: #dcb174;
+                }
             }
 
             &.f {
@@ -257,6 +335,10 @@
                 fill: #55423b;
                 margin-top: 3px;
                 @include size(auto, 75%);
+
+                @media (max-width: 479px) {
+                    margin-top: 7px;
+                }
             }
         }
     }

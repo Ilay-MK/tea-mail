@@ -159,6 +159,7 @@ $(document).ready(function () {
     /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
     /// и возрат обратно в противном случае
     detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
+    detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--320', 480);
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - COMMON - - - - - - - - - - - - - -  */
@@ -173,8 +174,9 @@ $(document).ready(function () {
 
         /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
         /// и возрат обратно в противном случае
-        detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
         detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
+        detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
+        detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--320', 480);
 
         if (getPageSize()[2] < 992) {
             $('#tea_room-content').css("margin-top", "0");
