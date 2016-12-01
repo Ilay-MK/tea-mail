@@ -21,6 +21,13 @@
                 @include size(auto, auto);
             }
 
+            @media (max-width: 479px) {
+                left: 0;
+                padding-top: 28px;
+                position: relative;
+                top: -30px;
+            }
+
             .binding {
                 background-color: #e6c89d;
                 float: left;
@@ -65,12 +72,17 @@
                 text-align: center;
                 width: auto;
             }
+
+            @media (max-width: 479px) {
+                max-width: 225px;
+                text-align: left;
+            }
         }
     }
 
     .shapely_line {
+        @include bg-cover;
         background: transparent url(../img/map/shapely_line.png) no-repeat center bottom;
-        @include background-size(100% 100%);
         bottom: 28px;
         @include size(100%, 16px);
         position: absolute;
@@ -88,19 +100,33 @@
 .map {
     &--work_mode {
 
+        @media (max-width: 479px) {
+            font-size: 14px !important;
+        }
 
         &-time {
 
+            @media (max-width: 479px) {
+                font-size: 14px !important;
+            }
         }
     }
     &--address {
         margin: 0;
+
+        @media (max-width: 479px) {
+            font-size: 14px !important;
+        }
 
         &-metro{
             margin: 10px 0 37px;
 
             @media (max-width: 767px) {
                 margin: 14px 0 27px;
+            }
+
+            @media (max-width: 479px) {
+                margin: 4px 0 21px;
             }
 
             /*&:before {
@@ -143,6 +169,10 @@
             @media (max-width: 767px) {
                 margin-bottom: 21px;
             }
+
+            @media (max-width: 479px) {
+                font-size: 14px !important;
+            }
         }
     }
     &--firmName {
@@ -150,6 +180,10 @@
 
         @media (max-width: 767px) {
             margin: 0 0 1px;
+        }
+
+        @media (max-width: 479px) {
+            font-size: 16px !important;
         }
     }
 }
