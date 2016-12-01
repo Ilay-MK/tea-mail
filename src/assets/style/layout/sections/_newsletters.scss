@@ -33,6 +33,12 @@
             height: 422px;
         }
 
+        @media (max-width: 479px) {
+            background: url(../img/newsletters/packages/3.png) no-repeat 40% calc(100% + 173px),
+                transparent;
+            height: 473px;
+        }
+
         .bg-top {
             background-color: rgba(209, 180, 138, 0.51);
             border-bottom-left-radius: 30% 650%;
@@ -112,6 +118,10 @@
             @media (max-width: 991px) {
                 margin-top: 70px;
             }
+
+            @media (max-width: 479px) {
+                margin-top: 80px;
+            }
         }
     }
 
@@ -152,12 +162,23 @@
 
     &--heading {
         text-transform: uppercase;
+
+        @media (max-width: 479px) {
+            margin-bottom: 47px;
+        }
     }
 
     &--text {
         margin-right: auto;
         margin-left: auto;
         max-width: 450px;
+
+        @media (max-width: 479px) {
+            font-size: 15px !important;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 250px;
+        }
     }
 
     &--button {
