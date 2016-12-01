@@ -109,6 +109,10 @@
                     @media (max-width: 767px) {
                         padding: 49px 0 109px;
                     }
+
+                    @media (max-width: 479px) {
+                        padding: 32px 0 97px;
+                    }
                 }
 
             }
@@ -288,6 +292,10 @@
     &--heading {
         margin-bottom: 38px;
         text-transform: uppercase;
+
+        @media (max-width: 479px) {
+            font-size: 34px;
+        }
     }
 
     &--subHeading {
@@ -298,6 +306,10 @@
     &--rating {
         float: left;
         margin-left: 68px;
+
+        @media (max-width: 479px) {
+            margin-left: 0;
+        }
 
         .star {
             /*@include bg-cover;*/
@@ -322,6 +334,7 @@
 
     &--username {
         margin: 17px auto 7px;
+        @extend .toe;
     }
 
     &--text {
