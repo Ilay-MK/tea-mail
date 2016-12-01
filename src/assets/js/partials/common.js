@@ -155,11 +155,15 @@ $(document).ready(function () {
     }
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - - MAPS - - - - - - - - - - - - - - -  */
+    detachPrependTo('.address-container', '#map', '#gmap', 480, true);
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - -  */
     /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
     /// и возрат обратно в противном случае
     detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
-    detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--320', 480);
+    detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--top', 480, true);
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - COMMON - - - - - - - - - - - - - -  */
@@ -176,7 +180,8 @@ $(document).ready(function () {
         /// и возрат обратно в противном случае
         detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
-        detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--320', 480);
+        detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--top', 480, true);
+        detachPrependTo('.address-container', '#map', '#gmap', 480, true);
 
         if (getPageSize()[2] < 992) {
             $('#tea_room-content').css("margin-top", "0");
@@ -357,18 +362,31 @@ function scrollHeroCarousel(route) {
 /// @from - откуда производится перенос
 /// @to - куда производится перенос
 /// @width - при какой ширине производить перенос { < width }
-function detachPrependTo(obj, from, to, width) {
+function detachPrependTo(obj, from, to, width, insertAfter) {
     if (width === undefined) {
         width = 768;
+    }
+    if (insertAfter === undefined) {
+        insertAfter = false;
     }
 
     if (getPageSize()[2] < width) {
         /* перемещаем контейнер */
-        $(from).find(obj).detach().prependTo(to);
+        if (insertAfter) {
+            $(from).find(obj).detach().insertAfter(to);
+        }
+        else {
+            $(from).find(obj).detach().prependTo(to);
+        }
     }
     else {
         /* перемещаем контейнер */
-        $(to).find(obj).detach().prependTo(from);
+        if (insertAfter) {
+            $(to).find(obj).detach().insertAfter(from);
+        }
+        else {
+            $(to).find(obj).detach().prependTo(from);
+        }
     }
 }
 
