@@ -201,6 +201,10 @@
                 margin-right: -3px;
             }
 
+            @media (max-width: 479px) {
+                margin-left: -11px;
+            }
+
             .catalog {
 
                 &-col {
