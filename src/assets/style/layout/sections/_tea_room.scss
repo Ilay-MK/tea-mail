@@ -13,6 +13,14 @@
         height: auto;
     }
 
+    @media (max-width: 479px) {
+        background-image: url(../img/about_project/bg-mobile-bottom.png);
+        background-position-y: 100%;
+        background-repeat: repeat-x;
+        background-size: initial;
+        padding-bottom: 15px;
+    }
+
     .shapely_line {
         @include background-size(100% 100%);
         @include size(100%, 16px);
@@ -128,6 +136,12 @@
     &--heading {
         text-transform: uppercase;
 
+        @media (max-width: 479px) {
+            font-size: 40px;
+            line-height: 1.8em;
+            margin-bottom: 0;
+        }
+
         &:after {
             @include bg-cover;
             background-image: url(../img/tea_room/visual.png);
@@ -145,14 +159,24 @@
 
     &--subHeading {
 
+        @media (max-width: 479px) {
+            margin-top: 0;
+        }
     }
 
     &--text {
 
+        @media (max-width: 479px) {
+            font-size: 17px;
+        }
     }
 
     &--address {
         margin: 41px 0 22px;
+
+        @media (max-width: 479px) {
+            margin: 20px 0 10px;
+        }
 
         /*&:before {
             @include bg-cover;
