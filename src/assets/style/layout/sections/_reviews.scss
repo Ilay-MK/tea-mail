@@ -165,7 +165,7 @@
                             padding-left: 9px;
 
                             @media (max-width: 767px) {
-                                left: 0;
+                                left: -6px;
                             }
                         }
                         &-inner {
@@ -182,7 +182,7 @@
                             right: -28px;
 
                             @media (max-width: 767px) {
-                                right: 0;
+                                right: -6px;
                             }
                         }
                         &-inner {
