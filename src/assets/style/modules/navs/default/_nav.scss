@@ -130,6 +130,10 @@
                 margin-right: 36px;
             }
 
+            @media (max-width: 991px) {
+                margin: 0 0 0 61px;
+            }
+
             ul li {
                 > a {
                     @extend .nav-opened--link;
@@ -334,6 +338,16 @@
                 position: absolute;
                 bottom: -11px;
                 @include size(100%, 11px);
+            }
+
+            @at-root {
+                main .navbar-main-collapse {
+                    margin-left: -15px;
+
+                    .nav-catalog-opened {
+                        padding-top: 17px !important;
+                    }
+                }
             }
         }
 

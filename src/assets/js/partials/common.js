@@ -58,6 +58,8 @@ $(document).ready(function () {
 
     }, false);
 
+    detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
+
     /*$("body").click(function () {
         var $obj;
 
@@ -172,6 +174,7 @@ $(document).ready(function () {
         /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
         /// и возрат обратно в противном случае
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
+        detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
 
         if (getPageSize()[2] < 992) {
             $('#tea_room-content').css("margin-top", "0");
