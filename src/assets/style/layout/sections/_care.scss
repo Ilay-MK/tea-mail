@@ -5,6 +5,10 @@
     padding-bottom: 60px; /* TEMP */
     text-align: center;
 
+    @media (max-width: 479px) {
+        padding-bottom: 30px;
+    }
+
     &--advantages {
 
         &--gift {
@@ -64,6 +68,11 @@
                 margin-left: auto;
                 margin-right: auto;
                 max-width: 300px;
+            }
+
+            @media (max-width: 479px) {
+                margin-top: 40px;
+                margin-bottom: 5px;
             }
         }
 
@@ -174,6 +183,10 @@
                         &-container {
                             left: -6px;
                             padding-left: 9px;
+
+                            @media (max-width: 479px) {
+                                left: 3px;
+                            }
                         }
                         &-inner {
                             border-bottom: 1px solid #a4a4a4;
@@ -187,6 +200,11 @@
                         &-container {
                             padding-right: 9px;
                             right: -6px;
+
+                            @media (max-width: 479px) {
+                                /*right: 3px;*/
+                                right: 8px;
+                            }
                         }
                         &-inner {
                             border-right: 1px solid #a4a4a4;
