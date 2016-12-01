@@ -9,6 +9,15 @@
         padding-bottom: 8px;
     }
 
+    @media (max-width: 479px) {
+        background-image: url(../img/about_project/bg-mobile-bottom.png);
+        background-position-y: 100%;
+        background-repeat: repeat-x;
+        background-size: initial;
+        padding-bottom: 15px;
+        padding-top: 30px;
+    }
+
     /// Описание картинок ссылок
     &--imgLink {
 
@@ -70,6 +79,13 @@
                     right: calc(50% - 80px);
                 }
 
+                @media (max-width: 479px) {
+                    background-position-x: 35px;
+                    right: calc(50% - 115px);
+                    top: 280px;
+                    transform: scale(-1,1);
+                }
+
                 &:hover {
                     /*background-image: url(../img/kits/2-hover.png);*/
                     //background-position: -400px 0;
@@ -91,6 +107,10 @@
                     right: calc(50% - 180px);
                 }
 
+                @media (max-width: 479px) {
+                    display: none;
+                }
+
                 &:hover {
                     /*background-image: url(../img/kits/2-hover.png);*/
                     //background-position: -400px 0;
@@ -108,6 +128,10 @@
         @include size(auto, 190px); /* 175px */
         z-index: 8;
         /*z-index: -1;*/
+
+        @media (max-width: 479px) {
+            display: none;
+        }
 
         svg {
             @include size(100%, 100%);
@@ -165,6 +189,10 @@
             margin-bottom: 66px;
             padding: 0 33px;
         }
+
+        @media (max-width: 479px) {
+            padding-bottom: 30px;
+        }
     }
 
     &--heading {
@@ -185,6 +213,10 @@
         letter-spacing: .025em !important;
         position: relative;
         z-index: 9;
+
+        @media (max-width: 479px) {
+           font-size: 16px !important;
+        }
     }
 
     &--button {
@@ -192,8 +224,12 @@
         position: relative;
         z-index: 9;
 
-        @media (max-width: 991px) {
+        @media (max-width: 479px) {
             margin: 310px auto 0!important;
+        }
+
+        @media (max-width: 991px) {
+            margin-top: 247px !important;
         }
     }
 
