@@ -60,6 +60,10 @@
         &-choice_teaPost {
             @include webkit-scrollbar(#8aad7f, #688c5d);
 
+            @media (max-width: 991px) {
+                display: none !important;
+            }
+
             .catalog {
 
                 &--product {
