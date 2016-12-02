@@ -279,7 +279,7 @@
             margin: 0 14px;
             vertical-align: top;
             @include size(76px, 44px);
-            transition: box-shadow 0.3s ease-out, margin-bottom 0.3s ease-out, height 0.3s ease-out, background 0.3s ease-out;
+            transition: box-shadow 0.3s ease-out, margin-bottom 0.3s ease-out, height 0.3s ease-out;
 
             @media (max-width: 479px) {
                 @include size(47px);
@@ -287,6 +287,7 @@
                 background-image: none;
                 border-radius: 50%;
                 margin: 2px;
+                transition:  background 0.3s ease-out;
             }
 
             &:hover {
