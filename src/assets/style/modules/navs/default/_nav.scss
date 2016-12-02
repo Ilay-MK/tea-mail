@@ -291,7 +291,17 @@
             .navbar-toggle {
                 margin-left: 15px;
                 position: absolute;
+                @include transition();
                 z-index: 999;
+
+                &:hover {
+                    background-color: #d6a54f;
+
+                    .icon-bar {
+                        background-color: #fff;
+                        @include transition();
+                    }
+                }
 
                 .icon-bar {
                     background-color: #d6a54f;
