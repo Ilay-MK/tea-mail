@@ -172,9 +172,9 @@ $(document).ready(function () {
         /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
         /// и возрат обратно в противном случае
         detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
+        detachPrependTo('.address-container', '#map', '#gmap', 480, true);
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--top', 480, true);
-        detachPrependTo('.address-container', '#map', '#gmap', 480, true);
 
         if (getPageSize()[2] < 992) {
             $('#tea_room-content').css("margin-top", "0");
@@ -375,7 +375,7 @@ function detachPrependTo(obj, from, to, width, insertAfter) {
     else {
         /* перемещаем контейнер */
         if (insertAfter) {
-            $(to).find(obj).detach().insertAfter(from);
+            $(to).siblings(obj).detach().prependTo(from);
         }
         else {
             $(to).find(obj).detach().prependTo(from);
