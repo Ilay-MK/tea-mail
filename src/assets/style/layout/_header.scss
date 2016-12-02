@@ -393,7 +393,7 @@
 
     .shapely_line {
         background: transparent url(../img/header/shapely_line.png) no-repeat center bottom;
-        @include background-size(100% 100%);
+        @include background-size(cover);
         bottom: 28px;
         @include size(100%, 16px);
         position: absolute;
