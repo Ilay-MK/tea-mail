@@ -80,10 +80,28 @@
                 }
 
                 @media (max-width: 479px) {
-                    background-position-x: 35px;
-                    right: calc(50% - 115px);
+                    /*background-position-x: 35px;
+                    right: calc(50% - 115px);*/
+                    background-position-x: 56px;
+                    right: calc(50% - 125px);
                     top: 280px;
                     transform: scale(-1,1);
+                }
+
+                @media (max-width: 405px) {
+                    top: 290px;
+                }
+
+                @media (max-width: 370px) {
+                    top: 300px;
+                }
+
+                @media (max-width: 368px) {
+                    top: 336px;
+                }
+
+                @media (max-width: 338px) {
+                    top: 370px;
                 }
 
                 &:hover {
@@ -124,7 +142,8 @@
 
     &-decorate {
         position: absolute;
-        top: 94px;
+        /*top: 94px;*/
+        top: 105px;
         @include size(auto, 190px); /* 175px */
         z-index: 8;
         /*z-index: -1;*/
@@ -179,7 +198,7 @@
         border-radius: 20px/150px;
         margin: 0 auto;
         max-width: 485px;
-        padding: 1px 100px;
+        padding: 1px 110px;
         position: relative;
         @include size(100%, 399px);
         z-index: 9;
@@ -197,8 +216,10 @@
     }
 
     &--heading {
-        margin-bottom: 17px;
-        margin-top: 13px;
+        /*margin-bottom: 17px;*/
+        margin-bottom: 50px;
+        /*margin-top: 13px;*/
+        margin-top: 55px;
         position: relative;
         text-transform: uppercase;
         z-index: 9;
@@ -225,12 +246,12 @@
         position: relative;
         z-index: 9;
 
-        @media (max-width: 479px) {
-            margin: 310px auto 0!important;
+        @media (max-width: 991px) {
+            margin-top: 280px!important;
         }
 
-        @media (max-width: 991px) {
-            margin-top: 247px !important;
+        @media (max-width: 479px) {
+            margin: 230px auto 0!important;
         }
     }
 
@@ -258,8 +279,10 @@
         }
 
         @media (max-width: 991px) {
+            height: 250px;
             margin-right: 0px !important;
-            top: 187px;
+            /*top: 187px;*/
+            top: 267px;
             z-index: 10;
         }
 
