@@ -3,6 +3,7 @@
 #dishes {
     @include bg-cover;
     background-image: url(../img/dishes/bg.png);
+    background-attachment: fixed;
     /*height: 384px;*/
     padding: 149px 0px 80px;
     position: relative;
