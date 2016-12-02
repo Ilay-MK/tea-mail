@@ -531,6 +531,8 @@
                 left: 50%;
                 margin-left: 58px;
                 margin-top: 6px;
+
+
             }
         }
 
@@ -556,6 +558,13 @@
                     a {
                         text-align: center;
                         width: 100%;
+
+                        &.nav--username {
+
+                            @media (max-width: 479px) {
+                                display: none;
+                            }
+                        }
                     }
 
                     &.basket {
