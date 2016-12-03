@@ -23,9 +23,9 @@
 
             @media (max-width: 479px) {
                 left: 0;
-                padding-top: 28px;
+                /*padding-top: 28px;
                 position: relative;
-                top: -30px;
+                top: -30px;*/
             }
 
             .binding {
@@ -98,6 +98,16 @@
 }
 
 .map {
+    &__decorate-line {
+        background-color: #fff;
+        height: 30px;
+        position: absolute;
+        width: 100%;
+
+        &_hide-data {
+            top: 315px; /*345 - 30*/
+        }
+    }
     &--work_mode {
 
         @media (max-width: 479px) {

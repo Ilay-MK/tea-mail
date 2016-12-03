@@ -149,7 +149,7 @@ $(document).ready(function () {
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - MAPS - - - - - - - - - - - - - - -  */
-    detachPrependTo('.address-container', '#map', '#gmap', 480, true);
+    detachPrependTo('.address-container', '#map .container', '#gmap', 480, true);
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - -  */
@@ -172,7 +172,7 @@ $(document).ready(function () {
         /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
         /// и возрат обратно в противном случае
         detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
-        detachPrependTo('.address-container', '#map', '#gmap', 480, true);
+        detachPrependTo('.address-container', '#map .container', '#gmap', 480, true);
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--top', 480, true);
 
