@@ -103,6 +103,18 @@ $(document).ready(function () {
     });
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - CATALOG - - - - - - - - - - - - - - - */
+    $('.like__icon').click(function () {
+        $(this).stop().animateCss("bounceIn");
+        if($(this).hasClass("like__icon_liked")) {
+            $(this).removeClass('like__icon_liked');
+        }
+        else {
+            $(this).addClass('like__icon_liked');
+        }
+    });
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - TEA_MAIL - - - - - - - - - - - - - -  */
     /*$(".tea_mail--imgLink").hover(
         function(){
