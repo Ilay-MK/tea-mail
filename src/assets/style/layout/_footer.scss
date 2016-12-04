@@ -158,6 +158,10 @@
             padding: 0 18px;
             @include size(190px, 33px);
 
+            @media (max-width: 991px) and (min-width: 768px) {
+                width: 165px;
+            }
+
             @media (max-width: 479px) {
                 width: 185px;
             }
