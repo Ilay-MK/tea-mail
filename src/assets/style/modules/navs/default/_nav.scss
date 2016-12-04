@@ -406,7 +406,6 @@
 
                     &:hover {
                         .icon {
-
                             svg {
                                 fill: c("nav--link-hover");
                             }
@@ -452,10 +451,10 @@
                     &.pushed {
                         .icon {
                             .caret {
-                                border-bottom: none;
-                                border-top: 4px dashed;
-                                border-top: 4px solid\9;
-                                margin-top: -6px;
+                                border-top: none;
+                                border-bottom: 4px dashed;
+                                border-bottom: 4px solid\9;
+                                margin-top: -8px;
                             }
                         }
                     }
@@ -482,10 +481,10 @@
                             border-right: 4px solid transparent;
                             border-left: 4px solid transparent;*/
 
-                            border-top: none;
-                            border-bottom: 4px dashed;
-                            border-bottom: 4px solid\9;
-                            margin-top: -8px;
+                            border-bottom: none;
+                            border-top: 4px dashed;
+                            border-top: 4px solid\9;
+                            margin-top: -6px;
                             @include transition();
                         }
                     }
