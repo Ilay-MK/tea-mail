@@ -100,9 +100,14 @@
 .map {
     &__decorate-line {
         background-color: #fff;
+        display: none;
         height: 30px;
         position: absolute;
         width: 100%;
+
+        @media (max-width: 479px) {
+            display: block;
+        }
 
         &_hide-data {
             top: 315px; /*345 - 30*/
