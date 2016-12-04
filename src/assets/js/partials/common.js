@@ -69,17 +69,17 @@ $(document).ready(function () {
     });*/
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-    /* - - - - - - - - - - - - - - - - HEADER - - - - - - - - - - - - - - -  */
-    $("#header .ctrl-arrow-left").click(function () {
+    /* - - - - - - - - - - - - - - - - - HERO - - - - - - - - - - - - - - -  */
+    $("#hero .ctrl-arrow-left").click(function () {
         scrollHeroCarousel("prev");
     });
 
-    $("#header .ctrl-arrow-right").click(function () {
+    $("#hero .ctrl-arrow-right").click(function () {
         scrollHeroCarousel("next");
     });
 
     /* SEARCH */
-    /*$("#header--search--input").on('input', function () {
+    /*$("#hero--search--input").on('input', function () {
         var $item = $(this),
             value = $item.val();
 
@@ -87,7 +87,7 @@ $(document).ready(function () {
     });*/
 
     /* SEARCH */
-    $("#header--search--input").on('focus', function () {
+    $("#hero--search--input").on('focus', function () {
         var $item = $(this),
             value = $item.val();
 
@@ -95,7 +95,7 @@ $(document).ready(function () {
     });
 
     /* SEARCH */
-    $("#header--search--input").on('blur', function () {
+    $("#hero--search--input").on('blur', function () {
         var $item = $(this),
             value = $item.val();
 
@@ -345,8 +345,8 @@ function scrollHeroCarousel(route) {
         bg = heroCarousel.bg_default;
     }
 
-    $("#header h1").stop().text(h1).css("animation-duration", "0.8s").animateCss("fadeInDown");
-    $("#header").css("background-image", "url(assets/img/header/bg_" + bg + ".png)");
+    $("#hero h1").stop().text(h1).css("animation-duration", "0.8s").animateCss("fadeInDown");
+    $("#hero").css("background-image", "url(assets/img/hero/bg_" + bg + ".png)");
 }
 
 /// Перемещение объектов
