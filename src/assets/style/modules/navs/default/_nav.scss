@@ -402,11 +402,6 @@
                         max-width: 103px;
                         position: relative;
                         vertical-align: middle;
-
-                        &:hover {
-                            @extend .nav--link-hover;
-                            text-decoration: none;
-                        }
                     }
 
                     &:hover {
@@ -415,6 +410,11 @@
                             svg {
                                 fill: c("nav--link-hover");
                             }
+                        }
+
+                        > a {
+                            @extend .nav--link-hover;
+                            text-decoration: none;
                         }
                     }
 
