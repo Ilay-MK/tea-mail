@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карточки продукта.
+/// Элемент визуализации продукта
+.product-card_hover__visual {
+    /*@include size(203px, 63px);*/
+    /*@include size(100%, 63px);*/
+    @include size(100%, 59px); /* Поправка на увеличение карточки */
+    position: relative;
+
+    @media (max-width: 1309px) {
+        height: 132px;
+    }
+}

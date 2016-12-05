@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карточки продукта.
+/// Элемент старая стоимость
+.product-card__old-cost {
+    display: inline-block;
+    margin: 0;
+    text-decoration: line-through;
+
+    @media (max-width: 1309px) {
+        font-size: 20px;
+    }
+}
