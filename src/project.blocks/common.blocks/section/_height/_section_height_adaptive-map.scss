@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/// Описание BEM блока секции
+/// Модификатор - height со значением adaptive-map
+.section_height_adaptive-map {
+    height: 400px;
+
+    @media only screen and (max-height: 667px) {
+        height: 300px;
+    }
+
+    @media only screen and (max-height: 568px) {
+        height: 250px;
+    }
+
+    @media only screen and (max-height: 480px) {
+        height: 200px;
+    }
+
+    @media only screen and (max-height: 320px) {
+        height: 150px;
+    }
+}
