@@ -3,14 +3,8 @@
 /// Описание модификатора элемента BEM блока поля ввода.
 /// Модификатор - type со значением search
 .input_type_search {
-    background-color: transparent;
-    border: 0px solid transparent;
-    border: none;
-    outline: 0px solid transparent;
-    outline: none;
     padding: 0 20px;
     @include size(200px, 100%);
-    @include transition();
 
     @include placeholder_append {
 
