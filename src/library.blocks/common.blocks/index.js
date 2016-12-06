@@ -1,0 +1,1 @@
+//= parallax/index.js
