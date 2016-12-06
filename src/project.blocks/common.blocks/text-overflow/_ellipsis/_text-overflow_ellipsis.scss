@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока text-overflow.
+/// Модификатор - ellipsis
+.text-overflow_ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// Short
+.toe {
+    @extend .text-overflow_ellipsis;
+}
