@@ -3,5 +3,16 @@
 /// Описание элемента блока карточки продукта.
 /// Элемент input-field - поля ввода
 .product-card__input-field {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede; /* TEMP - взять из карты цветов */
+    border-radius: 2px;
+    float: left;
+    margin: 0 4px;
+    @include size(65px, 30px); /* 70px, 32px - поправка на зум */
 
+    @media (max-width: 1309px) {
+        margin: 0 5px;
+        @include size(92px, 40px);
+    }
 }
