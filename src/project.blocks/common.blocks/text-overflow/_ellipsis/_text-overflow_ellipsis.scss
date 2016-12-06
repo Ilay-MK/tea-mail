@@ -7,8 +7,3 @@
     overflow: hidden;
     white-space: nowrap;
 }
-
-// Short
-.toe {
-    @extend .text-overflow_ellipsis;
-}
