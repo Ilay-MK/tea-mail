@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока поля ввода типа поиск.
+/// Элемента - icon
+.input-search__icon {
+    @extend %bg-cover;
+    /*background-image: url("../img/header/search/search.png");*/
+    background-color: transparent;
+    border: 0px solid transparent;
+    border: none;
+    cursor: pointer;
+    outline: 0px solid transparent;
+    outline: none;
+    /*position: absolute;
+    right: 17px;
+    top: 9px;*/
+    margin-right: 15px;
+    @include size(16px);
+    vertical-align: middle;
+}
