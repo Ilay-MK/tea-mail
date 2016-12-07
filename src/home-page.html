@@ -1,35 +1,75 @@
-//= template/base/head.html
+<!DOCTYPE html>
+<html lang="ru">
 
-//= template/layout/header.html
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tea-Mail</title>
 
-<main id="home-page">
+    <link rel="canonical" href="http://tea-mail.by/" />
 
-    //= template/layout/sections/hero.html
+    <meta name="description" content="Tea-Mail." />
+    <meta name="keywords" content="Tea-Mail">
 
-    //= template/layout/sections/catalog.html
 
-    //= template/layout/sections/tea_mail.html
+    <meta property="og:title" content="Tea-Mail" />
+    <meta property="og:description" content="Tea-Mail" />
+    <meta property="og:url" content="http://tea-mail.by/" />
+    <meta property="og:locale" content="ru_BY" />
+    <meta property="og:image" content="/tea-mail.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tea-Mail" />
 
-    //= template/layout/sections/tea_room.html
+    //= template/base/head.html
 
-    //= template/layout/sections/tea_blog.html
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/home-page.css?v=0.0.1" />
+    <!-- endbuild -->
 
-    //= template/layout/sections/kits.html
+</head>
 
-    //= template/layout/sections/care.html
+<body lang="ru">
 
-    //= template/layout/sections/dishes.html
+    //= template/layout/header.html
 
-    //= template/layout/sections/about_project.html
+    <main id="home-page">
 
-    //= template/layout/sections/newsletters.html
+        //= template/layout/sections/hero.html
 
-    //= template/layout/sections/reviews.html
+        //= template/layout/sections/catalog.html
 
-</main>
+        //= template/layout/sections/tea_mail.html
 
-//= template/layout/sections/map.html
+        //= template/layout/sections/tea_room.html
 
-//= template/layout/footer.html
+        //= template/layout/sections/tea_blog.html
 
-//= template/base/foot.html
+        //= template/layout/sections/kits.html
+
+        //= template/layout/sections/care.html
+
+        //= template/layout/sections/dishes.html
+
+        //= template/layout/sections/about_project.html
+
+        //= template/layout/sections/newsletters.html
+
+        //= template/layout/sections/reviews.html
+
+    </main>
+
+    //= template/layout/sections/map.html
+
+    //= template/layout/footer.html
+
+    //= template/base/foot.html
+
+    <script>
+        $(document).ready(function () {
+            downloadJSAtOnload('assets/js/home-page.js?v=0.0.1');
+        });
+    </script>
+
+</body>
+
+</html>

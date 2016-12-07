@@ -1,15 +1,55 @@
-//= template/base/head.html
+<!DOCTYPE html>
+<html lang="ru">
 
-//= template/layout/header.html
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tea-Mail</title>
 
-<main id="catalog-page">
+    <link rel="canonical" href="http://tea-mail.by/" />
 
-    //= template/layout/sections/catalog.html
+    <meta name="description" content="Tea-Mail." />
+    <meta name="keywords" content="Tea-Mail">
 
-</main>
 
-//= template/layout/sections/map.html
+    <meta property="og:title" content="Tea-Mail" />
+    <meta property="og:description" content="Tea-Mail" />
+    <meta property="og:url" content="http://tea-mail.by/" />
+    <meta property="og:locale" content="ru_BY" />
+    <meta property="og:image" content="/tea-mail.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tea-Mail" />
 
-//= template/layout/footer.html
+    //= template/base/head.html
 
-//= template/base/foot.html
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/catalog-page.css?v=0.0.1" />
+    <!-- endbuild -->
+
+</head>
+
+<body lang="ru">
+
+    //= template/layout/header.html
+
+    <main id="catalog-page">
+
+        //= template/layout/sections/catalog.html
+
+    </main>
+
+    //= template/layout/sections/map.html
+
+    //= template/layout/footer.html
+
+    //= template/base/foot.html
+
+    <script>
+        $(document).ready(function () {
+            downloadJSAtOnload('assets/js/catalog-page.js?v=0.0.1');
+        });
+    </script>
+
+</body>
+
+</html>

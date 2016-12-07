@@ -15,7 +15,6 @@ var neighborhoods = [
 ];
 
 var markers = [], marker;
-var map;
 var image = './assets/img/map/marker.png';
 
 $('#gmap').one('inview', drop());

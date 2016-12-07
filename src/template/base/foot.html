@@ -29,14 +29,12 @@
             document.getElementsByTagName("body")[0].appendChild(element)
         }
 
-        $(document).ready(function () {
-            /*loadStyle('css/main.css?v=0.0.1');*/
-            downloadJSAtOnload('assets/js/main.js?v=0.0.4');
-        });
-
     </script>
 
     <script>
+
+        var map;
+
         function initMap() {
             map = new google.maps.Map(document.getElementById('gmap'), {
                 zoom: 17,
@@ -69,7 +67,3 @@
     <!-- Google.Analytics counter -->
 
     <!-- /Google.Analytics counter -->
-
-</body>
-
-</html>
