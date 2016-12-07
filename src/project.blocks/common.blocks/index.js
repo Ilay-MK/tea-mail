@@ -1,4 +1,3 @@
-//= menu/index.js
 //= menu-catalog/index.js
 //= menu-main/index.js
 //= menu-secondary/index.js
