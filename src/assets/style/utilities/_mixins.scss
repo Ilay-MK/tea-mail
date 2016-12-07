@@ -68,6 +68,14 @@
     }
 }
 
+@mixin background-gradient ($gradient) {
+    background-image: -webkit-$gradient;
+    background-image:   --moz-$gradient;
+    background-image:     -ms-$gradient;
+    background-image:      -o-$gradient;
+    background-image:         $gradient;
+}
+
 @mixin background-size ($background-size) {
     -webkit-background-size: $background-size;
        -moz-background-size: $background-size;
@@ -113,6 +121,15 @@
         display: table;
         clear: both;
     }
+}
+
+/// Помощник для сброса обрамления
+/// border и outline уберает
+@mixin clear-edging {
+    border: 0px solid transparent;
+    border: none;
+    outline: 0px solid transparent;
+    outline: none;
 }
 
 /// Помощник для определения размера
