@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/* Блок */
+@import "menu-catalog";
+/* Модификаторы */
+@import "_opened/index";
+/* Элементы */
+@import "__content/index";
+@import "__list/index";
+@import "__item/index";
+@import "__link/index";
