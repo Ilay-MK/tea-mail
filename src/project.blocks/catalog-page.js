@@ -1,2 +1,2 @@
-//= common.blocks/index.js
+//= common.js
 //= catalog-page.blocks/index.js

@@ -1,0 +1,1 @@
+//= common.blocks/index.js
