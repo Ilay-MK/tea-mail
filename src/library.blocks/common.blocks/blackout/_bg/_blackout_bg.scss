@@ -3,6 +3,11 @@
 /// Описание модификатора элемента BEM блока blackout.
 /// Модификатор - bg
 .blackout_bg {
-    background-color: rgba(0, 0, 0, 0.18);
+    background-color: rgba(0, 0, 0, 0.10);
     /*background-image: url(../img/blackout.png);*/ /*img для кроссбраузерности, браузеры не поддерживающие rgba*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
 }
