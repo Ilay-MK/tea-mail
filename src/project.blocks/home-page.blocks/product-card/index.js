@@ -1,5 +1,1 @@
-"use strict";
-
-$(function() {
-    // Handler for .ready() called.
-});
+//= product-card.js
