@@ -43,7 +43,7 @@ function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY)
 
 
 $(function() {
-    $.extend(true, $(document).scroll(),
+    $.extend(true, $(document).scroll(), $(document).scroll(
         function () {
             /*parallax($('#tea_mail').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3], "px", -8);*/
             parallax($('#tea_room-content'), 'margin-top', getPageSize()[3] / 2);
@@ -51,5 +51,5 @@ $(function() {
             /*parallax($('#dishes').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3] / 6, "px", -10);*/
             parallax($('#map--address'), 'top', getPageSize()[3] / 2);
         }
-    );
+    ));
 });
