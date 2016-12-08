@@ -40,8 +40,3 @@ function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY)
     /*object.addClass("parallax");*/
     object.css(cssRule, hOffset + unit);
 }
-
-
-$(function() {
-
-});
