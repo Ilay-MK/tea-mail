@@ -3,5 +3,7 @@
 /// Описание элемента BEM блока линк.
 /// Элемент icon - иконка
 .like__icon {
-    @include bg-cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    @include background-size(contain);
 }
