@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента блока chevron - "картинка" контрола карусели.
+/// Элемент inner.
+.chevron__inner {
+    display: inline-block;
+    margin: auto 0;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+    /*@include size(16px);*/
+    @include size(18px);
+    @include transition($time: 100ms);
+}

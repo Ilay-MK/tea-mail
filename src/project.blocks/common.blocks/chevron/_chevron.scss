@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание блока chevron - "картинка" контрола карусели.
+.chevron {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5d5d5;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: -28px;
+    /*padding: 19px;*/
+    padding-bottom: 18px;
+    padding-top: 18px;
+    position: absolute;
+    top: 50%;
+    @include size(55px);
+    @include transition();
+}
