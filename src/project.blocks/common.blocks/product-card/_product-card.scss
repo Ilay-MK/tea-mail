@@ -10,6 +10,10 @@
     margin: 4px;
     @include transition(all, 600ms, cubic-bezier(0.075, 0.82, 0.165, 1));
 
+    @media (min-width: 1310px) {
+        display: block;
+    }
+
     /*&:hover {
         border-color: #925900;
         box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.17);
