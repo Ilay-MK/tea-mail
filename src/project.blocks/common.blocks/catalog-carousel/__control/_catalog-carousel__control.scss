@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карусели каталога.
+/// Элемент контролы карусели.
+.catalog-carousel__control {
+    background: none;
+    opacity: 1;
+    @include transition();
+    width: 10%;
+
+    @media (min-width: 1310px) {
+        display: none;
+    }
+}
