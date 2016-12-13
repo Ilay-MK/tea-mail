@@ -11,4 +11,22 @@
     @media (min-width: 1310px) {
         display: none;
     }
+
+    // Маленькая плюшечка)
+    /*&:active, &:focus:active {
+
+        .chevron {
+
+            &-container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            &-inner {
+                border: 1px solid #eeafaf;
+                border-radius: 50%;
+                transform: none;
+            }
+        }
+    }*/
 }
