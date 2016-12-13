@@ -3,5 +3,5 @@
 /// Описание модификатора__products блока категории продукта.
 /// Модификатор - theme (тема) со значением new-goods.
 .catalog-category__products_theme_new-goods {
-    @include webkit-scrollbar(#d29b3b, #b1812c);
+    @include webkit-scrollbar-append(#d29b3b, #b1812c);
 }

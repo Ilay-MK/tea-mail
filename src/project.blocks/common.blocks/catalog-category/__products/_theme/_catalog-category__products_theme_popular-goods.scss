@@ -3,5 +3,5 @@
 /// Описание модификатора элемента блока категории продукта.
 /// Модификатор - theme (тема) со значением popular-goods.
 .catalog-category__products_theme_popular-goods {
-    @include webkit-scrollbar(#e0cc91, #c4b178);
+    @include webkit-scrollbar-append(#e0cc91, #c4b178);
 }
