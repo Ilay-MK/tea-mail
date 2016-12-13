@@ -23,8 +23,8 @@
     }
 
     &:focus {
-        outline: thin dotted;
         outline: 1px auto -webkit-focus-ring-color;
+        outline: thin dotted;
         /*outline: 0px solid transparent;
         outline: none;*/
     }
