@@ -4,4 +4,6 @@
 /// Модификатор - catalog
 .section__btn_catalog {
     margin: 0 auto 27px;
+    // TEMP
+    @include f("catalog--button");
 }
