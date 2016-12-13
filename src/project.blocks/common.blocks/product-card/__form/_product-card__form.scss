@@ -4,4 +4,8 @@
 /// Элемент форма
 .product-card__form {
 
+    @media (min-width: 1310px) {
+        /*display: none;*/
+    }
+
 }

@@ -5,14 +5,10 @@
 .product-card__btn {
     border-radius: 4px;
     background-color: #b62927; /* TEMP - взять из карты цветов */
-    bottom: 14px;
-    left: calc(50% - 36px);
-    position: absolute;
+    margin: 10px 0 0;
     @include size(71px, 29px); /* size(77px, 31px) Поправка на зум */
 
     @media (max-width: 1309px) {
-        bottom: 10px;
-        left: calc(50% - 45px);
         line-height: 38px !important;
         @include size(90px, 40px);
     }
@@ -20,11 +16,9 @@
     &:hover {
         background-color: #d63f3c;
         /*padding-top: 1px;*/
-        left: calc(50% - 37px);
         @include size(73px, 30px); /* size(80px, 32px) Поправка на зум */
 
         @media (max-width: 1309px) {
-            left: calc(50% - 45px);
             @include size(90px, 40px);
         }
     }
