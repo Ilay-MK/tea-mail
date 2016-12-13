@@ -3,5 +3,10 @@
 /// Описание BEM блока добавления в избранное.
 /// Like - понравившееся
 .like {
-
+    /*display: none;*/ /* специфично для section of homepage */
+    position: absolute;
+    text-align: center;
+    top: 12px;
+    @include transition(top, 600ms, cubic-bezier(.77,0,.175,1));
+    width: 100%;
 }
