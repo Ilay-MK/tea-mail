@@ -209,9 +209,45 @@
 
 }
 
-@mixin webkit-scrollbar-append($thumb-color: #d29b3b, $thumb-color-hover: #6dc0c8) {
-    @include optional-at-root('&') {
-        @content;
+@mixin webkit-scrollbar-append($thumb-color: #e0cc91, $thumb-color-hover: #c4b178, $btn-height: 0px, $scrollbar-track: transparent) {
+
+    &::-webkit-scrollbar-button {
+        /*@content;*/
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 5px;
+        height: $btn-height;
+    }
+
+    /* Цвет дорожки */
+    &::-webkit-scrollbar-track {
+        background-color: $scrollbar-track; /* #ecedee */
+    }
+
+    /* Цвет бегунка полосы, + его закругления */
+    &::-webkit-scrollbar-thumb {
+        //border-width: 1px 1px 1px 2px;
+        //border-color: #777;
+        //border-style: solid;
+        -webkit-border-radius: 0px;
+                border-radius: 0px;
+        background-color: $thumb-color; /* #6dc0c8 */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: $thumb-color-hover;
+    }
+
+    &::-webkit-resizer {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 4px;
+        height: 0px
+    }
+
+    /* Основная ширина прокрутки */
+    &::-webkit-scrollbar {
+        width: 6px;
     }
 }
 
