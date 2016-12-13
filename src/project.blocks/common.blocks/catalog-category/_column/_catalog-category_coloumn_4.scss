@@ -7,4 +7,9 @@
     /*@include size(393px, auto);*/
     /* width: 401px; */
     @include size(400px, auto);
+
+    @media (max-width: 1309px) {
+        margin: 0 6px 27px;
+        width: auto;
+    }
 }
