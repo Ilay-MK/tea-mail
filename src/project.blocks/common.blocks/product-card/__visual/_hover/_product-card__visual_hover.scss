@@ -5,10 +5,10 @@
 .product-card__visual_hover {
     /*@include size(203px, 63px);*/
     /*@include size(100%, 63px);*/
-    @include size(100%, 59px); /* Поправка на увеличение карточки */
+    @include size(100%, 132px);
     position: relative;
 
-    @media (max-width: 1309px) {
-        height: 132px;
+    @media (min-width: 1310px) {
+        height: 59px !important;/* Поправка на увеличение карточки */
     }
 }
