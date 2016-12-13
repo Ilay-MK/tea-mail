@@ -96,11 +96,11 @@
             border-image: url($image) $border;
 }
 
-@mixin transition ($target: all, $time: 0.3s, $effect: ease-out) {
-    -webkit-transition: $target $time $effect;
-       -moz-transition: $target $time $effect;
-         -o-transition: $target $time $effect;
-            transition: $target $time $effect;
+@mixin transition ($target: all, $time: 0.3s, $effect: ease-out, $important: null) {
+    -webkit-transition: $target $time $effect #{$important};
+       -moz-transition: $target $time $effect #{$important};
+         -o-transition: $target $time $effect #{$important};
+            transition: $target $time $effect #{$important};
 }
 
 @mixin bg-cover {
