@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока container (grid).
+/// Элемент - catalog.
+.container__cotalog {
+    @media (max-width: 479px) {
+        /*margin-left: -11px;*/
+        margin-left: -14px;  /* всвязи со скроллбаром */
+    }
+}
