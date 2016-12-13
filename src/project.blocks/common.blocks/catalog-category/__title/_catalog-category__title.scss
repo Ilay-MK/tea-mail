@@ -3,5 +3,6 @@
 /// Описание элемента блока категории продукта.
 /// Элемент заголовок (наименование категории).
 .catalog-category__title {
+    @include f("catalog--category--title");
     margin: 0 auto;
 }

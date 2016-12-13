@@ -3,6 +3,7 @@
 /// Описание элемента блока карточки продукта.
 /// Элемент input-field - поля ввода
 .product-card__input-field {
+    @include f("catalog--product_card--inputData");
     border-style: solid;
     border-width: 1px;
     border-color: #dedede; /* TEMP - взять из карты цветов */

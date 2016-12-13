@@ -3,5 +3,7 @@
 /// Описание элемента блока карточки продукта.
 /// Элемент подзаголовок
 .product-card__sub-title {
+    @include f("catalog--product_card--subTitle");
+    line-height: normal !important; /* TEMP */
     margin: 0;
 }

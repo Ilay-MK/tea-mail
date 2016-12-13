@@ -3,6 +3,8 @@
 /// Описание элемента блока карточки продукта.
 /// Элемент стоимость
 .product-card__cost {
+    @include f("catalog--product_card--price");
+    line-height: normal !important; /* TEMP */
     display: inline-block;
     margin-top: 18px;
     margin-bottom: 13px;
