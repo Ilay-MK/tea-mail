@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание BEM блока поля ввода
+.form-search__input {
+    @include f("hero--search");
+    line-height: normal;
+    position: relative;
+    z-index: 9;
+}

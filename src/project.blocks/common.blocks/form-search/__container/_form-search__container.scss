@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока формы поиска.
+/// Элемент - container.
+.form-search__container {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 18.5px;
+    display: inline-block;
+    position: relative;
+    /*@include size(241px, 37px);*/
+    @include size(auto, 37px);
+
+    @media (max-width: 479px) {
+        /*margin-bottom: 0;*/
+    }
+}
