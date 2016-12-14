@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание модификатор элемента BEM блока формы поиска.
+/// Модификатор - hero.
+.form-search__container_hero {
+    border-color: rgb(210, 155, 59);
+    background-color: rgba(0, 0, 0, 0.31);
+    margin: 0 auto 117px;
+}
