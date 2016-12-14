@@ -13,6 +13,10 @@
         height: auto;
     }
 
+    @media (min-width: 992px) {
+        background-attachment: fixed;
+    }
+
     @media (max-width: 479px) {
         background-image: url(../img/about_project/bg-mobile-bottom.png);
         background-position-y: 100%;
