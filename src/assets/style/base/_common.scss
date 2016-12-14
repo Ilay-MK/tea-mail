@@ -44,26 +44,12 @@ a {
     text-decoration: none;
     @include transition(color);
 
-    &:link, &:visited , &:hover, &:active, &:focus, &:focus:active {
-        display: inline-block;
-        text-decoration: none;
-    }
-
-    &:link {
-
-    }
-    &:visited {
-
-    }
     &:hover {
         text-decoration: underline;
     }
-    &:active {
-
-    }
     &:focus {
-        outline: thin dotted;
         outline: 1px auto -webkit-focus-ring-color;
+        outline: thin dotted;
         /*outline: 0px solid transparent;
         outline: none;*/
     }
@@ -85,22 +71,8 @@ img {
     vertical-align: middle;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-}
-
 main {
     background-color: #f6f6f5;
-}
-
-section {
-    overflow: hidden;
-    position: relative;
 }
 
 // Extras
