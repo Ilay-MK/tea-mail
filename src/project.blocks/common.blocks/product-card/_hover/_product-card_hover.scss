@@ -6,9 +6,8 @@
     border-color: #925900;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.17);
     position: relative;
-    transform: scale(1.079787234042553, 1.073469387755102) !important; // это size(203px, 263px)
 
-    @media (max-width: 1309px) {
-        transform: none;
+    @media (min-width: 1310px) {
+        transform: scale(1.079787234042553, 1.073469387755102) !important; // это size(203px, 263px)
     }
 }
