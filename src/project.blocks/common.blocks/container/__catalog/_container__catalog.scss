@@ -3,8 +3,15 @@
 /// Описание элемента BEM блока container (grid).
 /// Элемент - catalog.
 .container__cotalog {
+
     @media (max-width: 479px) {
         /*margin-left: -11px;*/
         margin-left: -14px;  /* всвязи со скроллбаром */
     }
+
+    @media (max-width: 1199px) and (min-width: 480px) {
+        margin-left: -3px;
+        margin-right: -3px;
+    }
+
 }
