@@ -4,4 +4,8 @@
 /// Модификатор - type со значением text
 .input_type_text {
 
+    &:focus {
+        outline: 0 solid transparent;
+        outline: none;
+    }
 }

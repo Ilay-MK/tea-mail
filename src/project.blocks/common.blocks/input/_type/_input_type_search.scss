@@ -7,6 +7,11 @@
     @include size(200px, 100%);
 
     @include placeholder_append {
+        color: #fff;
+    }
 
+    &:focus {
+        outline: 0 solid transparent;
+        outline: none;
     }
 }
