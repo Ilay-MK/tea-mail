@@ -104,15 +104,7 @@ $(document).ready(function () {
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - CATALOG - - - - - - - - - - - - - - - */
-    $('.like__icon').click(function () {
-        $(this).stop().animateCss("bounceIn");
-        if($(this).hasClass("like__icon_liked")) {
-            $(this).removeClass('like__icon_liked');
-        }
-        else {
-            $(this).addClass('like__icon_liked');
-        }
-    });
+
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - TEA_MAIL - - - - - - - - - - - - - -  */
@@ -129,6 +121,12 @@ $(document).ready(function () {
         mh(this, event);
     });
 
+    $.extend(true, $(document).scroll(), $(document).scroll(
+        function () {
+            /*parallax($('#tea_mail').addClass("parallax parallax_bg"), 'background-position-y', -getPageSize()[3], "px", -8);*/
+        }
+    ));
+
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - TEA_ROOM - - - - - - - - - - - - - -  */
     /*$("#tea_room").on('inview', function(event, isInView) {
@@ -138,6 +136,13 @@ $(document).ready(function () {
             // element has gone out of viewport
         }
     });*/
+
+    $.extend(true, $(document).scroll(), $(document).scroll(
+        function () {
+            /*parallax($('#tea_room').addClass("parallax parallax_bg"), 'background-position-y', 0, "px", -4, 400, -400);*/
+            parallax($('#tea_room-content'), 'margin-top', getPageSize()[3] / 2);
+        }
+    ));
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - KITS - - - - - - - - - - - - - - -  */
@@ -160,8 +165,23 @@ $(document).ready(function () {
     }
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /* - - - - - - - - - - - - - - - - - DISHES - - - - - - - - - - - - - -  */
+
+    $.extend(true, $(document).scroll(), $(document).scroll(
+        function () {
+            /*parallax($('#tea_mail').addClass("parallax parallax_bg"), 'background-position-y', -getPageSize()[3], "px", -8);*/
+        }
+    ));
+
+    /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - MAPS - - - - - - - - - - - - - - -  */
     detachPrependTo('.address-container', '#map .container', '#gmap', 480, true);
+
+    $.extend(true, $(document).scroll(), $(document).scroll(
+        function () {
+            parallax($('#map--address'), 'top', getPageSize()[3] / 2);
+        }
+    ));
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
     /* - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - -  */
@@ -178,8 +198,6 @@ $(document).ready(function () {
     }
 
     $( window ).resize(function() {
-        /* NAV TOP */
-        navMainResp();
 
         /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
         /// и возрат обратно в противном случае
@@ -198,14 +216,6 @@ $(document).ready(function () {
     });
 
     $(document).scroll( function () {
-        parallax($('#tea_mail').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3], "px", -8);
-        parallax($('#tea_room-content').addClass("parallax"), 'margin-top', getPageSize()[3] / 2);
-        /*parallax($('#tea_room').addClass("parallax-bg"), 'background-position-y', 0, "px", -4, 400, -400);*/
-        /*parallax($('#dishes').addClass("parallax-bg"), 'background-position-y', -getPageSize()[3] / 6, "px", -10);*/
-        parallax($('#map--address').addClass("parallax"), 'top', getPageSize()[3] / 2);
-
-        /* NAV TOP */
-        navMainResp();
 
     });
 
@@ -224,67 +234,6 @@ $(document).ready(function () {
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
 /* - - - - - - - - - - - - - - - - FUNCTION - - - - - - - - - - - - - - - */
 
-/// NAV TOP responsive nebu bg && margins
-/// p.s. вынести всё в класыы и скриптом только присваивание классов сделать!.
-function navMainResp() {
-
-    if(+$(document).scrollTop() > 50) {
-        if (getPageSize()[2] > 991) {
-            $("#nav-main").css("background-size", "280% 219px");
-            $("#nav-main").css("height", "202px");
-            $("#nav-main").css("margin-top", "-110px");
-            $("#nav-main").css("padding-top", "104px");
-            $("#nav-main .logo").html('<img src="assets/img/nav/logo_mini.png" alt="">');
-        }
-
-        if (getPageSize()[2] < 992) {
-            $("#nav-main").css("background-size", "300% 219px");
-            $("#nav-main").css("height", "219px");
-            $("#nav-main").css("margin-top", "-117px");
-            $("#nav-main").css("padding-top", "117px");
-            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
-        }
-
-        if (getPageSize()[2] < 768) {
-            $("#nav-main").css("background-size", "500% 219px");
-        }
-
-        if (getPageSize()[2] < 555) {
-            $("#nav-main").css("background-size", "800% 219px");
-        }
-
-        /* opened */
-        $(".nav-catalog-opened").css("padding-top", "60px");
-    }
-    else {
-        if (getPageSize()[2] > 991) {
-            $("#nav-main").css("background-size", "180% 219px");
-            $("#nav-main").css("height", "219px");
-            $("#nav-main").css("margin-top", "-100px");
-            $("#nav-main").css("padding-top", "100px");
-            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
-        }
-
-        if (getPageSize()[2] < 992) {
-            $("#nav-main").css("background-size", "300% 219px");
-            $("#nav-main").css("height", "219px");
-            $("#nav-main").css("margin-top", "-117px");
-            $("#nav-main").css("padding-top", "117px");
-            $("#nav-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
-        }
-
-        if (getPageSize()[2] < 768) {
-            $("#nav-main").css("background-size", "500% 219px");
-        }
-
-        if (getPageSize()[2] < 555) {
-            $("#nav-main").css("background-size", "800% 219px");
-        }
-
-        /* opened */
-        $(".nav-catalog-opened").css("padding-top", "100px");
-    }
-}
 
 /// Эффект наведения на картинки-линки в блоке чайной почты
 function mh(ob, event) {
@@ -393,47 +342,6 @@ function detachPrependTo(obj, from, to, width, insertAfter) {
             $(to).find(obj).detach().prependTo(from);
         }
     }
-}
-
-/// Parallax effect
-function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY) {
-    if (getPageSize()[2] < 992) {
-        return;
-    }
-
-    if (unit === undefined) {
-        unit = "px";
-    }
-    if (maxOffsetY === undefined) {
-        maxOffsetY = +object.outerHeight()/2;
-    }
-    if (minOffsetY === undefined) {
-        minOffsetY = -object.outerHeight()/2;
-    }
-    if (rate === undefined) {
-        rate = 4;
-    }
-
-    var currScrollPos = +$(document).scrollTop(),
-        offsetFromTop = object.offset(),
-        currToBlock   = +offsetFromTop.top - currScrollPos,
-        hOffset       = (currToBlock + baseline) / rate;
-
-    console.log("----------------------");
-    console.log("getPageSize()[3]: " + getPageSize()[3]);
-    console.log("maxOffsetY: " + maxOffsetY);
-    console.log("minOffsetY: " + minOffsetY);
-    console.log("currToBlock: " + currToBlock);
-    console.log("hOffset: " + hOffset);
-
-    if ( hOffset > maxOffsetY ) { hOffset = maxOffsetY; }
-    if ( hOffset < minOffsetY ) { hOffset = minOffsetY; }
-
-    console.log("hOffset + unit: " + hOffset + unit);
-    console.log("----------------------");
-
-    /*object.addClass("parallax");*/
-    object.css(cssRule, hOffset + unit);
 }
 
 /// Кроссбраузерное получение размеров окна на JS
