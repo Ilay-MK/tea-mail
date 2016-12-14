@@ -3,7 +3,10 @@
 /// Описание модификатора элемента контейнер заголовков блока категории продукта.
 /// Модификатор - shadow.
 .catalog-category__headings_shadow {
-    box-shadow: 0px 31px 5px 10px #f6f6f5;
-    position: relative;
-    z-index: 9;
+
+    @media (min-width: 1310px) {
+        box-shadow: 0px 31px 5px 10px #f6f6f5;
+        position: relative;
+        z-index: 9;
+    }
 }
