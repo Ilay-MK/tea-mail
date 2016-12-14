@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока категории продукта.
+/// Модификатор - shadow со значением radius.
+.catalog-category__decorate_shadow_radius {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}

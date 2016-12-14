@@ -11,8 +11,14 @@
         min-height: 100%;
         /* height: 498px */
         margin: 0px -3px;
+
         padding: 5px 4px; /* Чтоб не резала продукт при hover */
+        height: 515px; /**/
+
         /*@include size(auto, 502px);*/
         @include size(auto, 507px); /* Чтоб не резала продукт при hover */
+
+        padding: 15px 4px;
+        height: 525px;
     }
 }
