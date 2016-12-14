@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание BEM блока hidden-xs.
+.hidden-xs {
+    @media (max-width: 767px) and (min-width: 480px) {
+        display: none !important;
+    }
+}
