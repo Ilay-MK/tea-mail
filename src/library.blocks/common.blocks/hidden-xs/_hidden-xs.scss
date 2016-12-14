@@ -2,7 +2,7 @@
 
 /// Описание BEM блока hidden-xs.
 .hidden-xs {
-    @media (max-width: 767px) and (min-width: 480px) {
+    @media (max-width: 767px) {
         display: none !important;
     }
 }
