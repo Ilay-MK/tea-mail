@@ -203,23 +203,13 @@
     }
 
     .search {
-        display: inline-block;
-        border: solid 2px rgb(210, 155, 59);
-        background-color: rgba(0, 0, 0, 0.31);
-        border-radius: 18.5px;
-        margin: 0 auto 117px;
-        position: relative;
-        /*@include size(241px, 37px);*/
-        @include size(auto, 37px);
 
-        @media (max-width: 479px) {
-            /*margin-bottom: 0;*/
-        }
 
         .icon-search {
 
 
             svg {
+
             }
         }
 
@@ -228,15 +218,12 @@
         }
 
         input {
-            position: relative;
-            z-index: 9;
+
         }
 
         &--input {
 
-            &:focus {
-                width: 306px;
-            }
+
         }
 
         &--preResult {
