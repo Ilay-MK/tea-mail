@@ -5,11 +5,12 @@
 .product-card__btn {
     border-radius: 4px;
     background-color: #b62927; /* TEMP - взять из карты цветов */
+    @include f("catalog--product_card--button");
+    line-height: 28px !important; /* TEMP */
     margin: 10px 0 0;
     @include size(71px, 29px); /* size(77px, 31px) Поправка на зум */
 
     @media (max-width: 1309px) {
-        line-height: 38px !important;
         @include size(90px, 40px);
     }
 
