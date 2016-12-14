@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /// Описание модификатор элемента BEM блока формы поиска.
-/// Модификатор - hero.
-.form-search__input_hero {
+/// Модификатор - theme со значением hero.
+.form-search__input_theme_hero {
 
     &:focus {
         width: 306px;

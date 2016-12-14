@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /// Описание модификатора элемента BEM блока формы поиска.
-/// Модификатор - submit.
-.form-search__btn_submit {
+/// Модификатор - type со значением submit.
+.form-search__btn_type_submit {
     @include clear-edging;
     background-color: transparent;
     margin-right: 15px;
