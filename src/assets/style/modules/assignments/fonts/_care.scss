@@ -7,7 +7,7 @@
     }
 
     &--advantages {
-        @include f("header--advantages--text");
+        @include f("care--advantages--text");
         color: #bf9265; /* Temp из карты взять */
     }
 
