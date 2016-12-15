@@ -2,6 +2,7 @@
 
 /// Описание BEM блока линк.
 .link {
+    cursor: pointer;
     display: inline-block;
     text-decoration: none;
     @include transition(color);
