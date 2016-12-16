@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/// Описание BEM блока sr-only.
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    position: absolute;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    width: 1px;
+}
+
+/*
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}*/
