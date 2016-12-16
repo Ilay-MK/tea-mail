@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню.
+/// Элемент link.
+/// Модификатор theme.
+/// Значение модификатора tea-mail.
+.menu__link_theme_tea-mail {
+    color: getColor("GoldenBrown"); /* #925900 */
+    fill: getColor("GoldenBrown"); /* #925900  - иконки в svg*/
+}
