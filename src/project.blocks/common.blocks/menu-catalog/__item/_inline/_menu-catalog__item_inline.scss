@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор inline.
+.menu-catalog__item_inline {
+    display: inline-block;
+    margin-right: 55px;
+    max-width: 200px;
+    padding: 0;
+    vertical-align: top;
+
+    @media (max-width: 1309px) {
+        margin-right: 66px;
+    }
+
+    @media (max-width: 1279px) {
+        margin-right: 91px;
+    }
+
+    @media (max-width: 1259px) {
+        margin-right: 86px;
+    }
+
+    @media (max-width: 1239px) {
+        margin-right: 80px;
+    }
+
+    @media (max-width: 1219px) {
+        margin-right: 75px;
+    }
+
+    @media (max-width: 1199px) {
+        margin-right: 87px;
+    }
+
+    @media (max-width: 1179px) {
+        margin-right: 82px;
+    }
+
+    @media (max-width: 1159px) {
+        margin-right: 77px;
+    }
+
+    @media (max-width: 1139px) {
+        margin-right: 72px;
+    }
+
+    @media (max-width: 1119px) {
+        margin-right: 67px;
+    }
+
+    @media (max-width: 1099px) {
+        margin-right: 62px;
+    }
+
+    @media (max-width: 1079px) {
+        margin-right: 57px;
+    }
+
+    @media (max-width: 1059px) {
+        margin-right: 52px;
+    }
+
+    @media (max-width: 1039px) {
+        margin-right: 47px;
+    }
+
+    @media (max-width: 1019px) {
+        margin-right: 42px;
+    }
+
+    @media (max-width: 999px) {
+        margin-right: 38px;
+    }
+}
