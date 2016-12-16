@@ -3,6 +3,7 @@
 /// Описание модификатора элемента BEM блока меню каталога.
 /// Модификатор sub (подменю).
 .menu-catalog__link_sub {
+    color: getColor("GoldenBrown"); /* #925900 */
     font-size: 14px;
     font-weight: 600;
 
