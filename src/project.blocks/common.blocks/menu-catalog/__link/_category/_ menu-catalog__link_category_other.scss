@@ -1,0 +1,10 @@
+ @charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор category.
+/// Значение моификатора other.
+.menu-catalog__link_category_other {
+    &:before {
+        background-image: url(../img/nav/opened/title-icons/other.png);
+    }
+}
