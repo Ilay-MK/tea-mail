@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание модификатора блока navbar-collapse.
+/// Модификатор - catalog.
+.navbar-collapse_catalog {
+    //margin-left: -16px; /* 16px т.к. border 1px */
+    //margin-right: -16px;
+    padding-left: 0;
+    padding-right: 0;
+
+    @media (min-width: 1280px) {
+
+    }
+}
