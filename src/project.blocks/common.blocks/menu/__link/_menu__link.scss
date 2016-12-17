@@ -4,4 +4,11 @@
 /// Элемент link
 .menu__link {
     @include f("nav--link");
+
+    &:active,
+    &:active:focus,
+    &:visited,
+    &:visited:focus {
+        @include clear-edging;
+    }
 }
