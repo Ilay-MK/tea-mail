@@ -2,5 +2,14 @@
 
 /// Описание BEM блока меню
 .menu {
-
+    /* TEMP */
+    a {
+        &:active,
+        &:active:focus,
+        &:visited,
+        &:visited:focus,
+        &:focus {
+            @include clear-edging;
+        }
+    }
 }
