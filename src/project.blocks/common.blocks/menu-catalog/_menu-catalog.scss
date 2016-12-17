@@ -3,6 +3,8 @@
 /// Описание BEM блока меню каталога
 .menu-catalog {
     background-color: #f6f6f5;
+    margin-left: -16px; /* 16px т.к. border 1px */
+    margin-right: -16px;
     padding-top: 100px;
     @include transition();
     z-index: 90;
