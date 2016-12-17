@@ -3,5 +3,17 @@
 /// Описание элемента BEM блока меню каталога.
 /// Элемент content
 .menu-catalog__content {
+    margin: 0 105px;
 
+    @media (max-width: 1199px) {
+        margin: 0px 71px;
+    }
+
+    @media (max-width: 1100px) {
+        margin-right: 36px;
+    }
+
+    @media (max-width: 991px) {
+        margin: 0 0 0 61px;
+    }
 }
