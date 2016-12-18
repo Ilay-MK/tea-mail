@@ -7,5 +7,6 @@
 
     &:before {
         top: -16px;
+        transform: scale(1, -1);
     }
 }

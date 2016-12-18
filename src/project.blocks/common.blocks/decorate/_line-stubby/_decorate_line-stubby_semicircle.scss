@@ -2,10 +2,10 @@
 
 /// Описание модификатора BEM блока decorate.
 /// Модификатор line-stubby.
-/// Значение bottom.
-.decorate_line-stubby_bottom {
+/// Значение semicircle.
+.decorate_line-stubby_semicircle {
 
     &:after {
-        bottom: -11px;
+        background-image: url(assets/img/decorate_line-stubby_semicircle.png);
     }
 }
