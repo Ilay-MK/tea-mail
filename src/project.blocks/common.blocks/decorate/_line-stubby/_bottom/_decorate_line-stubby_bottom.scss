@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-stubby.
+/// Значение bottom.
+.decorate_line-stubby_bottom {
+
+    &:after {
+        bottom: -11px;
+    }
+}

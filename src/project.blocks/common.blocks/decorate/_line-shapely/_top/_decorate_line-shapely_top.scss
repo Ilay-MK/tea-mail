@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-shapely.
+/// Значение top.
+.decorate_line-shapely_top {
+
+    &:before {
+        top: -16px;
+    }
+}

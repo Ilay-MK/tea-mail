@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-stubby.
+.decorate_line-stubby {
+
+    &:before,
+    &:after {
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        height: 11px;
+    }
+}

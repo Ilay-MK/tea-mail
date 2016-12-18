@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание BEM блока decorate.
+.decorate {
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+    }
+}
