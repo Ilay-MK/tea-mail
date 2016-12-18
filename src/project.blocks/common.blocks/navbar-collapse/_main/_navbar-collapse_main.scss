@@ -6,4 +6,9 @@
     @media (min-width: 1280px) {
         display: block;
     }
+
+    @media (max-width: 1279px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
