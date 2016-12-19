@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-shapely.
+/// Значение theme-white.
+.decor_line-shapely_theme-white {
+
+    &:before,
+    &:after {
+        background-image: url(../img/decor/line/decor_line-shapely_theme-white.png);
+    }
+
+    &:before {
+
+    }
+
+    &:after {
+
+    }
+}

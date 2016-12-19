@@ -3,9 +3,19 @@
 /// Описание модификатора BEM блока decorate.
 /// Модификатор line-shapely.
 /// Значение bottom.
-.decorate_line-shapely_bottom {
+.decor_line-shapely_bottom {
+
+    &:before,
+    &:after {
+
+    }
+
+    &:before {
+
+    }
 
     &:after {
+        content: " ";
         bottom: -16px;
     }
 }

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decor.
+/// Модификатор line.
+.decor_line {
+
+    &:before,
+    &:after {
+        left: 0;
+    }
+
+    &:before {
+
+    }
+
+    &:after {
+
+    }
+}

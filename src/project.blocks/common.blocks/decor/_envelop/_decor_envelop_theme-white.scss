@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decor.
+/// Модификатор envelop.
+/// Значение theme-white.
+.decor_envelop_theme-white {
+
+    &:before,
+    &:after {
+        background-color: #fff;
+    }
+}

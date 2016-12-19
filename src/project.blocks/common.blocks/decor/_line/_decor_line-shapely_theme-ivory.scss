@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-shapely.
+/// Значение theme-ivory.
+.decor_line-shapely_theme-ivory {
+
+    &:before,
+    &:after {
+        background-image: url(../img/decor/line/decor_line-shapely_theme-ivory.png);
+    }
+
+    &:before {
+
+    }
+
+    &:after {
+
+    }
+}
