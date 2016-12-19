@@ -123,17 +123,7 @@
         }
 
         &:after {
-            background: url(../img/tea_room/bg-content-bottom.png) 0 100% repeat-x transparent;
-            bottom: -28px;
-            content: '';
-            display: block;
-            left: 0;
-            position: absolute;
-            @include size(100%, 28px);
 
-            @media (max-width: 991px) {
-                display: none;
-            }
         }
     }
 
