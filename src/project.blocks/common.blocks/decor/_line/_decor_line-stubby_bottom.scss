@@ -17,5 +17,9 @@
     &:after {
         content: " ";
         bottom: -11px;
+
+        @media (max-width: 991px) {
+            content: none;
+        }
     }
 }
