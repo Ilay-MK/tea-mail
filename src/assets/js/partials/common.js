@@ -58,7 +58,9 @@ $(document).ready(function () {
 
     }, false);
 
-    detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
+    detachPrependTo('#menu-catalog', '.navbar-collapse_catalog', '#place_menu-catalog', 992);
+
+
 
     /*$("body").click(function () {
         var $obj;
@@ -201,13 +203,26 @@ $(document).ready(function () {
 
         /// Перемещение формы подписки в подвале после навигации при ширине экрана < 768
         /// и возрат обратно в противном случае
-        detachPrependTo('.navbar-main-collapse', '.container-collapse-menu', 'main', 992);
+        detachPrependTo('#menu-catalog', '.navbar-collapse_catalog', '#place_menu-catalog', 992);
         detachPrependTo('.address-container', '#map .container', '#gmap', 480, true);
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--top', '#footer--newsletters--bottom');
         detachPrependTo('.footer--newsletters--container', '#footer--newsletters--bottom', '#footer--newsletters--top', 480, true);
 
         if (getPageSize()[2] < 992) {
             $('#tea_room-content').css("margin-top", "0");
+            $('#menu-catalog .menu-catalog__content > .menu-catalog__list').removeClass('pull-left');
+        }
+        else {
+            $('#menu-catalog .menu-catalog__content > .menu-catalog__list').addClass('pull-left');
+        }
+
+        if (getPageSize()[2] < 930) {
+            $('#menu-catalog__link_other').siblings('.menu-catalog__list_sub').hide();
+            $('#menu-catalog__link_dishes').siblings('.menu-catalog__list_sub').hide();
+        }
+        else {
+            $('#menu-catalog__link_other').siblings('.menu-catalog__list_sub').show();
+            $('#menu-catalog__link_dishes').siblings('.menu-catalog__list_sub').show();
         }
 
         if (getPageSize()[2] < 768) {
