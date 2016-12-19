@@ -40,8 +40,8 @@ function menuMainResponsive() {
         if (getPageSize()[2] < 992) {
             $("#menu-main").css("background-size", "300% 219px");
             $("#menu-main").css("height", "219px");
-            $("#menu-main").css("margin-top", "-117px");
-            $("#menu-main").css("padding-top", "117px");
+            $("#menu-main").css("margin-top", "-100px");
+            $("#menu-main").css("padding-top", "100px");
             $("#menu-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
         }
 
@@ -56,15 +56,15 @@ function menuMainResponsive() {
 }
 
 $(function() {
-    $.extend(true, $(document).scroll(),
+    $.extend(true, $(document).scroll(), $(document).scroll(
         function () {
             menuMainResponsive();
         }
-    );
+    ));
 
-    $.extend(true, $(document).resize(),
+    $.extend(true, $(document).resize(), $(document).resize(
         function () {
             menuMainResponsive();
         }
-    );
+    ));
 });

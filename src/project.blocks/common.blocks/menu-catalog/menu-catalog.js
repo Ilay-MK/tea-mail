@@ -14,15 +14,15 @@ function menuCatalogResponsive() {
 }
 
 $(function() {
-    $.extend(true, $(document).scroll(),
+    $.extend(true, $(document).scroll(), $(document).scroll(
         function () {
             menuCatalogResponsive();
         }
-    );
+    ));
 
-    $.extend(true, $(document).resize(),
+    $.extend(true, $(document).resize(), $(document).resize(
         function () {
             menuCatalogResponsive();
         }
-    );
+    ));
 });
