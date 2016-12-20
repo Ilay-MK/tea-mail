@@ -4,4 +4,7 @@
 /// Элемент item
 .menu-catalog__item {
 
+    @media (max-width: 479px) {
+        margin: 0;
+    }
 }
