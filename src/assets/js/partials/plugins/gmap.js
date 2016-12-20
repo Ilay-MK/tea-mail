@@ -14,7 +14,6 @@ var neighborhoods = [
   {lat: 53.911619, lng: 27.576343}
 ];
 
-var markers = [], marker;
 var image = './assets/img/map/marker.png';
 
 $('#gmap').one('inview', drop());
