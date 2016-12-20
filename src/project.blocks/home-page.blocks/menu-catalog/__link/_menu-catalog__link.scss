@@ -4,4 +4,7 @@
 /// Элемент link
 .menu-catalog__link {
 
+    @media (max-width: 479px) {
+        text-transform: uppercase;
+    }
 }
