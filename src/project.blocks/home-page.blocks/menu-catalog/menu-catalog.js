@@ -28,10 +28,13 @@ function menuCatalogRespTemp() {
 
 $(function() {
     menuCatalogRespTemp();
+
     /// Расширение функции
     $.extend(true, $(window).resize(), $(window).resize(
         function() {
             menuCatalogRespTemp();
         }
     ));
+
+    detachPrependTo('#menu-catalog', '.navbar-collapse_catalog', '#place_menu-catalog', 992);
 });

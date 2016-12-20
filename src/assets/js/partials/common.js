@@ -58,10 +58,6 @@ $(document).ready(function () {
 
     }, false);
 
-    detachPrependTo('#menu-catalog', '.navbar-collapse_catalog', '#place_menu-catalog', 992);
-
-
-
     /*$("body").click(function () {
         var $obj;
 
