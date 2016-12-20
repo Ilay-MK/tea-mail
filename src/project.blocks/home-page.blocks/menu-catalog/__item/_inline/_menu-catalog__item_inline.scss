@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор inline.
+.menu-catalog__item_inline {
+
+    @media (max-width: 479px) {
+        display: block;
+        margin: 0;
+        max-width: 100% !important;
+        padding: 0;
+        width: 100%;
+    }
+}
