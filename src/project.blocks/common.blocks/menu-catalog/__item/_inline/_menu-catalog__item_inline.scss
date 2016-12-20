@@ -20,4 +20,30 @@
     @media (max-width: 1199px) {
         margin-right: 39px;
     }
+
+    /* P.S. Переделать! */
+
+    @media (max-width: 929px) {
+        /*margin-right: 73px;*/
+        margin-right: 0;
+        padding-left: 110px;
+        width: 49%;
+        max-width: 49% !important;
+    }
+
+    @media (max-width: 839px) {
+        padding-left: 100px;
+    }
+
+    @media (max-width: 665px) {
+        padding-left: 50px;
+    }
+
+    @media (max-width: 569px) {
+        padding-left: 20px;
+    }
+
+    @media (max-width: 500px) {
+        padding-left: 10px;
+    }
 }
