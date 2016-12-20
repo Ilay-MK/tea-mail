@@ -1,4 +1,5 @@
 //= chevron/index.js
+//= detachPrependTo/index.js
 //= like/index.js
 //= menu/index.js
 //= menu-catalog/index.js
