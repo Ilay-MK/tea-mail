@@ -6,4 +6,8 @@
 	color: getColor("DimGray"); /* #6e6e6e */
     font-size: 13px;
     font-weight: 400;
+
+	@media (max-width: 479px) {
+        text-transform: none;
+    }
 }
