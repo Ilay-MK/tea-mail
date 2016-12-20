@@ -5,6 +5,8 @@
 .form-search__input_theme_hero {
 
     &:focus {
-        width: 306px;
+        @media (min-width: 480px) {
+            width: 306px;
+        }
     }
 }
