@@ -4,4 +4,7 @@
 /// Элемент list
 .menu-catalog__list {
 
+    @media (max-width: 479px) {
+        margin: 0 !important;
+    }
 }
