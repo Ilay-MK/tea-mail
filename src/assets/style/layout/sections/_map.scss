@@ -204,7 +204,7 @@
 }
 
 #gmap {
-    bottom: -30px;
+    /*bottom: -30px;*/
     @include size(100%);
 
     @media (max-width: 767px) {
