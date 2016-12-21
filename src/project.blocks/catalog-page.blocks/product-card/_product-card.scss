@@ -2,9 +2,9 @@
 
 /// Описание блока карточки продукта
 .product-card {
-    @include size(188px, 245px); /* специфично для section of catalog */
+    @include size(250px, 326px); /* специфично для section of catalog */
 
     @media (max-width: 1309px) {
-        @include size(292px, 337px); /* специфично для section of catalog */
+
     }
 }
