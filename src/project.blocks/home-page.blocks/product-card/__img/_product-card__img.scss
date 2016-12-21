@@ -4,5 +4,4 @@
 /// Элемент фотка продукта
 .product-card__img {
     /*@include size(184px, 132px);*/  /* специфично для section of homepage */
-    @include size(100%, auto);
 }
