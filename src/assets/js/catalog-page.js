@@ -1,0 +1,1 @@
+//= partials/catalog-page.js

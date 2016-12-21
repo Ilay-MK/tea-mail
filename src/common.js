@@ -1,2 +1,2 @@
-//= assets/js/main.js
+//= assets/js/common.js
 //= library.blocks/index.js
