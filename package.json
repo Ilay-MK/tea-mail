@@ -1,6 +1,6 @@
 {
     "name": "Tea-mail",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Tea-mail - интернет магазин китайского чая в Беларуси",
     "main": "index.html",
     "scripts": {
