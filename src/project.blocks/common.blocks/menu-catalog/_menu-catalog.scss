@@ -2,6 +2,7 @@
 
 /// Описание BEM блока меню каталога
 .menu-catalog {
+    margin-bottom: 0;
     @include transition();
     z-index: 90;
 }
