@@ -3,5 +3,10 @@
 /// Описание модификатора элемента BEM блока меню каталога.
 /// Модификатор without-sub (без вложенного списка).
 .menu-catalog__list_without-sub {
+    margin-right: 0;
+    max-width: 100%;
 
+    @media (min-width: 1310px) {
+        max-width: 170px;
+    }
 }

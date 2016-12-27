@@ -2,13 +2,6 @@
 
 /// Описание BEM блока меню каталога
 .menu-catalog {
-    background-color: #f6f6f5;
-    padding-top: 100px;
     @include transition();
     z-index: 90;
-
-    @media (max-width: 1279px) {
-        padding: 0;
-        z-index: 99;
-    }
 }
