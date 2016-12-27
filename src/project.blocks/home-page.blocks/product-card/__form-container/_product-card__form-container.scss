@@ -3,5 +3,8 @@
 /// Описание элемента блока карточки продукта.
 /// Элемент form-container - контейнер формы
 .product-card__form-container {
-    @include transition(margin-top, 600ms, cubic-bezier(.77,0,.175,1));
+
+    @media (min-width: 1310px) {
+        margin-top: 50px;
+    }
 }
