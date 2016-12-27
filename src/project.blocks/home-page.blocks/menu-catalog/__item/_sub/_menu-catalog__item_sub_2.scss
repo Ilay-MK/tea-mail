@@ -3,12 +3,6 @@
 /// Описание модификатора элемента BEM блока меню каталога.
 /// Модификатор sub (подменю).
 /// Значение модификатора - 2.
-.menu-catalog__link_sub_2 {
-    font-weight: 400;
-    padding: 4px 0;
+.menu-catalog__item_sub_2 {
 
-    @media (max-width: 479px) {
-        font-weight: 600;
-        padding: 5px 0;
-    }
 }
