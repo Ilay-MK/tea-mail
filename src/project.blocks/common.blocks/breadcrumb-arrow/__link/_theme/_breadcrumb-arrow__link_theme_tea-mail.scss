@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока хлебных крошек.
+/// Элемент - link.
+/// Модификатор - theme.
+/// Значение - tea-mail.
+
+$breadcrumb-arrow__color-rate: 15%;
+
+$breadcrumb-arrow__colors_theme_tea-mail: (
+    "default" : #dedede,
+    "bg"      : #fff,
+    "base"    : getColor("Putty"),
+    "hover"   : lighten(getColor("Putty"), $breadcrumb-arrow__color-rate),
+    "active"  : darken(getColor("Putty"), $breadcrumb-arrow__color-rate),
+    "font"    : #3c3c3c
+);
+
+.breadcrumb-arrow__link_theme_tea-mail {
+    background-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "bg");
+    border-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "default");
+    color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "font");
+
+    &:before {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "bg");
+    }
+
+    &:after {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "default");
+    }
+
+    &:focus,
+    &:hover {
+        background-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "hover");
+        border-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "hover");
+    }
+
+    &:focus:before,
+    &:hover:before {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "hover");
+    }
+
+    &:active {
+        background-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "active");
+        border-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "active");
+    }
+
+    &:active:after,
+    &:active:before {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "active");
+    }
+}
