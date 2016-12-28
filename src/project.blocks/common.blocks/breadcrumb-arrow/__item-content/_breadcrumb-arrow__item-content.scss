@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента блока хлебных крошек типа стрелки.
+/// Элемент - item-content (span).
+.breadcrumb-arrow__item-content {
+    color: #434a54;
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: top;
+}
