@@ -1,4 +1,5 @@
 //= breadcrumb/index.js
+//= breadcrumb-arrow/index.js
 //= chevron/index.js
 //= detachPrependTo/index.js
 //= like/index.js
