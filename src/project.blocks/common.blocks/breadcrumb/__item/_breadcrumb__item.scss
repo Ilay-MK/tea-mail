@@ -5,6 +5,10 @@
 .breadcrumb__item {
     display: inline-block;
 
+    &:first-child {
+
+    }
+
     & + .breadcrumb__item:before {
         padding: 0 5px;
         color: #ccc;
