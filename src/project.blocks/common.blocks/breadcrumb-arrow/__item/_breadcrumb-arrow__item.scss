@@ -7,8 +7,9 @@
     vertical-align: top;
 
     & + .breadcrumb-arrow__item:before {
-        padding: 0;
         content: "";
+        display: block;
+        padding: 0;
     }
 
     &:not(:first-child) {
