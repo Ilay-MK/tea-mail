@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока секции.
+/// Модификатор - catalog
+.section__btn_catalog {
+    margin: 0 auto 27px;
+    // TEMP - перенести всё в сущность кнопки
+    @include f("catalog--button");
+    background-color: transparent;
+    border: 2px solid #cc9d6d;
+    color: #cc9d6d;
+
+    &:hover {
+        border: 2px solid #c28e32;
+        color: #fff;
+    }
+}
