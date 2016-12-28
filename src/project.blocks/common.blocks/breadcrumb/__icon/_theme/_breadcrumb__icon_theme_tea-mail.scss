@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатор элемента блока хлебных крошек.
+/// Элемент - icon.
+/// Модификатор - theme.
+/// Значение - tea-mail.
+.breadcrumb__icon_theme_tea-mail {
+    background-color: #ffffff;
+    border-radius: 50%;
+    @include size(23px);
+}
