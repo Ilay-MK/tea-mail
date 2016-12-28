@@ -8,8 +8,8 @@
 
     & + .breadcrumb-arrow__item:before {
         content: "";
-        display: block;
         padding: 0;
+        vertical-align: top;
     }
 
     &:not(:first-child) {
