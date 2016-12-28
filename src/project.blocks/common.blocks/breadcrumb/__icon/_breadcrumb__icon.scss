@@ -6,5 +6,6 @@
     display: inline-block;
     overflow: hidden;
     @include size(100%);
+    text-align: center;
     vertical-align: top;
 }
