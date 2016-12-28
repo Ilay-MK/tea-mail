@@ -2,5 +2,10 @@
 
 /// Описание блока хлебных крошек.
 .breadcrumb {
-
+    background-color: #f6f6f5;
+    border-radius: 4px;
+    list-style: none;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+    padding: 8px 15px;
 }
