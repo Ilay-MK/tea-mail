@@ -3,5 +3,15 @@
 /// Описание элемента блока хлебных крошек.
 /// Элемент - item.
 .breadcrumb__item {
+    display: inline-block;
 
+    & + .breadcrumb__item:before {
+        padding: 0 5px;
+        color: #ccc;
+        content: "/\00a0";
+    }
+
+    &:last-child {
+        @extend .breadcrumb__item_active;
+    }
 }
