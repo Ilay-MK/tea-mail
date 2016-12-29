@@ -33,11 +33,17 @@ $breadcrumb-arrow__colors_theme_tea-mail: (
     &:hover {
         background-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "hover");
         border-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "hover");
+        color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "bg");
     }
 
     &:focus:before,
     &:hover:before {
         border-left-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "hover");
+    }
+
+    &:focus:after,
+    &:hover:after {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_tea-mail, "active");
     }
 
     &:active {
