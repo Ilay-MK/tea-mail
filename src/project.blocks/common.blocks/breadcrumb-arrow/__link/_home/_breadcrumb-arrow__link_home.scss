@@ -4,5 +4,5 @@
 /// Элемент - link.
 /// Модификатор - home.
 .breadcrumb-arrow__link_home {
-
+    @extend .breadcrumb-arrow__link_first-child-item;
 }
