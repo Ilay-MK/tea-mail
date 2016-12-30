@@ -3,6 +3,20 @@
 /// Описание элемента BEM блока catalog-filter.
 /// Элемент - input.
 .catalog-filter__input {
+    background-color: #fff;
+    border-color: #dadada;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    outline: 0px solid transparent;
+    outline-color: #cc9d6d;
+    margin: 0 6px;
+    @include size(47px, 35px);
+    @include transition();
+
+    &:focus {
+        outline: 1px solid #cc9d6d;
+    }
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
