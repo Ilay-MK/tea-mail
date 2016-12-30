@@ -10,8 +10,10 @@
     font-weight: 300;
     letter-spacing: 0.025em;
     line-height: 25px;
-    min-height: 75px;
+    height: 90px;
+    overflow: hidden;
     position: relative;
+    @include transition($time: 0.7s);
 
     &:after {
         content: '';
