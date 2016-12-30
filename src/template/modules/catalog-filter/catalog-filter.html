@@ -1,0 +1,20 @@
+<div class="catalog-filter">
+    <form method="post" action="">
+        <div data-role="rangeslider">
+            <label for="price-min">Price:</label>
+            <input type="number" data-type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
+
+            <label for="price-max">Price:</label>
+            <input type="number" data-type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+
+            <div class="layout-slider">
+                <span style="display: inline-block; width: 400px; padding: 0 5px;">
+                    <input id="slider-price" type="text" name="area" value="25;75" />
+                </span>
+            </div>
+        </div>
+        <div class="ui-btn-container">
+            <input type="submit" data-inline="true" value="Показать" class="" />
+        </div>
+    </form>
+</div>
