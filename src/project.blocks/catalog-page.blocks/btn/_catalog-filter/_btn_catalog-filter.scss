@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока кнопки.
+/// Модификатор - catalog-filter.
+.btn_catalog-filter {
+    background-color: #cc9d6d;
+    border-radius: 2px;
+    @include clear-edging;
+    color: #fff;
+    font-family: getFont-family("OpenSans");
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 1em;
+    @include size(99px, 33px);
+
+    &:hover, &:active, &:focus, &:focus:active {
+
+    }
+
+    &:hover,
+    &:focus {
+        background-color: darken(#cc9d6d, 5%);
+    }
+
+    &:active,
+    &:focus:active {
+        background-color: darken(#cc9d6d, 15%);
+    }
+
+}
