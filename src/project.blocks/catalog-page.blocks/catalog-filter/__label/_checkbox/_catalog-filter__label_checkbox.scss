@@ -8,6 +8,10 @@
     display: inline-block;
     position: relative;
 
+    &:active:before {
+        outline: 1px solid #cc9d6d;
+    }
+
     &:before {
         background-color: #fff;
         border-color: #dadada;
@@ -19,9 +23,11 @@
         content: "";
         display: inline-block;
         left: 0;
+        outline: 0px solid transparent;
         margin-right: 10px;
         position: relative;
         @include size(28px, 27px);
+        @include transition();
         vertical-align: middle;
     }
 
