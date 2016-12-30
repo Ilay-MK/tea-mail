@@ -1,20 +1,32 @@
 <div class="catalog-filter">
     <form method="post" action="">
         <div data-role="rangeslider">
-            <label for="price-min">Price:</label>
-            <input type="number" data-type="range" name="price-min" id="price-min" value="200" min="0" max="1000">
 
-            <label for="price-max">Price:</label>
-            <input type="number" data-type="range" name="price-max" id="price-max" value="800" min="0" max="1000">
+            <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline">
+                <div class="form__group">
+                    <label for="price-min">Цена от</label>
+                    <input type="number" data-type="range" name="price-min" id="price-min" value="200" min="0" max="1000" class="catalog-filter__input" />
 
-            <div class="layout-slider">
-                <span style="display: inline-block; width: 400px; padding: 0 5px;">
-                    <input id="slider-price" type="text" name="area" value="25;75" />
-                </span>
+                    <label for="price-max">до</label>
+                    <input type="number" data-type="range" name="price-max" id="price-max" value="800" min="0" max="1000" class="catalog-filter__input" />
+                    р. за 100г
+                </div>
+                <div class="form__group">
+                    <div class="catalog-filter__slider-conteiner">
+                        <span class="catalog-filter__slider-price-conteiner">
+                            <input id="catalog-filter__slider-price" class="catalog-filter__slider-price" type="text" name="area" value="25;75" />
+                        </span>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="ui-btn-container">
-            <input type="submit" data-inline="true" value="Показать" class="" />
+
+            <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline">
+                <div class="catalog-filter__btn-container">
+                    <button type="submit" class="btn btn_catalog-filter catalog-filter__btn">
+                        Показать
+                    </button>
+                </div>
+            </div>
         </div>
     </form>
 </div>
