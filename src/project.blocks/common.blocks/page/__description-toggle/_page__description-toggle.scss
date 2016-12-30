@@ -3,5 +3,12 @@
 /// Описание элемента BEM блока page.
 /// Элемент - description-toggle.
 .page__description-toggle {
-
+    color: getColor("Putty");
+    font-family: getFont-family("OpenSans");
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 19px;
+    text-decoration: underline;
 }
