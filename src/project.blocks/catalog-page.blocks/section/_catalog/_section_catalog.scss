@@ -4,4 +4,8 @@
 /// Модификатор - catalog.
 .section_catalog {
     text-align: center;
+
+    @media (min-width: 1310px) {
+        width: 794px;
+    }
 }
