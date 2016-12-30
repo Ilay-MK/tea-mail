@@ -4,11 +4,11 @@
 
             <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline">
                 <div class="form__group">
-                    <label for="price-min">Цена от</label>
-                    <input type="number" data-type="range" name="price-min" id="price-min" value="200" min="0" max="1000" class="catalog-filter__input" />
+                    <label for="catalog-filter__input_price-min">Цена от</label>
+                    <input type="number" id="catalog-filter__input_price-min" name="catalog-filter__input_price-min" value="200" class="catalog-filter__input" data-type="range" min="0" max="1000" />
 
-                    <label for="price-max">до</label>
-                    <input type="number" data-type="range" name="price-max" id="price-max" value="800" min="0" max="1000" class="catalog-filter__input" />
+                    <label for="catalog-filter__input_price-max">до</label>
+                    <input type="number" id="catalog-filter__input_price-max" name="catalog-filter__input_price-max" class="catalog-filter__input" data-type="range" value="800" min="0" max="1000" />
                     р. за 100г
                 </div>
                 <div class="form__group">
@@ -18,6 +18,15 @@
                         </span>
                     </div>
                 </div>
+            </div>
+
+            <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline">
+                <div class="catalog-filter__checkbox-container">
+					<input type="checkbox" id="catalog-filter__checkbox_choice-tea-post" value="1" title="Выбор Чайной Почты" class="catalog-filter__checkbox">
+					<label for="catalog-filter__checkbox_choice-tea-post">
+						<span>Выбор Чайной Почты</span>
+					</label>
+				</div>
             </div>
 
             <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline">
