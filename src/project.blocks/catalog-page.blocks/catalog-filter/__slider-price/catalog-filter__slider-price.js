@@ -1,16 +1,81 @@
 "use strict";
 
-$(function() {
+/// Связь инпутов и ползунка.
+/// P.S. переписать всё.
+function statechangeSliderPrice () {
+
     /*$('#catalog-filter__slider-price').slider("value");*/
     /*$('#catalog-filter__slider-price').slider("value", p1, p2);*/
     /*$('#catalog-filter__slider-price').slider("prc");*/
     /*$('#catalog-filter__slider-price').slider("prc", p1, p2);*/
     /*$('#catalog-filter__slider-price').slider("calculatedValue");*/
 
-    var val, p1, p2;
+    /*$('#catalog-filter__slider-price').bind("DOMAttrModified propertychange", function (e) {
+        alert( $('#catalog-filter__slider-price').slider("value") );
+    });*/
+    var value, inputMin, inputMax, min, max;
 
-    val = $('#catalog-filter__slider-price').slider("value");
+    inputMin = $('#catalog-filter__input_price-min');
+    inputMax = $('#catalog-filter__input_price-max');
 
-    alert(val);
+    min = inputMin.attr("min");
+    max = inputMin.attr("max");
 
+    $('.jslider-pointer').mousedown(function(){
+        $('.catalog-filter__slider-price-conteiner').mousemove(function(){
+            var p1, p2;
+
+            value = $('#catalog-filter__slider-price').slider("value");
+            p1 = value.split(';')[0];
+            p2 = value.split(';')[1];
+
+            inputMin.val(p1);
+            inputMax.val(p2);
+        });
+    });
+
+    inputMin.on('input paste copy change', function(e) {
+        var val = min;
+        if( !Number.isNaN( val = parseInt($( this ).val(), 10 )) ) {
+            if( val > min ) {
+                if( val > inputMax.val() ) {
+                    $('#catalog-filter__slider-price').slider("value", inputMax.val());
+                    inputMin.val(inputMax.val());
+                }
+                else {
+                    $('#catalog-filter__slider-price').slider("value", val);
+                }
+            }
+        }
+    });
+
+    inputMax.on('input paste copy change', function(e) {
+        var val = max;
+        if( !Number.isNaN( val = parseInt($( this ).val(), 10 )) ) {
+            if( val < max ) {
+                if( val < inputMin.val() ) {
+                    $('#catalog-filter__slider-price').slider("value", inputMin.val(), inputMin.val());
+                    inputMax.val(inputMin.val());
+                }
+                else {
+                    $('#catalog-filter__slider-price').slider("value", inputMin.val(), val);
+                }
+            }
+        }
+    });
+}
+
+$(function() {
+    statechangeSliderPrice();
+
+    /// Событие click() с отменой перехода по ссылке
+    $('.catalog-filter__link_reset').click(function (e) {
+        e.preventDefault();
+
+        var form = $( this ).closest("form");
+        form[0].reset();
+        form.find('input').trigger('change');
+        form.submit();
+
+    });
 });

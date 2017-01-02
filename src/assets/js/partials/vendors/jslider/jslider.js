@@ -9,6 +9,9 @@ $(function() {
         heterogeneity: ['50/100', '75/250'],
         limits: true,
         dimension: '&nbsp; руб.',
-        skin: "round"
+        skin: "round"/*,
+        onstatechange: function( value ){
+            console.dir( this );
+        }*/
     });
 });
