@@ -4,6 +4,14 @@
 /// Модификатора - hover
 .product-card__visual_hover {
 
+    /* Сделать по BEM! */
+    &.product-card_view_block {
+
+        @media (min-width: 1310px) {
+            //height: 130px;/* Поправка на увеличение карточки */
+        }
+    }
+
     @media (min-width: 1310px) {
         height: 130px;/* Поправка на увеличение карточки */
     }
