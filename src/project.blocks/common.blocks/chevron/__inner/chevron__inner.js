@@ -4,9 +4,9 @@
 $(function() {
     $.extend(true, $('.catalog-carousel__control').hover(), $('.catalog-carousel__control').hover(
         function() {
-            $( this ).find('chevron-inner').addClass( "chevron-inner_hover" );
+            $( this ).find('.chevron__inner').addClass( "chevron__inner_hover" );
         }, function() {
-            $( this ).find('chevron-inner').removeClass( "chevron-inner_hover" );
+            $( this ).find('.chevron__inner').removeClass( "chevron__inner_hover" );
         }
     ));
 });
