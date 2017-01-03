@@ -3,7 +3,7 @@
 /// Описание модификатора элемента блока карточки продукта.
 /// Модификатор - hover
 .product-card_hover {
-    border-color: #925900;
+    border-color: getColor("GoldenBrown") !important;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.17);
     position: relative;
     z-index: 9;
