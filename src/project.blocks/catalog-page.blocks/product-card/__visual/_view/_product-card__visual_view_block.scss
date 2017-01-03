@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока карточки продукта.
+/// Модификатор - view.
+/// Значение - block.
+.product-card__visual_view_block {
+    @include size(249px, 135px);
+}
