@@ -4,4 +4,13 @@
 /// Элемент контролы карусели.
 .catalog-carousel__control {
     opacity: 1 !important;
+    @include transition(all, 600ms, cubic-bezier(.77,0,.175,1));
+
+    /* Передалать по BEM! */
+    &.left {
+        left: -50px;
+    }
+    &.right {
+        right: -50px;
+    }
 }
