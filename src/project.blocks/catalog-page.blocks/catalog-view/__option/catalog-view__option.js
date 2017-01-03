@@ -12,12 +12,16 @@ $(function() {
                 $('.product-card').addClass('product-card_view_block');
                 /* работаем с блоком visual */
                 $('.product-card__visual').addClass('product-card__visual_view_block');
+                /* работаем с контейнером описания продукта */
+                $('.product-card__description').addClass('product-card__description_view_block');
             }
             else {
                 /* работаем непосредсвенно с блоком-карточкой */
                 $('.product-card').removeClass('product-card_view_block');
                 /* работаем с блоком visual */
                 $('.product-card__visual').removeClass('product-card__visual_view_block');
+                /* работаем с контейнером описания продукта */
+                $('.product-card__description').removeClass('product-card__description_view_block');
             }
         }
     ));
