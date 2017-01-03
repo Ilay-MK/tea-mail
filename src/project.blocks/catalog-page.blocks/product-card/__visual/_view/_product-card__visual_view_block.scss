@@ -4,5 +4,6 @@
 /// Модификатор - view.
 /// Значение - block.
 .product-card__visual_view_block {
+    display: inline-block;
     @include size(249px, 135px);
 }
