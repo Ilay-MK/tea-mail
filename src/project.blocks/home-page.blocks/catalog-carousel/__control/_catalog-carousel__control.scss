@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карусели каталога.
+/// Элемент контролы карусели.
+.catalog-carousel__control {
+    background: none !important;
+    opacity: 1 !important;
+    @include transition();
+    width: 10%;
+
+    @media (min-width: 1310px) {
+        display: none !important;
+    }
+
+    // Маленькая плюшечка)
+    /*&:active, &:focus:active {
+
+        .chevron {
+
+            &-container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            &-inner {
+                border: 1px solid #eeafaf;
+                border-radius: 50%;
+                transform: none;
+            }
+        }
+    }*/
+}
