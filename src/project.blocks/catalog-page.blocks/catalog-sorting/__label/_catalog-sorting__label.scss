@@ -3,5 +3,12 @@
 /// Описание элемента блока метода сортировки товаров.
 /// Элемент - label (label метода сортировки).
 .catalog-sorting__label {
+    color: #4b4b4b;
     display: inline-block;
+    font-family: getFont-family("OpenSans");
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 16px;
 }
