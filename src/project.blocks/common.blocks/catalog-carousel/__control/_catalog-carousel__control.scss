@@ -3,5 +3,7 @@
 /// Описание элемента блока карусели каталога.
 /// Элемент контролы карусели.
 .catalog-carousel__control {
-
+    background: 0 0!important;
+    @include transition();
+    z-index: 10;
 }
