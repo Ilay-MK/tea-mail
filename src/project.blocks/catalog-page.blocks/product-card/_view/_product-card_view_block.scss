@@ -4,5 +4,6 @@
 /// Модификатор - view.
 /// Значение - block.
 .product-card_view_block {
-
+    float: none !important;
+    width: auto !important;
 }
