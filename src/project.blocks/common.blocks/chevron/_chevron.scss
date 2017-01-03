@@ -16,4 +16,8 @@
     top: 50%;
     @include size(55px);
     @include transition();
+
+    &:hover {
+        border-color: #d29b3b;
+    }
 }
