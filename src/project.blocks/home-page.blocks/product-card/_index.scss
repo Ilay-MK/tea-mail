@@ -1,13 +1,7 @@
 @charset "UTF-8";
 
-/* Карточка */
 @import "product-card";
-/* Фото */
-@import "__visual/index";
-@import "__img/index";
-/* Заголовки */
-/* Цены */
-/* Форма */
+@import "__cost/index";
 @import "__form-container/index";
-/* Поля ввода */
-/* Кнопка */
+@import "__img/index";
+@import "__visual/index";
