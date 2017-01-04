@@ -20,6 +20,13 @@ $(function() {
                 $('.product-card__btn').addClass('product-card__btn_view_block');
                 /* работаем с контейнером заготовков продукта */
                 $('.product-card__headings').addClass('product-card__headings_view_block');
+                /* работаем с ценами продукта */
+                $( '.product-card__prices' ).each(function() {
+                    var parCont = $( this ).closest(".product-card__description");
+                    $( this ).detach().insertAfter(parCont.find('.product-card__btn-container'));
+                });
+                $('.product-card__prices').addClass('product-card__prices_view_block');
+                $('.product-card__cost').addClass('product-card__cost_view_block');
             }
             else {
                 /* работаем непосредсвенно с блоком-карточкой */
@@ -34,6 +41,13 @@ $(function() {
                 $('.product-card__btn').removeClass('product-card__btn_view_block');
                 /* работаем с контейнером заготовков продукта */
                 $('.product-card__headings').removeClass('product-card__headings_view_block');
+                /* работаем с ценами продукта */
+                $( '.product-card__prices' ).each(function() {
+                    var parCont = $( this ).closest(".product-card__description");
+                    $( this ).detach().insertAfter(parCont.find('.product-card__headings'));
+                });
+                $('.product-card__prices').removeClass('product-card__prices_view_block');
+                $('.product-card__cost').removeClass('product-card__cost_view_block');
             }
         }
     ));
