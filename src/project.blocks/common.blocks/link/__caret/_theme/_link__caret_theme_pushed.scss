@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока линк.
+/// Модификатора - theme.
+/// Значение - pushed.
+.link__caret_theme_pushed {
+    border-top: none;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid\9;
+    margin-top: -8px;
+}

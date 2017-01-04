@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока линка меню каталога.
+/// Элемент caret.
+.link__caret {
+	/*border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;*/
+
+    border-bottom: none;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    margin-top: -6px;
+    @include transition();
+}
