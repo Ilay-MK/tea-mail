@@ -3,5 +3,12 @@
 /// Описание модификатора элемента BEM блока меню каталога.
 /// Модификатор sub (подменю).
 .menu-catalog__list_sub {
-    margin-left: 35px;
+
+    @media (min-width: 1200px) {
+        margin-left: 35px;
+    }
+
+    @media (max-width: 479px) {
+        margin-left: -35px;
+    }
 }
