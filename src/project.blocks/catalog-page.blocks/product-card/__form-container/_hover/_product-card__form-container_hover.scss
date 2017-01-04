@@ -3,5 +3,8 @@
 /// Описание модификатора элемента блока карточки продукта.
 /// Модификатор - hover.
 .product-card__form-container_hover {
-    margin-top: 2px;
+
+    @media (min-width: 1310px) {
+        margin-top: 2px;
+    }
 }
