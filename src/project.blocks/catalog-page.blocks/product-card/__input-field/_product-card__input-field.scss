@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
 /// Описание элемента блока карточки продукта.
-/// Элемент стоимость
-.product-card__cost {
+/// Элемент input-field - поля ввода
+.product-card__input-field {
 
     @media (max-width: 991px) {
-        font-size: 23px;
-        margin-bottom: 10px;
-        margin-top: 13px;
+        margin: 0 5px;
+        @include size(92px, 40px);
     }
 }

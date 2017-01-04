@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
 /// Описание элемента блока карточки продукта.
-/// Элемент стоимость
-.product-card__cost {
+/// Элемент старая стоимость
+.product-card__cost_old {
 
     @media (max-width: 991px) {
-        font-size: 23px;
-        margin-bottom: 10px;
-        margin-top: 13px;
+        font-size: 20px;
     }
 }

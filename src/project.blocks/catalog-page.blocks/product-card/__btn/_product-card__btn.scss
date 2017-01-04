@@ -4,4 +4,15 @@
 /// Элемент - кнопка
 .product-card__btn {
 
+    @media (max-width: 991px) {
+        @include size(90px, 40px);
+    }
+
+    &:hover {
+
+        @media (max-width: 991px) {
+            @include size(90px, 40px);
+        }
+    }
+
 }
