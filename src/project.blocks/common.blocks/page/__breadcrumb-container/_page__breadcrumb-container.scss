@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока page.
+/// Элемент - breadcrumb-container.
+.page__breadcrumb-container {
+
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
