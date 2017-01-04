@@ -3,5 +3,10 @@
 /// Описание элемента блока контейнера фильтров товаров.
 /// Элемент - title.
 .catalog-filter-container__title {
-
+    color: #4b4b4b;
+    font-family: getFont-family("OpenSans");
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
 }
