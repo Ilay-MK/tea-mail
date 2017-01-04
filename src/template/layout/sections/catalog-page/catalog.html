@@ -1,18 +1,23 @@
 <section id="catalog" class="section section_catalog">
 
-    <div class="catalog-filter-conteiner">
+    <div class="catalog-filter-container">
 
-        <h3 class="h3 catalog-filter-container__title">Фильтры</h3>
+        <h3 class="h3 catalog-filter-container__title" data-toggle="collapse" data-target="#catalog-filter-container__content">Фильтры</h3>
 
-        //= ../../../modules/catalog-filter/catalog-filter.html
+        <div id="catalog-filter-container__content" class="catalog-filter-container__content collapse in">
 
-        <div class="catalog-sort-view-container text-right">
+            //= ../../../modules/catalog-filter/catalog-filter.html
 
-            //= ../../../modules/catalog-filter/catalog-sorting.html
+            <div class="catalog-sort-view-container text-right">
 
-            //= ../../../modules/catalog-filter/catalog-view.html
+                //= ../../../modules/catalog-filter/catalog-sorting.html
+
+                //= ../../../modules/catalog-filter/catalog-view.html
+
+            </div>
 
         </div>
+
 
     </div>
 
