@@ -3,4 +3,7 @@
 /// Описание блока контейнера фильтров товаров.
 .catalog-filter-container {
 
+    @media (max-width: 991px) {
+        margin: 35px 0 0px;
+    }
 }

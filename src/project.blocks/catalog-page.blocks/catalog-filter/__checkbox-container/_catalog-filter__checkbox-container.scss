@@ -5,4 +5,8 @@
 .catalog-filter__checkbox-container {
     /*margin: 0 30px;*/
     margin: 0 40px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
