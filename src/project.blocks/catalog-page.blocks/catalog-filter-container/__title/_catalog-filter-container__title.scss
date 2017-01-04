@@ -16,4 +16,23 @@
     font-weight: 400;
     margin: 0 -15px;
     padding: 20px 15px;
+    position: relative;
+
+    &:after {
+        background-color: #fff;
+        border-color: #eeeeee;
+        border-style: solid;
+        border-bottom-width: 1px;
+        border-left-width: 0;
+        border-right-width: 1px;
+        border-top-width: 0;
+        bottom: -8px;
+        content: '';
+        left: calc(50% - 8px);
+        position: absolute;
+        transform-origin: 50% 50%;
+        transform: rotate(45deg);
+        @include size(16px);
+        @include transition();
+    }
 }
