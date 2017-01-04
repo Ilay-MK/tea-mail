@@ -3,5 +3,12 @@
 /// Описание элемента BEM блока меню каталога.
 /// Элемент link
 .menu-catalog__link {
-    text-transform: uppercase;
+
+    @media (min-width: 1200px) {
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 479px) {
+        text-transform: uppercase;
+    }
 }
