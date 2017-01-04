@@ -10,7 +10,9 @@ function removeInClassFromCatalogFilter_992() {
 }
 
 $(function() {
-    removeInClassFromCatalogFilter_992();
+    setTimeout(function() {
+        removeInClassFromCatalogFilter_992();
+    }, 1500);
 
     /// Расширение функции
     $.extend(true, $(window).resize(), $(window).resize( function (){
