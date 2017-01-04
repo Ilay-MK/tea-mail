@@ -20,7 +20,7 @@ $(function() {
         }
     ));
 
-    $.extend(true, $(document).resize(), $(document).resize(
+    $.extend(true, $(window).resize(), $(window).resize(
         function () {
             /*menuCatalogResponsive();*/
         }
