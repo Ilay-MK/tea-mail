@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
 /// Описание элемента BEM блока меню каталога.
-/// Элемент content
-.menu-catalog__content {
-    padding-left: 30px;
+/// Элемент link-icon.
+.menu-catalog__link-icon {
+    left: -20px;
+    position: absolute;
 }
