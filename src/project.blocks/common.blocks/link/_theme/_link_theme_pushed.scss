@@ -9,10 +9,8 @@
         content: '';
         @include bg-cover;
         background-image: url(../img/nav/underline-pusshed.png);
-        bottom: 19px;
         display: block;
         position: absolute;
-        right: 31px;
         @include size(25px, 5px);
     }
 }
