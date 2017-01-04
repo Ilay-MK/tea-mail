@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока container.
+/// Элемент - form.
+.container__form {
+
+    @media (max-width: 1199px) and (min-width: 480px) {
+        display: none;
+    }
+}
