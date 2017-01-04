@@ -18,6 +18,10 @@
     padding: 20px 15px;
     position: relative;
 
+    @media (min-width: 992px) {
+        display: none;
+    }
+
     &:after {
         background-color: #fff;
         border-color: #eeeeee;

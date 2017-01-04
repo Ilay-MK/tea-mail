@@ -4,8 +4,13 @@
 /// Элемент - content.
 .catalog-filter-container__content {
 
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
         padding-bottom: 20px;
+    }
+
+    @media (min-width: 992px) {
+        display: block;
+        height: auto !important;
     }
 }
