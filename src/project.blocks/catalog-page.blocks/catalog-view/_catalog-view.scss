@@ -5,4 +5,8 @@
     display: inline-block;
     margin-left: 57px;
     margin-right: 40px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
