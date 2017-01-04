@@ -6,9 +6,13 @@
 
     /* Передалать по BEM! */
     &.left {
-        left: 0px;
+        @media (min-width: 992px) {
+            left: 0px;
+        }
     }
     &.right {
-        right: 0px;
+        @media (min-width: 992px) {
+            right: 0px;
+        }
     }
 }

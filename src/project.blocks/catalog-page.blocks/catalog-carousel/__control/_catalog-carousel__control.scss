@@ -8,9 +8,13 @@
 
     /* Передалать по BEM! */
     &.left {
-        left: -50px;
+        @media (min-width: 992px) {
+            left: -50px;
+        }
     }
     &.right {
-        right: -50px;
+        @media (min-width: 992px) {
+            right: -50px;
+        }
     }
 }
