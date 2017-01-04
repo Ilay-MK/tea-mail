@@ -4,7 +4,8 @@
 /// Модификатор - view.
 /// Значение - block.
 .product-card__visual_view_block {
-    display: inline-block;
+    /*display: inline-block;*/
+    float: left;
     @include size(249px, 135px);
     vertical-align: top;
 }
