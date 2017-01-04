@@ -3,6 +3,10 @@
 /// Описание можификатора блока aside.
 /// Модификатор left.
 .aside_left {
-    float: left;
     padding-left: 20px;
+
+    @media (min-width: 1200px) {
+        float: left;
+        width: 300px;
+    }
 }
