@@ -18,6 +18,8 @@ $(function() {
                 $('.product-card__btn-container').addClass('product-card__btn-container_view_block');
                 /* работаем с кнопкой продукта */
                 $('.product-card__btn').addClass('product-card__btn_view_block');
+                /* работаем с контейнером заготовков продукта */
+                $('.product-card__headings').addClass('product-card__headings_view_block');
             }
             else {
                 /* работаем непосредсвенно с блоком-карточкой */
@@ -30,6 +32,8 @@ $(function() {
                 $('.product-card__btn-container').removeClass('product-card__btn-container_view_block');
                 /* работаем с кнопкой продукта */
                 $('.product-card__btn').removeClass('product-card__btn_view_block');
+                /* работаем с контейнером заготовков продукта */
+                $('.product-card__headings').removeClass('product-card__headings_view_block');
             }
         }
     ));
