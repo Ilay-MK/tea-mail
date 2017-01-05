@@ -1,6 +1,7 @@
 //= breadcrumb/index.js
 //= breadcrumb-arrow/index.js
 //= chevron/index.js
+//= collapse-link-triangle/index.js
 //= detachPrependTo/index.js
 //= like/index.js
 //= menu/index.js

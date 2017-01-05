@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока треугольничка линка колапса.
+/// Модификатор - active.
+.collapse-link-triangle_active {
+
+    &:after {
+        transform: rotate(-135deg);
+    }
+}
