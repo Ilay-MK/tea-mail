@@ -21,4 +21,8 @@
     @media (max-width: 479px) {
         //margin-left: -20px; /* компенсирование оступа aside */
     }
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
 }
