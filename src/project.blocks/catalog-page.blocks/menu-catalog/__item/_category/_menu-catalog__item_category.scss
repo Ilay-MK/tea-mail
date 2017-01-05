@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор - category.
+.menu-catalog__item_category {
+
+    @media (max-width: 991px) and (min-width: 480px) {
+        display: inline-block;
+        padding-right: 50px;
+        vertical-align: top;
+        width: 49%;
+    }
+}
