@@ -45,7 +45,7 @@
                 //= template/layout/forms/form-search.html
 
                 <!-- block menu-catalog -->
-                <nav id="menu-catalog" class="menu menu-catalog navbar" role="navigation">
+                <nav id="menu-catalog" class="menu menu-catalog navbar collapse in" role="navigation">
 
                     <div class="menu__content menu-catalog__content clearfix">
                         <ul class="menu__list menu-catalog__list">
@@ -409,6 +409,10 @@
                     </div>
 
                 </nav>
+
+                <div class="text-center">
+                    <a href="#" class="link page__link-toggle page__description-toggle" data-toggle="collapse" data-target="#menu-catalog">Скрыть каталог</a>
+                </div>
             </aside>
 
             <main class="main main_catalog">
@@ -423,12 +427,12 @@
                     <h2 class="h2 page__title">Чай 2016 года</h2>
                 </div>
                 <div class="page__description-container">
-                    <div class="page__description">
+                    <div id="page__description" class="page__description">
                         <p>Зеленый чай с высоким содержанием светлых почек, ароматизированный цветками жасмина. Жасмин поднимает настроение и придает позитивный импульс в любых начинаниях. Такой чай особенно любим прекрасной половиной человечества.</p>
                         <p>Зеленый чай с высоким содержанием светлых почек, ароматизированный цветками жасмина. Жасмин поднимает настроение и придает позитивный импульс в любых начинаниях. Такой чай особенно любим прекрасной половиной человечества.</p>
                         <p>Зеленый чай с высоким содержанием светлых почек, ароматизированный цветками жасмина. Жасмин поднимает настроение и придает позитивный импульс в любых начинаниях. Такой чай особенно любим прекрасной половиной человечества.</p>
                     </div>
-                    <a href="#" class="link page__description-toggle">Читать полностью</a>
+                    <a href="#" class="link page__link-toggle page__description-toggle">Читать полностью</a>
                 </div>
 
                 //= template/layout/sections/catalog-page/catalog.html
