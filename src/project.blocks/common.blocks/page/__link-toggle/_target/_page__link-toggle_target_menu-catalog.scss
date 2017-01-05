@@ -6,4 +6,7 @@
 /// Значение - menu-catalog.
 .page__link-toggle_target_menu-catalog {
 
+    @media (max-width: 479px) {
+        margin-left: -20px; /* компенсирование оступа aside */
+    }
 }
