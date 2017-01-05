@@ -7,6 +7,9 @@
 .page__link-toggle_target_menu-catalog {
     border-color: #dfdfdf;
     border-style: solid;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
     border-top-width: 1px;
 
     @media (max-width: 479px) {
