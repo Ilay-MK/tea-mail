@@ -5,6 +5,9 @@
 /// Модификатор - target.
 /// Значение - menu-catalog.
 .page__link-toggle_target_menu-catalog {
+    border-color: #dfdfdf;
+    border-style: solid;
+    border-top-width: 1px;
 
     @media (max-width: 479px) {
         margin-left: -20px; /* компенсирование оступа aside */
