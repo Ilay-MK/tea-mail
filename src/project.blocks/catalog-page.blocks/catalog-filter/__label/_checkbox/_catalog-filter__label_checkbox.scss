@@ -27,7 +27,7 @@
         margin-right: 10px;
         position: relative;
         @include size(28px, 27px);
-        @include transition();
+        @include transition(outline);
         vertical-align: middle;
     }
 

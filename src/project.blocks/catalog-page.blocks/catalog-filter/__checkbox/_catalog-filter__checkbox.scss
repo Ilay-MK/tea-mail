@@ -7,8 +7,8 @@
 
     &:checked + label:before {
         content: "\2713";
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-        font-size: 40px;
+        /*text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);*/
+        font-size: 35px;
         color: #cc9d6d;
         text-align: center;
         line-height: 15px;
