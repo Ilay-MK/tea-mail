@@ -24,4 +24,6 @@ $(function() {
 
         }
     });
+
+    $('.jslider-value').hide();
 });
