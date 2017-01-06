@@ -7,7 +7,7 @@ $(function() {
         to: 1000,
         step: 1,
         heterogeneity: ['50/100', '75/250'],
-        limits: true,
+        limits: false,
         dimension: '&nbsp; руб.',
         skin: "round",
         onstatechange: function( value ) {
@@ -19,6 +19,9 @@ $(function() {
 
             $('#catalog-filter__input_price-min').val(p1);
             $('#catalog-filter__input_price-max').val(p2);
+        },
+        callback: function(value) {
+
         }
     });
 });
