@@ -1,7 +1,7 @@
 "use strict";
 
 /* Переписать нормально */
-function detachInsertItemMenuCatalog() {
+function detachInsertItemMenuCatalogTea() {
     var items_tea = [],
         target = '.menu-catalog__item_category_tea',
         $target = $(target),
@@ -52,10 +52,10 @@ function detachInsertItemMenuCatalog() {
 }
 
 $(function() {
-    detachInsertItemMenuCatalog();
+    detachInsertItemMenuCatalogTea();
 
     /// Расширение функции
     $.extend(true, $(window).resize(), $(window).resize(function() {
-        detachInsertItemMenuCatalog();
+        detachInsertItemMenuCatalogTea();
     }));
 });
