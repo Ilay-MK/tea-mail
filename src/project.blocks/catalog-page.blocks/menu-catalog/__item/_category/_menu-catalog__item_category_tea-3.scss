@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор - category.
+/// Значение - tea-3.
+.menu-catalog__item_category_tea-3 {
+    display: none;
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+        display: inline-block;
+    }
+}
