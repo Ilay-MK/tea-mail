@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока catalog-filter.
+/// Элемент - btn-container.
+/// Модификатор - outside.
+.catalog-filter__btn-container_outside {
+
+    @media (min-width: 1385px) {
+        float: right;
+    }
+}
