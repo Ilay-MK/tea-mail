@@ -21,19 +21,6 @@ function statechangeSliderPrice () {
     min = inputMin.attr("min");
     max = inputMin.attr("max");
 
-    $('.jslider-pointer').mousedown(function(){
-        $('.catalog-filter__slider-price-conteiner').mousemove(function(){
-            var p1, p2;
-
-            value = $('#catalog-filter__slider-price').slider("value");
-            p1 = value.split(';')[0];
-            p2 = value.split(';')[1];
-
-            inputMin.val(p1);
-            inputMax.val(p2);
-        });
-    });
-
     inputMin.on('input paste copy change', function(e) {
         var val = min;
         if( !Number.isNaN( val = parseInt($( this ).val(), 10 )) ) {
