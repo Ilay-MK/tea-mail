@@ -3,7 +3,8 @@
 /// Описание модификатор элемента BEM блока формы поиска.
 /// Модификатор - theme со значением hero.
 .form-search__container_theme_hero {
-    border-color: rgb(210, 155, 59);
     background-color: rgba(0, 0, 0, 0.31);
+    border-color: rgb(210, 155, 59);
+    border-width: 2px;
     margin: 0 auto 117px;
 }
