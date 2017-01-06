@@ -4,4 +4,7 @@
 /// Элемент item
 .menu-catalog__item {
 
+    &:last-child {
+        padding-right: 0;
+    }
 }
