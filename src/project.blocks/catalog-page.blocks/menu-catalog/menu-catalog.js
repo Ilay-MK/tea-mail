@@ -1,5 +1,6 @@
 "use strict";
 
+/* Переписать нормально */
 function detachInsertItemMenuCatalog() {
     var items_tea = [],
         target = '.menu-catalog__item_category_tea',
@@ -37,8 +38,13 @@ function detachInsertItemMenuCatalog() {
     });
 
     $.each( items_tea, function(index, value) {
-        $.each( items_tea[index], function(i, val){
-            $(target_insert + (index+rate)).prepend(items_tea[index][i]);
+        $.each( items_tea[index], function(i, val) {
+            if ( rate == 0 ) {
+                $(target_insert + (index+rate)).append(items_tea[index][i]);
+            }
+            else {
+                $(target_insert + (index+rate)).prepend(items_tea[index][i]);
+            }
         });
 
         /*return (this != "four");*/
