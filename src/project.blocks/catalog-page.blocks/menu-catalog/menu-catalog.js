@@ -19,13 +19,25 @@ function detachInsertItemMenuCatalogTea() {
     });*/
 
     if ( (getPageSize()[2] < 1200) && (getPageSize()[2] > 991) ) {
-        rate = 2;
+        $('#menu-catalog__list_first')
+            .append(
+                $('#menu-catalog__list_without-sub li')
+                .addClass('from___menu-catalog__list_without-sub')
+                .detach()
+        );
 
+        rate = 2;
         if ($last_target_insert.has( "li" ).length > 0) return false;
     }
     else {
-        rate = 0;
+        $('#menu-catalog__list_without-sub')
+            .append(
+                $('#menu-catalog__list_first .from___menu-catalog__list_without-sub')
+                .removeClass('from___menu-catalog__list_without-sub')
+                .detach()
+        );
 
+        rate = 0;
         if ( !($last_target_insert.has( "li" ).length > 0) ) return false;
     }
 
