@@ -7,4 +7,10 @@
     float: none !important;
     height: 139px !important;
     width: auto !important;
+
+    @media (min-width: 1385px) {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

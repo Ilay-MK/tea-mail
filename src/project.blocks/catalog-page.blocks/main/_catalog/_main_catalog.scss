@@ -9,6 +9,10 @@
         width: 950px;
     }
 
+    @media (min-width: 1385px) {
+        width: 1055px;
+    }
+
     @media (max-width: 991px) {
         text-align: center;
     }

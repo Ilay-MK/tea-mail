@@ -3,4 +3,7 @@
 /// Описание BEM блока container (grid).
 .container {
 
+    @media (min-width: 1385px) {
+        width: 1385px;
+    }
 }
