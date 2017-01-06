@@ -11,6 +11,8 @@
     outline: 0px solid transparent;
     outline-color: #cc9d6d;
     margin: 0 6px;
+    padding: 5px;
+    text-align: center;
     @include size(47px, 35px);
     @include transition();
 
