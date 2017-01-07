@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока карточки продукта.
+/// Модификатор - headings.
+/// Значение - hover.
+.product-card__headings_hover {
+    /* P.S. Ах.ть - поднять cursor: pointer; выше text-decoration и вёрстка сыпетсья ! Ухаха */
+    text-decoration: underline;
+    cursor: pointer;
+}
