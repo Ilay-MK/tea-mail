@@ -6,6 +6,6 @@
 .product-card__visual_view_block {
     /*display: inline-block;*/
     float: left;
-    @include size(249px, 135px);
+    @include size(249px, 100%);
     vertical-align: top;
 }
