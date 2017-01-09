@@ -2,11 +2,9 @@
 
 /// Описание BEM блока карточки продукта
 .product-card {
-    background-color: c();
-    border-style: solid;
-    border-width: 2px;
     float: left;
-    overflow: hidden;
+    /*overflow: hidden;*/
+    overflow: visible;
     margin: 4px;
     text-align: center;
     @include transition(all, 600ms, cubic-bezier(0.075, 0.82, 0.165, 1), !important);
