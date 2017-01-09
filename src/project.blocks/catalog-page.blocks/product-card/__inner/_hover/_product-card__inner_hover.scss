@@ -8,4 +8,21 @@
         margin: -8px;
         @include size(266px, 342px); /* специфично для section of catalog || +16px */
     }
+
+    /* Переделать по BEM */
+    &.product-card__inner_view_block {
+
+        @media (min-width: 1200px) {
+            margin: 0;
+            top: -4px;
+            @include size(100%, 147px);
+        }
+
+        & .product-card__headings {
+
+            @media (min-width: 1200px) {
+                padding-bottom: 34px;
+            }
+        }
+    }
 }

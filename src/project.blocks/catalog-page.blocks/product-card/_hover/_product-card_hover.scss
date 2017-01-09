@@ -4,17 +4,4 @@
 /// Модификатор - hover
 .product-card_hover {
 
-    /* Сделать по BEM! */
-    &.product-card_view_block {
-
-        @media (min-width: 1310px) {
-            //transform: scale(1.079787234042553, 1.073469387755102) !important; // это size(203px, 263px)
-            transform: scale(1, 1.05) !important;
-        }
-    }
-
-    @media (min-width: 1310px) {
-        //transform: scale(1.079787234042553, 1.073469387755102) !important; // это size(203px, 263px)
-        transform: scale(1.07, 1.05) !important;
-    }
 }

@@ -1,10 +1,8 @@
 @charset "UTF-8";
 
 /// Описание модификатора элемента блока карточки продукта.
-/// Модификатор - hover.
-.product-card__cost_hover {
+/// Модификатор - view.
+/// Значение - inline-block.
+.product-card__inner_view_inline-block {
 
-    @media (min-width: 1200px) {
-        margin-top: 29px;
-    }
 }

@@ -27,6 +27,7 @@ $(function() {
                 });
                 $('.product-card__prices').addClass('product-card__prices_view_block');
                 $('.product-card__cost').addClass('product-card__cost_view_block');
+                $('.product-card__inner').addClass('product-card__inner_view_block');
             }
             else {
                 /* работаем непосредсвенно с блоком-карточкой */
@@ -48,6 +49,7 @@ $(function() {
                 });
                 $('.product-card__prices').removeClass('product-card__prices_view_block');
                 $('.product-card__cost').removeClass('product-card__cost_view_block');
+                $('.product-card__inner').removeClass('product-card__inner_view_block');
             }
         }
     ));
