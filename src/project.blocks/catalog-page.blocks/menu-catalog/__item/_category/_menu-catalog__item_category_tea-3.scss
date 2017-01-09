@@ -4,10 +4,17 @@
 /// Модификатор - category.
 /// Значение - tea-3.
 .menu-catalog__item_category_tea-3 {
-    display: none;
+    /*display: none;*/
 
     @media (max-width: 1199px) and (min-width: 992px) {
         display: inline-block;
         margin-top: 37px;
+    }
+
+    @media (max-width: 991px) and (min-width: 480px) {
+        left: -9999px;
+        padding: 0;
+        position: absolute;
+        width: 1px;
     }
 }
