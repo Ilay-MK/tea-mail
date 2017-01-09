@@ -3,7 +3,6 @@
 /// Описание BEM блока карточки продукта
 .product-card {
     float: left;
-    /*overflow: hidden;*/
     overflow: visible;
     margin: 4px;
     text-align: center;
@@ -12,15 +11,4 @@
     @media (min-width: 1310px) {
         display: block !important;
     }
-
-    /*&:hover {
-        border-color: #925900;
-        box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.17);
-        position: relative;
-        transform: scale(1.079787234042553, 1.073469387755102); // это size(203px, 263px)
-
-        @media (max-width: 1309px) {
-            transform: none;
-        }
-    }*/
 }
