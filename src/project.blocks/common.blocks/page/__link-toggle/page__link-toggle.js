@@ -5,16 +5,26 @@ $(function() {
     /// Событие click() с отменой перехода по ссылке
     /// Toggle описание страницы.
     $(".page__link-toggle_target_description").click(function (e) {
-        var linkToggle = $( this );
         e.preventDefault();
+        var linkToggle, obj;
+
+        linkToggle  = $( this );
+        obj         = linkToggle.attr("data-target");
 
         /*$(this).prev();*/
         /*$(this).prev(".page__description");*/
-        linkToggle.siblings(".page__description").animate({
+        /*linkToggle.siblings(".page__description").animate({
             height: "100%"
-        }, 1000, "linear", function() {
-            linkToggle.fadeToggle();
-        });
+        }, 2000, "linear", function() {
+            //linkToggle.fadeToggle();
+        });*/
+
+        if($(obj).attr('aria-expanded') == 'false') {
+            linkToggle.text("Свернуть описание");
+        }
+        else {
+            linkToggle.text("Читать полностью");
+        }
 
     });
 
@@ -39,7 +49,7 @@ $(function() {
 
         obj = $( this ).attr("data-target");
 
-        /* инверсно, т.к. видимо сперва проверка а затем колапс */
+        /* инверсно, т.к. колапс занимает некоторое время */
         if($(obj).is(':hidden')) {
             $( this ).text("Скрыть каталог");
         }

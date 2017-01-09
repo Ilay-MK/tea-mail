@@ -4,13 +4,14 @@
 /// Элемент - description.
 .page__description {
     color: #4c4c4c;
+    display: block;
     font-family: getFont-family("OpenSans");
     font-size: 15px;
     font-style: italic;
     font-weight: 300;
     letter-spacing: 0.025em;
     line-height: 25px;
-    height: 90px;
+    min-height: 90px;
     overflow: hidden;
     margin-bottom: 13px;
     position: relative;
