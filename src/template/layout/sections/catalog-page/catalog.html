@@ -25,7 +25,61 @@
 
         <!-- product-card -->
         <!--
-        .product-card.product-card_theme_popular-goods(.product-card__visual(img[src="assets/img/catalog/popular-goods/$.png" alt="TheNameOfProduct$"].img.img_responsive.product-card__img+.like(.like__icon))+hgroup.product-card__headings(h4.h4.product-card__title{Тай Пин Хоу Куй}+h5.h5.product-card__sub-title{Весна 2016г})+.product-card__prices(p.product-card__cost{54 р}+p.product-card__cost.product-card__cost_old{56 р})+.product-card__form-container(form[action="" method="post"].form.product-card__form(.form__group.form__group_inline.product-card__form-group(select[name="product-card__input-field_weight" id="product-id_$@1__weight" required="required"].input.input_type_select.form__input-field.form__input-field_select.product-card__input-field.product-card__select(option[value="$@100"]{$@100г.}*4)+select[name="product-card__input-field_weight" id="product-id_$@1__count" required="required"].input.input_type_select.form__input-field.form__input-field_select.product-card__input-field.product-card__select(option[value="$"]{$шт.}*5))+.product-card__btn-container(button[type="submit"].btn.btn_simple.product-card__btn{В корзину}))))
+        #product-card_id_$@11.product-card.product-card_theme_popular-goods.carousel.slide[data-ride=""](
+            .product-card__visual.carousel-inner(
+                .item(
+                    img[src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8"].img.img_responsive.product-card__img
+                )+
+                .item.active(
+                    img[src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8"].img.img_responsive.product-card__img
+                )+
+
+                .like(
+                    .like__icon
+                )+
+
+                a.carousel-control.catalog-carousel__control.left[href="#product-card_id_$@11" data-slide="prev"](
+                    .chevron.chevron_left.chevron_theme_catalog-page-card(
+                        .chevron__inner.chevron__inner_left
+                    )
+                )+
+                a.carousel-control.catalog-carousel__control.right[href="#product-card_id_$@11" data-slide="next"](
+                    .chevron.chevron_right.chevron_theme_catalog-page-card(
+                        .chevron__inner.chevron__inner_right
+                    )
+                )
+            )+
+
+            .card__description(
+                hgroup.product-card__headings(
+                    h4.h4.product-card__title{Тай Пин Хоу Куй}+
+                    h5.h5.product-card__sub-title{Весна 2016г}
+                )+
+
+                .product-card__prices(
+                    p.product-card__cost{54 р}+
+                    p.product-card__cost.product-card__cost_old{56 р}
+                )+
+
+                .product-card__form-container(
+                    form[action="" method="post"].form.product-card__form(
+                        .form__group.form__group_inline.product-card__form-group(
+
+                            select[name="product-id_$@11__weight" id="product-id_$@11__weight" required="required"].input.input_type_select.form__input-field.form__input-field_select.product-card__input-field.product-card__select(
+                                option[value="$@100"]{$@100г.}*4
+                            )+
+                            select[name="product-id_$@11__count" id="product-id_$@11__count" required="required"].input.input_type_select.form__input-field.form__input-field_select.product-card__input-field.product-card__select(
+                                option[value="$"]{$шт.}*5
+                            )
+
+                        )+
+                        .product-card__btn-container(
+                            button[type="submit"].btn.btn_simple.product-card__btn{В корзину}
+                        )
+                    )
+                )
+            )
+        )
         -->
 
         <div id="product-card_id_1" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
@@ -113,13 +167,13 @@
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
                         <div class="form__group form__group_inline product-card__form-group">
-                           <select name="product-card__input-field_weight" id="product-id_2__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                           <select name="product-id_2__weight" id="product-id_2__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
                             </select>
-                            <select name="product-card__input-field_weight" id="product-id_2__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            <select name="product-id_2__count" id="product-id_2__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
@@ -161,12 +215,12 @@
                 </div>
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
-                        <div class="form__group form__group_inline product-card__form-group"><select name="product-card__input-field_weight" id="product-id_3__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_3__weight" id="product-id_3__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
-                            </select><select name="product-card__input-field_weight" id="product-id_3__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            </select><select name="product-id_3__count" id="product-id_3__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
@@ -208,12 +262,12 @@
                 </div>
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
-                        <div class="form__group form__group_inline product-card__form-group"><select name="product-card__input-field_weight" id="product-id_4__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_4__weight" id="product-id_4__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
-                            </select><select name="product-card__input-field_weight" id="product-id_4__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            </select><select name="product-id_4__count" id="product-id_4__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
@@ -255,12 +309,12 @@
                 </div>
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
-                        <div class="form__group form__group_inline product-card__form-group"><select name="product-card__input-field_weight" id="product-id_5__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_5__weight" id="product-id_5__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
-                            </select><select name="product-card__input-field_weight" id="product-id_5__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            </select><select name="product-id_5__count" id="product-id_5__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
@@ -302,12 +356,12 @@
                 </div>
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
-                        <div class="form__group form__group_inline product-card__form-group"><select name="product-card__input-field_weight" id="product-id_6__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_6__weight" id="product-id_6__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
-                            </select><select name="product-card__input-field_weight" id="product-id_6__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            </select><select name="product-id_6__count" id="product-id_6__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
@@ -349,12 +403,12 @@
                 </div>
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
-                        <div class="form__group form__group_inline product-card__form-group"><select name="product-card__input-field_weight" id="product-id_7__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_7__weight" id="product-id_7__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
-                            </select><select name="product-card__input-field_weight" id="product-id_7__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            </select><select name="product-id_7__count" id="product-id_7__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
@@ -396,12 +450,12 @@
                 </div>
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
-                        <div class="form__group form__group_inline product-card__form-group"><select name="product-card__input-field_weight" id="product-id_8__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_8__weight" id="product-id_8__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
-                            </select><select name="product-card__input-field_weight" id="product-id_8__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            </select><select name="product-id_8__count" id="product-id_8__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
@@ -443,12 +497,364 @@
                 </div>
                 <div class="product-card__form-container">
                     <form action="" method="post" class="form product-card__form">
-                        <div class="form__group form__group_inline product-card__form-group"><select name="product-card__input-field_weight" id="product-id_8__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_9__weight" id="product-id_9__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="100">100г.</option>
                                 <option value="101">101г.</option>
                                 <option value="102">102г.</option>
                                 <option value="103">103г.</option>
-                            </select><select name="product-card__input-field_weight" id="product-id_8__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                            </select><select name="product-id_9__count" id="product-id_9__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_10" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item active">
+                    <img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img">
+                </div>
+                <div class="item">
+                    <img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img">
+                </div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+
+                <a href="#product-card_id_10" class="carousel-control catalog-carousel__control left" data-slide="prev">
+                    <span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span>
+                </a>
+                <a href="#product-card_id_10" class="carousel-control catalog-carousel__control right" data-slide="next">
+                    <span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span>
+                </a>
+            </div>
+            <div class="product-card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_10__weight" id="product-id_10__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_10__count" id="product-id_10__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_11" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+                <a href="#product-card_id_11" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_11" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_11__weight" id="product-id_11__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_11__count" id="product-id_11__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_12" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+                <a href="#product-card_id_12" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_12" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_12__weight" id="product-id_12__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_12__count" id="product-id_12__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_13" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+                <a href="#product-card_id_13" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_13" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_13__weight" id="product-id_13__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_13__count" id="product-id_13__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_14" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+                <a href="#product-card_id_14" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_14" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_14__weight" id="product-id_14__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_14__count" id="product-id_14__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_15" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+                <a href="#product-card_id_15" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_15" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_15__weight" id="product-id_15__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_15__count" id="product-id_15__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_16" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+                <a href="#product-card_id_16" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_16" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_16__weight" id="product-id_16__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_16__count" id="product-id_16__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_17" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+                <a href="#product-card_id_17" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_17" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_17__weight" id="product-id_17__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_17__count" id="product-id_17__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="1">1шт.</option>
+                                <option value="2">2шт.</option>
+                                <option value="3">3шт.</option>
+                                <option value="4">4шт.</option>
+                                <option value="5">5шт.</option>
+                            </select></div>
+                        <div class="product-card__btn-container"><button type="submit" class="btn btn_simple product-card__btn">В корзину</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="product-card_id_18" class="product-card product-card_theme_popular-goods carousel slide" data-ride="">
+            <div class="product-card__visual carousel-inner">
+                <div class="item"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="item active"><img src="assets/img/catalog/popular-goods/8.png" alt="TheNameOfProduct8" class="img img_responsive product-card__img"></div>
+                <div class="like">
+                    <div class="like__icon"></div>
+                </div>
+
+                <a href="#product-card_id_18" class="carousel-control catalog-carousel__control left" data-slide="prev"><span class="chevron chevron_left chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_left"></span></span></a>
+                <a href="#product-card_id_18" class="carousel-control catalog-carousel__control right" data-slide="next"><span class="chevron chevron_right chevron_theme_catalog-page-card"><span class="chevron__inner chevron__inner_right"></span></span></a>
+            </div>
+            <div class="card__description">
+                <hgroup class="product-card__headings">
+                    <h4 class="h4 product-card__title">Тай Пин Хоу Куй</h4>
+                    <h5 class="h5 product-card__sub-title">Весна 2016г</h5>
+                </hgroup>
+                <div class="product-card__prices">
+                    <p class="product-card__cost">54 р</p>
+                    <p class="product-card__cost product-card__cost_old">56 р</p>
+                </div>
+                <div class="product-card__form-container">
+                    <form action="" method="post" class="form product-card__form">
+                        <div class="form__group form__group_inline product-card__form-group"><select name="product-id_18__weight" id="product-id_18__weight" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
+                                <option value="100">100г.</option>
+                                <option value="101">101г.</option>
+                                <option value="102">102г.</option>
+                                <option value="103">103г.</option>
+                            </select><select name="product-id_18__count" id="product-id_18__count" required class="input input_type_select form__input-field form__input-field_select product-card__input-field product-card__select">
                                 <option value="1">1шт.</option>
                                 <option value="2">2шт.</option>
                                 <option value="3">3шт.</option>
