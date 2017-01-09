@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока карточки продукта.
+/// Модификатор - hover.
+.product-card__inner_hover {
+
+    @media (min-width: 1200px) {
+        margin: -8px;
+        @include size(266px, 342px); /* специфично для section of catalog || +16px */
+    }
+}
