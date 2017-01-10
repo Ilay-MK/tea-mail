@@ -2,6 +2,7 @@
 
 /// NAV TOP responsive nebu bg && margins
 /// p.s. вынести всё в класы и скриптом только присваивание классов сделать!.
+/// Переписать всё
 function menuMainResponsive() {
     if(+$(document).scrollTop() > 50) {
         if (getPageSize()[2] > 991) {
@@ -9,7 +10,7 @@ function menuMainResponsive() {
             $("#menu-main").css("height", "202px");
             $("#menu-main").css("margin-top", "-110px");
             $("#menu-main").css("padding-top", "104px");
-            $("#menu-main .logo").html('<img src="assets/img/nav/logo_mini.png" alt="">');
+            $('#svg-icon_logo__group_description').hide();
         }
 
         if (getPageSize()[2] < 992) {
@@ -17,7 +18,7 @@ function menuMainResponsive() {
             $("#menu-main").css("height", "219px");
             $("#menu-main").css("margin-top", "-117px");
             $("#menu-main").css("padding-top", "117px");
-            $("#menu-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+            $('#svg-icon_logo__group_description').show();
         }
 
         if (getPageSize()[2] < 768) {
@@ -34,7 +35,7 @@ function menuMainResponsive() {
             $("#menu-main").css("height", "219px");
             $("#menu-main").css("margin-top", "-100px");
             $("#menu-main").css("padding-top", "100px");
-            $("#menu-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+            $('#svg-icon_logo__group_description').show();
         }
 
         if (getPageSize()[2] < 992) {
@@ -42,7 +43,7 @@ function menuMainResponsive() {
             $("#menu-main").css("height", "219px");
             $("#menu-main").css("margin-top", "-100px");
             $("#menu-main").css("padding-top", "100px");
-            $("#menu-main .logo").html('<img src="assets/img/nav/logo.png" alt="">');
+            $('#svg-icon_logo__group_description').show();
         }
 
         if (getPageSize()[2] < 768) {
