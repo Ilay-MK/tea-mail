@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока обёртки.
+/// Модификатор - home.
+/// Значение - 1.
+.wrapper_home_1 {
+
+    &:before {
+
+        @media (max-width: 991px) {
+            content: none !important;
+        }
+    }
+}
