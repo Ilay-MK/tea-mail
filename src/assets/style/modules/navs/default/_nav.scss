@@ -150,7 +150,12 @@
             z-index: 98;
 
             @media (max-width: 1279px) {
-                z-index: 99;
+                /*z-index: 99;*/
+                padding-top: 10px;
+            }
+
+            @media (max-width: 1279px) and (min-width: 992px) {
+                padding-top: 30px;
             }
 
             @media (max-width: 767px) {
@@ -367,7 +372,6 @@
 
         .navbar-right-container {
             margin: 23px 0;
-            left: calc(50% + 90px);
             padding: 0;
             position: absolute;
             right: 15px;
@@ -376,6 +380,10 @@
 
             @media (max-width: 991px) {
                 margin: 17px 0;
+            }
+
+            @media (max-width: 1279px) {
+                left: calc(50% + 90px);
             }
 
             ul.navbar-right {
