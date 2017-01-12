@@ -24,18 +24,22 @@ function parallax(object, cssRule, baseline, unit, rate, maxOffsetY, minOffsetY)
         currToBlock   = +offsetFromTop.top - currScrollPos,
         hOffset       = (currToBlock + baseline) / rate;
 
+    /*
     console.log("----------------------");
     console.log("getPageSize()[3]: " + getPageSize()[3]);
     console.log("maxOffsetY: " + maxOffsetY);
     console.log("minOffsetY: " + minOffsetY);
     console.log("currToBlock: " + currToBlock);
     console.log("hOffset: " + hOffset);
+    */
 
     if ( hOffset > maxOffsetY ) { hOffset = maxOffsetY; }
     if ( hOffset < minOffsetY ) { hOffset = minOffsetY; }
 
+    /*
     console.log("hOffset + unit: " + hOffset + unit);
     console.log("----------------------");
+    */
 
     /*object.addClass("parallax");*/
     object.css(cssRule, hOffset + unit);
