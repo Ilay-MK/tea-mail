@@ -71,6 +71,18 @@
         margin-left: auto;
         position: relative;
 
+        &:before {
+            content: none !important;
+
+            @media (max-width: 991px) {
+                content: '' !important;
+            }
+        }
+
+        @media (max-width: 991px) {
+            display: inline;
+        }
+
         @media (min-width: 1200px) {
             padding-left: 15px;
             padding-right: 15px;
