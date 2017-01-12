@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карусели чайного блога.
+/// Элемент контролы карусели.
+.tea-blog-carousel__control {
+    background: 0 !important;
+    width: 10%;
+    @include transition();
+    z-index: 10;
+}
