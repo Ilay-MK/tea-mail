@@ -103,7 +103,7 @@ $( document ).ready(function() {
             if (getPageSize()[2] < 768) {
                 window.setTimeout(function() {
                     map.setCenter( marker.getPosition() );
-                }, 1500);
+                }, 2000);
             }
         }
     ));
