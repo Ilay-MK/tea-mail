@@ -34,8 +34,10 @@ function mh(ob, event) {
 
     $obj = $(ob).siblings(".hover");
 
+    /*
     console.log("---------");
     console.log("X:"+x+"; Y:"+y);
+    */
 
     left = x ;
     top = y;
@@ -43,8 +45,10 @@ function mh(ob, event) {
     left -= $(".tea_mail--imgLink .hover").width()/2;
     top -= $(".tea_mail--imgLink .hover").height()/2;
 
+    /*
     console.log("left:"+left+"; top:"+top);
     console.log("---------");
+    */
 
     $obj.css("left", left);
     $obj.css("top", top);
