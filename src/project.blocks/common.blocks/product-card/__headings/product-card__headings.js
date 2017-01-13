@@ -14,6 +14,7 @@ $(function() {
     $.extend(true, $('.product-card__headings').click(), $('.product-card__headings').click(function() {
         var product = $( this ).closest( '.product-card' ).attr( 'id' ),
             url = "./?product=" + product;
-        $(location).attr('href', url);
+
+        $(location).attr('href', "./product-page.html");
     }));
 });
