@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока меню каталога
+/// Элемент item
+.menu-catalog__item {
+
+    &:last-child {
+        padding-right: 0;
+    }
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор without-sub (без вложенного меню).
+.menu-catalog__item_without-sub {
+    vertical-align: middle;
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+        vertical-align: top;
+    }
+}

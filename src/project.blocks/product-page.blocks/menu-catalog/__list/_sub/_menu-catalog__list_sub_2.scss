@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор sub (подменю).
+/// Значение модификатора - 2.
+.menu-catalog__list_sub_2 {
+
+    @media (max-width: 1199px) and (min-width: 480px) {
+        margin-left: 12px;
+    }
+
+    @media (max-width: 479px) {
+        margin-left: 0;
+    }
+}

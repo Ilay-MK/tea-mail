@@ -1,1 +1,1 @@
-
+//= menu-catalog/index.js
