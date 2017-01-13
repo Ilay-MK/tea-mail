@@ -201,7 +201,7 @@
                         @media (max-width: 767px) {
                             display: block;
                             font-style: normal !important;
-                            font-size: 12px;
+                            font-size: 12px !important;
                             min-width: 100%;
                             padding: 8px 15px !important;
                             text-transform: uppercase;
@@ -343,7 +343,7 @@
                         top: 36px;
 
                         @media (max-width: 767px) {
-                            top: 9px;
+                            top: 8px;
                         }
 
                         svg {
