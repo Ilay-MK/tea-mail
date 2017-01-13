@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока main.
+/// Модификатор - catalog.
+.main_product {
+    display: inline-block;
+
+    @media (min-width: 1310px) {
+        width: 950px;
+    }
+
+    @media (min-width: 1420px) {
+        width: 1055px;
+    }
+
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+}
