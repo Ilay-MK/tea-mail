@@ -13,7 +13,7 @@ $(function() {
     /// Расширение функции
     $.extend(true, $('.product-card__headings').click(), $('.product-card__headings').click(function() {
         var product = $( this ).closest( '.product-card' ).attr( 'id' ),
-            url = "products/?product=" + product;
+            url = "./?product=" + product;
         $(location).attr('href', url);
     }));
 });
