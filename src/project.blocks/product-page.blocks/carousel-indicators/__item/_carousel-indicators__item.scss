@@ -2,6 +2,18 @@
 
 /// Описание элемента модификатора BEM блока carousel-indicators.
 /// Элемент - item.
+li.carousel-indicators__item,
 .carousel-indicators__item {
+    border-radius: 0;
+    border-width: 0;
+    margin: 5px;
+    text-indent: 0;
+    @include size(82px, 80px);
 
+    /* Переделать по BEM */
+    &.active {
+        border-width: 1px;
+        margin: 5px;
+        @include size(82px, 80px);
+    }
 }
