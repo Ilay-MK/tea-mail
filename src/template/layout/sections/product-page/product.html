@@ -15,10 +15,10 @@
         #product__visual.product__visual.carousel.slide[data-ride=""](
 
             ol.carousel-indicators(
-                li.active[data-target="#product__visual" data-slide-to="$@0"](
+                li.carousel-indicators__item.active[data-target="#product__visual" data-slide-to="$@0"](
                     img.img.img_responsive.product__img.product__img_thumbnail[src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1"]
                 )+
-                li[data-target="#product__visual" data-slide-to="$@1"](
+                li.carousel-indicators__item[data-target="#product__visual" data-slide-to="$@1"](
                     img.img.img_responsive.product__img.product__img_thumbnail[src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1"]
                 )*4
             )+
@@ -97,7 +97,7 @@
     -->
 
     <!--
-        .product__inner(#product__visual.product__visual.carousel.slide[data-ride=""](ol.carousel-indicators(li.active[data-target="#product__visual" data-slide-to="$@0"](img.img.img_responsive.product__img.product__img_thumbnail[src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1"])+li[data-target="#product__visual" data-slide-to="$@1"](img.img.img_responsive.product__img.product__img_thumbnail[src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1"])*4)+.carousel-inner(.item.active(img.img.img_responsive.product__img[src="assets/img/products/131/1.png" alt="TheNameOfProduct1"])+.item(img.img.img_responsive.product__img[src="assets/img/products/131/1.png" alt="TheNameOfProduct1"])*4+.like(.like__icon)+a.carousel-control.catalog-carousel__control.left[href="#product__visual" data-slide="prev"](.chevron.chevron_left.chevron_theme_catalog-page-card(.chevron__inner.chevron__inner_left))+a.carousel-control.catalog-carousel__control.right[href="#product__visual" data-slide="next"](.chevron.chevron_right.chevron_theme_catalog-page-card(.chevron__inner.chevron__inner_right))))+.product__data(.product__reviews(a.link[href="./reviews-page?category=tea&product=131"](.link__icon(svg)))+.product__description-container(#product__description.product__description.collapse[aria-expanded="false" style="height: 0;"](p(lorem60)*3)+a.link.product__link-toggle.product__link-toggle_target_description[href="#" data-toggle="collapse" data-target="#product__description"]{Читать полностью})+.product__form-container(.product__prices(p.product__cost{54 р}+p.product__cost.product__cost_old{56 р})+form.form.product__form[action="" method="post"](.form__group.form__group_inline.product__form-group(select[name="product-id_131__weight" id="product-id_131__weight" required="required"].input.input_type_select.form__input-field.form__input-field_select.product__input-field.product__select(option[value="$@100"]{$@100г.}*4)+select[name="product-id_131__count" id="product-id_131__count" required="required"].input.input_type_select.form__input-field.form__input-field_select.product__input-field.product__select(option[value="$"]{$шт.}*5))+.product__btn-container(button[type="submit"].btn.btn_simple.product__btn{В корзину})))))+.produc__characteristics(.produc__characteristics-inner(.produc__characteristic(.produc__characteristic-icon(svg.produc__characteristic-img)+.produc__characteristic-desc(p(lorem2)))*6))
+        .product__inner(#product__visual.product__visual.carousel.slide[data-ride=""](ol.carousel-indicators(li.carousel-indicators__item.active[data-target="#product__visual" data-slide-to="$@0"](img.img.img_responsive.product__img.product__img_thumbnail[src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1"])+li.carousel-indicators__item[data-target="#product__visual" data-slide-to="$@1"](img.img.img_responsive.product__img.product__img_thumbnail[src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1"])*4)+.carousel-inner(.item.active(img.img.img_responsive.product__img[src="assets/img/products/131/1.png" alt="TheNameOfProduct1"])+.item(img.img.img_responsive.product__img[src="assets/img/products/131/1.png" alt="TheNameOfProduct1"])*4+.like(.like__icon)+a.carousel-control.catalog-carousel__control.left[href="#product__visual" data-slide="prev"](.chevron.chevron_left.chevron_theme_catalog-page-card(.chevron__inner.chevron__inner_left))+a.carousel-control.catalog-carousel__control.right[href="#product__visual" data-slide="next"](.chevron.chevron_right.chevron_theme_catalog-page-card(.chevron__inner.chevron__inner_right))))+.product__data(.product__reviews(a.link[href="./reviews-page?category=tea&product=131"](.link__icon(svg)))+.product__description-container(#product__description.product__description.collapse[aria-expanded="false" style="height: 0;"](p(lorem60)*3)+a.link.product__link-toggle.product__link-toggle_target_description[href="#" data-toggle="collapse" data-target="#product__description"]{Читать полностью})+.product__form-container(.product__prices(p.product__cost{54 р}+p.product__cost.product__cost_old{56 р})+form.form.product__form[action="" method="post"](.form__group.form__group_inline.product__form-group(select[name="product-id_131__weight" id="product-id_131__weight" required="required"].input.input_type_select.form__input-field.form__input-field_select.product__input-field.product__select(option[value="$@100"]{$@100г.}*4)+select[name="product-id_131__count" id="product-id_131__count" required="required"].input.input_type_select.form__input-field.form__input-field_select.product__input-field.product__select(option[value="$"]{$шт.}*5))+.product__btn-container(button[type="submit"].btn.btn_simple.product__btn{В корзину})))))+.produc__characteristics(.produc__characteristics-inner(.produc__characteristic(.produc__characteristic-icon(svg.produc__characteristic-img)+.produc__characteristic-desc(p(lorem2)))*6))
     -->
 
     <div class="product__inner">
@@ -124,19 +124,19 @@
                 </a>
             </div>
             <ol class="carousel-indicators carousel-indicators_product">
-                <li class="active" data-target="#product__visual" data-slide-to="0">
+                <li class="carousel-indicators__item active" data-target="#product__visual" data-slide-to="0">
                     <img src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1" class="img img_responsive product__img product__img_thumbnail" />
                 </li>
-                <li data-target="#product__visual" data-slide-to="1">
+                <li class="carousel-indicators__item" data-target="#product__visual" data-slide-to="1">
                     <img src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1" class="img img_responsive product__img product__img_thumbnail" />
                 </li>
-                <li data-target="#product__visual" data-slide-to="2">
+                <li class="carousel-indicators__item" data-target="#product__visual" data-slide-to="2">
                     <img src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1" class="img img_responsive product__img product__img_thumbnail" />
                 </li>
-                <li data-target="#product__visual" data-slide-to="3">
+                <li class="carousel-indicators__item" data-target="#product__visual" data-slide-to="3">
                     <img src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1" class="img img_responsive product__img product__img_thumbnail" />
                 </li>
-                <li data-target="#product__visual" data-slide-to="4">
+                <li class="carousel-indicators__item" data-target="#product__visual" data-slide-to="4">
                     <img src="assets/img/products/131/thumbnails/1.png" alt="TheNameOfProduct1" class="img img_responsive product__img product__img_thumbnail" />
                 </li>
             </ol>
