@@ -6,14 +6,16 @@ li.carousel-indicators__item,
 .carousel-indicators__item {
     border-radius: 0;
     border-width: 0;
-    margin: 5px;
+    float: left;
+    margin: 8px 4px;
     text-indent: 0;
     @include size(82px, 80px);
+    @include transition();
 
     /* Переделать по BEM */
     &.active {
         border-width: 1px;
-        margin: 5px;
+        margin: 8px 4px;
         @include size(82px, 80px);
     }
 }
