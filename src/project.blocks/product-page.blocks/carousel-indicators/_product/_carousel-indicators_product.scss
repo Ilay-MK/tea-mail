@@ -3,5 +3,12 @@
 /// Описание модификатора BEM блока carousel-indicators.
 /// Модификатор - product.
 .carousel-indicators_product {
-
+    bottom: auto;
+    left: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
 }
