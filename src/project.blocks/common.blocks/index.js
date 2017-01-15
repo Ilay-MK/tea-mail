@@ -10,3 +10,4 @@
 //= menu-secondary/index.js
 //= page/index.js
 //= product-card/index.js
+//= text-collapsing/index.js
