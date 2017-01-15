@@ -4,7 +4,6 @@
 /// Элемент - description.
 .page__description {
     color: #4c4c4c;
-    display: block;
     font-family: getFont-family("OpenSans");
     font-size: 15px;
     font-style: italic;
@@ -12,18 +11,4 @@
     letter-spacing: 0.025em;
     line-height: 25px;
     min-height: 90px;
-    overflow: hidden;
-    margin-bottom: 13px;
-    position: relative;
-    @include transition($time: 0.7s);
-
-    &:after {
-        content: '';
-        box-shadow: 0 0px 15px 12px #ffffff;
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        left: 0;
-        right: 0;
-    }
 }
