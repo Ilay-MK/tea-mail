@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока product.
+/// Элемент - svg.
+/// Модификатора - reviews.
+.product__svg_reviews {
+    height: 30px;
+    vertical-align: middle;
+}
