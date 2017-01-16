@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока product.
 /// Элемента - characteristic-icon.
 .product__characteristic-icon {
-
+    @include size(30px, 45px);
+    display: inline-block;
 }
