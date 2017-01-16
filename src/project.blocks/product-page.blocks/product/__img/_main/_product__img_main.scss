@@ -10,4 +10,8 @@
         height: 317px !important;
         max-width: auto !important;
     }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        height: 344px!important;
+    }
 }
