@@ -9,4 +9,12 @@
     @media (max-width: 479px) {
         float: none;
     }
+
+    @media (min-width: 1420px) {
+        margin-right: 60px;
+    }
+
+    @media (min-width: 1310px) and (max-width: 1419px) {
+        margin-right: 35px;
+    }
 }
