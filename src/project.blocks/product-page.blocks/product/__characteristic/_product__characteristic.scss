@@ -4,6 +4,15 @@
 /// Элемента - characteristic.
 .product__characteristic {
     display: inline-block;
+    margin: 25px 0;
     text-align: center;
     width: 16%;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        width: 32%;
+    }
+
+    @media (max-width: 479px) {
+        width: 49%;
+    }
 }
