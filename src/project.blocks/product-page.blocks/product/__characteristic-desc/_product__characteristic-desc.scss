@@ -3,5 +3,10 @@
 /// Описание элемента BEM блока product.
 /// Элемента - characteristic-desc.
 .product__characteristic-desc {
-
+    @extend %font-NotoSans_Italic;
+    color: #434343;
+    font-size: 13px;
+    letter-spacing: 0.025em;
+    line-height: 1.4em;
+    margin: 0;
 }
