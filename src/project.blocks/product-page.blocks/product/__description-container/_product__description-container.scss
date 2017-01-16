@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемент - description-container.
+.product__description-container {
+
+    @media (max-width: 767px) {
+        text-align: center;
+    }
+}
