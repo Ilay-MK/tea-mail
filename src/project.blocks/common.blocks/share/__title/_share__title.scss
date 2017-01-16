@@ -3,5 +3,9 @@
 /// Описание элемента BEM блока share.
 /// Элемент - title.
 .share__title {
-
+    color: #7e7e7e;
+    @extend %font-OpenSans_RegularItalic;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    margin-bottom: 17px;
 }
