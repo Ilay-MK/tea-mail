@@ -22,4 +22,9 @@
     @media (max-width: 767px) {
         float: none;
     }
+
+    @media (max-width: 479px) {
+        margin: 0 auto;
+        width: 290px;
+    }
 }
