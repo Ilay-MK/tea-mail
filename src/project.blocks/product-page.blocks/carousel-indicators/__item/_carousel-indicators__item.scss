@@ -4,6 +4,7 @@
 /// Элемент - item.
 li.carousel-indicators__item,
 .carousel-indicators__item {
+    border-color: getColor("GoldenBrown");
     border-radius: 0;
     border-width: 0;
     float: left;
@@ -13,6 +14,10 @@ li.carousel-indicators__item,
     @include transition();
 
     /* Переделать по BEM */
+    &:hover {
+        border-width: 1px;
+    }
+
     &.active {
         border-width: 1px;
         margin: 8px 4px;
