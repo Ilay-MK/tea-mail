@@ -6,4 +6,8 @@
     @extend .page__description;
     letter-spacing: 0.05em;
     min-height: 90px;
+
+    @media (min-width: 992px) {
+        overflow-y: scroll;
+    }
 }
