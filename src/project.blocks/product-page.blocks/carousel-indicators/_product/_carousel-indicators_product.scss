@@ -12,4 +12,8 @@ ol.carousel-indicators_product,
     right: auto;
     top: auto;
     width: 100%;
+
+    @media (max-width: 479px) {
+        display: none;
+    }
 }
