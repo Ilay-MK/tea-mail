@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока продукта.
+/// Элемент - btn-container.
+.product__btn-container {
+
+    @media (max-width: 479px) {
+        display: block;
+        margin-top: 20px;
+    }
+}
