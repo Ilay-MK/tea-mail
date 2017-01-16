@@ -5,14 +5,4 @@
 /// Модификатор - label.
 .carousel-indicators__item_label {
     position: relative;
-
-    &:after {
-        background-color: rgba(26, 26, 26, .341);
-        bottom: 0;
-        content: '';
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
 }
