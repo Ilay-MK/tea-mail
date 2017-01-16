@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока product.
 /// Элемента - characteristic.
 .product__characteristic {
-
+    display: inline-block;
+    text-align: center;
 }
