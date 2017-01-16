@@ -12,4 +12,9 @@
         width: 340px;
         vertical-align: top;
     }
+
+    @media (max-width: 479px) {
+        margin: 0;
+        width: 100%;
+    }
 }
