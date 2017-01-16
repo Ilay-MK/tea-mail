@@ -5,4 +5,17 @@
 .share__link {
     max-width: 40px;
     width: 40px;
+
+    /*& + .share__link{
+        border-left: 1px solid rgba(216, 216, 216, .631);
+        position: relative;
+
+        &:before {
+            background-color: rgba(216, 216, 216, .631);
+            //content: '';
+            position: absolute;
+            @include size(1px, 14px);
+        }
+    }*/
+
 }
