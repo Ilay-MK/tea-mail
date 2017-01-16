@@ -4,6 +4,7 @@
 /// Элемент форма.
 .product__form {
     float: left;
+    margin-top: 5px;
 
     @media (max-width: 479px) {
         float: none;
