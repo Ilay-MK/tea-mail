@@ -1,1 +1,1 @@
-//= __item/index.js
+//= carousel-indicators.js
