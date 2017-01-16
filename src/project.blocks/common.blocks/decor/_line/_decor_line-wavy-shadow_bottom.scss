@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-wavy-shadow.
+/// Значение bottom.
+.decor_line-wavy-shadow_bottom {
+
+    &:after {
+        content: " ";
+        background-image: url(../img/decor/line/decor_line-wavy-shadow.png);
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        height: 15px;
+        bottom: -15px;
+    }
+}
