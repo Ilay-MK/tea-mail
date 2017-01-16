@@ -7,11 +7,17 @@ ol.carousel-indicators_product,
     bottom: auto;
     left: auto;
     margin: 0;
+    max-height: 352px;
     padding: 0;
     position: relative;
     right: auto;
     top: auto;
     width: 100%;
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        display: inline-block;
+        width: auto;
+    }
 
     @media (max-width: 479px) {
         display: none;
