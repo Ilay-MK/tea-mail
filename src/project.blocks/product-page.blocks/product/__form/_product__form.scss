@@ -3,5 +3,9 @@
 /// Описание BEM элемента блока продукта.
 /// Элемент форма.
 .product__form {
+    float: left;
 
+    @media (max-width: 479px) {
+        float: none;
+    }
 }

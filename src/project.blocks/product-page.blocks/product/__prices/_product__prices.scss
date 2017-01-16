@@ -3,5 +3,9 @@
 /// Описание элемента блока продукта.
 /// Элемент контейнер цен.
 .product__prices {
+    float: right;
 
+    @media (max-width: 479px) {
+        float: none;
+    }
 }
