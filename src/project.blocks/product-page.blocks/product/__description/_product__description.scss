@@ -17,6 +17,10 @@
         padding-right: 90px;
     }
 
+    @media (max-width: 767px) {
+        min-height: 125px;
+    }
+
     /* Переделать по BEM! */
     p {
         &:first-child {
