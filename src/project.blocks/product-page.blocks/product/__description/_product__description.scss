@@ -11,6 +11,10 @@
         overflow-y: scroll;
     }
 
+    @media (min-width: 1420px) {
+        padding-right: 90px;
+    }
+
     /* Переделать по BEM! */
     p {
         &:first-child {
