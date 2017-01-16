@@ -6,10 +6,6 @@
     float: right;
     text-align: center;
 
-    @media (max-width: 479px) {
-        float: none;
-    }
-
     @media (min-width: 1420px) {
         margin-right: 60px;
     }
@@ -20,5 +16,10 @@
 
     @media (max-width: 767px) {
         margin-right: 40px;
+    }
+
+    @media (max-width: 479px) {
+        float: none;
+        margin-right: 0;
     }
 }
