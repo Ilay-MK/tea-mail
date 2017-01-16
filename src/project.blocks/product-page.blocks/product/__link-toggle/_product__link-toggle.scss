@@ -4,4 +4,8 @@
 /// Элемент - link-toggle.
 .product__link-toggle {
     @extend .page__link-toggle;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
