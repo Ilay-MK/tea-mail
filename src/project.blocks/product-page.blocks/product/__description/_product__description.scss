@@ -5,12 +5,12 @@
 .product__description {
     @extend .page__description;
     letter-spacing: 0.05em;
-    padding-right: 10px;
     min-height: 225px;
     text-align: left;
 
     @media (min-width: 768px) {
         overflow-y: scroll;
+        padding-right: 10px;
     }
 
     @media (min-width: 1420px) {
@@ -19,6 +19,10 @@
 
     @media (max-width: 767px) {
         min-height: 125px;
+    }
+
+    @media (max-width: 479px) {
+        margin: 0 15px;
     }
 
     /* Переделать по BEM! */
