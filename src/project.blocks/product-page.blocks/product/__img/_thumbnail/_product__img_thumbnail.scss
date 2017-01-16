@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока product.
+/// Элемент - img.
+/// Модификатор - thumbnail.
+.product__img_thumbnail {
+
+    @media (min-width: 480px) {
+        height: auto;
+    }
+}
