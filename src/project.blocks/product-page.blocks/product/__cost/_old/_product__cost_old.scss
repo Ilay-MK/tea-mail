@@ -3,9 +3,8 @@
 /// Описание элемента блока продукта.
 /// Элемент старая стоимость
 .product__cost_old {
-    @include f("catalog--product_card--oldPrice");
-    line-height: normal !important; /* TEMP */
-    display: inline-block;
-    margin: 0;
+    color: getColor("DoubleColonialWhite");
+    font-size: 14px;
+    font-weight: 400;
     text-decoration: line-through;
 }
