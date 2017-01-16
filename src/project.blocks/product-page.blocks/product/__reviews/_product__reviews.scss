@@ -5,4 +5,8 @@
 .product__reviews {
     margin-bottom: 8px;
     margin-top: 11px;
+
+    @media (max-width: 479px) {
+        display: none;
+    }
 }
