@@ -4,11 +4,7 @@
 /// Модификатор - product.
 .section_product {
 
-    @media (min-width: 1200px) {
-        width: 794px;
-    }
-
-    @media (min-width: 1420px) {
-        width: 100%;
+    @media (min-width: 1200px) and (max-width: 1309px) {
+        width: 840px;
     }
 }
