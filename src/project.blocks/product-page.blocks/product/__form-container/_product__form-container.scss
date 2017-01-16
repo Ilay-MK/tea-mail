@@ -4,4 +4,8 @@
 /// Элемента - form-container.
 .product__form-container {
     margin-top: 80px;
+
+    @media (max-width: 767px) {
+        margin-top: 20px;
+    }
 }
