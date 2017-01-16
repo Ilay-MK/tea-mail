@@ -13,4 +13,13 @@
     @media (min-width: 1200px) {
         width: 450px; /* 442px - по 4px по сторонам */
     }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        margin-right: 0;
+        width: auto;
+    }
+
+    @media (max-width: 767px) {
+        float: none;
+    }
 }
