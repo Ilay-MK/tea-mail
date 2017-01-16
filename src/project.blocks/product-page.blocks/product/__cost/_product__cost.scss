@@ -3,9 +3,11 @@
 /// Описание элемента блока product.
 /// Элемент стоимость
 .product__cost {
-    @include f("catalog--product_card--price");
-    line-height: normal !important; /* TEMP */
-    display: inline-block;
-    margin-top: 18px;
-    margin-bottom: 13px;
+    color: getColor("GoldenBrown");
+    display: block;
+    @extend %font-OpenSans_SemiBoldItalic;
+    font-size: 24px;
+    letter-spacing: 0.025em;
+    line-height: 26px;
+    margin: 0;
 }
