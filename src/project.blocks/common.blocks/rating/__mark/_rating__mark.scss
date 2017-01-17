@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока rating.
+/// Элемент - mark.
+.rating__mark {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    float: left;
+    margin: 0 3px;
+}
