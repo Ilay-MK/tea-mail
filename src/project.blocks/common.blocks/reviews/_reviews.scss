@@ -3,4 +3,11 @@
 /// Описание BEM блока reviews.
 .reviews {
 
+    @media (max-width: 767px) and (min-width: 480px) {
+        padding: 0 15px;
+    }
+
+    @media (max-width: 479px) {
+        padding: 0 25px;
+    }
 }
