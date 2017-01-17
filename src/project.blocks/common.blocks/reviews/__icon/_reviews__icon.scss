@@ -8,6 +8,7 @@ $reviews__icon___size_rate: 50px;
 /// Описание элемента BEM блока reviews.
 /// Элемент - icon.
 .reviews__icon {
+    display: inline-block;
     border-radius: 50%;
     background-color: #e3e3e3;
     line-height:$reviews__icon___size_rate;
