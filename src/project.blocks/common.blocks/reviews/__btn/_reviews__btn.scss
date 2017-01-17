@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - btn.
 .reviews__btn {
-
+    @include f("reviews--button");
+    line-height: 40px; /* TEMP */
 }
