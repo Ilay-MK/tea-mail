@@ -7,6 +7,9 @@
     display: inline-block;
     vertical-align: middle;
 
+    @media (min-width: 768px) {
+        margin-bottom: 15px;
+    }
     /* Переделать по BEM */
     p {
         margin: 0;
