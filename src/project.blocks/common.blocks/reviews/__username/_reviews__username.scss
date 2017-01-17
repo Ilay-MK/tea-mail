@@ -3,5 +3,11 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - username.
 .reviews__username {
+    display: inline-block;
+    vertical-align: middle;
 
+    /* Переделать по BEM */
+    p {
+        margin: 0;
+    }
 }
