@@ -14,5 +14,6 @@ $reviews__icon___size_rate: 50px;
     line-height:$reviews__icon___size_rate;
     padding: 8px;
     text-align: center;
+    vertical-align: middle;
     @include size($reviews__icon___size_rate);
 }
