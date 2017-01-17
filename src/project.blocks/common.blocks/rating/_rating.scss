@@ -2,5 +2,6 @@
 
 /// Описание BEM блока rating.
 .rating {
-
+    //overflow: hidden;
+    @extend .clearfix;
 }
