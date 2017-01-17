@@ -3,6 +3,7 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - username.
 .reviews__username {
+    @include f("reviews--username");
     display: inline-block;
     vertical-align: middle;
 
