@@ -5,4 +5,8 @@
 .reviews__text {
     @include f("reviews--text");
     overflow: hidden;
+
+    @media (min-width: 768px) {
+        margin-left: 65px;
+    }
 }
