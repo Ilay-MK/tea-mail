@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - person.
+.reviews__person {
+    margin: 30px 0;
+
+    @media (min-width: 768px) {
+        margin: 10px 0 -30px;
+    }
+}
