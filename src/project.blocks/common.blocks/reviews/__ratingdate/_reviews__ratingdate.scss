@@ -4,4 +4,7 @@
 /// Элемент - ratingdate.
 .reviews__ratingdate {
 
+    @media (min-width: 768px) {
+        margin-left: 65px;
+    }
 }
