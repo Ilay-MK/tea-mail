@@ -3,5 +3,10 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - date.
 .reviews__date {
+    float: right;
 
+    /* Сделать по BEM */
+    p {
+        margin: 0;
+    }
 }
