@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - text.
 .reviews__text {
+    @include f("reviews--text");
     overflow: hidden;
 }
