@@ -3,5 +3,5 @@
 /// Описание модификатора блока border-line.
 /// Модификатора - bottom.
 .border-line_bottom {
-    border-bottom-width: $border-line___rate;
+    border-bottom-width: $border-line___rate !important;
 }

@@ -6,5 +6,5 @@ $border-line___rate: 1px !default;
 
 /// Описание блока border-line.
 .border-line {
-    border: 0 solid transparent;
+    border: 0 solid transparent !important;
 }
