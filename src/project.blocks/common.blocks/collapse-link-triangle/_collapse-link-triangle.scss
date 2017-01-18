@@ -3,6 +3,8 @@
 /// Описание BEM блока треугольничка линка колапса.
 .collapse-link-triangle {
     cursor: pointer;
+    padding-bottom: 10px;
+    padding-top: 10px;
     position: relative;
 
     &:after {
