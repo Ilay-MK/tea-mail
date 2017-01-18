@@ -3,7 +3,6 @@
 /// Описание элемента BEM блока product.
 /// Элемент - link-toggle.
 .product__link-toggle {
-    @extend .page__link-toggle;
 
     @media (min-width: 768px) {
         display: none;
