@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// @parap $border-line___rate -
+/// размер бордера.
+$border-line___rate: 1px;
+
+/// Описание модификатора блока border-line.
+/// Модификатора - theme.
+/// Значение - tea-mail.
+.border-line_theme_tea-mail {
+    border-color: #dfdfdf;
+    border-style: solid;
+}
