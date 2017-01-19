@@ -11,4 +11,11 @@
     //float: left;
     //margin: 0 4px;
     //@include size(65px, 30px); /* 70px, 32px - поправка на зум */
+
+    @include plhdr(".reviews__textarea") {
+        @include font-NotoSans_Italic;
+        color: #d3d2d2;
+        font-size: 13px;
+        letter-spacing: 0.025em;
+    }
 }
