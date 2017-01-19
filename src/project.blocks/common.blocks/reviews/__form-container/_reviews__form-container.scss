@@ -3,6 +3,14 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - form-container (контейнер формы).
 .reviews__form-container {
-    padding-left: 40px;
-    padding-right: 40px;
+
+    @media (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (max-width: 767px) and (min-width: 480px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
