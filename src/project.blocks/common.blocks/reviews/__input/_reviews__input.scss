@@ -12,4 +12,8 @@
     @include plhdr(".reviews__textarea") {
         color: #999999;
     }
+
+    &:focus {
+        border-color: getColor("GoldenBrown");
+    }
 }
