@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - input.
+.reviews__input {
+
+    @include plhdr(".reviews__textarea") {
+        color: #999999;
+    }
+}
