@@ -2,6 +2,13 @@
 
 /// Описание элемента BEM блока reviews.
 /// Элемент - textarea.
-.reviews__text {
+.reviews__textarea {
+    border: 1px solid #dedede;
+    padding: 20px;
+    position: relative;
+    @include size(100%, 210px);
 
+    @media (max-width: 479px) {
+        height: 70px;
+    }
 }
