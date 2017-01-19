@@ -7,6 +7,7 @@
     border: 1px solid #dedede;
     padding-left: 15px;
     padding-right: 15px;
+    vertical-align: middle;
 
     @include plhdr(".reviews__textarea") {
         color: #999999;
