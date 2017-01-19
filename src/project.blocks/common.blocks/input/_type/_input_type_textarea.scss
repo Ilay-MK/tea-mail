@@ -6,7 +6,7 @@
 
     @include plhdr(".reviews__textarea") {
         position: relative;
-        left: 20px;
+        left: 0;
         @include transition(left, $effect: ease);
     }
 
