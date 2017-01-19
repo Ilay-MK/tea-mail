@@ -3,5 +3,7 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - comment.
 .reviews__comment {
+    text-overflow: initial;
+    white-space: initial;
     text-align: left;
 }
