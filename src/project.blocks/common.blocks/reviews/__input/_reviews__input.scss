@@ -3,7 +3,7 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - input.
 .reviews__input {
-    @include size(184px, 35px);
+    @include size(180px, 35px);
     border: 1px solid #dedede;
     padding-left: 15px;
     padding-right: 15px;
