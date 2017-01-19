@@ -3,7 +3,32 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - comment.
 .reviews__comment {
+    padding: 30px 0 15px;
+    text-align: left;
     text-overflow: initial;
     white-space: initial;
-    text-align: left;
+
+    @media (max-width: 1199px) and (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 135px;
+    }
+
+    @media (max-width: 1309px) and (min-width: 1200px) {
+        padding-left: 70px;
+        padding-right: 165px;
+    }
+
+    @media (min-width: 1310px) {
+        padding-left: 55px;
+        padding-right: 80px;
+    }
+
+    @media (min-width: 480px) {
+        margin: 0 15px;
+    }
+
+    & + .reviews__comment {
+        border: 0 solid transparent;
+        border-top: 1px solid #f3f3f3;
+    }
 }
