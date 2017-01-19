@@ -3,5 +3,30 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - form-rating.
 .reviews__form-rating {
+    overflow: hidden;
 
+    @media (max-width: 767px) and (min-width: 480px) {
+
+    }
+
+    @media (min-width: 1420px) {
+        margin-right: 30px;
+    }
+
+    @media (max-width: 1419px) and (min-width: 1310px) {
+        margin-right: 50px;
+    }
+
+    @media (max-width: 1309px) and (min-width: 992px) {
+        margin-right: 20px;
+    }
+
+    @media (min-width: 768px) {
+        float: right;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 767px) {
+        margin-top: 15px;
+    }
 }
