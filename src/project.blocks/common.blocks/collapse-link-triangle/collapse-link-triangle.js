@@ -16,6 +16,7 @@ $(function() {
         }
     }));*/
 
+    /*
     $('.collapse-link-triangle').click( function (e) {
         e.preventDefault();
         var obj;
@@ -27,6 +28,19 @@ $(function() {
         }
         else {
             $( this ).removeClass('collapse-link-triangle_active');
+        }
+    });
+    */
+
+    $('.collapse-link-triangle').click( function (e) {
+        e.preventDefault();
+
+
+        if( $( this ).hasClass('collapse-link-triangle_active') ) {
+            $( this ).removeClass('collapse-link-triangle_active');
+        }
+        else {
+            $( this ).addClass('collapse-link-triangle_active');
         }
     });
 
