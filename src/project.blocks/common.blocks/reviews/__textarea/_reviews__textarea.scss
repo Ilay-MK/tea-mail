@@ -8,6 +8,13 @@
     position: relative;
     @include size(100%, 210px);
 
+    @include plhdr(".reviews__textarea") {
+        @include font-NotoSans_Italic;
+        color: #d3d2d2;
+        font-size: 13px;
+        letter-spacing: 0.025em;
+    }
+
     @media (max-width: 479px) {
         height: 70px;
     }
