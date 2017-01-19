@@ -3,6 +3,8 @@
 /// Описание BEM блока reviews.
 .reviews {
     margin: 0 auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
 
     @media (max-width: 767px) and (min-width: 480px) {
         padding: 0 15px;
