@@ -3,5 +3,7 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - form-icon.
 .reviews__form-icon {
-    border-radius: 0;
+    border-radius: 0 !important;
+    padding-top: 0 !important;
+    @include size(47px !important, 33px !important);
 }
