@@ -4,4 +4,14 @@
 /// Элемент контейнер product-card-btn.
 .similar-product__product-card-btn {
 
+    @media (max-width: 1309px) {
+        @include size(90px, 40px);
+    }
+
+    &:hover {
+
+        @media (max-width: 1309px) {
+            @include size(90px, 40px);
+        }
+    }
 }
