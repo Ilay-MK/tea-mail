@@ -4,4 +4,7 @@
 /// Модификатор - old.
 .similar-product__product-card-cost_old {
 
+    @media (max-width: 1309px) {
+        font-size: 20px;
+    }
 }
