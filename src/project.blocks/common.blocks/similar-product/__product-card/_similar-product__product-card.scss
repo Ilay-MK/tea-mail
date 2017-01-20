@@ -3,5 +3,10 @@
 /// Описание элемента блока similar-product.
 /// Элемент контейнер product-card.
 .similar-product__product-card {
+    margin: 8px;
+    @include size(188px, 245px);
 
+    @media (max-width: 1309px) {
+        @include size(292px, 337px);
+    }
 }
