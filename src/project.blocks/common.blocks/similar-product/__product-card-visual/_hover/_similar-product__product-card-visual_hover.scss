@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента блока similar-product.
+/// Модификатора - hover
+.similar-product__product-card-visual_hover {
+
+    @media (min-width: 1310px) {
+        height: 59px; /* Поправка на увеличение карточки */
+    }
+}
