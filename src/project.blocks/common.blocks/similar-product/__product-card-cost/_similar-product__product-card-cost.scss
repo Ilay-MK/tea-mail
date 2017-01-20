@@ -4,4 +4,9 @@
 /// Элемент контейнер product-card-cost.
 .similar-product__product-card-cost {
 
+    @media (max-width: 1309px) {
+        font-size: 23px;
+        margin-bottom: 10px;
+        margin-top: 13px;
+    }
 }
