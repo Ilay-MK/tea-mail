@@ -6,7 +6,7 @@
     margin: 8px;
     @include size(188px, 245px);
 
-    @media (max-width: 1309px) {
+    @media (max-width: 991px) {
         @include size(292px, 337px);
     }
 }
