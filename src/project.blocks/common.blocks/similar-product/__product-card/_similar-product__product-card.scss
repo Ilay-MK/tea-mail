@@ -3,6 +3,10 @@
 /// Описание элемента блока similar-product.
 /// Элемент контейнер product-card.
 .similar-product__product-card {
+
+    display: inline-block !important;
+    float: none;
+
     margin: 8px;
     @include size(188px, 245px);
 
