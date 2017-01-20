@@ -10,4 +10,5 @@
 //= menu-secondary/index.js
 //= page/index.js
 //= product-card/index.js
+//= similar-product/index.js
 //= text-collapsing/index.js
