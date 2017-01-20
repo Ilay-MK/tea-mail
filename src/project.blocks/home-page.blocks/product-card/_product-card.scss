@@ -7,4 +7,8 @@
     @media (max-width: 1309px) {
         @include size(292px, 337px); /* специфично для section of homepage */
     }
+
+    @media (min-width: 1310px) {
+        display: block !important;
+    }
 }
