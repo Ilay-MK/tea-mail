@@ -4,7 +4,7 @@
 /// Элемент form-container - input-field.
 .similar-product__product-card-input-field {
 
-    @media (max-width: 1309px) {
+    @media (max-width: 991px) {
         margin: 0 5px;
         @include size(92px, 40px);
     }
