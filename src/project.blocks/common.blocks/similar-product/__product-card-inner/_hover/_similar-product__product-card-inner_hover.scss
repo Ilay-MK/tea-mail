@@ -4,7 +4,7 @@
 /// Модификатор - hover.
 .similar-product__product-card-inner_hover {
 
-    @media (min-width: 1310px) {
+    @media (min-width: 992px) {
         /*margin: -16px;*/
         /*@include size(220px, 277px);*/ /* специфично для section of homepage || +32px */
         @include size(204px, 261px); /* специфично для section of homepage || +16px */
