@@ -1,7 +1,39 @@
 @charset "UTF-8";
-
 /// Описание элемента BEM блока similar-product.
 /// Элемент - carousel-inner.
 .similar-product__carousel-inner {
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    @media all and (transform-3d),
+    (-webkit-transform-3d) {
+        > .item {
+            // use your favourite prefixer here
+            transition: 500ms ease-in-out left;
+            transition: 500ms ease-in-out all;
+            backface-visibility: visible;
+            transform: none !important;
+        }
+    }
 
+    >.active {
+        &.left {
+            left: 33% !important;
+        }
+        &.right {
+            left: -33% !important;
+        }
+    }
+
+    >.next,
+    >.prev {
+        width: 0;
+    }
+
+    >.next {
+        left: -33% !important;
+    }
+    >.prev {
+        left: 33% !important;
+    }
 }
