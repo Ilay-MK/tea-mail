@@ -2,6 +2,10 @@
 
 /// Листание карусели похожих продуктов.
 $(function() {
+    $('.similar-product__carousel').carousel({
+      interval: false
+    });
+
     $('.similar-product .carousel-control.right').click(function() {
         $(this).blur();
         $(this).parent().find('.item').first().insertAfter($(this).parent().find('.item').last());
