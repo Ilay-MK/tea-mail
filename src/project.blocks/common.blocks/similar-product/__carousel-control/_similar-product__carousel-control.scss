@@ -4,4 +4,29 @@
 /// Элемент - carousel-control.
 .similar-product__carousel-control {
     background-image: none !important;
+
+    @media (min-width: 767px) {
+        width: 40px;
+    }
+
+    /* Сделать по BEM */
+    &.left {
+        left: -32px;
+    }
+
+    &.right {
+        right: -32px;
+    }
+
+    .chevron {
+
+        @media (min-width: 767px) {
+            border-color: transparent !important;
+            background-color: transparent !important;
+        }
+    }
+
+    .chevron__inner {
+        border-color: #d29b3b;
+    }
 }
