@@ -3,5 +3,17 @@
 /// Описание элемента BEM блока similar-product.
 /// Элемент - inner.
 .similar-product__inner {
+    margin: 0 auto;
 
+    @media (min-width: 1200px) {
+        max-width: 818px;
+    }
+
+    @media (max-width: 1200px) and (min-width: 767px) {
+        max-width: 616px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 308px;
+    }
 }

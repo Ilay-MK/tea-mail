@@ -4,4 +4,8 @@
 /// Элемент - decorate.
 .similar-product__decorate {
     margin: 8px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
