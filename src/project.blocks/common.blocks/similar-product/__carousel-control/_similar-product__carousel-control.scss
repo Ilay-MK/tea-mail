@@ -5,7 +5,7 @@
 .similar-product__carousel-control {
     background-image: none !important;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         width: 40px;
     }
 
@@ -20,7 +20,7 @@
 
     .chevron {
 
-        @media (min-width: 767px) {
+        @media (min-width: 768px) {
             border-color: transparent !important;
             background-color: transparent !important;
         }
