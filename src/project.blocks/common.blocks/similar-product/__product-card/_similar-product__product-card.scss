@@ -4,8 +4,10 @@
 /// Элемент контейнер product-card.
 .similar-product__product-card {
 
-    display: inline-block !important;
-    float: none;
+    @media (min-width: 767px) {
+        display: inline-block !important;
+        float: none;
+    }
 
     margin: 8px;
     @include size(188px, 245px);
