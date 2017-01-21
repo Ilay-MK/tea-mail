@@ -6,6 +6,7 @@
 
     @media (max-width: 991px) {
         @include size(90px, 40px);
+        margin: 0;
     }
 
     &:hover {
