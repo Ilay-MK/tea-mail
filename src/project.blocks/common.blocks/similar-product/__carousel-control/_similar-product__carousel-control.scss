@@ -11,11 +11,25 @@
 
     /* Сделать по BEM */
     &.left {
-        left: -32px;
+
+        @media (min-width: 768px) {
+            left: -32px;
+        }
+
+        @media (max-width: 767px) {
+            left: -12px;
+        }
     }
 
     &.right {
-        right: -32px;
+
+        @media (min-width: 768px) {
+            right: -32px;
+        }
+
+        @media (max-width: 767px) {
+            right: -12px;
+        }
     }
 
     .chevron {
