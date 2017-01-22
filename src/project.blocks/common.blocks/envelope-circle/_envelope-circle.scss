@@ -2,5 +2,9 @@
 
 /// Описание BEM блока envelope-circle (застёжка круглая).
 .envelope-circle {
-
+    border-radius: 50%;
+    //background-color: #d1b48a;
+    border: 9px solid #d1b48a;
+    /*height: 32px; */
+    @include size(31px);
 }
