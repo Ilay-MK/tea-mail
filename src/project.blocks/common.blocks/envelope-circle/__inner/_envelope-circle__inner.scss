@@ -3,5 +3,7 @@
 /// Описание элемента BEM блока envelope-circle (застёжка круглая).
 /// Элемент - inner.
 .envelope-circle__inner {
-
+    border-radius: 50%;
+    border: 2px solid #4e4e4e;
+    @include size(13px);
 }
