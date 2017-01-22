@@ -58,14 +58,6 @@
         }
 
         .envelope-circle {
-            border-radius: 50%;
-            //background-color: #d1b48a;
-            border: 9px solid #d1b48a;
-            /*height: 32px; */
-            @include size(31px);
-
-            &.top {
-            }
 
             &.bottom {
                 margin-top: 33px; /* 93 - 31 - 29 */
@@ -102,12 +94,6 @@
                 @media (max-width: 991px) {
                     display: none;
                 }
-            }
-
-            .inner {
-                border-radius: 50%;
-                border: 2px solid #4e4e4e;
-                @include size(13px);
             }
         }
 
