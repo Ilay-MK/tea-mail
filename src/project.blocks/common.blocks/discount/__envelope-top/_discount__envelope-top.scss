@@ -4,4 +4,8 @@
 /// Элемент - envelope-top.
 .discount__envelope-top {
 
+    @media (max-width: 1199px) {
+        background: none !important;
+        overflow: visible !important;
+    }
 }

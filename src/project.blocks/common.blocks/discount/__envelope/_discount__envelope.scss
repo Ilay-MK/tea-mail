@@ -4,4 +4,7 @@
 /// Элемент - envelope.
 .discount__envelope {
 
+    @media (max-width: 1199px) {
+        background: none !important;
+    }
 }
