@@ -5,4 +5,8 @@
 /// Модификатор - hover.
 .discount__img-card_hover {
     margin-top: -55px;
+
+    @media (max-width: 1199px) {
+        margin-top: -50px;
+    }
 }
