@@ -3,5 +3,10 @@
 /// Описание элемента BEM блока discount.
 /// Элемент - carousel-item.
 .discount__carousel-item {
+    float: left;
+    margin: 0 10px;
 
+    @media (min-width: 992px) {
+        display: block !important;
+    }
 }
