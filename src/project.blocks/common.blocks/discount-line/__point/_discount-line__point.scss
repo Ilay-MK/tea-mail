@@ -13,5 +13,6 @@ $discount-line__point___size: 20px;
     background-color: #ffffff;
     float: left;
     margin-top: -($discount-line__point___size - $discount-line__line___size_height) / 2;
+    position: relative;
     @include size($discount-line__point___size);
 }
