@@ -4,4 +4,7 @@
 /// Элемент - discount-line.
 .discount__discount-line {
 
+    @media (max-width: 991px) {
+        margin-top: 40px;
+    }
 }
