@@ -3,6 +3,7 @@
 //= chevron/index.js
 //= collapse-link-triangle/index.js
 //= detachPrependTo/index.js
+//= discount-line/index.js
 //= like/index.js
 //= menu/index.js
 //= menu-catalog/index.js
