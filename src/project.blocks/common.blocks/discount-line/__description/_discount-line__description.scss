@@ -7,4 +7,8 @@
     color: getColor("Charcoal");
     font-size: 14px;
     letter-spacing: 0.05em;
+
+    @media (max-width: 991px) {
+        overflow: hidden;
+    }
 }
