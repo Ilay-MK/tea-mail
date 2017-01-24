@@ -4,5 +4,11 @@
 /// Элемент - top.
 /// Модификатор - inner.
 .envelope__top_inner {
-
+    background-image: -moz-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
+    background-image: -webkit-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
+    background-image: -ms-linear-gradient( -90deg, rgb(177,153,105) 0%, rgba(229,202,147,0) 100%);
+    background-origin: content-box;
+    height: 160px;
+    margin-top: -90px;
+    padding-top: 90px;
 }
