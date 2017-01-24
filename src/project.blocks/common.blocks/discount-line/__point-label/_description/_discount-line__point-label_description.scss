@@ -5,6 +5,8 @@
 /// Модификатор - description.
 .discount-line__point-label_description {
     font-size: 12px;
+    left: calc(-50% + 4px);
+    margin-top: 5px;
 
     @media (min-width: 992px) {
         display: none;
