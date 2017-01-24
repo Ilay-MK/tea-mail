@@ -8,4 +8,8 @@
     margin-bottom: -40px;
     @include size(340px, 177px);
     @include transition(margin);
+
+    @media (max-width: 1199px) {
+        width: 100%;
+    }
 }
