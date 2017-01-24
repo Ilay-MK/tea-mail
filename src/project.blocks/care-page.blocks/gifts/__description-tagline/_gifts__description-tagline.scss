@@ -3,5 +3,5 @@
 /// Описание элемента BEM блока gifts.
 /// Элемент - description-tagline.
 .gifts__description-tagline {
-
+    @include font-OpenSans_RegularItalic;
 }
