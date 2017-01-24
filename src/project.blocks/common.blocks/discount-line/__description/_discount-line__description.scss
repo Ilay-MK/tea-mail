@@ -3,5 +3,8 @@
 /// Описание элемента BEM блока discount-line.
 /// Элемент - description.
 .discount-line__description {
-
+    @include font-OpenSans_LightItalic;
+    color: getColor("Charcoal");
+    font-size: 14px;
+    letter-spacing: 0.05em;
 }
