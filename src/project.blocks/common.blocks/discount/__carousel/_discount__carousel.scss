@@ -3,5 +3,9 @@
 /// Описание элемента BEM блока discount.
 /// Элемент - carousel.
 .discount__carousel {
+    margin: 0 auto;
 
+    @media (max-width: 1199px) {
+        max-width: 360px;
+    }
 }
