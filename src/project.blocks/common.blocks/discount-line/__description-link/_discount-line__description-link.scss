@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока discount-line.
 /// Элемент - description-link.
 .discount-line__description-link {
-
+    color: getColor("Fallow-1");
+    text-decoration: underline;
 }
