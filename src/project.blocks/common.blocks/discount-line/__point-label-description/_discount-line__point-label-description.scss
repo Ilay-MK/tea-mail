@@ -4,4 +4,7 @@
 /// Элемент - point-label-description.
 .discount-line__point-label-description {
 
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
