@@ -5,4 +5,7 @@
 /// Модификатор - description.
 .discount-line__point-label_description {
 
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
