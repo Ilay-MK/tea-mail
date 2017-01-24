@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Размер внутренней точки дискаунта на линии.
+$discount-line__point-inner___size: 11px;
+
+/// Описание BEM блока discount-line.
+/// Элемент - point-inner.
+.discount-line__point-inner {
+    border-radius: 50%;
+    background-color: #dadada;
+    @include size($discount-line__point-inner___size);
+
+}
