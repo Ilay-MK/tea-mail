@@ -1,9 +1,11 @@
 @charset "UTF-8";
 
-/// Размер точки дискаунта на линии.
+/// Высота линии дискаунта.
 $discount-line__line___size_height: 6px !default;
 /// Размер точки дискаунта на линии.
 $discount-line__point___size: 20px !default;
+/// Размер точки дискаунта на линии.
+$discount-line__point-inner___size: 11px !default;
 
 
 /// Описание BEM блока discount-line.
