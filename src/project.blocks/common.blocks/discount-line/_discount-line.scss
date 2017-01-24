@@ -10,5 +10,14 @@ $discount-line__point-inner___size: 11px !default;
 
 /// Описание BEM блока discount-line.
 .discount-line {
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
     text-align: center;
+    /*height: 177px;
+    width: 423px;*/
+
+    @media (max-width: 479px) {
+        border-color: #e4e4e4;
+    }
 }
