@@ -3,5 +3,8 @@
 /// Описание BEM блока discount-line.
 /// Элемент - line.
 .discount-line__line {
-
+    background-color: #dadada;
+    margin: 0 auto;
+    max-width: 725px;
+    @include size(100%, 6px);
 }
