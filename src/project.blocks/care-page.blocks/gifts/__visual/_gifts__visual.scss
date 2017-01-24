@@ -3,5 +3,31 @@
 /// Описание элемента BEM блока gifts.
 /// Элемент - visual.
 .gifts__visual {
+    background-clip: content-box;
+    background-image: url(../img/gifts/visual.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 0 35px;
+
+    @media (min-width: 1200px) {
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        @include size(480px, auto);
+    }
+
+    @media (max-width: 1199px) {
+        height: 240px;
+        margin: 20px auto 30px;
+    }
+
+    @media (max-width: 479px) {
+        background-image: url(../img/gifts/visual_small.png);
+        margin: 0 auto;
+    }
+
+
 
 }
