@@ -5,4 +5,8 @@
 .discount__carousel-inner {
     margin: auto;
     max-width: 1080px;
+
+    @media (max-width: 1199px) {
+        max-width: 340px;
+    }
 }
