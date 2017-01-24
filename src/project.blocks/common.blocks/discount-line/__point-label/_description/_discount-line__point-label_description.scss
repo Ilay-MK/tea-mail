@@ -4,6 +4,7 @@
 /// Элемент - point-label.
 /// Модификатор - description.
 .discount-line__point-label_description {
+    font-size: 12px;
 
     @media (min-width: 992px) {
         display: none;
