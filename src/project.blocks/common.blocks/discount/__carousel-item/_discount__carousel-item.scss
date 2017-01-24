@@ -9,4 +9,8 @@
     @media (min-width: 1200px) {
         display: block !important;
     }
+
+    @media (max-width: 1199px) {
+        margin: 0;
+    }
 }
