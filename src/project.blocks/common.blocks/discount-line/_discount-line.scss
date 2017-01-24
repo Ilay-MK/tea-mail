@@ -13,11 +13,13 @@ $discount-line__point-inner___size: 11px !default;
     border-style: solid;
     border-width: 1px;
     border-color: transparent;
+    padding-bottom: 15px;
     text-align: center;
     /*height: 177px;
     width: 423px;*/
 
     @media (max-width: 991px) {
+        margin-top: 40px;
         border-color: #e4e4e4;
     }
 }
