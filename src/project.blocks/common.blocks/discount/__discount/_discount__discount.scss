@@ -4,5 +4,7 @@
 /// Элемент - discount.
 .discount__discount {
     margin-top: 90px;
+    margin-bottom: -40px;
     @include size(340px, 177px);
+    @include transition(margin);
 }
