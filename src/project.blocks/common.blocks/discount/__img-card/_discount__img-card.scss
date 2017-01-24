@@ -7,4 +7,8 @@
     max-width: 300px;
     @include size(100%, auto);
     @include transition(margin-top);
+
+    @media (max-width: 1199px) {
+
+    }
 }
