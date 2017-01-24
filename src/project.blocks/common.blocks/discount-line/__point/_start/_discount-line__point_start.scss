@@ -5,4 +5,7 @@
 /// Модификатор - start.
 .discount-line__point_start {
 
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
