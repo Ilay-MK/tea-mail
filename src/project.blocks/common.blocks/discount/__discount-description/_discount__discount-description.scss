@@ -3,6 +3,10 @@
 /// Описание элемента BEM блока discount.
 /// Элемент - discount-description.
 .discount__discount-description {
+    @inlude font-OpenSans_LightItalic;
+    color: #4b4b4b;
+    font-size: 14px;
+    letter-spacing: 0.025em;
 
     @media (max-width: 1199px) {
 
