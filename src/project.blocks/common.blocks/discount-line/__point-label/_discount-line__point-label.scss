@@ -3,6 +3,7 @@
 /// Описание BEM блока discount-line.
 /// Элемент - point-label.
 .discount-line__point-label {
+    display: inline-block;
     @include font-NotoSans_Italic;
     color: #cccccc;
     letter-spacing: 0.025em;
