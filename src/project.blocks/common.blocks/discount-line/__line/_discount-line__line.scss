@@ -11,4 +11,9 @@ $discount-line__line___size_height: 6px;
     max-width: 725px;
     position: relative;
     @include size(54%, $discount-line__line___size_height);
+
+    @media (max-width: 991px) {
+        margin-bottom: 50px;
+        width: 90%;
+    }
 }
