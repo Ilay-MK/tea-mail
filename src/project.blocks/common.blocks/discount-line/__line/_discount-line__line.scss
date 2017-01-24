@@ -7,7 +7,7 @@ $discount-line__line___size_height: 6px;
 /// Элемент - line.
 .discount-line__line {
     background-color: #dadada;
-    margin: 30px auto;
+    margin: 65px auto 30px;
     max-width: 725px;
     position: relative;
     @include size(100%, $discount-line__line___size_height);
