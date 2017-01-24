@@ -1,7 +1,17 @@
 @charset "UTF-8";
 
+/// Размер точки дискаунта на линии.
+$discount-line__point___size: 20px;
+
 /// Описание BEM блока discount-line.
 /// Элемент - point.
 .discount-line__point {
-
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dadada;
+    border-radius: 50%;
+    background-color: #ffffff;
+    float: left;
+    margin-top: -($discount-line__point___size - $discount-line__line___size_height) / 2;
+    @include size($discount-line__point___size);
 }
