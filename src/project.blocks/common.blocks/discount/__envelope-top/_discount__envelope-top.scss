@@ -8,4 +8,10 @@
         background: none !important;
         overflow: visible !important;
     }
+
+    &:after {
+        @media (max-width: 1199px) {
+            display: none !important;
+        }
+    }
 }
