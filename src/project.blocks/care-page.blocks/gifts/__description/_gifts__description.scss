@@ -4,4 +4,7 @@
 /// Элемент - description.
 .gifts__description {
 
+    @media (min-width: 1200px) {
+        margin-left: 0;
+    }
 }
