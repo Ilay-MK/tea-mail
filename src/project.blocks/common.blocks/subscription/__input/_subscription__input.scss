@@ -9,6 +9,10 @@
     vertical-align: middle;
     @include size(290px, 40px);
 
+    @media (max-width: 479px) {
+        width: 100%;
+    }
+
     @include plhdr(".subscription__input") {
         color: #b3b3b3;
     }
