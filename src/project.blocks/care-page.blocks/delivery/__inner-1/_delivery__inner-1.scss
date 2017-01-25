@@ -4,4 +4,7 @@
 /// Элемент - inner-1.
 .delivery__inner-1 {
 
+    @media (min-width: 1200px) {
+        float: left;
+    }
 }
