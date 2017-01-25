@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока socials.
+/// Элемент - link.
+.socials__link {
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border-radius: 50%;
+    outline: 0 !important;
+    vertical-align: middle;
+
+    /* Переделать по BEM */
+
+    /*& + .socials__link{
+        border-left: 1px solid rgba(216, 216, 216, .631);
+        position: relative;
+
+        &:before {
+            background-color: rgba(216, 216, 216, .631);
+            //content: '';
+            position: absolute;
+            @include size(1px, 14px);
+        }
+    }*/
+
+}
