@@ -3,12 +3,10 @@
 /// Описание элемента BEM блока subscription.
 /// Элемент - input-field.
 .subscription__input-field {
-    //@include f("catalog--product_card--inputData");
-    //border-style: solid;
-    //border-width: 1px;
-    //border-color: #dedede; /* TEMP - взять из карты цветов */
-    //border-radius: 2px;
-    //float: left;
-    //margin: 0 4px;
-    //@include size(65px, 30px); /* 70px, 32px - поправка на зум */
+
+    @include plhdr(".subscription__input") {
+        @include font-OpenSans_LightItalic;
+        font-size: 14px;
+        letter-spacing: 0.025em;
+    }
 }
