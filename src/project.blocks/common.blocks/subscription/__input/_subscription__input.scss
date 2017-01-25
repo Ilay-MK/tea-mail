@@ -3,14 +3,14 @@
 /// Описание элемента BEM блока subscription.
 /// Элемент - input.
 .subscription__input {
-    @include size(180px, 35px);
     border: 1px solid #dedede;
     padding-left: 15px;
     padding-right: 15px;
     vertical-align: middle;
+    @include size(290px, 40px);
 
-    @include plhdr(".subscription__textarea") {
-        color: #999999;
+    @include plhdr(".subscription__input") {
+        color: #b3b3b3;
     }
 
     &:focus {
