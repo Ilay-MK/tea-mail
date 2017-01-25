@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока subscription.
+/// Элемент - input.
+.subscription__input {
+    @include size(180px, 35px);
+    border: 1px solid #dedede;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle;
+
+    @include plhdr(".subscription__textarea") {
+        color: #999999;
+    }
+
+    &:focus {
+        border-color: getColor("GoldenBrown");
+    }
+}
