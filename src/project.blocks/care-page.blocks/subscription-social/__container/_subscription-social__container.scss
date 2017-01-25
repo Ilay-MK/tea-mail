@@ -5,5 +5,7 @@
 .subscription-social__container {
     margin: auto;
 
-
+    @media (max-width: 991px) {
+        max-width: 320px;
+    }
 }
