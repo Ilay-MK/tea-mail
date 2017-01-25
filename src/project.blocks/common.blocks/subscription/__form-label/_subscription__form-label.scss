@@ -3,5 +3,9 @@
 /// Описание элемента BEM блока subscription.
 /// Элемент - form-label.
 .subscription__form-label {
-
+    @include font-OpenSans_LightItalic;
+    color: getColor("Charcoal-3");
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    line-height: 19px;
 }
