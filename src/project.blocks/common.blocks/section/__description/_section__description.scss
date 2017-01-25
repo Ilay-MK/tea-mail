@@ -8,4 +8,10 @@
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.025em;
+
+    @media (max-width: 479px) {
+        font-size: 16px;
+        line-height: 23px;
+        max-width: 230px;
+    }
 }
