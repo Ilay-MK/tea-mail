@@ -3,5 +3,13 @@
 /// Описание элемента BEM блока delivery.
 /// Элемент - description.
 .delivery__description {
+    margin: auto;
 
+    @media (max-width: 1199px) {
+        max-width: 380px;
+    }
+
+    @media (max-width: 479px) {
+        max-width: 230px;
+    }
 }
