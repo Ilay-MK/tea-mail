@@ -3,5 +3,7 @@
 /// Описание элемента BEM блока subscription.
 /// Элемент - btn-container.
 .subscription__btn-container {
-    margin-top: 20px;
+    display: inline-block;
+    margin-left: -10px;
+    position: relative;
 }
