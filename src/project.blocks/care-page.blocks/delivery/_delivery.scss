@@ -2,5 +2,22 @@
 
 /// Описание BEM блока delivery.
 .delivery {
+    background-clip: content-box;
+    background-image: url(../img/delivery/bg.png);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 350px;
+    height: 650px;
+    padding: 50px 0 20px;
 
+    @media (min-width: 1200px) {
+        background-size: contain;
+        padding-top: 150px;
+        height: 790px;
+    }
+
+    @media (max-width: 479px) {
+        background-image: url(../img/delivery/bg_small.png);
+    }
 }
