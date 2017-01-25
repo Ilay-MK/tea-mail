@@ -3,13 +3,5 @@
 /// Описание элемента BEM блока gifts.
 /// Элемент - title.
 .gifts__title {
-    @include font-Karton_Regular;
-    font-size: 40px;
-    letter-spacing: 0.04em;
-    line-height: 75px;
-    text-transform: uppercase;
 
-    @media (max-width: 767px) {
-        font-size: 35px;
-    }
 }
