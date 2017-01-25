@@ -2,6 +2,15 @@
 
 /// Описание BEM блока subscription.
 .subscription {
-    padding: 20px 0;
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    padding: 50px 0;
     text-align: center;
+
+    @media (min-width: 1200px) {
+        background-image: url(../img/subscription/bg.png);
+    }
 }
