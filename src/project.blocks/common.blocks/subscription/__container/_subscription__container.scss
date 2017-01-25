@@ -4,20 +4,11 @@
 /// Элемент - container.
 .subscription__container {
     margin: 30px auto;
-    max-width: 820px;
+    text-align: center;
 
     @media (min-width: 1200px) {
         margin: 110px auto;
-    }
-
-    @media (max-width: 1199px) and (min-width: 992px) {
-        max-width: 550px;
-        text-align: center;
-    }
-
-    @media (max-width: 991px) {
-        max-width: 430px;
-        text-align: center;
+        max-width: 820px;
     }
 
     @media (max-width: 767px) {
