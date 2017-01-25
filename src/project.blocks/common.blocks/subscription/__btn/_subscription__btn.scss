@@ -5,4 +5,5 @@
 .subscription__btn {
     @include f("reviews--button");
     line-height: 40px; /* TEMP */
+    margin: 0;
 }
