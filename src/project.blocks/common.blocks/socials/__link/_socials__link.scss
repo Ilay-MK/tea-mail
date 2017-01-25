@@ -11,6 +11,7 @@
     border-radius: 50%;
     outline: 0 !important;
     vertical-align: middle;
+    @include size(147px, 145px);
 
     /* Переделать по BEM */
 
