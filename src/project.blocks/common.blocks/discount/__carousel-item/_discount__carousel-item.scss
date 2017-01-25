@@ -7,18 +7,6 @@
     margin: 0 10px;
     position: relative;
 
-    &:after {
-        position: absolute;
-        bottom: -60px;
-        box-shadow: 0px -20px 40px -20px rgba(0, 0, 0, 0.3);
-        left: 0;
-        @include size(100%, 60px);
-
-        @media (min-width: 1200px) {
-            content: '';
-        }
-    }
-
     @media (min-width: 1200px) {
         display: block !important;
     }

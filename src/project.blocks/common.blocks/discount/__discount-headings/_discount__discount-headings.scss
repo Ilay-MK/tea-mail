@@ -3,6 +3,7 @@
 /// Описание элемента BEM блока discount.
 /// Элемент - discount-headings.
 .discount__discount-headings {
+    overflow: hidden;
 
     @media (max-width: 1199px) {
 

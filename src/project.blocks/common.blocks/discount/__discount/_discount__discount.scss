@@ -4,9 +4,7 @@
 /// Элемент - discount.
 .discount__discount {
     display: inline-block;
-    margin-top: 90px;
-    margin-bottom: -40px;
-    @include size(340px, 177px);
+    @include size(340px, 306px);
     @include transition(margin);
 
     @media (max-width: 1199px) {
