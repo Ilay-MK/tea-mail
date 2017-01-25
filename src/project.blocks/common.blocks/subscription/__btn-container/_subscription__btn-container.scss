@@ -6,4 +6,9 @@
     display: inline-block;
     margin-left: -10px;
     position: relative;
+
+    @media (max-width: 479px) {
+        display: block;
+        margin: 20px auto;
+    }
 }
