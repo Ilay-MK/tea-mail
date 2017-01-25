@@ -2,10 +2,19 @@
 
 /// Описание BEM блока socials.
 .socials {
-    background-clip: content-box;
-    background-origin: content-box;
+    background-clip: padding-box;
+    background-origin: padding-box;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     background-image: url(../img/socials/bg.png);
+
+    margin: 60px 0;
+    padding: 40px 0;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        padding: 0;
+        margin: 30px 0;
+    }
 }
