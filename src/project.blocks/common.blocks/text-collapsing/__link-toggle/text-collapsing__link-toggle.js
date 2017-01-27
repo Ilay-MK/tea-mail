@@ -27,6 +27,11 @@ $(function() {
 
         /* --- */
 
+        if( $( '.menu-catalog__title' ) !== undefined )
+            $( '.menu-catalog__title' ).slideToggle();
+
+        /* --- */
+
         /*
         if($(obj).attr('aria-expanded') == 'false') {
 
