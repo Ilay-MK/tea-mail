@@ -27,7 +27,8 @@ $(function() {
 
         /* --- */
 
-        if( $( '.menu-catalog__title' ) !== undefined )
+        /* Показать заголовок меню каталога при разворачивании меню */
+        if( $( '.menu-catalog__title' ) !== undefined && linkToggle.hasClass('menu-catalog__link-toggle') )
             $( '.menu-catalog__title' ).slideToggle();
 
         /* --- */
