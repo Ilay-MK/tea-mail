@@ -8,4 +8,9 @@
     font-size: 14px;
     letter-spacing: 0.025em;
     text-align: left;
+
+    /* Переделать по BEM */
+    p {
+        margin: 0;
+    }
 }
