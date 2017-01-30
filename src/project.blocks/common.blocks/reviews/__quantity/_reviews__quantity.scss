@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - quantity (кол-во отзывов).
+.reviews__quantity {
+    @include font-NotoSans_Italic;
+    color: getColor("Matterhorn-2");
+    font-size: 14px;
+    letter-spacing: 0.025em;
+}
