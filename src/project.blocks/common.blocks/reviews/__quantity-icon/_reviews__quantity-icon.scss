@@ -3,5 +3,7 @@
 /// Описание элемента BEM блока reviews.
 /// Элемент - quantity-icon (иконка кол-ва отзывов).
 .reviews__quantity-icon {
-
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" class="svg svg_comment product__svg_reviews" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.8 21.8" xml:space="preserve"><style>.svg__elem_color_comment-base{fill: #cfcfcf;}</style><path class="svg__elem svg__elem_color_comment-base" d="M12.6,2.7c-5.1,0-9.2,3-9.2,6.6c0,1.4,0.6,2.7,1.6,3.8l-1.2,5.2l4.7-3c1.2,0.4,2.6,0.7,4.1,0.7c5.1,0,9.2-3,9.2-6.6S17.7,2.7,12.6,2.7z"/></svg>');
+    vertical-align: middle;
+    @include size(30px, 26px);
 }
