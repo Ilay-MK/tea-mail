@@ -9,6 +9,26 @@
     letter-spacing: 0.025em;
     text-align: left;
 
+    @media (max-width: 1199px) and (min-width: 768px) {
+        padding-left: 40px;
+    }
+
+    @media (max-width: 1309px) and (min-width: 1200px) {
+        padding-left: 70px;
+    }
+
+    @media (min-width: 1310px) {
+        padding-left: 55px;
+    }
+
+    @media (min-width: 768px) {
+        margin: 0 15px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+
     /* Переделать по BEM */
     p {
         margin: 0;
