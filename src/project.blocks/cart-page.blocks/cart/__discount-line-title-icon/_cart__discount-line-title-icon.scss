@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока cart.
 /// Элеммент - discount-line-title-icon.
 .cart__discount-line-title-icon {
-
+    display: inline-block;
+    @include size(28px, 29px);
 }
