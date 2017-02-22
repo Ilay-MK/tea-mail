@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока карточки продукта.
+/// Модификатор - view.
+/// Значение - block.
+.product-card__form-container_view_block {
+    display: inline-block;
+    padding-top: 50px;
+    width: 49%;
+}

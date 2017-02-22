@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание блока карточки продукта
+.product-card {
+    @include size(250px, 326px); /* специфично для section of catalog */
+
+    @media (max-width: 991px) {
+        display: inline-block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        @include size(292px, 337px);
+    }
+}
