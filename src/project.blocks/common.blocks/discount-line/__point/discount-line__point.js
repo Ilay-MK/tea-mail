@@ -9,8 +9,8 @@ function positioningDiscountLinePoint() {
         rate = 2;
 
 
-    $point              = $('#discount .discount-line__point');
-    $pointVisible       = $('#discount .discount-line__point:visible');
+    $point              = $('.discount-line__point');
+    $pointVisible       = $('.discount-line__point:visible');
     pointWidth          = $point.outerWidth();
     countVisiblePoints  = +$pointVisible.length;
     rate               += rate * (countVisiblePoints > 2 ? countVisiblePoints-rate : 0) ;
