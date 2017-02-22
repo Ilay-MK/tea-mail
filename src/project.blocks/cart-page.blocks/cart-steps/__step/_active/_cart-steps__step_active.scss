@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/// Описание модификтаора элемента BEM блока cart-steps.
+/// Элеммент - step.
+/// Модификтаор - step.
+.cart-steps__step_active {
+    border-color: #d29b3b;
+    border-width: 2px;
+
+    &:before {
+        background-color: #d29b3b !important;
+        height: 2px !important;
+    }
+
+    & + .cart-steps__step {
+
+        &:before {
+            background-color: #d29b3b;
+            height: 2px;
+        }
+
+    }
+}

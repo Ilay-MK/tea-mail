@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart-steps.
+/// Элеммент - step-description.
+.cart-steps__step-description {
+    @include font-OpenSans_RegularItalic;
+    color: #838383;
+    font-size: 14px;
+    margin-top: 12px;
+}
