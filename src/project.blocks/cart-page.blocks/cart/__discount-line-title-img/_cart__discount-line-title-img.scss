@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart.
+/// Элеммент - discount-line-title-img.
+.cart__discount-line-title-img {
+    fill: #b8b8b8;
+    @include size(28px, 29px);
+}
