@@ -3,5 +3,14 @@
 /// Описание элемента BEM блока cart.
 /// Элеммент - discount-line.
 .cart__discount-line {
+    border: 1px solid #ededed;
+    margin: 4px;
 
+    /* Переделать по BEM! */
+    .discount-line__line {
+        margin-right: 20px;
+        margin-left: 20px;
+        max-width: 100%;
+        width: auto;
+    }
 }
