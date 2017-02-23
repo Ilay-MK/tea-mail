@@ -6,6 +6,12 @@
     border: 1px solid #ededed;
     margin: 4px;
 
+    @media (min-width: 1420px) {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     /* Переделать по BEM! */
     .discount-line__line {
         margin-right: 20px;
