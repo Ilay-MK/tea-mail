@@ -3,5 +3,8 @@
 /// Описание элемента BEM блока cart.
 /// Элеммент - discount-line-column.
 .cart__discount-line-column {
-
+    display: inline-block;
+    margin-left: 22px;
+    margin-right: 22px;
+    vertical-align: middle;
 }
