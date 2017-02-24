@@ -5,6 +5,7 @@
 .form-coupon__label {
     @include font-NotoSans_Italic;
     color: getColor("Eclipse");
+    display: inline-block;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.025em;
