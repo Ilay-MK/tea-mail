@@ -3,9 +3,12 @@
 /// Описание BEM блока формы ввода купона.
 /// Элемент - btn.
 .form-coupon__btn {
+    border-radius: 2px;
+    background-color: #cc9d6d;
     @include font-OpenSans_Light;
     color: getColor("white");
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.05em;
+    @include size(177px, 33px);
 }
