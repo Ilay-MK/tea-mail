@@ -3,5 +3,9 @@
 /// Описание BEM блока формы ввода купона.
 /// Элемента - input.
 .form-coupon__input {
-
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    border-radius: 2px;
+    @include size(138px, 35px);
 }
