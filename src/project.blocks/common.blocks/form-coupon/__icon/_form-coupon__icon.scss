@@ -3,5 +3,5 @@
 /// Описание BEM блока формы ввода купона.
 /// Элемента - icon.
 .form-coupon__icon {
-
+    @include size(18px, 27px);
 }

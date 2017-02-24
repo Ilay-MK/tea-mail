@@ -3,5 +3,6 @@
 /// Описание BEM блока формы ввода купона.
 /// Элемента - img.
 .form-coupon__img {
-
+    fill: #b8b8b8;
+    @include size(18px, 27px);
 }
