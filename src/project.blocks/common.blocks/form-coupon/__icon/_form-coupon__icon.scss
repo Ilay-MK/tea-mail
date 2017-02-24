@@ -4,6 +4,7 @@
 /// Элемента - icon.
 .form-coupon__icon {
     display: inline-block;
+    margin-right: 13px;
     @include size(18px, 27px);
     vertical-align: middle;
 }
