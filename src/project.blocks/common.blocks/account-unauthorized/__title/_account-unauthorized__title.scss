@@ -3,5 +3,10 @@
 /// Описание BEM блока account-unauthorized.
 /// Элемент title.
 .account-unauthorized__title {
-
+    @include font-OpenSans_SemiBoldItalic;
+    color: #4b4b4b;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+    margin: 0;
 }
