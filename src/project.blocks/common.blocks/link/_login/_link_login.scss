@@ -3,5 +3,9 @@
 /// Описание модификатора BEM блока линк.
 /// Модификатора - login.
 .link_login {
-
+    @include font-OpenSans_RegularItalic;
+    color: getColor("Putty");
+    font-size: 16px;
+    letter-spacing: 0.025em;
+    text-decoration: underline !important;
 }
