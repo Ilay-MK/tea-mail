@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/// Описание BEM блока radio (блок со стилизованными радио кнопками).
+/// Элемент - label.
+.radio__label {
+    @include font-OpenSans_Regular;
+    color: #2c2c2c;
+	cursor: pointer;
+	display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+	margin-right: 15px;
+	padding-left: 25px;
+	position: relative;
+
+    &:before {
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        //bottom: 1px;
+        //box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+        content: "";
+        display: inline-block;
+        left: 0;
+        margin-right: 10px;
+        position: absolute;
+        @include size(28px);
+    }
+
+
+    .radio__btn:checked + &:before {
+        content: "\2022";
+        color: #d29b3b;
+        font-size: 30px;
+        text-align: center;
+    }
+}
