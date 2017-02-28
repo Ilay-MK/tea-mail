@@ -5,5 +5,33 @@
             Учетная запись
         </h3>
     </div>
+
+    <div class="radio">
+        <div class="form__group">
+            <input id="account-unauthorized__new-user" type="radio" name="owner-order" class="radio__btn" value="user-new">
+            <label for="account-unauthorized__new-user" class="radio__label">
+                Оформить как новый пользователь
+                <span class="radio__label-desc">
+                    У нас много бонусов для постоянных клиентов, если вы оформите личный кабинет - это первый шаг стать им
+                </span>
+            </label>
+        </div>
+
+        <div class="form__group">
+            <input id="account-unauthorized__user" type="radio" name="owner-order" class="radio__btn" value="user" checked>
+            <label for="account-unauthorized__user" class="radio__label">
+                Уже зарегистрированы? Нажмите, чтобы
+                <a href="#" class="link link_login">войти</a>.
+            </label>
+        </div>
+
+        <div class="form__group">
+            <input id="account-unauthorized__guest" type="radio" name="owner-order" class="radio__btn" value="guest">
+            <label for="account-unauthorized__guest" class="radio__label">
+                Оформить заказ как гость
+            </label>
+        </div>
+    </div>
+
 </div>
 <!-- / account-unauthorized -->
