@@ -3,5 +3,8 @@
 /// Описание элемента BEM блока cart.
 /// Элеммент - total-cost.
 .cart__total-cost {
-
+    @include font-OpenSans_SemiBoldItalic;
+    color: getColor("GoldenBrown");
+    font-size: 24px;
+    letter-spacing: 0.025em;
 }
