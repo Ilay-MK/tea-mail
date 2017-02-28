@@ -3,5 +3,16 @@
 /// Описание BEM блока комментария к заказу.
 /// Элемент - textarea.
 .comment-order__textarea {
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    margin: 0 60px;
+    padding: 10px 15px;
+    @include size(100%, 136px);
 
+    @include plhdr(".comment-order__textarea") {
+        @include font-OpenSans_LightItalic;
+        color: #3e3e3e;
+        font-size: 14px;
+        letter-spacing: 0.025em;
+    }
 }
