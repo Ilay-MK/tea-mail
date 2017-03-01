@@ -4,5 +4,8 @@
 /// Элеммент - steps-ctrl (кнопки).
 /// Модификатор - checkout.
 .cart__steps-ctrl_checkout {
-
+    background-color: #d29b3b;
+    border: none;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+    color: getColor("white");
 }
