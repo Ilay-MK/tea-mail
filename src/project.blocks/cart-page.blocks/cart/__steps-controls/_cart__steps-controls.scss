@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока cart.
 /// Элеммент - steps-controls.
 .cart__steps-controls {
-
+    overflow: hidden;
+    text-align: right;
 }
