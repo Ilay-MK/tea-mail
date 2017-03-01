@@ -4,7 +4,7 @@
 /// Элеммент - discount-line.
 .cart__discount-line {
     border: 1px solid #ededed;
-    margin: 4px;
+    margin: 25px 4px 4px;
 
     @media (min-width: 1420px) {
         max-width: 900px;
@@ -14,9 +14,16 @@
 
     /* Переделать по BEM! */
     .discount-line__line {
-        margin-right: 20px;
         margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
         max-width: 100%;
         width: auto;
+    }
+    .discount-line__description {
+
+        p {
+            margin-top: 0;
+        }
     }
 }
