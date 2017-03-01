@@ -1,0 +1,1 @@
+//= jQuery.fn.addClass.js
