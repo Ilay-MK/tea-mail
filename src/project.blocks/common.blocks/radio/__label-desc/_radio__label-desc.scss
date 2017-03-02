@@ -3,5 +3,12 @@
 /// Описание BEM блока radio (блок со стилизованными радио кнопками).
 /// Элемент - label-desc.
 .radio__label-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1em;
 
+    @media (max-width: 991px) {
+        margin-top: 14px;
+    }
 }
