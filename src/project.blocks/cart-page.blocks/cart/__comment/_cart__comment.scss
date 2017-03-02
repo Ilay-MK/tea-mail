@@ -4,4 +4,7 @@
 /// Элеммент - comment.
 .cart__comment {
 
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
