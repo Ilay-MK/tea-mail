@@ -3,6 +3,8 @@
 /// Описание элемента блока delivery-recipient.
 /// Элемент - input-container.
 .delivery-recipient__input-container {
+    display: inline-block;
     margin-left: 11px;
     margin-right: 11px;
+    width: calc(33% - 22px);
 }
