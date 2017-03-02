@@ -23,7 +23,8 @@
         left: 0;
         margin-right: 10px;
         position: absolute;
-        top: calc(50% - 14px);
+        /*top: calc(50% - 14px);*/
+        top: 0;
         @include size(28px);
     }
 
