@@ -3,5 +3,12 @@
 /// Описание BEM блока delivery-methods.
 /// Элемент - method-cost.
 .delivery-methods__method-cost {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 210px;
 
+    @media (max-width: 991px) {
+
+    }
 }

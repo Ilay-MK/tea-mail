@@ -3,5 +3,11 @@
 /// Описание BEM блока delivery-methods.
 /// Элемент - method.
 .delivery-methods__method {
+    display: inline-block;
+    vertical-align: middle;
+    width: 815px;
 
+    @media (max-width: 991px) {
+
+    }
 }
