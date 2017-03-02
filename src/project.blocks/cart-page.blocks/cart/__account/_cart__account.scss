@@ -4,4 +4,7 @@
 /// Элеммент - account.
 .cart__account {
 
+    @media (max-width: 991px) {
+        margin-bottom: 25px;
+    }
 }
