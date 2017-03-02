@@ -7,4 +7,8 @@
     margin-left: 11px;
     margin-right: 11px;
     width: calc(33% - 22px);
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: calc(33% - 23px);
+    }
 }
