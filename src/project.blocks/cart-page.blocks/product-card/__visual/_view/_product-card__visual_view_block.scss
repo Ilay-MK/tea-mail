@@ -8,4 +8,8 @@
     float: left;
     @include size(249px, 100%);
     vertical-align: top;
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 185px;
+    }
 }

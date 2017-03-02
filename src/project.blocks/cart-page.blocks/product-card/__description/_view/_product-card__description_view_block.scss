@@ -9,4 +9,8 @@
     margin-right: 50px; /*15px*/
     text-align: left;
     vertical-align: top;
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        margin-left: 205px;
+    }
 }
