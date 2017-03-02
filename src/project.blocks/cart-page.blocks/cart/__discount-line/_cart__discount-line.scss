@@ -7,7 +7,12 @@
     margin: 25px 4px 4px;
 
     @media (min-width: 1420px) {
-        max-width: 900px;
+        /*max-width: 900px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (min-width: 992px) {
         margin-left: auto;
         margin-right: auto;
     }
