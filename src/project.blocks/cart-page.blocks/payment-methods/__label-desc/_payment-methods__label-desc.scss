@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание BEM блока payment-methods.
+/// Элемент - label-desc.
+.payment-methods__label-desc {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1em;
+    min-height: 70px;
+
+    @media (max-width: 991px) {
+        margin-top: 14px;
+        padding-bottom: 15px;
+    }
+
+    @media (min-width: 992px) {
+
+    }
+}
