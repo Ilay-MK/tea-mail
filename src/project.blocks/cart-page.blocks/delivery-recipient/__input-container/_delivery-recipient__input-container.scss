@@ -8,6 +8,12 @@
     margin-right: 11px;
     width: calc(33% - 22px);
 
+    @media (max-width: 991px) {
+        display: block;
+        margin: 14px auto;
+        width: 100%;
+    }
+
     @media (min-width: 992px) and (max-width: 1199px) {
         width: calc(33% - 23px);
     }

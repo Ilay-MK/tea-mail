@@ -4,4 +4,9 @@
 /// Элемент - container.
 .delivery-recipient__container {
     margin: 30px 49px;
+
+    @media (max-width: 991px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
