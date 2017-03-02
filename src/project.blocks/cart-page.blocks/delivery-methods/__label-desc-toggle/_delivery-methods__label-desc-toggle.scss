@@ -4,7 +4,7 @@
 /// Элемент - label-desc-toggle.
 .delivery-methods__label-desc-toggle {
 
-    @media (max-width: 991px) {
-
+    @media (min-width: 992px) {
+        display: none;
     }
 }
