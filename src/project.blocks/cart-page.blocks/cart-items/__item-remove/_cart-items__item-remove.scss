@@ -19,6 +19,12 @@
         position: absolute;
         top: 12px;
         @include size(24px, 3px);
+
+        @media (max-width: 991px) {
+            background-color: #fff;
+            left: 4px;
+            top: 14px;
+        }
     }
 
     &:before {
@@ -27,5 +33,14 @@
 
     &:after {
         transform: rotate(-45deg);
+    }
+
+    @media (max-width: 991px) {
+        background-color: rgba(211, 155, 60, 0.72);
+        border-radius: 50%;
+        right: 3px;
+        @include size(32px);
+        top: 3px;
+        z-index: 12;
     }
 }
