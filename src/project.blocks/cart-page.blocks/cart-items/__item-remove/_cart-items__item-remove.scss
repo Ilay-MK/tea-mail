@@ -3,5 +3,25 @@
 /// Описание элемента BEM блока cart-items.
 /// Элемент - item-remove.
 .cart-items__item-remove {
+    cursor: pointer;
+    right: 17px;
+    position: absolute;
+    top: calc(50% - 9px);
+    @include size(18px, 17px);
 
+    &:before, &:after {
+        content: '';
+        background-color: #bebebe;
+        left: 0;
+        position: absolute;
+        @include size(24px, 3px);
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
 }
