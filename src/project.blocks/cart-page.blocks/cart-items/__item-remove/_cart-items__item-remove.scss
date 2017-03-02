@@ -6,7 +6,9 @@
     cursor: pointer;
     right: 17px;
     position: absolute;
-    top: calc(50% - 9px);
+    top: 40%;
+    top: calc(50% - 14px);
+    /*top: calc(50% - 9px);*/
     @include size(28px);
     /*@include size(18px, 17px);*/
 
