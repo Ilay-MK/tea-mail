@@ -11,10 +11,12 @@
             <input id="payment-methods__mail" type="radio" name="payment-method" class="radio__btn" value="mail" checked>
             <label for="payment-methods__mail" class="radio__label">
                 Оплата в отделении БелПочты
-                <span class="radio__label-desc">
+                <span id="payment-methods__label-desc_mail" class="radio__label-desc payment-methods__label-desc text-collapsing__text collapse" style="height: 0;">
                     Ваш заказ отправят в течение 1-4 дней после получения. Стоимость почтовой доставки заказов до 400 т.р по Беларуси 40 т.р Обычно посылка идет 2-3 дня, мы отправляем из Минска. После отправки мы высылаем Вам трек номер для отслеживания посылки на сайте Белпочты. Возможна оплата на почте при получении. <br />
                     В этом случае не забудьте паспорт, 3% от итоговой суммы возьмет почта за перевод денег.
                 </span>
+
+                <a href="#" class="link payment-methods__label-desc-toggle text-collapsing__link-toggle text-collapsing__link-toggle_theme_tea-mail collapse-link-triangle collapse-link-triangle_position_top-inverse collapse-link-triangle_active border-line border-line_theme_tea-mail border-line_top" data-toggle="collapse" data-target="#payment-methods__label-desc_mail" data-alttext="Свернуть">Читать полностью</a>
             </label>
         </div>
 
@@ -22,9 +24,11 @@
             <input id="payment-methods__oris" type="radio" name="payment-method" class="radio__btn" value="oris">
             <label for="payment-methods__oris" class="radio__label">
                 Оплата через ЕРИП
-                <span class="radio__label-desc">
+                <span id="payment-methods__label-desc_oris" class="radio__label-desc payment-methods__label-desc text-collapsing__text collapse" style="height: 0;">
                     Номер счета для оплаты заказа через ЕРИП мы присылаем на указанный e-mail или номер телефона после обработки заказа. После получения пятизначного номера счета следуйте указаниям на странице доставка и оплата – оплата ЕРИП. Это удобно – экономится время на почте, вы не платите 3% за перевод денег на почте в наш адрес, а мы в свою очередь не переплачиваем за наложенный на посылку платеж.
                 </span>
+
+                <a href="#" class="link payment-methods__label-desc-toggle text-collapsing__link-toggle text-collapsing__link-toggle_theme_tea-mail collapse-link-triangle collapse-link-triangle_position_top-inverse collapse-link-triangle_active border-line border-line_theme_tea-mail border-line_top" data-toggle="collapse" data-target="#payment-methods__label-methods__oris" data-alttext="Свернуть">Читать полностью</a>
             </label>
         </div>
 
@@ -32,9 +36,6 @@
             <input id="payment-methods__card" type="radio" name="payment-method" class="radio__btn" value="card">
             <label for="payment-methods__card" class="radio__label">
                 Оплата картой
-                <span class="radio__label-desc">
-
-                </span>
             </label>
         </div>
 
@@ -42,9 +43,6 @@
             <input id="payment-methods__cash-courier" type="radio" name="payment-method" class="radio__btn" value="cash-courier">
             <label for="payment-methods__cash-courier" class="radio__label">
                 Наличными курьеру
-                <span class="radio__label-desc">
-
-                </span>
             </label>
         </div>
     </div>
