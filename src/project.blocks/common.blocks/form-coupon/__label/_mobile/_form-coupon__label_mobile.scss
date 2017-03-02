@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока формы ввода купона.
+/// Элемент - label.
+/// Модификатор - mobile.
+.form-coupon__label_mobile {
+    color: #3b404f;
+    display: none;
+
+    @media (max-width: 991px) {
+        display: inline-block;
+    }
+}

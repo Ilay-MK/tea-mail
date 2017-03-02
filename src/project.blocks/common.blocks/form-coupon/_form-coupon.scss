@@ -3,4 +3,17 @@
 /// Описание BEM блока формы ввода купона.
 .form-coupon {
     padding: 22px 45px;
+
+    @media (max-width: 991px) {
+        margin-bottom: 30px;
+        padding-top: 0;
+    }
+
+    &:after {
+
+        @media (min-width: 992px) {
+            content: none;
+            display: none;
+        }
+    }
 }

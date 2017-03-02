@@ -5,4 +5,8 @@
 .form-coupon__img {
     fill: #b8b8b8;
     @include size(18px, 27px);
+
+    @media (max-width: 991px) {
+        fill: #3b404f !important;
+    }
 }
