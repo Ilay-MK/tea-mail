@@ -7,4 +7,9 @@
     color: getColor("GoldenBrown");
     font-size: 24px;
     letter-spacing: 0.025em;
+
+    @media (max-width: 991px) {
+        display: block;
+        margin-top: 20px;
+    }
 }

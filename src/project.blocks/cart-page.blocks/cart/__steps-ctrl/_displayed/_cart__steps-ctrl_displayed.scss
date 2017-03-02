@@ -5,4 +5,10 @@
 /// Модификатор - displayed.
 .cart__steps-ctrl_displayed {
     display: inline-block;
+
+    @media (max-width: 991px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

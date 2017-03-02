@@ -5,4 +5,8 @@
 .cart__steps-controls {
     overflow: hidden;
     text-align: right;
+
+    @media (max-width: 991px) {
+        text-align: center;
+    }
 }

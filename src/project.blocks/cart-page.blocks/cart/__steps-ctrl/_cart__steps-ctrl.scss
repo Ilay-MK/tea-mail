@@ -17,4 +17,8 @@
     padding: 10px;
     min-width: 180px;
     text-align: center;
+
+    @media (max-width: 991px) {
+        margin-bottom: 20px;
+    }
 }

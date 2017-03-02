@@ -5,4 +5,8 @@
 .cart__cost-order {
     margin-bottom: 30px;
     text-align: right;
+
+    @media (max-width: 991px) {
+        text-align: center;
+    }
 }
