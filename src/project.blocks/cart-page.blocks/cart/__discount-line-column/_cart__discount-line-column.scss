@@ -7,4 +7,11 @@
     margin-left: 22px;
     margin-right: 22px;
     vertical-align: middle;
+
+    @media (max-width: 991px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
