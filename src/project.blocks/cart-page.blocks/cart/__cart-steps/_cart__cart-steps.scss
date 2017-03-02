@@ -4,4 +4,8 @@
 /// Элеммент - cart-steps.
 .cart__cart-steps {
     margin: 45px auto;
+
+    @media (max-width: 991px) {
+        margin: 25px auto;
+    }
 }

@@ -20,4 +20,13 @@
         }
 
     }
+
+    /* Сделать по BEM */
+    .cart-steps__step-number {
+
+        @media (max-width: 991px) {
+            border-color: #d29b3b;
+            border-width: 2px;
+        }
+    }
 }

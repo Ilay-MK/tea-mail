@@ -24,12 +24,30 @@
             top: 50%;
             top: calc(50% - 1px);
             @include size(50px, 1px);
+
+            @media (max-width: 991px) {
+                left: -7px;
+                width: 43px;
+            }
         }
 
+    }
+
+    @media (max-width: 991px) {
+        border: none;
+        margin: 0 -17px;
+        @include size(120px, 52px);
     }
 
     /* Сделать по BEM */
     p {
         margin: 0;
+    }
+
+    .cart-steps__step-number {
+
+        @media (max-width: 991px) {
+            border: 1px solid #e2e2e2;
+        }
     }
 }
