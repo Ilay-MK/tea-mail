@@ -1,0 +1,23 @@
+﻿Karton
+
+OpenSans Light
+OpenSansLight Italic
+OpenSans
+OpenSans Italic
+OpenSans Semibold
+OpenSans SemiboldItalic
+OpenSans Bold
+OpenSans BoldItalic
+
+NotoSans
+NotoSans Italic
+NotoSans BoldItalic
+
+NotoSerif BoldItalic
+
+ProximaNova Light
+ProximaNovaCond Light
+
+Bristol
+
+epsilonCTT

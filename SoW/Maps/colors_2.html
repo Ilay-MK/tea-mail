@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tea-Mail colors</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
+    
+
+    <meta name="robots" content="noindex,nofollow,noodp,noarchive,nosnippet" /> <!-- TEMP. Develope time -->
+
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if gte IE 9]
+        <style type="text/css">
+            .gradient {
+                filter: none;
+            }
+        </style>
+    <![endif]-->
+    
+    <style>
+        
+        .row {
+            border: 1px solid #9b9b9b;
+            border-radius: 10px;
+            height: 30px;
+            margin: 5px 15px;
+            padding: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .row > div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .color {
+            border: 1px solid #9b9b9b;
+            border-radius: 50%;
+            height: 25px;
+            margin-left: 5px;
+            margin-right: 20px;
+            width: 25px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        
+        .hex, .rgb {
+            height: 20px;
+            padding: 5px 15px;
+            /*outline: 1px solid;*/
+        }
+        
+        .hex {
+            border-right: 1px solid #9b9b9b;
+            width: 70px;
+        }
+        
+        .rgb {
+            width: 120px;
+        }
+        
+        .countOfResult {
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        #countOfColors {
+            color: #c00;
+            font-size: 1.7em;
+        }
+        
+    </style>
+    
+</head>
+
+<body lang="ru">
+
+    <div id="tableOfColors"></div>
+    
+    <div class="row countOfResult">
+        Количество цветов: 
+        <div id="countOfColors"></div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            
+            /*hexDec("#80407b");*/            
+            /*var rgbObj = rgb('#f00'); // red            
+            alert(rgbObj);*/            
+            /*placeToRGBaAndColor();*/
+            
+            var colors = [
+                "ffffff",
+                "000000",
+                "f6f6f5",
+                "3d3d3d",
+                "5c5c5c",
+                "313131",
+                "717171",
+                "dfdfdf",
+                "a0a09f",
+                "925900",
+                "d29a43",
+                "fbb844",
+                "f2b852",
+                "ffc867",
+                "e9b75d",
+                "ffc865",
+                "d29b3b",
+                "c28e32",
+                "535353",
+                "3f3f3f",
+                "6d6d6d",
+                "6e6e6e",
+                "7b7b7b",
+                "737373",
+                "797979",
+                "838383",
+                "bb8a34",
+                "c79236",
+                "ba8b3a",
+                "181818",
+                "9b9b9b",
+                "e0cc91",
+                "c4b178",
+                "DEDEDE",
+                "525151",
+                "b62927",
+                "d63f3c",
+                "8aad7f",
+                "807f7f",
+                "4a4a4a",
+                "BF9265",
+                "CE9F6F",
+                "B68A5E",
+                "C7996A",
+                "2e2e2e",
+                "fae7d4",
+                "808080",
+                "f5f5f5",
+                "d7a96a",
+                "646464",
+                "8e8e8e",
+                "a28455",
+                "dcdcdc",
+                "E4E4E4",
+                "222222",
+                "484848",
+                "ffe7be",
+                "454545",
+                "B19969",
+                "E5CA93",
+                "4e4e4e",
+                "edd6a7",
+                "d1b48a",
+                "ffdc94",
+                "e3e3e3",
+                "404040",
+                "eeafaf",
+                "a4a4a4",
+                "666666",
+                "e66060",
+                "848484",
+                "575757",
+                "636363",
+                "bdaa90",
+                "e6c89d",
+                "796b66",
+                "b1654b",
+                "fff2df",
+                "696969",
+                "B69B75",
+                "4f291e",
+                "55423b",
+                "282828",
+                "cca46b",
+                "302f2c",
+                "73C3A6",
+                ""
+            ];
+            
+            listOfColors(colors);
+            
+        });
+
+        function hexDec(h){
+            var m=h.slice(1).match(/.{2}/g);
+
+            m[0]=parseInt(m[0], 16);
+            m[1]=parseInt(m[1], 16);
+            m[2]=parseInt(m[2], 16);
+
+            alert(m.join('\n'));
+        };
+        
+        function hexToRgb(hex) {
+            var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+            hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+                return r + r + g + g + b + b;
+            });
+
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
+        }
+        
+        function rgb(color) {
+            
+            var rgb_color;
+            
+            rgb_color = hexToRgb(color);
+            
+            //alert('rgb(' + rgb_color.r + ',' + rgb_color.g + ',' + rgb_color.b + ')'); // rgb(255,0,0);
+            
+            /*return rgb_color;*/
+            return 'rgb(' + rgb_color.r + ', ' + rgb_color.g + ', ' + rgb_color.b + ')';
+        }
+        
+        function listOfColors(list) {
+            
+            var idObj, textObj;
+                
+            for (var i = 0; i < list.length; i++) {
+                if (list[i]) {
+                    idObj = "color_" + i;
+                    textObj = "#" + list[i].toLowerCase();
+                    
+                    $("#tableOfColors").append('<div class="row" id='+idObj+'><div class="color" style="background-color:'+textObj+'"></div><div class="hex">'+textObj+'</div><div class="rgb">'+rgb(textObj)+'</div></div>');
+                    
+                    //$(idObj).css("background-color", $(this).text());
+                    /*$(idObj).find(".color").css("background-color", textObj);
+                    $(idObj).find(".hex").text(textObj);
+                    $(idObj).find(".rgb").text(rgb(textObj));*/
+                }
+            }
+            
+            $("#countOfColors").text(list.length);
+            
+            return false;
+        };
+        
+        
+        function placeToRGBaAndColor() {
+            $('.hex').each(function(i,elem) {
+                if ($(this).text()) {
+                    alert(i + ': ' + $(elem).text());
+                    
+                    $(this).text("#"+$(this).text());
+                    $(this).parent(".row").prepend('<div class="color"></div>');
+                    $(this).prev(".color").css("background-color", $(this).text());
+                    $(this).parent(".row").append('<div class="rgb">'+rgb($(this).text())+'</div>');
+                    $(this).next().text(rgb($(this).text()));
+                    $(this).prev().css("background-color", $(this).text());
+                    
+                } else {
+                    alert("Остановлено на " + i + "-м пункте списка.");
+                    return false;
+                }
+            });
+        }
+        
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+[ HOMEPAGE]
+
+~ : the same
+= : identical
+? : may I make them the identical?
+! : priority
+UP: uppercase
+---------------------------------------------------------------------------
+Open Sans Regular			
+	14px 16px 0.025em		[ tea_blog > post > text ]						#646464 ~ [ gray_1 ]		{ gray }	
+	16px 20px 0.025em		[ reviews > post > text ]						#404040 ~ [ gray_2 ] 		{ gray }
+	15px 18px 0.025em		[ карта > work_mode ]							#848484 ~ [ gray_1 ] 		{ gray }
+							-----------------------------------------------
+Open Sans Italic			
+	15px 16px 0.05em		[ nav > link ]									#3d3d3d ? [ gray_2 ] 		{ gray }
+	15px 16px 0.05em		[ nav > link:hover ]							#925900 = [ Golden_Brown ] 	{ brown } !
+	14px 16px 0.05em		[ nav > opened > link > sublink ] 				#925900 = [ Golden_Brown ]	{ brown } !
+	13px 16px 0.05em		[ nav > opened > link_elaboration ] 			#797979 ~ [ gray_1 ] 		{ gray }
+	13px 16px 0.05em		[ nav > opened > link_elaboration ] 			#838383 ~ [ gray_1 ] 		{ gray }
+	13px 16px 0.05em		[ nav > opened > link_elaboration ] 			#737373 ~ [ gray_1 ] 		{ gray }
+	13px 16px 0.05em		[ nav > opened > link_elaboration ] 			#6e6e6e ~ [ gray_1 ] 		{ gray }
+	13px 16px 0.05em		[ nav > opened > link_more ] 					#6d6d6d ~ [ gray_1 ] 		{ gray }
+	18px 16px 0.05em		[ nav > opened > category ] 					#535353 ~ [ gray_2 ] 		{ gray }
+	18px 16px 0.05em		[ nav > opened > link_secondGroup("Подаро..") ] #535353 ~ [ gray_2 ] 		{ gray }
+	18px 16px 0.05em		[ nav > opened > link_secondGroup("Чайные..") ] #3f3f3f ~ [ gray_2 ] 		{ gray }
+	14px 23px 0.05em		[ nav > basket ] 								#000000	= [ black ] 		{ black }
+	15px 19px 0.025em		[ balls > text ]								#ffc867 ~ [ orange_1 ] 		{ orange }
+	15px 19px 0.025em		[ balls > text ]								#e9b75d ~ [ orange_1 ] 		{ orange }
+	15px 19px 0.025em		[ balls > text ]								#ffc865 ~ [ orange_1 ] 		{ orange }
+	15px 19px 0.025em		[ care > balls > text ]							#bf9265 ~ [ brown_1 ]		{ brown } !
+	13px 19px 0.025em		[ newsletters > heading > text ]				#454545 ~ [ gray_2 ] 		{ gray }
+	14px 18px 0.025em		[ карта > address_metro ]						#e66060 - [ Roman ]			{ red }
+	15px 18px 0.025em		[ карта > address_description ]					#848484 ~ [ gray_1 ] 		{ gray }
+	15px 16px 0.05em		[ footer > nav > link ] 						#55423b - [ brown_3 ]		{ brown }
+							-----------------------------------------------
+Open Sans Light 			
+	14px 16px 0.05em		[ nav > Username ] 								#5c5c5c ? [ gray_2 ] 		{ gray }
+	14px 16px 0.05em		[ nav > Login_label ]							#5c5c5c ? [ gray_2 ] 		{ gray }
+	12px 90px 0.025em		[ catalog > product_card > subtitle(год чая) ]	#9b9b9b ? [ gray_1 ] 		{ gray }
+	14px 18px 0.025em		[ tea_news > article > text ]					#000000 = [ black ] 		{ black }
+	13px 16px 0.05em		[ footer > nav_second (Оферта...) > link ]		#282828 ~ [ black_1 ]		{ black }
+	13px 16px 0.05em		[ footer > newsletters > title ]				#b1654b - [ brown_4 ]		{ brown }
+	12px 16px 0.05em		[ footer > newsletters > input ]				#696969 ~ [ gray_1 ] 		{ gray }
+	12px 15px 0.05em		[ footer > company_details ]					#796b66 - [ brown_5 ]		{ brown }
+							-----------------------------------------------
+Open Sans Light Italic		
+	14px 50px 0.04em		[ header > search ]								#ffffff = [ white ] 		{ white }
+	12px 50px 0.04em		[ header > search > heading ("Чай") ]			#fbb844 ? [ orange_1 ] 		{ orange }
+	14px 50px 0.04em		[ header > search > text ) ]					#ffffff = [ white ] 		{ white }
+							-= heading > text =-
+	15px 23.47px 0.05em		[ tea_mail_2 > text ]							#4a4a4a ~ [ black_2 ]		{ black }
+	15.02px 23.47px 0.05em	[ tea_room > text ]								#4a4a4a ~ [ black_2 ]		{ black }
+	14px 19px 0.025em		[ kits > text ]									#484848 ~ [ black_2 ]		{ black }
+	15px 23.47px 0.05em		[ about_project > text ]						#4a4a4a ~ [ black_2 ]		{ black }
+							-----------------------------------------------
+Open Sans Semibold			
+	15px 18px 0.025em		[ карта > work_mode_time ]						#444444 ~ [ black_2 ]		{ black }
+							-----------------------------------------------
+Open Sans Semibold Italic 	
+	14px 16px 0.05em		[ nav > opened > link ] 						#925900 = [ Golden_Brown ]	{ brown } !
+	14px 16px 0.05em		[ nav > opened > link:hover ] 					#d29a43 ? [ orange_1 ] 		{ orange }
+	13px 19px 0.025em		[ catalog > button ]							#ffffff	= [ white ]			{ white }	
+	14px 19px 0.025em		[ tea_mail_2 > button ]							#ffffff	= [ white ]			{ white }
+	14px 18px 0.025em		[ tea_room > address ]							#2e2e2e ~ [ black_1 ]		{ black }
+	14px 19px 0.025em		[ tea_room > button ]							#ffffff	= [ white ]			{ white }
+	14px 19px 0.025em		[ tea_blog > link_more ]						#d7a96a	~ [ orange_1 ]		{ orange }
+	22px 19px 0.025em		[ tea_news > heading_button_article ]			#925900 = [ Golden_Brown ]	{ brown } !
+	18px 19px 0.025em		[ tea_news > heading_button_news ]				#8e8e8e ~ [ gray_1 ]		{ gray } 
+	19px 19px 0.025em		[ tea_news > heading_button_news:hover ]		#a28455 = [ Muesli ]		{ coffee }
+	13px 19px 0.025em		[ kits > button ]								#ffffff	= [ white ]			{ white }
+	13px 19px 0.025em		[ dishes > button ]								#ffffff	= [ white ]			{ white }
+	14px 19px 0.025em		[ about_project > button ]						#ffffff	= [ white ]			{ white }
+	14px 19px 0.025em		[ newsletters > button ]						#ffffff	= [ white ]			{ white }
+	14px 19px 0.025em		[ reviews > button ]							#ffffff	= [ white ]			{ white }
+	16px 26px 0.025em		[ карта > address ]								#666666 ~ [ gray_1 ] 		{ gray }
+	16px 26px 0.025em		[ footer > newsletters > button ]				#fff2df ? [ white ] 		{ white }
+							-----------------------------------------------
+Open Sans Bold 	  			
+	15px 19px 0.025em		[ catalog > title ]								#bb8a34 ~ [ orange_2 ] 		{ orange } !
+	15px 19px 0.025em		[ catalog > title ]								#c79236 ~ [ orange_2 ] 		{ orange } !
+	15px 19px 0.025em		[ catalog > title ]								#ba8b3a ~ [ orange_2 ] 		{ orange } !
+							-----------------------------------------------
+Open Sans Bold Italic		
+	18px 26px 0.025em		[ карта > firmName ]							#666666 ~ [ gray_1 ] 		{ gray }
+---------------------------------------------------------------------------
+Noto Sans Regular 			
+	14px 90px 0.025em		[ catalog > product_card > title ]				#181818 - [ black_1 ] 		{ black }
+							-----------------------------------------------
+Noto Sans Italic			
+	16px 90px 0.025em		[ catalog > product_card > price ] 				#925900 = [ Golden_Brown ] 			{ brown } 	!
+	13px 90px 0.025em		[ catalog > product_card > oldprice ]			#e0cc91 = [ Double Colonial White ] { coffee } 	!
+	14px 90px 0.025em		[ catalog > product_card > inputData (гр./шт) ] #525151 ~ [ black_2 ]				{ black }
+	13px 19px 0.025em		[ tea_blog > date ]								#808080 ~ [ gray_1 ] = gray			{ gray }
+	13px 19px 0.025em		[ tea_news > post > date ]						#808080	~ [ gray_1 ] = gray			{ gray }
+	15px 19px 0.025em		[ tea_news > post[s] > link_more ]				#d7a96a	~ [ orange_1 ]				{ orange }
+	13px 19px 0.025em		[ reviews > post > date ]						#808080	~ [ gray_1 ] = gray			{ gray }
+	14px 24px 0.025em		[ reviews > post > username ]					#404040 ~ [ gray_2 ] 				{ gray }
+							-----------------------------------------------
+Noto Sans Bold Italic		
+	25px 19px 0.025em		[ tea_blog > heading_article ]					#2e2e2e ~ [ black_1 ]		{ black }
+	16px 19px 0.025em		[ tea_news > post > header ]					#000000 = [ black ] 		{ black }
+---------------------------------------------------------------------------
+Noto Serif Bold Italic		
+	18.78px 26.39px 0.05em	[ tea_room > subHeading ]						#000000 = [ black ] 		{ black }
+	18.78px 26.39px 0.05em	[ about_project > subHeading ]					#000000 = [ black ] 		{ black }
+---------------------------------------------------------------------------
+Karton Regular 				-= heading =-
+	50px 50px 0.04em UP		[ header > heading ]							#ffffff = [ white ] 		{ white }
+	30px 80.53px 0.025em UP	[ tea_mail_2 > heading ]						#000000 = [ black ] 		{ black }
+	45px 80.53px 0.025em UP	[ tea_room > heading ]							#000000 = [ black ] 		{ black }
+	48px 19px 0.025em		[ tea_blog > heading ]							#925900 = [ Golden_Brown ] 	{ brown } !
+	35px 19px 0.05em UP		[ kits > heading ]								#222222 ~ [ black_1 ]		{ black }
+	35px 19px 0.05em UP		[ care > heading ]								#222222 ~ [ black_1 ]		{ black }
+	40px 80.53px 0.025em UP	[ about_project > heading ]						#000000 = [ black ] 		{ black }
+	35px 19px 0.05em UP		[ newsletters > heading ]						#222222 ~ [ black_1 ]		{ black }
+	50px 19px 0.05em UP		[ reviews > heading]							#222222 ~ [ black_1 ]		{ black }
+	35px 19px 0.05em UP		[ reviews > heading_small ]						#222222 ~ [ black_1 ]		{ black }
+	28px 18px 0.025em 		[ footer > phone ]								#4f291e - [ brown_2 ]		{ brown }
+	28px 18px 0.025em 		[ footer > phone_+ ]							#4f291e - [ brown_2 ]		{ brown }
+---------------------------------------------------------------------------
+Bristol Regular 			
+	30px 19px 0.05em UP		[ dishes > heading ]							#ffffff = [ white ] 		{ white }
+	28px 18px 0.05em		[ footer > heading_social ]						#b1654b - [ brown_4 ]		{ brown }
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
