@@ -3,10 +3,14 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - btn-scope.
 .delivery__btn-scope {
+    @include font-OpenSans_RegularItalic;
+    color: #a8a8a8;
     border-style: solid;
     border-width: 1px;
     border-color: #e8e8e8;
     border-radius: 2px;
     background-color: #f6f6f6;
+    font-size: 16px;
+    letter-spacing: 0.05em;
     @include size(146px, 60px);
 }
