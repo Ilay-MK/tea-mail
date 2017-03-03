@@ -3,5 +3,10 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - title.
 .delivery__title {
-
+    @include font-Karton_Regular;
+    color: getColor("black");
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
