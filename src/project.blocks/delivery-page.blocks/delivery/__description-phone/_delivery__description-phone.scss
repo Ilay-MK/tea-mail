@@ -3,5 +3,17 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - description-phone.
 .delivery__description-phone {
-    display: inline-block;
+    max-width: 310px;
+    vertical-align: top;
+
+    @media (min-width: 480px) {
+        display: inline-block;
+        text-align: left;
+    }
+
+    @media (max-width: 479px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

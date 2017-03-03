@@ -10,4 +10,12 @@
     letter-spacing: 0.04em;
     margin-bottom: 55px;
     text-transform: uppercase;
+
+    @media (min-width: 480px) {
+        margin-bottom: 55px;
+    }
+
+    @media (max-width: 479px) {
+        margin-bottom: 5px;
+    }
 }
