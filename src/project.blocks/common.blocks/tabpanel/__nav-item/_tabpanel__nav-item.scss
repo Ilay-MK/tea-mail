@@ -3,6 +3,10 @@
 /// Описание элемента BEM блока tabpanel.
 /// Элемент - nav-item.
 .tabpanel__nav-item {
+    border-color: transparent;
+    border-bottom: none;
+    border-style: solid;
+    border-width: 1px;
     color: #595959;
     cursor: pointer;
     display: inline-block;
