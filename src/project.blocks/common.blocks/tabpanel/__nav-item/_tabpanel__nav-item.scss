@@ -4,7 +4,7 @@
 /// Элемент - nav-item.
 .tabpanel__nav-item {
     border-color: transparent;
-    border-bottom: none;
+    border-bottom: none !important;
     border-style: solid;
     border-width: 1px;
     color: #595959;
@@ -16,5 +16,5 @@
     font-variant: normal;
     font-weight: 400;
     letter-spacing: normal; /*0.005em|0.05em*/
-    padding: 15px 8px;
+    padding: 15px 7px;
 }
