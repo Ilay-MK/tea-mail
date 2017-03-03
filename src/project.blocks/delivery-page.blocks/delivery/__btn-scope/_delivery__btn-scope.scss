@@ -3,5 +3,10 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - btn-scope.
 .delivery__btn-scope {
-
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e8e8e8;
+    border-radius: 2px;
+    background-color: #f6f6f6;
+    @include size(146px, 60px);
 }
