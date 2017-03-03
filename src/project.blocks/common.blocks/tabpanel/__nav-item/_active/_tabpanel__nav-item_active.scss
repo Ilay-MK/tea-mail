@@ -4,6 +4,16 @@
 /// Элемент - nav-item.
 /// Модификатор - active.
 .tabpanel__nav-item_active {
+    background-color: getColor("white");
+    border-color: #eeeeee;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: none;
+    border-top-left-radius: 30px 70px;
+    border-top-right-radius: 30px 70px;
+    bottom: -1px;
+    box-shadow: 0 -10px 30px -10px rgba(174,174,174,.34); /*0px 4px 29px 0px*/
     color: getColor("black");
     letter-spacing: normal; /*0.01em|0.1em*/
+    position: relative;
 }
