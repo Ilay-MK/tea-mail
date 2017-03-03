@@ -3,5 +3,9 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - phone.
 .delivery__phone {
-
+    @include font-OpenSans_Regular;
+    color: getColor("GoldenBrown");
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.025em;
 }
