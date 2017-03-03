@@ -13,4 +13,5 @@
 //= page/index.js
 //= product-card/index.js
 //= similar-product/index.js
+//= tabpanel/index.js
 //= text-collapsing/index.js
