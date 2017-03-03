@@ -3,8 +3,7 @@
 $(function() {
 
     /// Активация таба
-    $(".tabpanel__nav-item").click(function (e) {
-        e.preventDefault();
+    $(".tabpanel__nav-item").click(function () {
         var activeTarget;
 
         $('.tabpanel__nav-item').removeClass('tabpanel__nav-item_active');
