@@ -5,5 +5,5 @@
 /// Модификатор - active.
 .tabpanel__nav-item_active {
     color: getColor("black");
-    letter-spacing: 0.1em;
+    letter-spacing: normal; /*0.01em|0.1em*/
 }

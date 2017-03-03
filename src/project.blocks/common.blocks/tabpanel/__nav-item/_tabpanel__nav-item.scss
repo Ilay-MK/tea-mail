@@ -4,10 +4,12 @@
 /// Элемент - nav-item.
 .tabpanel__nav-item {
     color: #595959;
+    cursor: pointer;
+    display: inline-block;
     font-family: getFont-family("NotoSerif"); /* Noto Serif */
     font-size: 17px;
     font-style: italic;
     font-variant: normal;
     font-weight: 400;
-    letter-spacing: 0.05em;
+    letter-spacing: normal; /*0.005em|0.05em*/
 }
