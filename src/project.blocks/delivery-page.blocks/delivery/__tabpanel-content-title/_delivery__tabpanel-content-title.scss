@@ -3,5 +3,8 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - tabpanel-content-title.
 .delivery__tabpanel-content-title {
-
+    @include font-NotoSerif_BoldItalic;
+    color: getColor("black");
+    font-size: 19px;
+    letter-spacing: 0.05em;
 }
