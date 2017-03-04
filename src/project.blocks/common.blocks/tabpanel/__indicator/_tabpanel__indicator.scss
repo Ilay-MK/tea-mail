@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока tabpanel.
+/// Элемент - indicator.
+.tabpanel__indicator {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    @include size(9px);
+}
