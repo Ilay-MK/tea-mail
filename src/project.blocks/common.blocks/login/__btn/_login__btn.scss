@@ -14,4 +14,10 @@
     text-align: center;
     text-transform: uppercase;
     @include size(73px, 23px);
+
+    &:focus {
+        border-style: solid !important;
+        border-width: 1px !important;
+        border-color: #dfdfdf !important;
+    }
 }
