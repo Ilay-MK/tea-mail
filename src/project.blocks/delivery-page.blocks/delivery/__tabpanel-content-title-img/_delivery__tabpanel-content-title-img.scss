@@ -3,5 +3,5 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - tabpanel-content-title-img.
 .delivery__tabpanel-content-title-img {
-
+    @include size(102px, 95px);
 }
