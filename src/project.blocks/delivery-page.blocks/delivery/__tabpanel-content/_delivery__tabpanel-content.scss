@@ -4,6 +4,10 @@
 /// Элеммент - tabpanel-content.
 .delivery__tabpanel-content {
 
+    @media (max-width: 991px) {
+        border-color: transparent;
+    }
+
     @media (min-width: 1200px) {
        height: 510px;
     }
