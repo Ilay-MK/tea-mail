@@ -7,8 +7,9 @@
     border-width: 1px;
     border-color: #dfdfdf;
     border-radius: 10px;
-    font-size: 14px;
     color: #717171;
+    font-size: 14px;
     text-align: center;
+    text-transform: uppercase;
     @include size(73px, 23px);
 }
