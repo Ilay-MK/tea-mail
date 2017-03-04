@@ -8,4 +8,10 @@
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 50px 25px 0; /* right: 20*/
+
+    @media (max-width: 991px) {
+        margin: 0 30px;
+        padding-top: 0;
+        text-align: center;
+    }
 }
