@@ -3,5 +3,5 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - tabpanel-content-icon.
 .delivery__tabpanel-content-icon {
-
+    @include size(102px, 95px);
 }
