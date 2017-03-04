@@ -3,5 +3,6 @@
 /// Описание элемента BEM блока delivery.
 /// Элеммент - tabpanel-content-title-icon.
 .delivery__tabpanel-content-title-icon {
+    margin-bottom: 20px;
     @include size(102px, 95px);
 }
