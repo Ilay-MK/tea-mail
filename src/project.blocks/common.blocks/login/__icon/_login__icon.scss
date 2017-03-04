@@ -6,8 +6,8 @@
     display: inline-block;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
-    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 25.8 21.8" xml:space="preserve"><style type="text/css">.login__img{fill:#3B404F;}</style><circle class="login__img" cx="12.4" cy="7.7" r="3.1"/><path class="login__img" d="M17.3,14.9l-1.6-2.9c-0.2-0.4-0.6-0.6-1-0.6h-4.6c-0.4,0-0.8,0.2-1,0.6l-1.6,2.9c-0.5,0.8,0.1,1.8,1,1.8h7.8C17.2,16.7,17.8,15.7,17.3,14.9z"/></svg>');
-
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="6 3 13 16" xml:space="preserve"><style type="text/css">.login__img{fill:#a0a09f;}</style><circle class="login__img" cx="12.4" cy="7.7" r="3.1"/><path class="login__img" d="M17.3,14.9l-1.6-2.9c-0.2-0.4-0.6-0.6-1-0.6h-4.6c-0.4,0-0.8,0.2-1,0.6l-1.6,2.9c-0.5,0.8,0.1,1.8,1,1.8h7.8C17.2,16.7,17.8,15.7,17.3,14.9z"/></svg>');
+    margin-top: 5px;
+    vertical-align: top;
     @include size(10px, 12px);
 }
