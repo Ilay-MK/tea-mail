@@ -201,6 +201,10 @@
             font-size: 16px !important;
         }
     }
+
+    &-container {
+        height: inherit;
+    }
 }
 
 #gmap {
