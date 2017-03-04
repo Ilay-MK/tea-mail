@@ -15,4 +15,5 @@
     margin-left: -2px;
     margin-right: -2px;
     @include size(146px, 60px);
+    @include transition();
 }
