@@ -5,4 +5,8 @@
 .delivery__delivery-payment-content {
     padding-left: 15px;
     padding-right: 15px;
+
+    @media (max-width: 479px) {
+        padding: 0;
+    }
 }
