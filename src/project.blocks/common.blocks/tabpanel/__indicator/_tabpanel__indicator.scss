@@ -3,5 +3,7 @@
 /// Описание элемента BEM блока tabpanel.
 /// Элемент - indicator.
 .tabpanel__indicator {
-
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    @include size(9px);
 }
