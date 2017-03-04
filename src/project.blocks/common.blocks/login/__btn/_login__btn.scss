@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока login.
+/// Элемент icon - btn
+.login__btn {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dfdfdf;
+    border-radius: 10px;
+    color: #717171;
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    @include size(73px, 23px);
+
+    &:focus {
+        border-style: solid !important;
+        border-width: 1px !important;
+        border-color: #dfdfdf !important;
+    }
+}

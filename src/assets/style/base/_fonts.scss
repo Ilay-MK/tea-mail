@@ -20,13 +20,29 @@
 @font-face {
     font-family: 'Karton';
     src: local('Karton'), local('Karton Regular'),
-        url('../fonts/Karton-Regular/Karton.eot');
+        url('../fonts/Karton/Karton.eot');
     src: local('Karton'), local('Karton Regular'),
         url('../fonts/Karton/Karton.woff2') format('woff2'),
         url('../fonts/Karton/Karton.woff') format('woff'),
         url('../fonts/Karton/Karton.ttf') format('truetype'),
         url('../fonts/Karton/Karton.svg#Karton-Regular') format('svg'),
         url('../fonts/Karton/Karton.eot?#iefix') format('embedded-opentype');
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+}
+
+/* EpsilonCTT Normal */
+@font-face {
+    font-family: 'EpsilonCTT';
+    src: local('EpsilonCTT'), local('EpsilonCTT Regular'),
+        url('../fonts/EpsilonCTT/normal/EpsilonCTT.eot');
+    src: local('EpsilonCTT'), local('EpsilonCTT Regular'),
+        url('../fonts/EpsilonCTT/normal/EpsilonCTT.woff2') format('woff2'),
+        url('../fonts/EpsilonCTT/normal/EpsilonCTT.woff') format('woff'),
+        url('../fonts/EpsilonCTT/normal/EpsilonCTT.ttf') format('truetype'),
+        url('../fonts/EpsilonCTT/normal/EpsilonCTT.svg#EpsilonCTT-Regular') format('svg'),
+        url('../fonts/EpsilonCTT/normal/EpsilonCTT.eot?#iefix') format('embedded-opentype');
     font-style: normal;
     font-variant: normal;
     font-weight: 400;

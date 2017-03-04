@@ -21,11 +21,9 @@ function detachPrependTo(obj, from, to, width, insertAfter, inverse) {
 
     if( inverse ) {
         condition = getPageSize()[2] > width-1;
-        console.log(condition);
     }
     else {
         condition = getPageSize()[2] < width;
-        console.log(condition);
     }
 
     if (condition) {
