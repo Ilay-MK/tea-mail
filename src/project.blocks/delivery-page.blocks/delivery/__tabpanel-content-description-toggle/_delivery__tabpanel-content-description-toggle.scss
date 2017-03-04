@@ -4,4 +4,7 @@
 /// Элеммент - tabpanel-content-description-toggle.
 .delivery__tabpanel-content-description-toggle {
 
+    @media (min-width: 992px) {
+        display: none;
+    }
 }
