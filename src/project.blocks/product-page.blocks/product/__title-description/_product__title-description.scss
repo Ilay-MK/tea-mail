@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемент - description.
+.product__title-description {
+    @extend .page__description;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+
+    @media (min-width: 768px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

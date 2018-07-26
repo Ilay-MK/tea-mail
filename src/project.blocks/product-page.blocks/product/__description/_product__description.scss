@@ -5,7 +5,7 @@
 .product__description {
     @extend .page__description;
     letter-spacing: 0.05em;
-    min-height: 225px;
+    min-height: 180px; /* 225px */
     text-align: left;
 
     @media (min-width: 768px) {
