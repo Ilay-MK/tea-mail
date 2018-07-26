@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока socials.
+/// Элемент - link.
+.socials__link {
+    background-clip: content-box;
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border-radius: 50%;
+    outline: 0 !important;
+    margin: 0 62px;
+    vertical-align: middle;
+    @include size(147px, 145px);
+
+    @media (max-width: 1309px) and (min-width: 1200px) {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+        margin-left: 28px;
+        margin-right: 28px;
+    }
+
+    @media (max-width: 991px) {
+        margin: 10px 23px;
+        @include size(105px, 103px);
+    }
+
+    @media (max-width: 479px) {
+        margin: 5px 17px;
+    }
+
+    /* Переделать по BEM */
+
+    /*& + .socials__link{
+        border-left: 1px solid rgba(216, 216, 216, .631);
+        position: relative;
+
+        &:before {
+            background-color: rgba(216, 216, 216, .631);
+            //content: '';
+            position: absolute;
+            @include size(1px, 14px);
+        }
+    }*/
+
+}

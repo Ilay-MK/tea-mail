@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-wavy.
+/// Значение top.
+.decor_line-wavy_top {
+
+    &:before {
+        content: " ";
+        background-image: url(../img/decor/line/decor_line-wavy.png);
+        background-repeat: repeat-x;
+        background-position: center bottom;
+        height: 8px;
+        top: -8px;
+        transform: scale(1, -1);
+    }
+}

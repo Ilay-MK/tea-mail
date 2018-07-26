@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока категории продукта.
+/// Модификатор _bottom.
+.catalog-category__decorate_bottom {
+    margin: 0 11px 0 5px; /*0 8px 0 1px*/
+    @include size(auto, 16px);
+
+    @media (max-width: 1309px) {
+        display: none;
+    }
+}

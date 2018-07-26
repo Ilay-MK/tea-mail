@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decor.
+/// Модификатор envelop.
+/// Значение theme-ivory.
+.decor_envelop_theme-ivory {
+
+    &:before,
+    &:after {
+        background-color: #f6f6f5;
+        border-bottom: 1px solid #e8e8e8;
+    }
+}

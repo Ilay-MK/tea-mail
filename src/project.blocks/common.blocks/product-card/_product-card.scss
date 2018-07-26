@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание BEM блока карточки продукта
+.product-card {
+    float: left;
+    overflow: visible;
+    margin: 4px;
+    text-align: center;
+    @include transition(all, 600ms, cubic-bezier(0.075, 0.82, 0.165, 1), !important);
+}

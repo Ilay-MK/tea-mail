@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор inline.
+.menu-catalog__item_inline {
+    display: inline-block;
+    margin-right: 55px;
+    max-width: 200px;
+    padding: 0;
+    vertical-align: top;
+
+    @media (max-width: 1309px) {
+        margin-right: 66px;
+    }
+
+    @media (max-width: 1279px) {
+        margin-right: 73px;
+    }
+
+    @media (max-width: 1199px) {
+        margin-right: 39px;
+    }
+
+    /* P.S. Переделать! */
+
+    @media (max-width: 929px) {
+        /*margin-right: 73px;*/
+        margin-right: 0;
+        padding-left: 110px;
+        width: 49%;
+        max-width: 49% !important;
+    }
+
+    @media (max-width: 839px) {
+        padding-left: 100px;
+    }
+
+    @media (max-width: 665px) {
+        padding-left: 50px;
+    }
+
+    @media (max-width: 569px) {
+        padding-left: 20px;
+    }
+
+    @media (max-width: 500px) {
+        padding-left: 10px;
+    }
+
+    @media (max-width: 479px) {
+        display: block;
+        margin: 0;
+        max-width: 100% !important;
+        padding: 0;
+        width: 100%;
+    }
+}

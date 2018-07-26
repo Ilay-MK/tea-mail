@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart-steps.
+/// Элеммент - step.
+.cart-steps__step {
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    display: inline-block;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    margin: 0 22px;
+    padding: 8px;
+    position: relative;
+    text-align: center;
+    @include size(120px, 65px);
+
+    & + .cart-steps__step {
+
+        &:before {
+            content: '';
+            background-color: #e2e2e2;
+            left: -50px;
+            position: absolute;
+            top: 50%;
+            top: calc(50% - 1px);
+            @include size(50px, 1px);
+
+            @media (max-width: 991px) {
+                left: -7px;
+                width: 43px;
+            }
+        }
+
+    }
+
+    @media (max-width: 991px) {
+        border: none;
+        margin: 0 -17px;
+        @include size(120px, 52px);
+    }
+
+    /* Сделать по BEM */
+    p {
+        margin: 0;
+    }
+
+    .cart-steps__step-number {
+
+        @media (max-width: 991px) {
+            border: 1px solid #e2e2e2;
+        }
+    }
+}

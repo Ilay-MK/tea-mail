@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока карусели каталога.
+/// модификатор - hover.
+.catalog-carousel__control_hover {
+
+    /* Передалать по BEM! */
+    &.left {
+        @media (min-width: 992px) {
+            left: 0px;
+        }
+    }
+    &.right {
+        @media (min-width: 992px) {
+            right: 0px;
+        }
+    }
+}

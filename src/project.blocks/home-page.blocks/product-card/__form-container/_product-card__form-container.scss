@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карточки продукта.
+/// Элемент form-container - контейнер формы
+.product-card__form-container {
+
+    @media (min-width: 1310px) {
+        margin-top: 50px;
+    }
+}

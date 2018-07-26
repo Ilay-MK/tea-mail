@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока продукта.
+/// Элемент - кнопка
+.product__btn {
+    border-radius: 4px;
+    background-color: #b62927; /* TEMP - взять из карты цветов */
+    @include f("catalog--product_card--button");
+    line-height: normal !important; /* TEMP */
+    margin: 0 0;
+    @include size(71px, 29px); /* size(77px, 31px) Поправка на зум */
+
+    &:hover {
+        background-color: #d63f3c;
+    }
+
+}

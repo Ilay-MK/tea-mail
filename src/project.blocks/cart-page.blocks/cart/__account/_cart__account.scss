@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart.
+/// Элеммент - account.
+.cart__account {
+
+    @media (max-width: 991px) {
+        margin-bottom: 25px;
+    }
+}

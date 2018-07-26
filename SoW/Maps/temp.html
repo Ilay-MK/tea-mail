@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tea-Mail colors</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,target-densitydpi=device-dpi, user-scalable=no" />
+    
+
+    <meta name="robots" content="noindex,nofollow,noodp,noarchive,nosnippet" /> <!-- TEMP. Develope time -->
+
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--[if gte IE 9]
+        <style type="text/css">
+            .gradient {
+                filter: none;
+            }
+        </style>
+    <![endif]-->
+    
+    <style>
+        
+        .row {
+            border: 1px solid #9b9b9b;
+            border-radius: 10px;
+            height: 30px;
+            margin: 5px 15px;
+            padding: 5px;
+            position: relative;
+            overflow: hidden;
+        }
+        .row > div {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        
+        .tableOfColors, .col-2 {
+            vertical-align: top;
+        }
+        
+        .color {
+            border: 1px solid #9b9b9b;
+            border-radius: 50%;
+            height: 25px;
+            margin-left: 5px;
+            margin-right: 20px;
+            width: 25px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        
+        .hex, .rgb {
+            height: 20px;
+            padding: 5px 15px;
+            /*outline: 1px solid;*/
+        }
+        
+        .hex {
+            border-right: 1px solid #9b9b9b;
+            width: 70px;
+        }
+        
+        .rgb {
+            width: 120px;
+        }
+        
+        .countOfResult {
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .countOfColors {
+            color: #c00;
+            font-size: 1.7em;
+        }
+        
+        .col-2 {
+            display: inline-block;
+        }
+        
+    </style>
+    
+</head>
+
+<body lang="ru">
+
+    <div class="container">
+        <div class="col-2">
+            <div id="tableOfColors" class="tableOfColors"></div>
+
+            <div class="row countOfResult">
+                Количество цветов: 
+                <div class="countOfColors" id="tableOfColors_countOfColors"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div id="tableOfColors_sorted" class="tableOfColors"></div>
+
+            <div class="row countOfResult">
+                Количество цветов: 
+                <div class="countOfColors" id="tableOfColors_sorted_countOfColors"></div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div id="tableOfColors_selected" class="tableOfColors"></div>
+
+            <div class="row countOfResult">
+                Количество цветов: 
+                <div class="countOfColors" id="tableOfColors_selected_countOfColors"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            
+            /*hexDec("#80407b");*/            
+            /*var rgbObj = rgb('#f00'); // red            
+            alert(rgbObj);*/            
+            /*placeToRGBaAndColor();*/
+            
+            var colors, color_gray, color_gray_1, color_gray_2, color_black, color_black_1, color_black_2, 
+                c_black, selected_black;
+            
+            color_gray_1 = [
+                "3d3d3d",
+                "3f3f3f",
+                "404040",
+                "454545",
+                "535353",
+                "5c5c5c"
+            ];
+            
+            color_gray_2 = [
+                "646464", // a1
+                "666666", // a1
+                "696969", // a1
+                "6d6d6d", // a1
+                "6e6e6e", // a1
+                "737373",
+                "797979",
+                "808080", // gray /* date */
+                "838383",
+                "848484",
+                "8e8e8e",
+                "9b9b9b"
+            ];
+            
+            color_gray = $.merge(color_gray_1, color_gray_2);
+            
+            color_black_1 = [
+                "181818",
+                "222222",
+                "282828",
+                "2e2e2e"
+            ];
+            
+            color_black_2 = [
+                "444444",
+                "484848",
+                "4a4a4a",
+                "525151"
+            ];
+            
+            color_black = $.merge(color_black_1, color_black_2);
+            
+            /* --------------------------------------- */
+            
+            c_black = [
+                "000000",
+                "181818", // black_1 // b1
+                "222222", // black_1 // b1
+                "282828", // black_1 // b1
+                "2e2e2e", // black_1 // b1
+                "3d3d3d", // black_2 // b2
+                "3f3f3f", // black_2 // b2
+                "404040", // black_2 // b2
+                "444444", // black_2 // b2
+                "454545", // black_2 // b2
+                "484848", // black_3 // b2
+                "4a4a4a", // black_3 // b2
+                "525151", // black_3 // b3
+                "535353", // black_3 // b3
+                "5c5c5c", // black_4 // b3
+                "646464", // black_4 // b3
+                "666666", // black_4 // b3
+                "696969", // black_4 // b4
+                "6d6d6d", // black_5 // b4
+                "6e6e6e", // black_5 // b4
+                "737373", // black_5 // b4
+                "797979", // black_5 // b4
+                "808080", // black_6 // b5  // gray /* date */
+                "838383", // black_6 // b5
+                "848484", // black_6 // b5
+                "8e8e8e", // black_6 // b5
+                "9b9b9b"  // black_7 // b5
+            ];
+            
+            selected_black = [
+                "000000",
+                "222222", // b1
+                "444444", // b2
+                "5c5c5c", // b3
+                "6e6e6e", // b4
+                "848484", // b4
+                ""
+            ];
+            
+            /* --------------------------------------- */
+            
+            colors = $.merge(color_black, color_gray);
+            
+            listOfColors(colors, "#tableOfColors");
+            listOfColors(c_black, "#tableOfColors_sorted");
+            listOfColors(selected_black, "#tableOfColors_selected");
+            
+        });
+
+        function hexDec(h){
+            var m=h.slice(1).match(/.{2}/g);
+
+            m[0]=parseInt(m[0], 16);
+            m[1]=parseInt(m[1], 16);
+            m[2]=parseInt(m[2], 16);
+
+            alert(m.join('\n'));
+        };
+        
+        function hexToRgb(hex) {
+            var shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
+            hex = hex.replace(shorthandRegex, function(m, r, g, b) {
+                return r + r + g + g + b + b;
+            });
+
+            var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null;
+        }
+        
+        function rgb(color) {
+            
+            var rgb_color;
+            
+            rgb_color = hexToRgb(color);
+            
+            //alert('rgb(' + rgb_color.r + ',' + rgb_color.g + ',' + rgb_color.b + ')'); // rgb(255,0,0);
+            
+            /*return rgb_color;*/
+            return 'rgb(' + rgb_color.r + ', ' + rgb_color.g + ', ' + rgb_color.b + ')';
+        }
+        
+        function listOfColors(list, target) {
+            
+            var idObj, textObj;
+                
+            for (var i = 0; i < list.length; i++) {
+                if (list[i]) {
+                    idObj = "color_" + i;
+                    textObj = "#" + list[i].toLowerCase();
+                    
+                    $(target).append('<div class="row" id='+idObj+'><div class="color" style="background-color:'+textObj+'"></div><div class="hex">'+textObj+'</div><div class="rgb">'+rgb(textObj)+'</div></div>');
+                    
+                    //$(idObj).css("background-color", $(this).text());
+                    /*$(idObj).find(".color").css("background-color", textObj);
+                    $(idObj).find(".hex").text(textObj);
+                    $(idObj).find(".rgb").text(rgb(textObj));*/
+                }
+            }
+            
+            $(target+"_countOfColors").text(list.length);
+            
+            return false;
+        };
+        
+        
+        function placeToRGBaAndColor() {
+            $('.hex').each(function(i,elem) {
+                if ($(this).text()) {
+                    alert(i + ': ' + $(elem).text());
+                    
+                    $(this).text("#"+$(this).text());
+                    $(this).parent(".row").prepend('<div class="color"></div>');
+                    $(this).prev(".color").css("background-color", $(this).text());
+                    $(this).parent(".row").append('<div class="rgb">'+rgb($(this).text())+'</div>');
+                    $(this).next().text(rgb($(this).text()));
+                    $(this).prev().css("background-color", $(this).text());
+                    
+                } else {
+                    alert("Остановлено на " + i + "-м пункте списка.");
+                    return false;
+                }
+            });
+        }
+        
+    </script>
+
+</body>
+
+</html>

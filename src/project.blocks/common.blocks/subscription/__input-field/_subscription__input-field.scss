@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока subscription.
+/// Элемент - input-field.
+.subscription__input-field {
+
+    @include plhdr(".subscription__input") {
+        @include font-OpenSans_LightItalic;
+        font-size: 14px;
+        letter-spacing: 0.025em;
+    }
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока discount.
+/// Элемент - envelope-clasp.
+.discount__envelope-clasp {
+
+    @media (max-width: 1199px) {
+        display: none;
+    }
+}

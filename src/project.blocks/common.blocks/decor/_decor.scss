@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание BEM блока decor.
+.decor {
+    position: relative; /* ?? */
+
+    &:before,
+    &:after {
+        display: table;
+        position: absolute;
+        width: 100%;
+        z-index: 8;
+    }
+}

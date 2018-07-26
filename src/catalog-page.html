@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tea-Mail</title>
+
+    <link rel="canonical" href="http://tea-mail.by/" />
+
+    <meta name="description" content="Tea-Mail." />
+    <meta name="keywords" content="Tea-Mail">
+
+
+    <meta property="og:title" content="Tea-Mail" />
+    <meta property="og:description" content="Tea-Mail" />
+    <meta property="og:url" content="http://tea-mail.by/" />
+    <meta property="og:locale" content="ru_BY" />
+    <meta property="og:image" content="/tea-mail.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tea-Mail" />
+
+    //= template/base/head.html
+
+    <!-- build:css css/main.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/catalog-page.css?v=0.0.2" />
+    <!-- endbuild -->
+
+</head>
+
+<body lang="ru">
+
+    <section class="page page_catalog">
+
+        <header id="header">
+
+            //= template/modules/navs/menu-main.html
+
+        </header>
+
+        <div class="page__content container">
+
+            <aside class="aside aside_left">
+                <!-- block menu-catalog -->
+                //= template/modules/navs/menu-catalog.html
+            </aside>
+
+            <main class="main main_catalog">
+
+                //= template/modules/breadcrumbs/breadcrumb-arrow.html
+
+                //= template/modules/page__headings/page__headings.html
+
+                //= template/modules/page__description/page__description.html
+
+                //= template/layout/sections/catalog-page/catalog.html
+
+            </main>
+
+        </div>
+
+        //= template/layout/sections/map.html
+
+        //= template/layout/footer.html
+
+    </section>
+
+    //= template/base/foot.html
+
+    <script>
+        $(document).ready(function () {
+            downloadJSAtOnload('assets/js/catalog-page.js?v=0.0.2');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемент - link-reviews.
+.product__link-reviews {
+    color: #525151;
+    font-family: getFont-family("OpenSans");
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    /*line-height: 90px;*/
+    outline: 0 !important;
+    text-decoration: underline;
+}

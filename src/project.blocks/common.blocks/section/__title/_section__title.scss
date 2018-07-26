@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока секции.
+/// Элемент - title.
+.section__title {
+    @include font-Karton_Regular;
+    font-size: 40px;
+    letter-spacing: 0.04em;
+    line-height: 75px;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+        font-size: 35px;
+    }
+}

@@ -1,0 +1,1 @@
+//= tabpanel__indicator.js

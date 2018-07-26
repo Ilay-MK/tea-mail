@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока catalog-filter.
+/// Элемент - label.
+/// Модификатор - checkbox.
+.catalog-filter__label_checkbox {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+
+    &:active:before {
+        outline: 1px solid #cc9d6d;
+    }
+
+    &:before {
+        background-color: #fff;
+        border-color: #dadada;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        bottom: 1px;
+        /*box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);*/
+        content: "";
+        display: inline-block;
+        left: 0;
+        outline: 0px solid transparent;
+        margin-right: 10px;
+        position: relative;
+        @include size(28px, 27px);
+        @include transition(outline);
+        vertical-align: middle;
+    }
+
+    /* Переделать по Bem */
+    & span {
+        vertical-align: middle;
+    }
+}

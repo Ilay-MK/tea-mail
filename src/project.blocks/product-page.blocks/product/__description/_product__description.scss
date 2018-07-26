@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемент - description.
+.product__description {
+    @extend .page__description;
+    letter-spacing: 0.05em;
+    min-height: 180px; /* 225px */
+    text-align: left;
+
+    @media (min-width: 768px) {
+        overflow-y: scroll;
+        padding-right: 10px;
+    }
+
+    @media (min-width: 1420px) {
+        padding-right: 90px;
+    }
+
+    @media (max-width: 767px) {
+        min-height: 125px;
+    }
+
+    @media (max-width: 479px) {
+        margin: 0 15px;
+    }
+
+    /* Переделать по BEM! */
+    p {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}

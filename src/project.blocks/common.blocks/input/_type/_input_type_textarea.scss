@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока поля ввода.
+/// Модификатор - type со значением textarea.
+.input_type_textarea {
+
+    @include plhdr(".textarea-plh") {
+        position: relative;
+        left: 0;
+        @include transition(left, $effect: ease);
+    }
+
+    @include plhdr(".textarea-plh:focus") {
+        left: 110%;
+    }
+}
+
+

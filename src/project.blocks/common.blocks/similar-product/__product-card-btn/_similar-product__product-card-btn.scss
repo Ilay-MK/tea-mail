@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// Описание элемента блока similar-product.
+/// Элемент контейнер product-card-btn.
+.similar-product__product-card-btn {
+
+    @media (max-width: 991px) {
+        @include size(90px, 40px);
+        margin: 0;
+    }
+
+    &:hover {
+
+        @media (max-width: 991px) {
+            @include size(90px, 40px);
+        }
+    }
+}

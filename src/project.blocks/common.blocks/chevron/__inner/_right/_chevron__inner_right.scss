@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока chevron - "картинка" контрола карусели.
+/// Модификатор - right.
+.chevron__inner_right {
+    /*border-right: 1px solid #a4a4a4;
+    border-top: 1px solid #a4a4a4;*/
+
+    border-right-color: #a4a4a4;
+    border-top-color: #a4a4a4;
+
+    border-bottom-width: 0 !important;
+    border-bottom-color: transparent !important;
+    border-left-width: 0 !important;
+    border-left-color: transparent !important;
+}

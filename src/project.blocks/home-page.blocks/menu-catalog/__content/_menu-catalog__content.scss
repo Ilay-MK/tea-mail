@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока меню каталога.
+/// Элемент content
+.menu-catalog__content {
+    /*margin: 0 105px;*/
+    margin-left: 88px; /* 16px с учётом border 1px */
+    margin-right: 88px;
+
+    @media (max-width: 1199px) {
+        /*margin: 0px 71px;*/
+        margin-left: 55px; /* 16px с учётом border 1px */
+        margin-right: 55px;
+    }
+
+    @media (max-width: 991px) {
+        /*margin: 0 0 0 61px;*/
+        margin-left: 45px; /* 16px с учётом border 1px */
+        margin-right: 45px;
+    }
+}

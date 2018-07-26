@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+.nav {
+    &--link {
+        @include f("nav--link");
+
+        &-hover {
+           @include f("nav--link-hover");
+        }
+    }
+
+    &-opened {
+        &--link {
+            @include f("nav-opened--link");
+
+            &-hover {
+               @include f("nav-opened--link-hover");
+            }
+
+            &--sublink {
+                @include f("nav-opened--link--sublink");
+            }
+
+            &-elaboration {
+                @include f("nav-opened--link-elaboration");
+            }
+
+            &_more {
+                @include f("nav-opened--link_more");
+            }
+
+            &_secondaryGroup {
+                @include f("nav-opened--link_secondaryGroup");
+            }
+        }
+
+        &--category {
+            @include f("nav-opened--category");
+        }
+    }
+
+    &--basket {
+        @include f("nav--basket");
+    }
+
+    &--username {
+        @include f("nav--username");
+    }
+
+    &--login_label {
+        @include f("nav--login_label");
+    }
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.dishes {
+
+    &--heading {
+        @include f("dishes--heading");
+    }
+
+    &--button {
+        @include f("dishes--button");
+    }
+
+}

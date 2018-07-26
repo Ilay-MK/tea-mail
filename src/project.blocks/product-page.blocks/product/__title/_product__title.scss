@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемент - title.
+.product__title {
+    @extend .page__title;
+    margin: 0 0 1em;
+
+    @media (max-width: 991px) {
+        margin-top: 22px;
+    }
+}

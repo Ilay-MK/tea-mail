@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание блока метода отображения товаров (карточек товаров).
+.catalog-view {
+    display: inline-block;
+    margin-left: 57px;
+    margin-right: 40px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

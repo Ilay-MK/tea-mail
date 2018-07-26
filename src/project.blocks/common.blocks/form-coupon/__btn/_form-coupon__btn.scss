@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание BEM блока формы ввода купона.
+/// Элемент - btn.
+.form-coupon__btn {
+    border: 0px solid transparent;
+    background: none;
+    border-radius: 2px;
+    background-color: #cc9d6d;
+    @include font-OpenSans_Light;
+    color: getColor("white");
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    outline: 0;
+    @include size(177px, 35px);
+}

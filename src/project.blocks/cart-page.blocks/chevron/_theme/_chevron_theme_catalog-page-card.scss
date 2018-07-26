@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание модификатора блока chevron - контрола карусели.
+/// Модификатор - theme.
+/// Значение - catalog-page-card.
+.chevron_theme_catalog-page-card {
+    background-color: rgba(0, 0, 0, .302);
+    border-color: transparent;
+    padding-bottom: 26px;
+    padding-top: 10px;
+    @include size(39px);
+}

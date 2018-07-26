@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Высота линии дискаунта.
+$discount-line__line___size_height: 6px;
+
+/// Описание BEM блока discount-line.
+/// Элемент - line.
+.discount-line__line {
+    background-color: #dadada;
+    margin: 65px auto 30px;
+    max-width: 725px;
+    position: relative;
+    @include size(54%, $discount-line__line___size_height);
+
+    @media (max-width: 991px) {
+        margin-bottom: 50px;
+        width: 90%;
+    }
+}

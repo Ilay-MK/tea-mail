@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока envelope-clasp (застёжка круглая).
+/// Элемент - inner.
+.envelope-clasp__inner {
+    border-radius: 50%;
+    border: 2px solid #4e4e4e;
+    @include size(13px);
+}

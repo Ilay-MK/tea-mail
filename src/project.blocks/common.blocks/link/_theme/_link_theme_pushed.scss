@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока линк.
+/// Модификатора - theme.
+/// Значение - pushed.
+.link_theme_pushed {
+
+    &:after {
+        content: '';
+        @include bg-cover;
+        background-image: url(../img/nav/underline-pusshed.png);
+        display: block;
+        position: absolute;
+        @include size(25px, 5px);
+    }
+}

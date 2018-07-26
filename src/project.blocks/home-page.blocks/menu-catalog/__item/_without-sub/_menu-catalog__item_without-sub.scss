@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор without-sub (без вложенного списка).
+.menu-catalog__item_without-sub {
+    margin-right: 0;
+
+    @media (max-width: 1309px) {
+        display: inline-block;
+        max-width: 200px;
+    }
+}

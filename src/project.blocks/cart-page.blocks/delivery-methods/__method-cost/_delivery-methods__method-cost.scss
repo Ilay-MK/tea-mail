@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+/// Описание BEM блока delivery-methods.
+/// Элемент - method-cost.
+.delivery-methods__method-cost {
+    @include font-OpenSans_SemiBoldItalic;
+    color: #707070;
+    font-size: 24px;
+    letter-spacing: 0.025em;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 210px;
+
+    @media (max-width: 479px) {
+        right: 15px;
+        position: absolute;
+        vertical-align: top;
+        top: 15px;
+        width: auto;
+    }
+
+    @media (min-width: 480px) and (max-width: 991px) {
+        margin-top: 15px;
+        text-align: left;
+        vertical-align: top;
+        width: 65px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 130px;
+    }
+
+    @media (min-width: 1200px) {
+
+    }
+}

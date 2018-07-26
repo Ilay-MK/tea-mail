@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart-items.
+/// Элемент - item-remove.
+.cart-items__item-remove {
+    cursor: pointer;
+    right: 17px;
+    position: absolute;
+    top: 40%;
+    top: calc(50% - 14px);
+    /*top: calc(50% - 9px);*/
+    @include size(28px);
+    /*@include size(18px, 17px);*/
+
+    &:before, &:after {
+        content: '';
+        background-color: #bebebe;
+        left: 2px;
+        position: absolute;
+        top: 12px;
+        @include size(24px, 3px);
+
+        @media (max-width: 991px) {
+            background-color: #fff;
+            left: 4px;
+            top: 14px;
+        }
+    }
+
+    &:before {
+        transform: rotate(45deg);
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+
+    @media (max-width: 991px) {
+        background-color: rgba(211, 155, 60, 0.72);
+        border-radius: 50%;
+        right: 3px;
+        @include size(32px);
+        top: 3px;
+        z-index: 12;
+    }
+}

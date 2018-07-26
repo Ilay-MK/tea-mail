@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.text-overflow-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.toe {
+    @extend .text-overflow-ellipsis;
+}

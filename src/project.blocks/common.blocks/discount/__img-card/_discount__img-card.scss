@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока discount.
+/// Элемент - img-card.
+.discount__img-card {
+    margin-top: -30px;
+    max-width: 300px;
+    @include size(100%, auto);
+    @include transition(margin-top);
+
+    @media (max-width: 1199px) {
+        margin-top: 0;
+    }
+}

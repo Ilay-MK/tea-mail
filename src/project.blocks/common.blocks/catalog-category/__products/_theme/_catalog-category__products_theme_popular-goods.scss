@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока категории продукта.
+/// Модификатор - theme (тема) со значением popular-goods.
+.catalog-category__products_theme_popular-goods {
+    @include webkit-scrollbar-append(#e0cc91, #c4b178);
+}

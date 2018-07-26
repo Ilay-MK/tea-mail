@@ -5,7 +5,7 @@
 /// @type Mixin
 /// @param {String} $assignment - Область применения
 
-@mixin inscription_headsets($assignment: use) {
+@mixin inscription_headsets($assignment: use()) {
 
     @if $assignment == use("use-1") {
         @include font-OpenSans_Regular;
@@ -46,6 +46,8 @@
         @include font-OpenSans_RegularItalic;
     } @else if $assignment == use("use-19") {
         @include font-OpenSans_RegularItalic;
+    } @else if $assignment == use("use-26") {
+        @include font-OpenSans_RegularItalic;
     } @else if $assignment == use("use-20") {
         @include font-OpenSans_RegularItalic;
         /* / OpenSans_RegularItalic */
@@ -58,8 +60,6 @@
     } @else if $assignment == use("use-24") {
         @include font-OpenSans_Light;
     } @else if $assignment == use("use-25") {
-        @include font-OpenSans_Light;
-    } @else if $assignment == use("use-26") {
         @include font-OpenSans_Light;
     } @else if $assignment == use("use-27") {
         @include font-OpenSans_Light;
@@ -185,6 +185,9 @@
     } @else if $assignment == use("use-82") {
         @include font-Bristol_Regular;
         /* / Bristol_Regular */
+    } @else if $assignment == use("use-83") {
+        @include font-NotoSans_Italic;
+        /* / NotoSans_Italic */
     } @else {
         @include font-OpenSans_Regular;
     }

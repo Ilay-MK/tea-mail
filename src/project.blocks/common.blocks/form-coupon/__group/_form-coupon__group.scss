@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание BEM блока формы ввода купона.
+/// Элемент - group.
+.form-coupon__group {
+    margin-left: 6px;
+    margin-right: 6px;
+    vertical-align: middle;
+
+    @media (max-width: 991px) {
+        display: block;
+        margin: 16px auto;
+        max-width: 177px;
+        text-align: center;
+    }
+}

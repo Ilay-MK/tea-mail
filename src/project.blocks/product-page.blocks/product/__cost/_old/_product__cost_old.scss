@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента блока продукта.
+/// Элемент старая стоимость
+.product__cost_old {
+    color: getColor("DoubleColonialWhite");
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: line-through;
+}

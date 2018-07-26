@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока subscription.
+/// Элемент - img.
+/// Модификатор - small.
+.subscription__img_small {
+    @include size(162px, 85px);
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}

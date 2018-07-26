@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/// Высота линии дискаунта.
+$discount-line__line___size_height: 6px !default;
+/// Размер точки дискаунта на линии.
+$discount-line__point___size: 20px !default;
+/// Размер точки дискаунта на линии.
+$discount-line__point-inner___size: 11px !default;
+
+
+/// Описание BEM блока discount-line.
+.discount-line {
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
+    padding-bottom: 15px;
+    text-align: center;
+    /*height: 177px;
+    width: 423px;*/
+
+    @media (max-width: 991px) {
+        border-color: #e4e4e4;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

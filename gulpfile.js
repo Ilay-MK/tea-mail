@@ -26,39 +26,51 @@ var
 /* ------------------- */
 var path = {
     build: {
-        html: 'build/',
-        js: 'build/assets/js/',
-        css: 'build/assets/css/',
-        img: 'build/assets/img/',
-        img_prettyPhoto: 'build/assets/img/prettyPhoto',
-        fonts: 'build/assets/fonts/',
-        files: 'build/assets/files/',
-        mail: 'build/',
-        libs: 'build/assets/libs/'
+        html: './build/',
+        js: './build/assets/js/',
+        css: './build/assets/css/',
+        img: './build/assets/img/',
+        img_prettyPhoto: './build/assets/img/prettyPhoto',
+        fonts: './build/assets/fonts/',
+        files: './build/assets/files/',
+        mail: './build/',
+        libs: './build/assets/libs/'
     },
     src: {
-        html: 'src/*.html',
+        html: './src/*.html',
         htmlBase: './src/template/base/*.html',
         htmlToBase: './src/template/base/',
-        js: 'src/assets/js/main.js',
-        style: 'src/assets/style/main.scss',
-        img: 'src/assets/img/**/*.*',
+        //js: './src/assets/js/*.js',
+        js: './src/*.js',
+        //style: './src/assets/style/*.scss',
+        style: './src/*.scss',
+        img: './src/assets/img/**/*.*',
+        //img: './src/**/img/**/*.*',
+        //img_png: './src/**/*.png',
+        //img_svg: './src/**/*.svg',
+        //img_jpg: './src/**/*.jpg',
         img_prettyPhoto: './bower_components/jquery-prettyPhoto/images/prettyPhoto/**/*.*',
-        fonts: 'src/assets/fonts/**/*.*',
-        files: 'src/assets/files/**/*.*',
-        mail: 'src/mail.php',
-        libs: 'src/assets/libs/**/*.*'
+        fonts: './src/assets/fonts/**/*.*',
+        files: './src/assets/files/**/*.*',
+        mail: './src/mail.php',
+        libs: './src/assets/libs/**/*.*'
     },
     watch: {
-        html: 'src/**/*.html',
-        js: 'src/assets/js/**/*.js',
-        style: 'src/assets/style/**/*.scss',
-        img: 'src/assets/img/**/*.*',
+        html: './src/**/*.html',
+        //js: './src/assets/js/**/*.js',
+        js: './src/**/*.js',
+        //style: './src/assets/style/**/*.scss',
+        style: './src/**/*.scss',
+        img: './src/assets/img/**/*.*',
+        //img: './src/**/img/**/*.*',
+        //img_png: './src/**/*.png',
+        //img_svg: './src/**/*.svg',
+        //img_jpg: './src/**/*.jpg',
         img_prettyPhoto: './bower_components/jquery-prettyPhoto/images/prettyPhoto/**/*.*',
-        fonts: 'src/assets/fonts/**/*.*',
-        files: 'src/assets/files/**/*.*',
-        mail: 'src/mail.php',
-        libs: 'src/assets/libs/**/*.*'
+        fonts: './src/assets/fonts/**/*.*',
+        files: './src/assets/files/**/*.*',
+        mail: './src/mail.php',
+        libs: './src/assets/libs/**/*.*'
     },
     fontAwesomeDir: './bower_components/font-awesome/',
     fontAwesomeCSS: './bower_components/font-awesome/css/font-awesome.css',
@@ -75,7 +87,7 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: true,
+    tunnel: false,
     host: 'localhost',
     port: 9000,
     logPrefix: "tea-mail"
@@ -85,12 +97,19 @@ var config = {
 
 var crossBrousersCompatibility = {
     brousers: [
+        '> 1%',
         'last 20 versions',
-        '> 0%',
-        'ie 9',
-        'ie 8',
         'Firefox ESR',
-        'Opera 12.1'
+        'ie 9',
+        'Opera 12.1',
+        'Android 2.3',
+        'Android >= 4',
+        'Chrome >= 20',
+        'Firefox >= 24',
+        'Explorer >= 8',
+        'iOS >= 6',
+        'Opera >= 12',
+        'Safari >= 6'
     ],
     cascade: false
 };
@@ -101,7 +120,7 @@ var hosting = {
     host: 'host',
     user: 'user',
     pass: 'pass',
-    remotePath: './remotePath'
+    remotePath: 'path'
 };
 
 
@@ -183,6 +202,45 @@ gulp.task('build:image', function () {
         .pipe(notify('build:image Done!'));
 });
 
+/*gulp.task('build:image_png', function () {
+    gulp.src(path.src.img_png)
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
+        .pipe(gulp.dest(path.build.img))
+        .pipe(reload({stream: true}))
+        .pipe(notify('build:image_png Done!'));
+});*/
+
+/*gulp.task('build:image_svg', function () {
+    gulp.src(path.src.img_svg)
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
+        .pipe(gulp.dest(path.build.img))
+        .pipe(reload({stream: true}))
+        .pipe(notify('build:image_svg Done!'));
+});*/
+
+/*gulp.task('build:image_jpg', function () {
+    gulp.src(path.src.img_jpg)
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()],
+            interlaced: true
+        }))
+        .pipe(gulp.dest(path.build.img))
+        .pipe(reload({stream: true}))
+        .pipe(notify('build:image_jpg Done!'));
+});*/
+
 gulp.task('build:fonts-awesome', function () {
     gulp.src(path.fontAwesomeFonts)
         .pipe(gulp.dest(path.build.fonts))
@@ -221,7 +279,10 @@ gulp.task('build', [
     'build:files',
     'build:libs',
     'build:mail',
-    'build:image'
+    'build:image'/*,
+    'build:image_png',
+    'build:image_svg',
+    'build:image_jpg'*/
 ]);
 
 
@@ -241,6 +302,15 @@ gulp.task('watch', function () {
     watch([path.watch.img], function (event, cb) {
         gulp.start('build:image');
     });
+    /*watch([path.watch.img_png], function (event, cb) {
+        gulp.start('build:image_png');
+    });
+    watch([path.watch.img_svg], function (event, cb) {
+        gulp.start('build:image_svg');
+    });
+    watch([path.watch.img_jpg], function (event, cb) {
+        gulp.start('build:image_jpg');
+    });*/
     watch([path.watch.fonts], function (event, cb) {
         gulp.start('build:fonts');
     });
@@ -254,12 +324,16 @@ gulp.task('watch', function () {
         gulp.start('build:mail');
     });
 });
+
 // Watch Wiredep
 gulp.task('watch-native', function () {
     gulp.watch(path.watch.html, ['build:html']);
     gulp.watch(path.watch.style, ['build:style']);
     gulp.watch(path.build.js, ['build:js']);
     gulp.watch(path.watch.img, ['build:image']);
+    /*gulp.watch(path.watch.img_png, ['build:image_png']);
+    gulp.watch(path.watch.img_svg, ['build:image_svg']);
+    gulp.watch(path.watch.img_jpg, ['build:image_jpg']);*/
     gulp.watch(path.watch.fonts, ['build:fonts']);
     gulp.watch(path.watch.files, ['build:files']);
     gulp.watch(path.watch.libs, ['build:libs']);

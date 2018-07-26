@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока поля ввода.
+/// Модификатор - type со значением text
+.input_type_text {
+
+    &:focus {
+        outline: 0 solid transparent;
+        outline: none;
+    }
+}

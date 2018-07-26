@@ -35,7 +35,7 @@
     }
 
     if (!$error) {
-        $recepient = "MiKrob09@gmail.com"; /* "MiKrob09@gmail.com" */
+        $recepient = "";
         $sitename  = "tea-mail";
         $pagetitle = "Новая заявка с сайта \"$sitename\"";
 

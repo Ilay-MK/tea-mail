@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока similar-product.
+/// Элемент - inner.
+.similar-product__inner {
+    margin: 0 auto;
+
+    @media (min-width: 1200px) {
+        max-width: 817px;
+    }
+
+    @media (max-width: 1199px) and (min-width: 992px) {
+        max-width: 613px;
+    }
+
+    @media (max-width: 991px) and (min-width: 768px) {
+        max-width: 616px;
+    }
+
+    @media (max-width: 767px) and (min-width: 480px) {
+        max-width: 308px;
+    }
+
+    @media (max-width: 479px) {
+        max-width: 290px;
+    }
+}

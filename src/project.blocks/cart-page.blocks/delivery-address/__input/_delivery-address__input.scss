@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/// Описание элемента блока delivery-address.
+/// Элемент - input.
+.delivery-address__input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    border-radius: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    @include size(100%, 42px);
+
+    @include plhdr(".comment-order__textarea") {
+        @include font-OpenSans_LightItalic;
+        color: #3e3e3e;
+        font-size: 14px;
+        letter-spacing: 0.025em;
+    }
+}

@@ -11,7 +11,7 @@ $service-colors: (
     use("use-2")  : getColor("RoofTerracotta"), /* #a94442 */
     use("use-3")  : getColor("JapaneseLaurel"), /* #3c763d */
 
-    use("use-4")  : getColor("white"),          /* #646464 */
+    use("use-4")  : getColor("DimGray-1"),      /* #646464 */
     use("use-5")  : getColor("Eclipse"),        /* #404040 */
     use("use-6")  : getColor("Grey"),           /* #848484 */
 
@@ -50,7 +50,7 @@ $service-colors: (
     use("use-36") : getColor("Charcoal"),       /* #444444 */
 
     use("use-37") : getColor("GoldenBrown"),    /* #925900 */
-    use("use-38") : getColor("white"),          /* #d29a43 */
+    use("use-38") : getColor("FireBush"),       /* #d29a43 */
     use("use-39") : getColor("white"),          /* #ffffff */
     use("use-40") : getColor("white"),          /* #ffffff */
     use("use-41") : getColor("NightRider"),     /* #2e2e2e */
@@ -104,5 +104,7 @@ $service-colors: (
     use("use-81") : getColor("white"),          /* #ffffff */
     use("use-82") : getColor("Tuscany"),        /* #b1654b */
     /* -------------------------------------------------------------------------- */
-    use("use-83") : getColor()
+    use("use-83") : getColor("white"),          /* #ffffff */
+    /* -------------------------------------------------------------------------- */
+    use("use-84") : getColor()
 );

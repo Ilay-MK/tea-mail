@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/// Описание BEM блока формы ввода купона.
+/// Элемента - input.
+.form-coupon__input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dedede;
+    border-radius: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include size(138px, 35px);
+
+    @media (max-width: 991px) {
+        width: 100%;
+    }
+
+    @include plhdr(".form-coupon__input") {
+
+        @media (min-width: 992px) {
+            visibility: hidden;
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор without-item (без ссылки).
+.menu-catalog_item_without-item {
+
+    @media (min-width: 480px) {
+        margin-top: 37px;
+    }
+}

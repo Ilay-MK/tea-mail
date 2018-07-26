@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание BEM блока hidden-sm.
+.hidden-sm {
+    @media (max-width: 991px) and (min-width: 768px) {
+        display: none !important;
+    }
+}

@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decor.
+/// Модификатор line-stubby.
+.decor_line-stubby {
+    /*margin-bottom: 11px;
+    margin-top: 11px;*/
+
+    &:before,
+    &:after {
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        height: 11px;
+    }
+
+    &:before {
+
+    }
+
+    &:after {
+
+    }
+}

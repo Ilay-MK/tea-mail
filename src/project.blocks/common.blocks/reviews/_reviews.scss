@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание BEM блока reviews.
+.reviews {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    padding-top: 10px;
+
+    @media (max-width: 767px) and (min-width: 480px) {
+        padding: 0 15px;
+    }
+
+    @media (max-width: 479px) {
+        padding: 0 25px;
+    }
+
+    @media (min-width: 768px) {
+        border: 1px solid #f3f3f3;
+    }
+}

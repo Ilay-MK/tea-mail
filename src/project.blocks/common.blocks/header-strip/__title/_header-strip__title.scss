@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание BEM блока полосы-заголовка.
+/// Элемент title.
+.header-strip__title {
+    @include font-OpenSans_SemiBoldItalic;
+    color: #4b4b4b;
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 0.025em;
+    margin: 0;
+}

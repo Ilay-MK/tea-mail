@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание BEM блока главного меню
+.menu-main {
+    border: 0px solid transparent !important;
+    border: none !important;
+    height: 219px;
+    left: 0;
+    margin-top: -100px;
+    padding-top: 100px;
+    position: fixed;
+    right: 0;
+    @include transition();
+    z-index: 1030;
+
+    @media (max-width: 991px) {
+        margin-top: -117px;
+        padding-top: 117px;
+    }
+}

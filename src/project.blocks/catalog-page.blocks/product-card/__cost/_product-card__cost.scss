@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карточки продукта.
+/// Элемент стоимость
+.product-card__cost {
+    @include transition(all, 600ms, cubic-bezier(0.075, 0.82, 0.165, 1), !important);
+
+    @media (max-width: 991px) {
+        font-size: 23px;
+        margin-bottom: 10px;
+        margin-top: 13px;
+    }
+}

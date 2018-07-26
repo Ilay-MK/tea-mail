@@ -68,7 +68,13 @@
     }
 }
 
-/**/
+@mixin background-gradient ($gradient) {
+    background-image: -webkit-$gradient;
+    background-image:   --moz-$gradient;
+    background-image:     -ms-$gradient;
+    background-image:      -o-$gradient;
+    background-image:         $gradient;
+}
 
 @mixin background-size ($background-size) {
     -webkit-background-size: $background-size;
@@ -90,11 +96,20 @@
             border-image: url($image) $border;
 }
 
-@mixin transition ($target: all, $time: 0.3s, $effect: ease-out) {
-    -webkit-transition: $target $time $effect;
-       -moz-transition: $target $time $effect;
-         -o-transition: $target $time $effect;
-            transition: $target $time $effect;
+@mixin transition ($target: all, $time: 0.3s, $effect: ease-out, $important: null) {
+    -webkit-transition: $target $time $effect #{$important};
+       -moz-transition: $target $time $effect #{$important};
+         -o-transition: $target $time $effect #{$important};
+            transition: $target $time $effect #{$important};
+}
+
+@mixin bg-cover {
+    background-position: center center; /*50% 50%*/
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+	   -moz-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
 }
 
 /// Помощник для сброса внутреннего обтекания
@@ -108,6 +123,15 @@
     }
 }
 
+/// Помощник для сброса обрамления
+/// border и outline уберает
+@mixin clear-edging {
+    border: 0px solid transparent;
+    border: none;
+    outline: 0px solid transparent;
+    outline: none;
+}
+
 /// Помощник для определения размера
 /// @author Hugo Giraudel
 /// @param {Length} $width
@@ -117,7 +141,115 @@
     width: $width;
 }
 
-/*Extras*/
+/* -= Extras =- */
+
+/* ScrollBars */
+
+/* параметризировать! */
+@mixin ie-scrollBar($base: "") {
+    scrollbar-base-color: #000; /* Задает основной цвет для скролла */
+
+    /* И более тонкие настройки: */
+
+    scrollbar-3dlight-color: #000; /*задает цвет верхней и левой границ полосы прокрутки, ее бегунка и стрелок*/
+
+    scrollbar-arrow-color: #000; /*задает цвет стрелок на кнопках полосы прокрутки*/
+
+    scrollbar-darkshadow-color: #000; /*задает цвет "тени", отбрасываемой бегунком и кнопками полосы прокрутки (цвет правых и нижних границей)*/
+
+    scrollbar-face-color: #000; /*задает основной цвет бегунка и кнопок прокрутки полосы прокрутки*/
+
+    scrollbar-highlight-color: #000; /*задает цвет "освещенной" части бегунка и кнопок прокрутки полосы прокрутки (цвет левых и верхних их граней)*/
+
+    scrollbar-shadow-color: #000; /*задает цвет "неосвещенной" части бегунка и кнопок прокрутки полосы прокрутки (цвет правых и нижних их граней). Не путать с цветом "тени", задаваемым атрибутом scroll-darkshadow-color*/
+
+    crollbar-track-color: #000; /*задает цвет фона полосы прокрутки, той ее части, по которой перемещается бегунок*/
+}
+
+/* параметризировать! */
+@mixin webkit-scrollbar($thumb-color: #e0cc91, $thumb-color-hover: #c4b178, $btn-height: 0px, $scrollbar-track: transparent) {
+
+    ::-webkit-scrollbar-button {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 5px;
+        height: $btn-height;
+    }
+
+    /* Цвет дорожки */
+    ::-webkit-scrollbar-track {
+        background-color: $scrollbar-track; /* #ecedee */
+    }
+
+    /* Цвет бегунка полосы, + его закругления */
+    ::-webkit-scrollbar-thumb {
+        //border-width: 1px 1px 1px 2px;
+        //border-color: #777;
+        //border-style: solid;
+        -webkit-border-radius: 0px;
+                border-radius: 0px;
+        background-color: $thumb-color; /* #6dc0c8 */
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: $thumb-color-hover;
+    }
+
+    ::-webkit-resizer {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 4px;
+        height: 0px
+    }
+
+    /* Основная ширина прокрутки */
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
+
+}
+
+@mixin webkit-scrollbar-append($thumb-color: #e0cc91, $thumb-color-hover: #c4b178, $btn-height: 0px, $scrollbar-track: transparent) {
+
+    &::-webkit-scrollbar-button {
+        /*@content;*/
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 5px;
+        height: $btn-height;
+    }
+
+    /* Цвет дорожки */
+    &::-webkit-scrollbar-track {
+        background-color: $scrollbar-track; /* #ecedee */
+    }
+
+    /* Цвет бегунка полосы, + его закругления */
+    &::-webkit-scrollbar-thumb {
+        //border-width: 1px 1px 1px 2px;
+        //border-color: #777;
+        //border-style: solid;
+        -webkit-border-radius: 0px;
+                border-radius: 0px;
+        background-color: $thumb-color; /* #6dc0c8 */
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: $thumb-color-hover;
+    }
+
+    &::-webkit-resizer {
+        background-image: url('');
+        background-repeat: no-repeat;
+        width: 4px;
+        height: 0px
+    }
+
+    /* Основная ширина прокрутки */
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+}
 
 // Extras
 // -- Highlight Color Customization
@@ -148,3 +280,104 @@
         @content;
     }
 }
+
+
+/// Помошник для медиа запросов
+/// "Breakpoint mixin supports: xs, sm, md, lg" - string name
+@mixin breakpoint($minWidth: 0, $maxWidth: 0, $minHeight: 0, $maxHeight: 0) {
+    $type: type-of($minWidth);
+
+    @if $type == string {
+        $class: $minWidth;
+
+        @if $class == xs {
+            @media (max-width: map-get($breakpoints, "xs-max")) {
+                @content;
+            }
+        }
+        @else if $class == sm {
+            @media (min-width: map-get($breakpoints, "sm-min")) {
+                @content;
+            }
+        }
+        @else if $class == md {
+            @media (min-width: map-get($breakpoints, "md-min")) {
+                @content;
+            }
+        }
+        @else if $class == lg {
+            @media (min-width: map-get($breakpoints, "lg-min")) {
+                @content;
+            }
+        }
+        @else {
+            @warn "Breakpoint mixin supports: xs, sm, md, lg";
+        }
+    }
+    @else if $type == number {
+        $widthQuery: "all" !default;
+
+        // width
+        @if $minWidth != 0 and $maxWidth != 0 {
+            $widthQuery: "(min-width: #{$minWidth}) and (max-width: #{$maxWidth})";
+        }
+        @else if $minWidth != 0 and $maxWidth == 0 {
+            $widthQuery: "(min-width: #{$minWidth})";
+        }
+        @else if $minWidth == 0 and $maxWidth != 0 {
+            $widthQuery: "(max-width: #{$maxWidth})";
+        }
+
+        // height
+        $heightQuery: 0;
+        @if $minHeight != 0 and $maxHeight != 0 {
+            $heightQuery: "(min-height: #{$minHeight}) and (max-height: #{$maxHeight})";
+        }
+        @else if $minHeight != 0 and $maxHeight == 0 {
+            $heightQuery: "(min-height: #{$minHeight})";
+        }
+        @else if $minHeight == 0 and $maxHeight != 0 {
+            $heightQuery: "(max-height: #{$maxHeight})";
+        }
+
+        @if $minHeight != 0 {
+            @media #{$widthQuery} and #{$heightQuery} {
+                @content;
+            }
+        }
+        @else if $maxHeight != 0 {
+            @media #{$widthQuery} and #{$heightQuery} {
+                @content;
+            }
+        }
+        @else if $minHeight != 0 and $maxHeight != 0 {
+            @media #{$widthQuery} and #{$heightQuery} {
+                @content;
+            }
+        }
+        @else {
+            @media #{$widthQuery} {
+                @content;
+            }
+        }
+    }
+
+    // EXAMPLES: @include breakpoint($maxWidth: 700px, $minWidth: 500px, $maxHeight: 1500px, $minHeight: 600px) {
+    // @include breakpoint($min: 400px, $max: 500px) {
+    //     background-color: red;
+    // }
+    // aside.primary {
+    //     @include breakpoint(md) {
+    //         float: right;
+    //         width: 350px;
+    //     }
+    //     @include breakpoint(480px) {
+    //         display: none;
+    //     }
+    //     @include breakpoint($min: 640px, $max: 767px) {
+    //         text-align: center;
+    //         font-style: italic;
+    //     }
+    // }
+}
+

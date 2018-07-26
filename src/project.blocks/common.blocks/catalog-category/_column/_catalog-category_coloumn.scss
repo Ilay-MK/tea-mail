@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора блока категории продукта.
+/// Модификатор солонка - coloumn.
+.catalog-category_coloumn {
+    /*outline: 1px solid;*/
+    display: inline-block;
+    margin: 0 5px 27px;
+    /*overflow: hidden;*/
+    vertical-align: top;
+}

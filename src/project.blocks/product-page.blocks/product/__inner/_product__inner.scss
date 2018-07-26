@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемента - inner.
+.product__inner {
+    overflow: hidden;
+
+    @media (min-width: 768px) {
+        max-height: 405px; /* 413px */
+    }
+}

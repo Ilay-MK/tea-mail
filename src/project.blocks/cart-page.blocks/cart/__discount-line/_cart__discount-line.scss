@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart.
+/// Элеммент - discount-line.
+.cart__discount-line {
+    border: 1px solid #ededed;
+    margin: 25px auto 4px;
+
+    @media (min-width: 1420px) {
+        /*max-width: 900px;*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media (max-width: 991px) {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        width: 292px;
+    }
+
+    /* Переделать по BEM! */
+    .discount-line {
+
+        @media (max-width: 991px) {
+            border: none !important;
+        }
+    }
+    .discount-line__line {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        max-width: 100%;
+        width: auto;
+    }
+    .discount-line__description {
+
+        p {
+            margin-top: 0;
+        }
+    }
+}

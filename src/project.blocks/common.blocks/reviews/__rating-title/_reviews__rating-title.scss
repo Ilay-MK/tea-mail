@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - rating-title.
+.reviews__rating-title {
+    @include font-OpenSans_LightItalic;
+    color: getColor("DimGray-4");
+    float: left;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    margin-right: 20px;
+
+    /* Сделать по BEM */
+    p {
+        margin: 0;
+    }
+}

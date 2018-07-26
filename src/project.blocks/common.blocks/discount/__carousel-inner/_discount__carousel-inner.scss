@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока discount.
+/// Элемент - carousel-inner.
+.discount__carousel-inner {
+    margin: auto;
+    max-width: 1080px;
+
+    @media (max-width: 1199px) {
+        max-width: 250px;
+    }
+}

@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/// Описание модификатора блока border-line.
+/// Модификатора - bottom.
+.border-line_bottom {
+    border-bottom-width: $border-line___rate !important;
+}

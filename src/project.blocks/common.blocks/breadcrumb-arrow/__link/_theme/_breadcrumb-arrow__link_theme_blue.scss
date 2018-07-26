@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока хлебных крошек.
+/// Элемент - link.
+/// Модификатор - theme.
+/// Значение - blue.
+
+$breadcrumb-arrow__colors_theme_blue: (
+    "default" : #3bafda,
+    "base"    : #3bafda,
+    "hover"   : #4fc1e9,
+    "active"  : #2494be
+);
+
+.breadcrumb-arrow__link_theme_blue {
+    background-color: map-get($breadcrumb-arrow__colors_theme_blue, "default");
+    border-color: map-get($breadcrumb-arrow__colors_theme_blue, "default");
+
+    &:before {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_blue, "default");
+    }
+
+    &:after {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_blue, "active");
+    }
+
+    &:focus,
+    &:hover {
+        background-color: map-get($breadcrumb-arrow__colors_theme_blue, "hover");
+        border-color: map-get($breadcrumb-arrow__colors_theme_blue, "hover");
+    }
+
+    &:focus:before,
+    &:hover:before {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_blue, "hover");
+    }
+
+    &:active {
+        background-color: map-get($breadcrumb-arrow__colors_theme_blue, "active");
+        border-color: map-get($breadcrumb-arrow__colors_theme_blue, "active");
+    }
+
+    &:active:after,
+    &:active:before {
+        border-left-color: map-get($breadcrumb-arrow__colors_theme_blue, "active");
+    }
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемента - visual.
+.product__visual {
+    float: left;
+    overflow: hidden;
+    margin-right: 30px;
+    max-height: inherit;
+    /*@include size(442px, 317px);*/
+    width: 360px; /* 352px - по 4px по сторонам */
+
+    @media (min-width: 1200px) {
+        width: 450px; /* 442px - по 4px по сторонам */
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        margin-right: 0;
+        width: auto;
+    }
+
+    @media (max-width: 767px) {
+        float: none;
+    }
+
+    @media (max-width: 479px) {
+        margin: 0 auto;
+        width: 290px;
+    }
+}

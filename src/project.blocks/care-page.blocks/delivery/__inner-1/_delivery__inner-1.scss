@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока delivery.
+/// Элемент - inner-1.
+.delivery__inner-1 {
+    overflow: hidden;
+
+    @media (min-width: 1200px) {
+        float: left;
+        margin: -70px 30px 70px;
+        width: 280px;
+    }
+}

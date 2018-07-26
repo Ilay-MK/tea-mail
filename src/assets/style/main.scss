@@ -4,7 +4,8 @@
 * Third Party
 */
 
-@import "../../../bower_components/normalize.css/normalize.css";
+/*@import "../../../bower_components/normalize.css/normalize.css";*/
+@import "../bower_components/normalize.css/normalize.css"; /* Этот файл импортируется файлом ./src/*.scss */
 
 /*
 * Custom

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока меню каталога.
+/// Элемент - link-toggle.
+.menu-catalog__link-toggle {
+    margin-left: -35px;
+    margin-top: 24px;
+    padding: 12px 0;
+    text-align: center;
+    width: calc(100% + 50px);
+
+    @media (max-width: 479px) {
+        //margin-left: -20px; /* компенсирование оступа aside */
+    }
+
+    @media (min-width: 1200px) {
+        display: none !important;
+    }
+}

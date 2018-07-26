@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока delivery.
+/// Элеммент - btn-scope.
+/// Модификатор - active.
+.delivery__btn-scope_active {
+    background-image: -moz-linear-gradient( 90deg, rgb(191,146,101) 0%, rgba(191,146,101,0) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(191,146,101) 0%, rgba(191,146,101,0) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(191,146,101) 0%, rgba(191,146,101,0) 100%);
+    color: getColor("white");
+}

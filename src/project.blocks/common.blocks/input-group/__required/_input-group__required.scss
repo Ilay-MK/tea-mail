@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока input-group.
+/// Элемента - required.
+.input-group__required {
+    @include font-OpenSans_LightItalic;
+    color: #d29b3b;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+}

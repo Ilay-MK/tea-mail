@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/// Описание модификатора блока border-line.
+/// Модификатора - right.
+.border-line_right {
+    border-right-width: $border-line___rate !important;
+}

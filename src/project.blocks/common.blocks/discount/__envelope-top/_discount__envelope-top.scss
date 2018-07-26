@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока discount.
+/// Элемент - envelope-top.
+.discount__envelope-top {
+
+    @media (max-width: 1199px) {
+        background: none !important;
+        overflow: visible !important;
+    }
+
+    &:after {
+        @media (max-width: 1199px) {
+            display: none !important;
+        }
+    }
+}

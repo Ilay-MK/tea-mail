@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - subscription.
+.subscription__btn {
+    @include f("reviews--button");
+    line-height: 40px; /* TEMP */
+    margin: 0;
+    width: 127px;
+}

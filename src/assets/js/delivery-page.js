@@ -1,0 +1,1 @@
+//= partials/delivery-page.js

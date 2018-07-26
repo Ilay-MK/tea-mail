@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание BEM блока delivery-methods.
+/// Элемент - method-group.
+.delivery-methods__method-group {
+    position: relative;
+
+    @media (max-width: 991px) {
+
+    }
+}

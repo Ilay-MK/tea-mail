@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока container (grid).
+/// Элемент - form.
+.container__form {
+
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+
+}

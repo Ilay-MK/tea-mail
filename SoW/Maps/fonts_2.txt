@@ -1,0 +1,78 @@
+[ HOMEPAGE]
+---------------------------------------------------------------------------
+Open Sans Regular			[ tea_blog > post > text ]
+							[ reviews > post > text ]
+							[ карта > work_mode ]
+							-----------------------------------------------
+Open Sans Italic			[ nav > link ]
+							[ nav > link > sublink ] 
+							[ footer > nav > link ] 
+							[ balls > text ]
+							[ care > balls > text ]
+							[ newsletters > heading > text ]
+							[ карта > address_metro ]
+							[ карта > address_description ]
+							-----------------------------------------------
+Open Sans Light 			[ nav > Username ] 
+							[ nav > Login_label ] 
+							[ footer > nav_second (Оферта...) > link ]
+							[ catalog > product_card > subtitle(год чая) ]
+							[ footer > company_details ]
+							-----------------------------------------------
+Open Sans Light Italic		[ header > search ]
+							[ heading > text ]
+							-----------------------------------------------
+Open Sans Semibold			[ карта > work_mode_time ]
+							-----------------------------------------------
+Open Sans Semibold Italic 	[ nav > opened > link ]
+							[ tea_room > address ]
+							[ tea_blog > link_more ]
+							[ tea_news > heading_button ]
+							[ карта > address ]
+							-----------------------------------------------
+Open Sans Bold 	  			[ catalog > title ]
+							-----------------------------------------------
+Open Sans Bold Italic		[ карта > firmName ]
+---------------------------------------------------------------------------
+Noto Sans Regular 			[ catalog > product_card > title ]
+							-----------------------------------------------
+Noto Sans Italic			[ catalog > product_card > price ] 
+							[ catalog > product_card > oldprice ]
+							[ catalog > product_card > inputData (гр./шт) ]
+							[ tea_blog > date ]
+							[ tea_news > post > date ]
+							[ tea_news > post > link_more ]
+							[ reviews > post > date ]
+							[ reviews > post > username ]
+							-----------------------------------------------
+Noto Sans Bold Italic		[ tea_blog > heading_article ]
+							[ tea_news > post > header ]
+---------------------------------------------------------------------------
+Noto Serif Bold Italic		[ tea_room > subHeading ]
+							[ about_project > subHeading ]
+---------------------------------------------------------------------------
+Karton Regular 				[ heading ]
+							[ reviews > heading_small ]
+							[ footer > phone ]
+---------------------------------------------------------------------------
+Bristol Regular 			[ dishes > heading ]
+							[ footer > heading_social ]
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

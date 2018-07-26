@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока линк.
+/// Элемент icon - иконка
+.link__icon {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    @include background-size(contain);
+}

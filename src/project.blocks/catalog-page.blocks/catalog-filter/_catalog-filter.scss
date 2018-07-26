@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание BEM блока catalog-filter.
+.catalog-filter {
+    margin: 30px 0 25px;
+    padding: 38px 0 22px;
+
+    @media (max-width: 991px) {
+        border-top-width: 0 !important;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 390px;
+    }
+
+    @media (min-width: 1420px) {
+        text-align: left;
+    }
+}

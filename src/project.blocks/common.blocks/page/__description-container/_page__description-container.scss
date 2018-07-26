@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока page.
+/// Элемент - description-container.
+.page__description-container {
+    overflow: hidden;
+    text-align: center;
+
+    @media (min-width: 992px) {
+        width: 720px;
+    }
+}

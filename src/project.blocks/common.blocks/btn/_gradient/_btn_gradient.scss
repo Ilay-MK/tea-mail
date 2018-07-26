@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока кнопки.
+/// Модификатор - gradient
+.btn_gradient {
+    border-radius: 2px;
+    background-image: -moz-linear-gradient( 90deg, rgb(191,146,101) 0%, rgb(206,159,111) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(191,146,101) 0%, rgb(206,159,111) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(191,146,101) 0%, rgb(206,159,111) 100%);
+    @include size(151px, 40px);
+
+    &:hover {
+        /*background-gradient (linear-gradient( -90deg, rgb(182,138,94) 0%, rgb(199,153,106) 100%));*/
+        background-image: -moz-linear-gradient( -90deg, rgb(182,138,94) 0%, rgb(199,153,106) 100%);
+        background-image: -webkit-linear-gradient( -90deg, rgb(182,138,94) 0%, rgb(199,153,106) 100%);
+        background-image: -ms-linear-gradient( -90deg, rgb(182,138,94) 0%, rgb(199,153,106) 100%);
+    }
+}

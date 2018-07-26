@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока page.
+/// Элемент - link-toggle.
+/// Модификатора - theme.
+/// Значение - tea-mail.
+.text-collapsing__link-toggle_theme_tea-mail {
+    color: getColor("Putty");
+    font-family: getFont-family("OpenSans");
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    line-height: 19px;
+    outline: 0 !important;
+    text-decoration: underline;
+}

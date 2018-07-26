@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока секции.
+/// Модификатор - catalog.
+.section_catalog {
+    margin-bottom: 130px;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+        width: 794px;
+    }
+
+    @media (min-width: 1420px) {
+        width: 100%;
+    }
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока share.
+/// Элемент - link.
+.share__link {
+    max-width: 40px;
+    outline: 0 !important;
+    vertical-align: middle;
+    width: 40px;
+
+    /* Переделать по BEM */
+    &:hover,
+    &:hover:focus {
+
+        svg {
+            fill: lighten(#ba9a60, 15%);
+        }
+    }
+
+    &:active,
+    &:active:focus {
+
+        svg {
+            fill: darken(#ba9a60, 15%);
+        }
+    }
+
+    /*& + .share__link{
+        border-left: 1px solid rgba(216, 216, 216, .631);
+        position: relative;
+
+        &:before {
+            background-color: rgba(216, 216, 216, .631);
+            //content: '';
+            position: absolute;
+            @include size(1px, 14px);
+        }
+    }*/
+
+}

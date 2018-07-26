@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - ratingdate.
+.reviews__ratingdate {
+
+    @media (min-width: 768px) {
+        margin-left: 65px;
+    }
+}

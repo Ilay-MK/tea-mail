@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание элемента блока добавления в избранное.
+/// Элемент icon - иконка Like'а
+.like__icon {
+    @include bg-cover;
+    background-color: rgba(0, 0, 0, 0.302);
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="icon__like" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.8 38.8" style="enable-background:new 0 0 43.8 38.8;" xml:space="preserve"><style type="text/css">.icon__like1{fill:none;stroke:#ffffff;stroke-width:4;stroke-miterlimit:10;}</style><path id="XMLID_417_" class="icon__like1" d="M22.3,35.1c0,0,8.6-4.5,13.4-10.1c4.8-5.7,6.6-14.4-0.7-19.2C27.1,0.5,21.8,8,21.8,8 s-5.1-6.2-11.3-2.7C4.2,8.8,2.9,15.5,8,23.5C13.2,31.4,22.3,35.1,22.3,35.1z"/></svg>');
+    border: 9px solid transparent;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    @include size(37px);
+    @include transition();
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.6);
+        background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="icon__like" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 43.8 38.8" style="enable-background:new 0 0 43.8 38.8;" xml:space="preserve"><style type="text/css">.icon__like1{fill:none;stroke:#d29b3b;stroke-width:4;stroke-miterlimit:10;}</style><path id="XMLID_417_" class="icon__like1" d="M22.3,35.1c0,0,8.6-4.5,13.4-10.1c4.8-5.7,6.6-14.4-0.7-19.2C27.1,0.5,21.8,8,21.8,8 s-5.1-6.2-11.3-2.7C4.2,8.8,2.9,15.5,8,23.5C13.2,31.4,22.3,35.1,22.3,35.1z"/></svg>');
+    }
+}

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.kits {
+
+    &--text {
+        @include f("kits--text");
+    }
+
+    &--heading {
+        @include f("kits--heading");
+    }
+
+    &--button {
+        @include f("kits--button");
+        line-height: 40px; /* TEMP */
+    }
+}

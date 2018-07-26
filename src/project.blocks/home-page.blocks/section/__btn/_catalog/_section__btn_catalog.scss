@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока секции.
+/// Модификатор - catalog
+.section__btn_catalog {
+    margin: 0 auto 27px;
+    // TEMP
+    @include f("catalog--button");
+}

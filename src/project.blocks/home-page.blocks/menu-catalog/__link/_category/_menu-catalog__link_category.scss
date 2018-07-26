@@ -1,0 +1,11 @@
+ @charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор category - общий.
+.menu-catalog__link_category {
+
+    @media (max-width: 479px) {
+        margin-left: 35px;
+        text-transform: none;
+    }
+}

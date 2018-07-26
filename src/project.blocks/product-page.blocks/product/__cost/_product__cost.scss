@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента блока product.
+/// Элемент стоимость
+.product__cost {
+    color: getColor("GoldenBrown");
+    display: block;
+    @extend %font-OpenSans_SemiBoldItalic;
+    font-size: 24px;
+    letter-spacing: 0.025em;
+    line-height: 26px;
+    margin: 0;
+}

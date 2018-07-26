@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока кнопки.
+/// Модификатор - simple
+.btn_simple {
+    background-color: #d29b3b;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.05);
+    line-height: 38px !important; /* Temp */
+    outline: none;
+    margin: 27px auto;
+    @include size(180px, 40px);
+
+    &:hover, &:active, &:focus, &:focus:active {
+        background-color: #c28e32;
+        border: none;
+        outline: none;
+    }
+}

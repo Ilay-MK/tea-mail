@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#dishes {
+    @include bg-cover;
+    background-image: url(../img/dishes/bg.png);
+    background-attachment: fixed;
+    /*height: 384px;*/
+    padding: 149px 0px 80px;
+    position: relative;
+    text-align: center;
+
+    @media (max-width: 991px) {
+        background-attachment: scroll;
+        padding: 85px 0 40px;
+    }
+
+    .bg-shadow {
+        position: absolute;
+
+        &-left {
+            background-image: -moz-linear-gradient( 0deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 0deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 0deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            bottom: 0;
+            left: 0;
+            top: 0;
+            width: 25%;
+            /*@include size(25.3125%, 100%);*/
+        }
+
+        &-right {
+            background-image: -moz-linear-gradient( 180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            bottom: 0;
+            right: 0;
+            top: 0;
+            width: 25%;
+            /*@include size(25.3125%, 100%);*/
+        }
+
+        &-bottom {
+            background-image: -moz-linear-gradient( 90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 90deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0) 100%);
+            bottom: 0;
+            /* height: 277px; */
+            @include size(100%, 50%);
+        }
+    }
+
+    .shapely_line {
+        @include background-size(100% 100%);
+        @include size(100%, 16px);
+        position: absolute;
+
+        &.top {
+            background: transparent url(../img/dishes/shapely_line/top.png) no-repeat center top;
+            top: 0;
+        }
+
+        &.bottom {
+            background: transparent url(../img/dishes/shapely_line/bottom.png) no-repeat center bottom;
+            bottom: 0;
+        }
+    }
+}
+
+.dishes {
+
+    &--heading {
+        margin-bottom: 17px;
+        text-transform: uppercase;
+
+        @media (max-width: 479px) {
+            font-size: 25px !important;
+            line-height: 24px !important;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 130px;
+        }
+    }
+
+    &--button {
+
+    }
+
+}

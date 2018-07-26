@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока catalog-filter.
+/// Элемент - slider-price-container.
+.catalog-filter__slider-price-container {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 0px;
+    width: 290px;
+
+    @media (max-width: 479px) {
+        width: 280px;
+    }
+}

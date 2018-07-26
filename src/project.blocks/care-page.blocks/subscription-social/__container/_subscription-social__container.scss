@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока subscription-social.
+/// Элемент - container.
+.subscription-social__container {
+    margin: auto;
+
+    @media (max-width: 767px) {
+        max-width: 320px;
+    }
+}

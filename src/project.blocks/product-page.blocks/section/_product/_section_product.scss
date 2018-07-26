@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока секции.
+/// Модификатор - product.
+.section_product {
+
+    @media (min-width: 1200px) and (max-width: 1309px) {
+        width: 840px;
+    }
+}

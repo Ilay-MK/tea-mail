@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока subscription.
+/// Элемент - title.
+.subscription__title {
+    @include font-Bristol_Regular;
+    color: #d29b3b;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    line-height: normal;
+    text-transform: uppercase;
+}

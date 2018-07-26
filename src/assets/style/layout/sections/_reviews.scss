@@ -1,0 +1,358 @@
+@charset "UTF-8";
+
+#reviews {
+    background-color: #fff;
+    /*background-image: url(../img/reviews/bg.png);*/
+    background-repeat: no-repeat;
+    background-position: 50% 94%;
+    text-align: center;
+
+    .container {
+        position: relative;
+    }
+
+    .bg-icons {
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+        svg {
+            position: absolute;
+            z-index: 8;
+
+            .reviews--bg--icon-bgcolor-2 {
+                fill: #f3838d;
+            }
+        }
+
+        .branch {
+
+            svg {
+                bottom: 17px;
+                fill: #6d6e70;
+                left: 140px;
+                width: 169px;
+            }
+        }
+        .tape {
+
+            svg {
+                bottom: 205px;
+                right: -18px;
+                width: 180px;
+
+                .reviews--bg--icon-bgcolor-1 {
+                    fill: #58595B;
+                }
+            }
+        }
+        .kettle {
+
+            svg {
+                bottom: 365px;
+                left: -24px;
+                width: 145px;
+
+                .reviews--bg--icon-bgcolor-1 {
+                    fill: #808184;
+                }
+            }
+        }
+    }
+
+    hgroup {
+        margin: 100px auto 80px;
+
+        @media (max-width: 991px) {
+            margin: 83px auto 63px;
+        }
+
+        @media (max-width: 767px) {
+            margin: 83px auto 0;
+        }
+    }
+
+    &--carousel {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #eeafaf;
+        border-radius: 4px;
+        background-color: #fff;
+        margin: 0 auto;
+        /*@include size(796px, 374px);*/
+        @include size(100%);
+
+        @media (max-width: 767px) {
+            border: none;
+        }
+
+        .carousel {
+            &-indicators li {
+                background-color: #f5f5f5;
+                /*@include size(9px);*/
+
+                &.active {
+                    background-color: #d7a96a;
+                }
+            }
+
+            &-inner {
+
+                .item {
+                    padding: 113px 110px 40px 80px;
+
+                    @media (max-width: 991px) {
+                        padding: 80px 50px 80px 50px;
+                    }
+
+                    @media (max-width: 767px) {
+                        padding: 49px 0 109px;
+                    }
+
+                    @media (max-width: 479px) {
+                        padding: 32px 0 97px;
+                    }
+                }
+
+            }
+
+            &-control {
+                background: none;
+                opacity: 1;
+                @include transition();
+                width: 10%;
+
+                @media (max-width: 767px) {
+                    height: 55px;
+                    top: auto;
+                }
+
+                .chevron {
+                    &-container {
+                        display: inline-block;
+                        border-style: solid;
+                        border-width: 1px;
+                        border-color: #eeafaf;
+                        border-radius: 50%;
+                        background-color: #ffffff;
+                        margin-top: -28px;
+                        /*padding: 19px;*/
+                        padding-bottom: 18px;
+                        padding-top: 18px;
+                        position: absolute;
+                        top: 50%;
+                        @include size(55px);
+                        @include transition();
+                    }
+
+                    &-inner {
+                        display: inline-block;
+                        margin: auto 0;
+                        transform-origin: 50% 50%;
+                        transform: rotate(45deg);
+                        /*@include size(16px);*/
+                        @include size(18px);
+                        @include transition($time: 100ms);
+                    }
+                }
+
+                &.left {
+
+                    .chevron {
+                        &-container {
+                            left: -28px;
+                            padding-left: 9px;
+
+                            @media (max-width: 767px) {
+                                left: -6px;
+                            }
+                        }
+                        &-inner {
+                            border-bottom: 1px solid #a4a4a4;
+                            border-left: 1px solid #a4a4a4;
+                        }
+                    }
+                }
+
+                &.right {
+                    .chevron {
+                        &-container {
+                            padding-right: 9px;
+                            right: -28px;
+
+                            @media (max-width: 767px) {
+                                right: -6px;
+                            }
+                        }
+                        &-inner {
+                            border-right: 1px solid #a4a4a4;
+                            border-top: 1px solid #a4a4a4;
+                        }
+                    }
+                }
+
+                &:hover {
+
+                    .chevron-inner {
+                        border-width: 2px;
+                        border-color: #eeafaf;
+                    }
+                }
+
+                /*&:active, &:focus:active {
+
+                    .chevron {
+
+                        &-container {
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+
+                        &-inner {
+                            border: 1px solid #eeafaf;
+                            border-radius: 50%;
+                            transform: none;
+                        }
+                    }
+                }*/
+            }
+        }
+    }
+}
+
+.reviews {
+
+    &-decoration-bottom {
+        @include bg-cover;
+        background-image: url(../img/reviews/decoration-bottom.png);
+        margin: -2px auto 0;
+        max-height: 244px;
+        max-width: 577px;
+        position: relative;
+        top: -92px;
+        /*@include size(100%, auto);*/
+        @include size(100%, 244px);
+        z-index: 11;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+
+    &-container {
+        border-radius: 6px;
+        background-color: #f5f5f5;
+        margin: 0 auto;
+        padding: 14px;
+        position: relative;
+        max-width: 825px;
+        @include size(auto, 402px);
+        z-index: 10;
+        text-align: left;
+
+        @media (max-width: 991px) {
+            height: 350px;
+        }
+
+        @media (max-width: 767px) {
+            background: none;
+            height: auto;
+        }
+
+        .col {
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    &--visual {
+        background-color: #e3e3e3;
+        /*background-image: url(../img/reviews/visual.png);*/
+        /*background-image: url(../img/reviews/visual.svg);*/
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 74%;
+        border-radius: 50%;
+        margin-right: 15px; /* 20px */
+        margin-top: 12px; /* 31px */
+        @include size(51px);
+
+        .icon {
+            margin: 0 auto;
+            padding-top: 13px;
+            width: 37px;
+        }
+
+        &--icon {
+            fill: #20201d;
+        }
+    }
+
+    &--heading {
+        margin-bottom: 38px;
+        text-transform: uppercase;
+
+        @media (max-width: 479px) {
+            font-size: 34px;
+        }
+    }
+
+    &--subHeading {
+        margin-top: 38px;
+        margin-bottom: 0;
+    }
+
+    &--rating {
+        float: left;
+        margin-left: 68px;
+
+        @media (max-width: 479px) {
+            margin-left: 0;
+        }
+
+        .star {
+            /*@include bg-cover;*/
+            background-image: url(../img/reviews/rating/star.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            cursor: pointer;
+            float: left;
+            margin: 0 3px;
+            @include size(15px, 17px);
+
+            &.off {
+                background-position: -15px 0;
+            }
+        }
+    }
+
+    &--date {
+        margin: 0;
+        float: right;
+    }
+
+    &--username {
+        margin: 17px auto 7px;
+        @extend .toe;
+    }
+
+    &--text {
+        margin: 0;
+        max-width: 450px;
+
+        @media (max-width: 767px) {
+            max-width: 350px;
+        }
+    }
+
+    &--button {
+        margin: 29px auto 0;
+        position: relative;
+        z-index: 9;
+
+        @media (max-width: 991px) {
+            margin: 29px auto 50px;
+        }
+    }
+}

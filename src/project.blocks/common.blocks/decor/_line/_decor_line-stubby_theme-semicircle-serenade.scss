@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decorate.
+/// Модификатор line-stubby.
+/// Значение theme-semicircle-serenade.
+.decor_line-stubby_theme-semicircle-serenade {
+
+    &:before,
+    &:after {
+        background-image: url(../img/decor/line/decor_line-stubby_theme-semicircle-serenade.png);
+    }
+
+    &:before {
+
+    }
+
+    &:after {
+
+    }
+}

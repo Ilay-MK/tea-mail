@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента блока хлебных крошек.
+/// Элемент - icon.
+.breadcrumb__icon {
+    display: inline-block;
+    overflow: hidden;
+    @include size(100%);
+    text-align: center;
+    vertical-align: top;
+}

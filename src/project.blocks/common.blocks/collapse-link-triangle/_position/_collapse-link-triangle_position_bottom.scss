@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока треугольничка линка колапса.
+/// Модификатор - position.
+/// Значение - bottom.
+.collapse-link-triangle_position_bottom {
+
+    &:after {
+        border-bottom-width: 1px;
+        border-right-width: 1px;
+        bottom: -8px;
+    }
+}

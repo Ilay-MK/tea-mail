@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+#tea_mail {
+    background-image: url(../img/tea_mail/bg.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-color: #f6f6f5; /* TEMP -взять из карты цветов */
+    padding-top: 55px;
+    padding-bottom: 105px;
+    text-align: center;
+
+    @media (max-width: 991px) {
+        background-image: none;
+        padding-bottom: 30px;
+        padding-top: 5px;
+    }
+
+    @media (max-width: 767px) {
+        background-image: none;
+    }
+
+    .tea_mail-content {
+        /*max-width: 396px;*/
+        /*background-color: #f6f6f5;*/
+        border-radius: 20px/150px;
+        margin: 0 auto;
+        /*padding: 0 15px;*/
+        position: relative;
+        max-width: 396px;
+        width: 100%;
+        z-index: 9;
+    }
+
+    /// Описание картинок ссылок
+    &--imgLink {
+
+        &-left {
+            background-image: url(../img/tea_mail/imgs/1.png);
+            right: calc(50% + 198px);
+
+            @media (max-width: 991px) {
+                right: calc(50% - 35px);
+            }
+
+            @media (max-width: 479px) {
+                right: calc(50% - 110px);
+                margin-top: 210px !important;
+            }
+
+            @media (max-width: 426px) {
+                margin-top: 240px !important;
+            }
+
+            @media (max-width: 339px) {
+                margin-top: 260px !important;
+            }
+
+            &:hover {
+                /*background-image: url(../img/tea_mail/1-hover.png);*/
+            }
+
+            .hover {
+                background-image: url(../img/tea_mail/imgs/1-hover.png);
+            }
+        }
+
+        &-right {
+            background-image: url(../img/tea_mail/imgs/2.png);
+            /*border-top-left-radius: 50%;*/
+            left: calc(50% + 198px);
+
+            @media (max-width: 991px) {
+                left: calc(50% - 35px);
+            }
+
+            @media (max-width: 479px) {
+                display: none;
+            }
+
+            &:hover {
+                /*background-image: url(../img/tea_mail/2-hover.png);*/
+            }
+
+            .hover {
+                background-image: url(../img/tea_mail/imgs/2-hover.png);
+            }
+        }
+    }
+
+    .tea_mail {
+
+        &--heading {
+            margin-bottom: 20px;
+            text-transform: uppercase;
+
+            @media (max-width: 479px) {
+                font-size: 25px;
+            }
+        }
+
+        &--text {
+
+        }
+
+        &--button {
+            margin-top: 73px;
+
+            @media (max-width: 991px) {
+                margin-top: 280px;
+            }
+
+            @media (max-width: 479px) {
+                margin-top: 252px;
+            }
+        }
+
+        &--imgLink {
+            @include bg-cover;
+            /*background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain;*/
+            border-radius: 70px/150px;
+            cursor: none;
+            margin: 45px auto 0;
+            padding: 0 15px;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            @include size(360px, 355px);
+            @include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));
+            z-index: 7;
+
+            @media (max-width: 991px) {
+                margin-top: 240px;
+                @include size(220px);
+            }
+
+            &--container {
+                position: relative;
+            }
+
+            &:hover {
+                /*@extend .animated;
+                @extend .flip;*/
+                /*background-position: -360px 0;*/
+
+                .hover {
+                    display: block;
+                }
+            }
+
+            .field {
+                display: block;
+                position: absolute;
+                opacity: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                z-index: 9;
+            }
+
+            .hover {
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                border-radius: 50%;
+                display: none;
+                position: absolute;
+                left: -999px;
+                top: -999px;
+                @include size(150px);
+                z-index: 8;
+                /*@include transition(background-position, 0.3s, cubic-bezier(0.68, -0.55, 0.265, 1.55));*/
+
+                /*&:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: -10px;
+                    left: -10px;
+                    right: -10px;
+                    top: -10px;
+                }*/
+
+                .inner {
+                    background: radial-gradient(transparent 60%,#fff 80%);
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.8);
+                    display: block;
+                    bottom: 0;
+                    left: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+
+            img {
+                /* size(720px, 355px) */
+            }
+        }
+
+    }
+
+}

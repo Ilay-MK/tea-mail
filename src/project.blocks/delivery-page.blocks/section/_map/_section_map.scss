@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока секции.
+/// Модификатор - map.
+.section_map {
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}

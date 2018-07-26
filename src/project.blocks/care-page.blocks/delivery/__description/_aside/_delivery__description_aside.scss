@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока delivery.
+/// Элемент - description.
+/// Модификатор - aside.
+.delivery__description_aside {
+    margin: auto;
+
+    @media (min-width: 1200px) {
+        background-color: #ffffff;
+        box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.08);
+        padding: 30px 30px 0 30px;
+        width: 280px;
+        @include size(228px, 117px);
+    }
+
+    @media (max-width: 1199px) {
+        max-width: 260px;
+    }
+
+    @media (max-width: 479px) {
+        max-width: 200px;
+    }
+
+    &:after {
+
+        @media (max-width: 1199px) {
+            content: none;
+        }
+    }
+}

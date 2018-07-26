@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// @parap $border-line___rate -
+/// размер бордера.
+$border-line___rate: 1px !default;
+
+/// Описание блока border-line.
+.border-line {
+    border: 0 solid transparent !important;
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание BEM блока envelope.
+.envelope {
+    background-color: #edd6a7; /* TEMP взять из карты цветов */
+    border: 1px solid transparent;
+    position: relative;
+    @include size(100%);
+}

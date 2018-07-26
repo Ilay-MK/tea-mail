@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока меню каталога.
+/// Модификатор sub (подменю).
+.menu-catalog__link_sub {
+    color: getColor("GoldenBrown"); /* #925900 */
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    padding: 5px 0;
+
+    &:hover {
+        color: getColor("FireBush"); /* #d29a43 */
+    }
+}

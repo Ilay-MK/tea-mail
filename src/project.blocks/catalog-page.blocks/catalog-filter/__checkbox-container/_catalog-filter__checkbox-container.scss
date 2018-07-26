@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока catalog-filter.
+/// Элемент - checkbox-container.
+.catalog-filter__checkbox-container {
+    /*margin: 0 30px;*/
+    margin: 0 40px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

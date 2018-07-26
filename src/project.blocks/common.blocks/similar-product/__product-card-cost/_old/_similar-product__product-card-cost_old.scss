@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента блока similar-product.
+/// Модификатор - old.
+.similar-product__product-card-cost_old {
+
+    @media (max-width: 991px) {
+        font-size: 20px;
+    }
+}

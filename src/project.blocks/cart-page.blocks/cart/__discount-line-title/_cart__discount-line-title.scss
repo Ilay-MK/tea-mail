@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart.
+/// Элеммент - discount-line-title.
+.cart__discount-line-title {
+    @include font-NotoSans_Italic;
+    color: #b8b8b8;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    margin-right: 10px;
+}

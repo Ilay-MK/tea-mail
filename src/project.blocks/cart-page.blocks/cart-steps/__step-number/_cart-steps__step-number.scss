@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart-steps.
+/// Элеммент - step-number.
+.cart-steps__step-number {
+    @include font-OpenSans_Regular;
+    color: #4b4b4b;
+    display: inline-block;
+    font-size: 20px;
+
+    @media (max-width: 991px) {
+        line-height: 32px;
+        @include size(48px, 100%);
+    }
+
+    /* Сделать по BEM */
+    span {
+
+        @media (max-width: 991px) {
+            display: none;
+        }
+    }
+}

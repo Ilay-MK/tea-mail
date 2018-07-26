@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/// Описание BEM блока поля ввода
+.input {
+    border-radius: 2px;
+    @include transition();
+}

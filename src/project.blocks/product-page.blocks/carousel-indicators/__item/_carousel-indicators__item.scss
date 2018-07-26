@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/// Описание элемента модификатора BEM блока carousel-indicators.
+/// Элемент - item.
+li.carousel-indicators__item,
+.carousel-indicators__item {
+    border-color: getColor("GoldenBrown");
+    border-radius: 0;
+    border-width: 0;
+    float: left;
+    margin: 8px 4px;
+    text-indent: 0;
+    @include size(82px, 80px);
+    @include transition();
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        display: block;
+        float: none;
+        margin: 8px 0;
+    }
+
+    /* Переделать по BEM */
+    &:hover {
+        border-width: 1px;
+    }
+
+    &.active {
+        border-width: 1px;
+        margin: 8px 4px;
+        @include size(82px, 80px);
+
+        @media (min-width: 480px) and (max-width: 767px) {
+            margin: 8px 0;
+        }
+    }
+}

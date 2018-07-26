@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Описание модификатора блока navbar-collapse.
+/// Модификатор - main.
+.navbar-collapse_main {
+    @media (min-width: 1280px) {
+        display: block;
+    }
+
+    @media (max-width: 1279px) {
+        margin-top: -10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

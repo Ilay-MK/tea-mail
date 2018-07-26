@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока similar-product.
+/// Элемент - carousel-control.
+.similar-product__carousel-control {
+    background-image: none !important;
+
+    @media (min-width: 768px) {
+        width: 40px;
+    }
+
+    /* Сделать по BEM */
+    &.left {
+
+        @media (min-width: 768px) {
+            left: -32px;
+        }
+
+        @media (max-width: 767px) {
+            left: -12px;
+        }
+    }
+
+    &.right {
+
+        @media (min-width: 768px) {
+            right: -32px;
+        }
+
+        @media (max-width: 767px) {
+            right: -12px;
+        }
+    }
+
+    .chevron {
+
+        @media (min-width: 768px) {
+            border-color: transparent !important;
+            background-color: transparent !important;
+        }
+    }
+
+    .chevron__inner {
+        border-color: #d29b3b;
+    }
+}

@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карточки продукта.
+/// Элемент input-field - поля ввода
+.product-card__input-field {
+
+    @media (max-width: 1309px) {
+        margin: 0 5px;
+        @include size(92px, 40px);
+    }
+}

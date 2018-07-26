@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента блока контейнера фильтров товаров.
+/// Элемент - sort-view-container.
+.catalog-filter-container__sort-view-container {
+    text-align: center;
+
+    @media (min-width: 992px) {
+        text-align: right;
+    }
+}

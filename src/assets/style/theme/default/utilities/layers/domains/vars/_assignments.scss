@@ -12,7 +12,7 @@ $assignments: (
     "use-3"  : "success",
 
     "use-4"  : "tea_blog--post--text",
-    "use-5"  : "reviews--post--text",
+    "use-5"  : "reviews--text",
     "use-6"  : "map--work_mode",
 
     "use-7"  : "nav--link",
@@ -21,38 +21,38 @@ $assignments: (
     "use-10" : "nav-opened--link-elaboration",
     "use-11" : "nav-opened--link_more",
     "use-12" : "nav-opened--category",
-    "use-13" : "nav-opened--link_secondGroup",
+    "use-13" : "nav-opened--link_secondaryGroup",
     "use-14" : "nav--basket",
-    "use-15" : "header--advantages--text",
-    "use-16" : "car--advantages--text",
-    "use-17" : "newsletters--heading--text",
+    "use-15" : "hero--advantages--text",
+    "use-16" : "care--advantages--text",
+    "use-17" : "newsletters--text",
     "use-18" : "map--address-metro",
     "use-19" : "map--address-description",
     "use-20" : "footer--nav--link",
 
     "use-21" : "nav--username",
     "use-22" : "nav--login_label",
-    "use-23" : "catalog--product_card--subtitle",
+    "use-23" : "catalog--product_card--subTitle",
     "use-24" : "tea_news--article--text",
-    "use-25" : "footer--nav-second--link",
+    "use-25" : "footer--nav-secondary--link",
     "use-26" : "footer--newsletters--title",
     "use-27" : "footer--newsletters--input",
     "use-28" : "footer--company_details",
 
-    "use-29" : "header--search",
-    "use-30" : "header--search--heading",
-    "use-31" : "header--search--text",
-    "use-32" : "tea_mail_2--text",
+    "use-29" : "hero--search",
+    "use-30" : "hero--search--heading",
+    "use-31" : "hero--search--text",
+    "use-32" : "tea_mail--text",
     "use-33" : "tea_room--text",
     "use-34" : "kits--text",
     "use-35" : "about_project--text",
 
-    "use-36" : "map--work_mode_time",
+    "use-36" : "map--work_mode-time",
 
     "use-37" : "nav-opened--link",
     "use-38" : "nav-opened--link-hover",
     "use-39" : "catalog--button",
-    "use-40" : "tea_mail_2--button",
+    "use-40" : "tea_mail--button",
     "use-41" : "tea_room--address",
     "use-42" : "tea_room--button",
     "use-43" : "tea_blog--link_more",
@@ -64,23 +64,23 @@ $assignments: (
     "use-49" : "about_project--button",
     "use-50" : "newsletters--button",
     "use-51" : "reviews--button",
-    "use-52" : "map--button",
+    "use-52" : "map--address",
     "use-53" : "footer--newsletters--button",
 
-    "use-54" : "catalog--title",
+    "use-54" : "catalog--category--title",
 
     "use-55" : "map--firmName",
     /* --------------------------------------------------------------------------- */
     "use-56" : "catalog--product_card--title",
 
     "use-57" : "catalog--product_card--price",
-    "use-58" : "catalog--product_card--oldprice",
+    "use-58" : "catalog--product_card--oldPrice",
     "use-59" : "catalog--product_card--inputData",
     "use-60" : "tea_blog--date",
     "use-61" : "tea_news--post--date",
     "use-62" : "tea_news--post--link_more",
-    "use-63" : "reviews--post--date",
-    "use-64" : "reviews--post--username",
+    "use-63" : "reviews--date",
+    "use-64" : "reviews--username",
 
     "use-65" : "tea_blog--heading_article",
     "use-66" : "tea_news--post--header",
@@ -88,8 +88,8 @@ $assignments: (
     "use-67" : "tea_room--subHeading",
     "use-68" : "about_project--subHeading",
     /* --------------------------------------------------------------------------- */
-    "use-69" : "header--heading",
-    "use-70" : "tea_mail_2--heading",
+    "use-69" : "hero--heading",
+    "use-70" : "tea_mail--heading",
     "use-71" : "tea_room--heading",
     "use-72" : "tea_blog--heading",
     "use-73" : "kits--heading",
@@ -97,14 +97,18 @@ $assignments: (
     "use-75" : "about_project--heading",
     "use-76" : "newsletters--heading",
     "use-77" : "reviews--heading",
-    "use-78" : "reviews--heading_small",
+    "use-78" : "reviews--subHeading",
     "use-79" : "footer--phone",
     "use-80" : "footer--phone_+",
     /* --------------------------------------------------------------------------- */
     "use-81" : "dishes--heading",
-    "use-82" : "dishes--heading_social",
+    "use-82" : "footer--social--heading",
 
     /* --------------------------------------------------------------------------- */
 
-    "use-83" : ""
+    "use-83" : "catalog--product_card--button",
+
+    /* --------------------------------------------------------------------------- */
+
+    "use-84" : ""
 );

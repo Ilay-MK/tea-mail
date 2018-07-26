@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока svg.
+/// Элемент - elem.
+/// Модификатор - product-characteristics.
+/// Значение - temperature.
+.svg__elem_product-characteristics_temperature {
+    fill: none;
+    stroke: #d2c6aa;
+    stroke-miterlimit: 10;
+}

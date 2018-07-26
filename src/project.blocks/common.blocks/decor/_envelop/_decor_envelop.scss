@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decor.
+/// Модификатор envelop.
+.decor_envelop {
+
+    &:before,
+    &:after {
+        content: " ";
+    }
+
+    &:before {
+        right: 50%;
+        right: calc(50% - 1px);
+        transform: rotate(2.8deg);
+    }
+
+    &:after {
+        left: 50%;
+        left: calc(50% - 1px);
+        transform: rotate(-2.8deg);
+    }
+}

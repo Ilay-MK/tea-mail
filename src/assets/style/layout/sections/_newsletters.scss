@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+#newsletters {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+
+    .letter {
+        background-color: #edd6a7; /* TEMP взять из карты цветов */
+        background: url(../img/newsletters/packages/1.png) no-repeat 20% 160%,
+            url(../img/newsletters/packages/2.png) no-repeat 40% 160%,
+            url(../img/newsletters/packages/3.png) no-repeat 60% 160%,
+            url(../img/newsletters/packages/4.png) no-repeat 80% 160%,
+            #edd6a7;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        max-width: 1152px;
+        @include size(100%, 548px); /* 468 | 52 */
+
+        @media (max-width: 1199px) {
+            background: url(../img/newsletters/packages/1.png) 0% 160% no-repeat,
+                url(../img/newsletters/packages/2.png) 30% 160% no-repeat,
+                url(../img/newsletters/packages/3.png) 60% 160% no-repeat,
+                url(../img/newsletters/packages/4.png) 90% 160% no-repeat,
+                #edd6a7;
+        }
+
+        @media (max-width: 991px) {
+            background: url(../img/newsletters/packages/2.png) no-repeat 0% calc(100% + 185px),
+                url(../img/newsletters/packages/3.png) no-repeat 80% calc(100% + 185px),
+                transparent;
+            height: 422px;
+        }
+
+        @media (max-width: 479px) {
+            background: url(../img/newsletters/packages/3.png) no-repeat 40% calc(100% + 173px),
+                transparent;
+            height: 473px;
+        }
+
+        .bg-top {
+            background-color: rgba(209, 180, 138, 0.51);
+            border-bottom-left-radius: 30% 650%;
+            border-bottom-right-radius: 30% 650%;
+            position: absolute;
+            overflow: hidden;
+            top: -30px; /* 0 */
+            @include size(100%, 110px); /* 80px */
+
+            @media (max-width: 991px) {
+                display: none;
+            }
+
+            &-inner {
+                @include size(100%, 100%);
+            }
+        }
+
+        .envelope-clasp {
+
+            &.bottom {
+                margin-top: 33px; /* 93 - 31 - 29 */
+
+                &:before, &:after {
+                    background-color: #ffdc94;
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 15px;
+                    /*top: 21px;*/
+                    top: 27px;
+                    transform-origin: 50% 50%;
+                    z-index: 9;
+                    /*@include size(2px, 52px);*/
+                    @include size(2px, 41px);
+                }
+
+                &:before {
+                    transform: rotate(24deg);
+                }
+
+                &:after {
+                    transform: rotate(-24deg);
+                }
+            }
+
+            &-container {
+                left: 48.7%; /* Suport more brousers ;) */
+                left: calc(50% - 15px);
+                top: 29px;
+                position: absolute;
+
+                @media (max-width: 991px) {
+                    display: none;
+                }
+            }
+        }
+
+        &-content {
+            margin-top: 182px;
+            position: relative;
+
+            @media (max-width: 991px) {
+                margin-top: 70px;
+            }
+
+            @media (max-width: 479px) {
+                margin-top: 80px;
+            }
+        }
+    }
+
+
+    .bg-bottom {
+        position: absolute;
+
+        &.left {
+            background-color: #fff;
+            bottom: -35%;
+            left: 0;
+            transform-origin: 100% -15px;
+            transform: rotate(2.8deg);
+            @include size(50%, 35%); /* 28px */
+        }
+
+        &.right {
+            background-color: #fff;
+            bottom: -35%;
+            right: 0;
+            transform-origin: 0 -15px;
+            transform: rotate(-2.8deg);
+            @include size(50%, 35%); /* 28px */
+        }
+
+        &.gradient {
+            background-color: transparent;
+            background-image: -moz-linear-gradient( 90deg, rgb(115,195,166) 0%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+            background-image: -webkit-linear-gradient( 90deg, rgb(115,195,166) 0%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+            background-image: -ms-linear-gradient( 90deg, rgb(115,195,166) 0%, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0) 100%);
+            bottom: 0;
+            @include size(100%, 35%); /* height: 193px; - 35,21897810218978% от 548px */
+        }
+    }
+}
+
+.newsletters {
+
+    &--heading {
+        text-transform: uppercase;
+
+        @media (max-width: 479px) {
+            margin-bottom: 47px;
+        }
+    }
+
+    &--text {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 450px;
+
+        @media (max-width: 479px) {
+            font-size: 15px !important;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 250px;
+        }
+    }
+
+    &--button {
+        margin-top: 24px;
+    }
+}

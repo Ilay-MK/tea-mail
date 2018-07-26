@@ -104,6 +104,8 @@ $service-trackings: (
     use("use-81") : getTracking("tracking-3"), /* 0.05em */
     use("use-82") : getTracking("tracking-3"), /* 0.05em */
     /* -------------------------------------------------------------------------- */
-    use("use-83") : getTracking()
+    use("use-83") : getTracking("tracking-1"), /* 0.025em */
+    /* -------------------------------------------------------------------------- */
+    use("use-84") : getTracking()
 
 );

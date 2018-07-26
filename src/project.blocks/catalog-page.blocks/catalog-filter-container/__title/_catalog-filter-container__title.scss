@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание элемента блока контейнера фильтров товаров.
+/// Элемент - title.
+.catalog-filter-container__title {
+    color: #4b4b4b;
+    font-family: getFont-family("OpenSans");
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    margin: 0 -15px;
+    padding: 20px 15px;
+    position: relative;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}

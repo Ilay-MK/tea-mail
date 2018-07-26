@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - date.
+.reviews__date {
+    @include f("reviews--date");
+    float: right;
+
+    /* Сделать по BEM */
+    p {
+        margin: 0;
+    }
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока меню каталога.
+/// Элемент link
+.menu-catalog__link {
+	color: getColor("Matterhorn"); /* #535353 */
+    font-size: 18px;
+	line-height: 20px;
+    padding-bottom: 12px;
+    padding-top: 5px;
+
+    &:before {
+        content: '';
+        @include bg-cover;
+        display: inline-block;
+        left: -35px;
+        position: absolute;
+        top: -1px;
+        @include size(26px, 32px);
+    }
+}

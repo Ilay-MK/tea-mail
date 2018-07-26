@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание модификатора блока chevron - контрола карусели.
+/// Модификатор - theme.
+/// Значение - tea-blog.
+.chevron_theme_tea-blog {
+    top: 35%;
+
+    /* Переделать по BEM */
+    &.chevron_left {
+        left: 0;
+    }
+
+    &.chevron_right {
+        right: 0;
+    }
+}

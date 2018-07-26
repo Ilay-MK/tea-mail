@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока discount-line.
+/// Элемент - point-label.
+/// Модификатор - discount.
+.discount-line__point-label_discount {
+    border-color: #dadada;
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 24px;
+    top: -29px;
+    @include size(36px, 26px);
+
+    &:after {
+        border-bottom-width: 1px;
+        border-color: #dadada;
+        border-left-width: 0;
+        border-radius: 2px;
+        border-style: solid;
+        border-right-width: 1px;
+        border-top-width: 0;
+        background-color: #ffffff;
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: calc(50% - 6px);
+        @include size(12px);
+        transform: rotate(45deg);
+    }
+}

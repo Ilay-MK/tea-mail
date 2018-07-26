@@ -1,2 +1,39 @@
 @charset "UTF-8";
 
+/// Карта breakpoints. Ширина экрана по названию
+/// @access private
+/// @type Map
+/// @prop {String} key - Словесный размер
+/// @prop {String} value - значение ширины, соответствущее ключу
+
+$viewports_min-width_big: (
+    'x-mini'  : 'min-width: 320px',
+    'mini'    : 'min-width: 480px',
+    'x-small' : 'min-width: 992px',
+    'small'   : 'min-width: 1280px',
+    'medium'  : 'min-width: 1440px',
+    'large'   : 'min-width: 1920px',
+    'huge'    : 'min-width: 2560px',
+    'x-huge'  : 'min-width: 4096px'
+) !default;
+
+$viewports: (
+    'x-mini'  : 'min-width: 320px',
+    'mini'    : 'min-width: 480px',
+    'x-small' : 'min-width: 768px',
+    'small'   : 'min-width: 992px',
+    'medium'  : 'min-width: 1200px',
+    'large'   : 'min-width: 1310px',
+    'x-large' : 'min-width: 1440px'
+) !default;
+
+$breakpoints: (
+    'x-mini'  : 'min-width: 320px',
+    'mini'    : 'min-width: 480px',
+    'x-small' : 'min-width: 960px',
+    'small'   : 'min-width: 1280px',
+    'medium'  : 'min-width: 1440px',
+    'large'   : 'min-width: 1920px',
+    'huge'    : 'min-width: 2560px',
+    'x-huge'  : 'min-width: 4096px'
+) !default;

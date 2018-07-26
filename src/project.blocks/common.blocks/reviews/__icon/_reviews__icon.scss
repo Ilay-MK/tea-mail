@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// @reviews__icon___size_rate -
+/// размер блока и центрирование вложенного блока,
+/// посредством line-height.
+$reviews__icon___size_rate: 50px;
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - icon.
+.reviews__icon {
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #e3e3e3;
+    line-height:$reviews__icon___size_rate;
+    padding: 8px;
+    text-align: center;
+    vertical-align: middle;
+    @include size($reviews__icon___size_rate);
+}

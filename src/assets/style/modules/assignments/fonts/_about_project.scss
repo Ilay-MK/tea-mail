@@ -1,0 +1,22 @@
+@sharset "UTF-8";
+
+.about_project {
+
+    &--heading {
+        @include f("about_project--heading");
+    }
+
+    &--subHeading {
+        @include f("about_project--subHeading");
+    }
+
+    &--text {
+        @include f("about_project--text");
+    }
+
+    &--button {
+        @include f("about_project--button");
+        line-height: 40px; /* TEMP */
+    }
+
+}

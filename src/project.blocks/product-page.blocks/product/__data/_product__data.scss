@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемента - data.
+.product__data {
+    max-height: inherit;
+    text-align: left;
+
+    @media (max-width: 767px) {
+        margin: 17px auto 0;
+        max-width: 426px;
+    }
+}

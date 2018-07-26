@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока page.
+/// Элемент - text.
+.text-collapsing__text {
+    display: block;
+    overflow: hidden;
+    margin-bottom: 13px;
+    position: relative;
+    @include transition($time: 0.7s);
+
+    &:after {
+        content: '';
+        box-shadow: 0 0px 15px 12px #ffffff;
+        position: absolute;
+        bottom: 0;
+        height: 1px;
+        left: 0;
+        right: 0;
+    }
+}

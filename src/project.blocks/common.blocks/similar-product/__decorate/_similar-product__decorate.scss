@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока similar-product.
+/// Элемент - decorate.
+.similar-product__decorate {
+    margin: 8px;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+}

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока discount.
+/// Элемент - title.
+.discount__title {
+    color: #4b4b4b;
+    font-family: "EpsilonCTT";
+    font-size: 24px;
+    line-height: 1em;
+    letter-spacing: 0.025em;
+    margin-top: 75px;
+
+    @media (max-width: 991px) {
+        margin-top: 45px;
+    }
+}

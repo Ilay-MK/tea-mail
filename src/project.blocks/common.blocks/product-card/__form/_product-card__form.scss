@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание BEM элемента блока карточки продукта.
+/// Элемент форма
+.product-card__form {
+
+    @media (min-width: 1310px) {
+        /*display: none;*/
+    }
+
+}

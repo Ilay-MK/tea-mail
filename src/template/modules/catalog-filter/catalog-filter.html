@@ -1,0 +1,43 @@
+<div class="catalog-filter border-line border-line_theme_tea-mail border-line_top border-line_bottom">
+    <form method="post" action="" class="form_catalog-filter">
+        <div data-role="rangeslider">
+
+            <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline">
+                <div class="form__group">
+                    <label for="catalog-filter__input_price-min" class="catalog-filter__label">Цена от</label>
+                    <input type="number" id="catalog-filter__input_price-min" name="catalog-filter__input_price-min" value="0" class="catalog-filter__input" data-type="range" min="0" max="1000" />
+
+                    <label for="catalog-filter__input_price-max" class="catalog-filter__label">до</label>
+                    <input type="number" id="catalog-filter__input_price-max" name="catalog-filter__input_price-max" class="catalog-filter__input" data-type="range" value="700" min="0" max="1000" />
+                    <label class="catalog-filter__label">р. за 100г</label>
+                </div>
+                <div class="form__group">
+                    <div class="catalog-filter__slider-container">
+                        <span class="catalog-filter__slider-price-container">
+                            <input id="catalog-filter__slider-price" class="catalog-filter__slider-price" type="text" name="area" value="0;700" />
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline">
+                <div class="catalog-filter__checkbox-container">
+					<input type="checkbox" id="catalog-filter__checkbox_choice-tea-post" value="1" title="Выбор Чайной Почты" class="catalog-filter__checkbox">
+					<label for="catalog-filter__checkbox_choice-tea-post" class="catalog-filter__label catalog-filter__label_checkbox">
+						<span>Выбор Чайной Почты</span>
+					</label>
+				</div>
+            </div>
+
+            <div class="form__group form__group_inline catalog-filter__group catalog-filter__group_inline catalog-filter__btn-container_outside">
+                <div class="catalog-filter__btn-container">
+                    <button type="submit" class="btn btn_catalog-filter catalog-filter__btn">
+                        Показать
+                    </button>
+                    <a href="#" class="link catalog-filter__link catalog-filter__link_reset">Сбросить</a>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>

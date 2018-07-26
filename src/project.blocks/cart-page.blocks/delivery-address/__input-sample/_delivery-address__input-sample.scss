@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента блока delivery-address.
+/// Элемент - input-sample.
+.delivery-address__input-sample {
+    @include font-OpenSans_LightItalic;
+    color: #bbb;
+    font-size: 14px;
+    letter-spacing: 0.025em;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 10px;
+}

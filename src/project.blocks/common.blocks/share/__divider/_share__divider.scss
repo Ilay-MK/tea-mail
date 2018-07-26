@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока share.
+/// Элемент - divider.
+.share__divider {
+    background-color: rgba(216, 216, 216, .631);
+    display: inline-block;
+    vertical-align: middle;
+    @include size(1px, 14px);
+}

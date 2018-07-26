@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание можификатора блока aside.
+/// Модификатор left.
+.aside_left {
+    padding-left: 20px;
+
+    @media (min-width: 1200px) {
+        float: left;
+        width: 300px;
+    }
+
+    /* Сделать по BEM */
+
+    .menu-catalog {
+        margin-top: 18px;
+    }
+
+}

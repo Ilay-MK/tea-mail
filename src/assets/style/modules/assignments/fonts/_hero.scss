@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/// Стили hero блока. Вкл. вложеные
+
+.hero {
+
+    &--heading {
+        @include f("hero--heading");
+    }
+
+    &--search {
+
+        &--input {
+
+        }
+
+        &--heading {
+            @include f("hero--search--heading");
+            line-height: normal;
+        }
+
+        &--text {
+            @include f("hero--search--text");
+            line-height: normal;
+        }
+    }
+
+    &--advantages {
+        @include f("hero--advantages--text");
+    }
+}

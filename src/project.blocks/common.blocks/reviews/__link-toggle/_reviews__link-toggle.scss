@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - link-toggle.
+.reviews__link-toggle {
+
+    @media (min-width: 480px) {
+        margin: 0 15px;
+    }
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока delivery.
+/// Элеммент - tabpanel-content-description.
+.delivery__tabpanel-content-description {
+    @include font-OpenSans_LightItalic;
+    color: getColor("Charcoal-2");
+    font-size: 15px;
+    line-height: 23.47px;
+    letter-spacing: 0.05em;
+    overflow: hidden;
+    margin: 30px 0;
+    min-height: 180px;
+}

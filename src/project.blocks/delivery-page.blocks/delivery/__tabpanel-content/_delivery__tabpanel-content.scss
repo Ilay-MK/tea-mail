@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока delivery.
+/// Элеммент - tabpanel-content.
+.delivery__tabpanel-content {
+
+    @media (max-width: 991px) {
+        border-color: transparent;
+    }
+
+    @media (min-width: 1200px) {
+       height: 510px;
+    }
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+       height: 530px;
+    }
+}

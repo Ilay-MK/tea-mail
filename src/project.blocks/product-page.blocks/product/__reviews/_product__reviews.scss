@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока product.
+/// Элемент - reviews.
+.product__reviews {
+    margin-bottom: 8px;
+    margin-top: 11px;
+
+    @media (max-width: 479px) {
+        display: none;
+    }
+}

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока cart.
+/// Элеммент - steps-ctrl (кнопки).
+/// Модификатор - displayed.
+.cart__steps-ctrl_displayed {
+    display: inline-block;
+
+    @media (max-width: 991px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

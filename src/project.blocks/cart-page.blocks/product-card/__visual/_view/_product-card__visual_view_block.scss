@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока карточки продукта.
+/// Модификатор - view.
+/// Значение - block.
+.product-card__visual_view_block {
+    /*display: inline-block;*/
+    float: left;
+    @include size(249px, 100%);
+    vertical-align: top;
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 185px;
+    }
+}

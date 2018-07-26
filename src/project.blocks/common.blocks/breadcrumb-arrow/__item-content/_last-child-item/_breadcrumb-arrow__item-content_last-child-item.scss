@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/// Описание модификатор элемента блока хлебных крошек типа стрелки.
+/// Элемент - item-content (span).
+/// Модификатор - last-child-item.
+.breadcrumb-arrow__item-content_last-child-item {
+
+    /* Переделать пр BEM */
+    &.breadcrumb-arrow__item-content_theme_tea-mail {
+        background-color: #fff;
+        border-color: getColor("Putty");
+        border-style: solid;
+        border-width: 1px;
+        color: map-get($colors-orange, "FuelYellow");
+        font-weight: 600;
+        position: relative;
+
+        /* Разобрать */
+        &:before,
+        &:after {
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+            border-left-style: solid;
+            border-left-width: 11px;
+            border-left-color: getColor("Putty");
+            content: '';
+            height: 0;
+            position: absolute;
+            top: -1px;
+            @include transition();
+            width: 0;
+        }
+
+        &:before {
+            border-left-color: #fff;
+            right: -10px;
+            z-index: 3;
+        }
+
+        &:after {
+            right: -11px;
+            z-index: 2;
+        }
+    }
+}

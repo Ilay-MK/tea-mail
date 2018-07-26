@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание BEM блока container (grid).
+.container {
+
+    @media (min-width: 480px) {
+        width: 430px;
+    }
+
+    @media (min-width: 992px) {
+        width: 805px;
+    }
+
+    @media (min-width: 1200px) {
+        width: 1065px;
+    }
+}

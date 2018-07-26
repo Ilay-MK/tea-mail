@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart.
+/// Элеммент - discount-line-container.
+.cart__discount-line-container {
+    max-width: 840px; /*940px*/
+    /*width: 940px;*/
+    width: 100%;
+
+    @media (min-width: 992px) and (max-width: 1199px) {
+        width: 580px;
+    }
+}

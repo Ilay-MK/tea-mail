@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока cart.
+/// Элеммент - comment.
+.cart__comment {
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

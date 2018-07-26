@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока tabpanel.
+/// Элемент - indicators.
+.tabpanel__indicators {
+    list-style: none;
+    margin: 15px 0;
+    padding: 0;
+    text-align: center;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

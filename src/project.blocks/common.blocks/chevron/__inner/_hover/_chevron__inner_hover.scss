@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока chevron - "картинка" контрола карусели.
+/// Модификатор - hover.
+.chevron__inner_hover {
+    border-width: 2px;
+    border-color: #d29b3b !important;
+}

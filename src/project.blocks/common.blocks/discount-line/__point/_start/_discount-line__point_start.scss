@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока discount-line.
+/// Элемент - point.
+/// Модификатор - start.
+.discount-line__point_start {
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}

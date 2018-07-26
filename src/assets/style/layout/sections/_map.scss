@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+#map {
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    @include size(100%, 590px);
+
+    .address {
+        &-container {
+            background-color: #ffffff;
+            left: 40px;
+            position: absolute;
+            top: 118px;
+            @include size(457px, 321px);
+            z-index: 99;
+
+            @media (max-width: 767px) {
+                position: static;
+                margin: 1px 0 30px;
+                @include size(auto, auto);
+            }
+
+            @media (max-width: 479px) {
+                left: 0;
+                /*padding-top: 28px;
+                position: relative;
+                top: -30px;*/
+            }
+
+            .binding {
+                background-color: #e6c89d;
+                float: left;
+                margin-right: 35px;
+                @include size(38px, 100%);
+
+                @media (max-width: 767px) {
+                    display: none;
+                }
+
+                .circle {
+                    border-radius: 50%;
+                    background-color: #bdaa90;
+                    left: 10px;
+                    padding: 3px;
+                    position: absolute;
+                    @include size(18px);
+
+                    &.top {
+                        top: 26px;
+                    }
+                    &.bottom {
+                        bottom: 31px;
+                    }
+
+                    &-inner {
+                        border-radius: 50%;
+                        background-color: #636363;
+                        @include size(12px);
+                    }
+                }
+            }
+        }
+
+        &-content {
+            overflow: hidden;
+            max-width: 320px;
+
+            @media (max-width: 767px) {
+                max-width: 245px;
+                margin: 0 auto;
+                text-align: center;
+                width: auto;
+            }
+
+            @media (max-width: 479px) {
+                max-width: 225px;
+                text-align: left;
+            }
+        }
+    }
+
+    .shapely_line {
+        @include bg-cover;
+        background: transparent url(../img/map/shapely_line.png) no-repeat center bottom;
+        bottom: 28px;
+        @include size(100%, 16px);
+        position: absolute;
+
+        &:after {
+            content: "";
+            background-color: rgb(230, 200, 157);
+            @include size(100%, 28px);
+            position: absolute;
+            bottom: -28px;
+        }
+    }
+}
+
+.map {
+    &__decorate-line {
+        background-color: #fff;
+        display: none;
+        height: 30px;
+        position: absolute;
+        width: 100%;
+
+        @media (max-width: 479px) {
+            display: block;
+        }
+
+        &_hide-data {
+            top: 315px; /*345 - 30*/
+        }
+    }
+    &--work_mode {
+
+        @media (max-width: 479px) {
+            font-size: 14px !important;
+        }
+
+        &-time {
+
+            @media (max-width: 479px) {
+                font-size: 14px !important;
+            }
+        }
+    }
+    &--address {
+        margin: 0;
+
+        @media (max-width: 479px) {
+            font-size: 14px !important;
+        }
+
+        &-metro{
+            margin: 10px 0 37px;
+
+            @media (max-width: 767px) {
+                margin: 14px 0 27px;
+            }
+
+            @media (max-width: 479px) {
+                margin: 4px 0 21px;
+            }
+
+            /*&:before {
+                @include bg-cover;
+                background-image: url(../img/map/metro.png);
+                content: '';
+                float: left;
+                margin: -2px 11px 0 2px;
+                @include size(21px);
+            }*/
+
+            .icon {
+                margin: -2px 5px 0 2px;
+
+                @media (max-width: 991px) {
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: -6px 0 -8px;
+                }
+
+                svg {
+                    float: left;
+                    margin-left: -2px;
+                    margin-top: -5px;
+                    width: 28px;
+
+                    .map-address-metro-icon-cl0 {
+                        fill: #db2727;
+                    }
+
+                    .map-address-metro-icon-cl1 {
+                        fill: #be1e2d;
+                    }
+                }
+            }
+        }
+        &-description{
+            margin-bottom: 40px;
+
+            @media (max-width: 767px) {
+                margin-bottom: 21px;
+            }
+
+            @media (max-width: 479px) {
+                font-size: 14px !important;
+            }
+        }
+    }
+    &--firmName {
+        margin: 51px 0 1px;
+
+        @media (max-width: 767px) {
+            margin: 0 0 1px;
+        }
+
+        @media (max-width: 479px) {
+            font-size: 16px !important;
+        }
+    }
+
+    &-container {
+        height: inherit;
+    }
+}
+
+#gmap {
+    /*bottom: -30px;*/
+    @include size(100%);
+
+    @media (max-width: 767px) {
+        height: 345px;
+    }
+}

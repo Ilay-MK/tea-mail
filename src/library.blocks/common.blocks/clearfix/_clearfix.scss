@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание BEM блока clearfix.
+.clearfix {
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}

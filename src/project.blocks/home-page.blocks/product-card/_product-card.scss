@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/// Описание блока карточки продукта
+.product-card {
+    @include size(188px, 245px); /* специфично для section of homepage */
+
+    @media (max-width: 1309px) {
+        @include size(292px, 337px); /* специфично для section of homepage */
+    }
+
+    @media (min-width: 1310px) {
+        display: block !important;
+    }
+}

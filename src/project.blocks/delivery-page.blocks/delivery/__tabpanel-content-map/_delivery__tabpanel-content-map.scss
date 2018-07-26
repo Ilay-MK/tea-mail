@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока delivery.
+/// Элеммент - tabpanel-content-map.
+.delivery__tabpanel-content-map {
+    height: 400px; /* P.S. непонятно какой высоты должна быть карта из PSD, сделал на здравый смысл */
+    margin-top: 45px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

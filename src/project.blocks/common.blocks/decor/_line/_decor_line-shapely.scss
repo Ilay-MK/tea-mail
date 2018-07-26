@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/// Описание модификатора BEM блока decor.
+/// Модификатор line-shapely.
+.decor_line-shapely {
+    /*margin-bottom: 16px;
+    margin-top: 16px;*/
+    overflow-y: visible;
+
+    &:before,
+    &:after {
+        @include bg-cover;
+        height: 16px;
+    }
+
+    &:before {
+
+    }
+
+    &:after {
+
+    }
+}

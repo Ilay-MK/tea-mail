@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание BEM элемента блока продукта.
+/// Элемент форма.
+.product__form {
+    float: left;
+    margin-top: 5px;
+
+    @media (max-width: 479px) {
+        float: none;
+        text-align: center;
+    }
+}

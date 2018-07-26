@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/// Описание BEM блока линк.
+.link {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    @include transition(color);
+
+    &:link {
+
+    }
+
+    &:visited {
+
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:active {
+
+    }
+
+    &:focus {
+        outline: 1px auto -webkit-focus-ring-color;
+        outline: thin dotted;
+        /*outline: 0px solid transparent;
+        outline: none;*/
+    }
+
+    &:focus:active {
+
+    }
+}

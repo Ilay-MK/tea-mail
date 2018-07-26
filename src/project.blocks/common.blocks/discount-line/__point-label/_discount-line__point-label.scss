@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// Описание BEM блока discount-line.
+/// Элемент - point-label.
+.discount-line__point-label {
+    display: inline-block;
+    @include font-NotoSans_Italic;
+    color: #cccccc;
+    letter-spacing: 0.025em;
+    left: -50%;
+    position: absolute;
+
+    /* Переделать по BEM */
+
+    p {
+        margin: 0;
+    }
+}

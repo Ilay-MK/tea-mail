@@ -27,7 +27,10 @@ html {
 }
 
 body {
-    @include f;
+    @include f();
+    //background-color: c();
+    background-color: #e6c89d;
+    color: #000;
     /*font-size: 16px;*/
     padding: 0;
     text-rendering: auto;
@@ -41,26 +44,12 @@ a {
     text-decoration: none;
     @include transition(color);
 
-    &:link, &:visited , &:hover, &:active, &:focus, &:focus:active {
-        display: inline-block;
-        text-decoration: none;
-    }
-
-    &:link {
-
-    }
-    &:visited {
-
-    }
     &:hover {
-
-    }
-    &:active {
-
+        text-decoration: underline;
     }
     &:focus {
-        outline: thin dotted;
         outline: 1px auto -webkit-focus-ring-color;
+        outline: thin dotted;
         /*outline: 0px solid transparent;
         outline: none;*/
     }
@@ -80,20 +69,6 @@ figure {
 }
 img {
     vertical-align: middle;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-}
-
-section {
-    overflow: hidden;
-    position: relative;
 }
 
 // Extras
@@ -120,3 +95,5 @@ img {
 :focus {
 
 }
+
+@include webkit-scrollbar($scrollbar-track: #fff);

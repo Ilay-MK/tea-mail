@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока delivery.
+/// Элемент - title.
+.delivery__title {
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (max-width: 479px) {
+        max-width: 230px;
+    }
+}

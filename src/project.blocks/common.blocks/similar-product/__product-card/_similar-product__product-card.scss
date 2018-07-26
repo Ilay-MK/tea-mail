@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/// Описание элемента блока similar-product.
+/// Элемент контейнер product-card.
+.similar-product__product-card {
+    @include size(188px, 245px);
+
+    @media (min-width: 768px) {
+        display: inline-block !important;
+        float: none;
+    }
+
+    @media (min-width: 480px) {
+        margin: 8px;
+    }
+
+
+    @media (max-width: 991px) {
+        @include size(292px, 337px);
+    }
+
+    @media (max-width: 479px) {
+        margin: 0;
+        width: 290px;
+    }
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока discount.
+/// Элемент - discount.
+.discount__discount {
+    display: inline-block;
+    @include size(340px, 306px);
+    @include transition(margin);
+
+    @media (max-width: 1199px) {
+        width: 100%;
+    }
+}

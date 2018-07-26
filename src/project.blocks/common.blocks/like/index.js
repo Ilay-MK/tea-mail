@@ -1,0 +1,1 @@
+//= __icon/index.js

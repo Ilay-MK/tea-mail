@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/// Описание элемента модификатора BEM блока carousel-indicators.
+/// Элемент - label-count.
+.carousel-indicators__label-count {
+    @extend %font-OpenSans_Regular;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 0.05em;
+    background-color: rgba(26, 26, 26, .341);
+    bottom: 0;
+    left: 0;
+    line-height: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+
+    @media (min-width: 1200px) {
+        display: none;
+    }
+}

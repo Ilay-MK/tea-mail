@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание модификатор элемента блока хлебных крошек типа стрелки.
+/// Элемент - item-content (span).
+/// Модификатор - not-first-child-item.
+.breadcrumb-arrow__item-content_not-first-child-item {
+    height: 36px;
+    line-height: 36px;
+    padding: 0 10px 0 25px;
+}

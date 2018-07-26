@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока хлебных крошек.
+/// Элемент - link.
+/// Модификатор - home.
+.breadcrumb-arrow__link_home {
+    @extend .breadcrumb-arrow__link_first-child-item;
+}

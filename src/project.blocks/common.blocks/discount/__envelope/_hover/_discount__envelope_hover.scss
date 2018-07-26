@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока discount.
+/// Элемент - envelope.
+/// Модификатор - hover.
+.discount__envelope_hover {
+    margin-top: 55px;
+
+    @media (max-width: 1199px) {
+        margin-top: 85px;
+        //margin-bottom: -40px;
+    }
+}

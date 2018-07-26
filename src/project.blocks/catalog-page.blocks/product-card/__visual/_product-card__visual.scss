@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/// Описание элемента блока карточки продукта.
+/// Элемент визуализации продукта
+.product-card__visual {
+    @include size(auto, 135px); /* специфично для section of catalog */
+}

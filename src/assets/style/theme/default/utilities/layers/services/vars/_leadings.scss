@@ -20,7 +20,7 @@ $service-leadings: (
     use("use-9")  : getLeading("leading-2"),  /* 16px */
     use("use-10") : getLeading("leading-2"),  /* 16px */
     use("use-11") : getLeading("leading-2"),  /* 16px */
-    use("use-12") : getLeading("leading-2"),  /* 16px */
+    use("use-12") : getLeading("leading-5"),  /* 16px */
     use("use-13") : getLeading("leading-2"),  /* 16px */
     use("use-14") : getLeading("leading-6"),  /* 23px */
     use("use-15") : getLeading("leading-4"),  /* 19px */
@@ -104,5 +104,7 @@ $service-leadings: (
     use("use-81") : getLeading("leading-4"),  /* 19px */
     use("use-82") : getLeading("leading-3"),  /* 18px */
     /* -------------------------------------------------------------------------- */
-    use("use-83") : getLeading()
+    use("use-83") : getLeading("leading-11"), /* 90px */
+    /* -------------------------------------------------------------------------- */
+    use("use-84") : getLeading()
 );

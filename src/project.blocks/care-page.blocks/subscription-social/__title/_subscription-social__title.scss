@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока subscription-social.
+/// Элемент - title.
+.subscription-social__title {
+    margin-bottom: 0;
+
+    @media (max-width: 479px) {
+        font-size: 25px;
+        line-height: 45px;
+    }
+}

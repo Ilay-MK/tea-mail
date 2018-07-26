@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока поля ввода.
+/// Модификатор - type со значением search
+.input_type_search {
+    background-color: transparent;
+    @include f("hero--search");
+    color: #696969;
+    line-height: normal;
+    padding: 0 20px;
+    @include size(200px, 100%);
+
+    @include placeholder_append {
+        color: #696969;
+    }
+}

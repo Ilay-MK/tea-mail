@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока gifts.
+/// Элемент - content.
+.gifts__content {
+    overflow: hidden;
+
+    @media (min-width: 1200px) {
+        float: right;
+        margin: 0 30px;
+        width: 280px;
+    }
+}

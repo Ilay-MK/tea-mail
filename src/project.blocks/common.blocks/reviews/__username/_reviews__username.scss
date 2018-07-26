@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока reviews.
+/// Элемент - username.
+.reviews__username {
+    @include f("reviews--username");
+    display: inline-block;
+    vertical-align: middle;
+
+    @media (min-width: 768px) {
+        margin-bottom: 15px;
+    }
+    /* Переделать по BEM */
+    p {
+        margin: 0;
+    }
+}

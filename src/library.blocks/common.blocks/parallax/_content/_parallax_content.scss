@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока parallax.
+/// Элемент content
+.parallax_content {
+    @include transition(all, 1.3s, cubic-bezier(0.18, 0.89, 0.32, 1.28));
+}

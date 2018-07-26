@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/// Описание BEM блока формы ввода купона.
+/// Элемент - label.
+.form-coupon__label {
+    @include font-NotoSans_Italic;
+    color: getColor("Eclipse");
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    padding-right: 7px;
+    vertical-align: middle;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
+}

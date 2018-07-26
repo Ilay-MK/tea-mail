@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/// Описание элемента блока метода отображения товаров (карточек товаров).
+/// Элемент - option.
+.catalog-view__option {
+    cursor: pointer;
+    display: inline-block;
+}

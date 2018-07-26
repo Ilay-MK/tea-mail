@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока меню каталога.
+/// Элемент list
+.menu-catalog__list {
+
+    @media (max-width: 479px) {
+        margin: 0 !important;
+    }
+}

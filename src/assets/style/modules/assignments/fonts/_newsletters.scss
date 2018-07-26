@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.newsletters {
+
+    &--heading {
+        @include f("newsletters--heading");
+    }
+
+    &--text {
+        @include f("newsletters--text");
+    }
+
+    &--button {
+        @include f("newsletters--button");
+        line-height: 40px; /* TEMP */
+    }
+
+}

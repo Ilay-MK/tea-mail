@@ -1,0 +1,60 @@
+<section id="cart" class="cart section">
+    <div class="container">
+
+        <div class="cart__container">
+
+            <header class="cart__headings section__headings">
+                <h2 class="h2 cart__title">
+                    <div class="icon cart__title-icon"></div>
+                    Корзина
+                </h2>
+            </header>
+
+            <div class="cart__cart-steps">
+                //= ../../../modules/cart/cart-steps/cart-steps.html
+            </div>
+
+            <div class="cart__cart-steps-conteiner decor decor_line decor_line-wavy-shadow decor_line-wavy-shadow_bottom">
+                <div class="cart__purchases cart__step-container">
+                    //= ../../../modules/cart/cart__purchases.html
+                </div>
+
+                <div class="cart__delivery cart__step-container">
+                    //= ../../../modules/cart/cart__delivery.html
+                </div>
+
+                <div class="cart__payment cart__step-container">
+                    //= ../../../modules/cart/cart__payment.html
+                </div>
+            </div>
+
+            <footer class="cart__footer">
+                <div class="cart__cost-order">
+                    <p class="cart__total">
+                        Сумма заказа:
+                        <span class="cart__total-cost">
+                            108 р
+                        </span>
+                    </p>
+                </div>
+
+                <div class="cart__steps-controls">
+                    <button class="btn cart__steps-ctrl cart__steps-ctrl_prev" data-purpose__text_delivery="Вернуться в корзину" data-purpose__text_payment="Вернуться к доставке">
+                        <span class="label">Вернуться в корзину</span>
+                    </button>
+
+                    <button class="btn cart__steps-ctrl cart__steps-ctrl_next" data-purpose__text_cart="Перейти к доставке" data-purpose__text_delivery="Перейти к оплате">
+                        <span class="label">Перейти к доставке</span>
+                        <span class="arrow arrow_right cart__steps-ctrl-arrow cart__steps-ctrl-arrow_right"></span>
+                    </button>
+
+                    <button type="submit" class="btn cart__steps-ctrl cart__steps-ctrl_checkout" data-purpose__text_payment="Оформить заказ">
+                        <span class="label">Оформить заказ</span>
+                    </button>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока catalog-filter.
+/// Элемент - label.
+.catalog-filter__label {
+    color: #4b4b4b;
+    font-family: getFont-family("OpenSans");
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    line-height: 16px;
+}

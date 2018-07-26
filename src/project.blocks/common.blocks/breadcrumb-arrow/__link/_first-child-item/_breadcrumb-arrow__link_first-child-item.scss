@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента блока хлебных крошек.
+/// Элемент - link.
+/// Модификатор - first-child-item.
+.breadcrumb-arrow__link_first-child-item {
+
+    /* Переделать пр BEM */
+    &.breadcrumb-arrow__link_theme_tea-mail {
+        background-color: getColor("Putty");
+        border-color: getColor("Putty");
+        padding: 5px;
+
+        &:before,
+        &:after {
+            border-left-color: getColor("Putty");
+        }
+    }
+}

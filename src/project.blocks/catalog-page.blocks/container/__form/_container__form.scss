@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/// Описание элемента BEM блока container.
+/// Элемент - form.
+.container__form {
+    margin-bottom: 15px;
+
+    @media (max-width: 1199px) and (min-width: 480px) {
+        display: none;
+    }
+
+    @media (max-width: 479px) {
+        margin-left: -20px; /* компенсирование оступа aside */
+        text-align: center;
+    }
+}

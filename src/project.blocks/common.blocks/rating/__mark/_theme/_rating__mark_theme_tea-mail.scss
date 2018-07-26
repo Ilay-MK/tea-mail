@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Описание модификатора элемента BEM блока rating.
+/// Элемент - mark.
+/// Модификатора - theme_tea-mail.
+.rating__mark_theme_tea-mail {
+    background-image: url(../img/reviews/rating/star.png);
+    @include size(15px, 17px);
+}
